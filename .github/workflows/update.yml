@@ -2,7 +2,7 @@ name: Update Stash Proxies
 
 on:
   schedule:
-    - cron: '0 * * * *'
+    - cron: '5 * * * *'
   workflow_dispatch: {}
 
 concurrency:
@@ -25,7 +25,10 @@ jobs:
           python-version: '3.12'
 
       - name: Install dependencies
-        run: pip install pyyaml
+        run: pip install pyyaml pytest
+
+      - name: Run tests
+        run: python -m pytest test_convert.py -v
 
       - name: Run converter
         run: python convert.py

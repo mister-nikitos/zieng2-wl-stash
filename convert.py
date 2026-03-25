@@ -177,7 +177,9 @@ def fetch_and_convert(url: str) -> list[dict]:
     """Fetch a VLESS text file and convert all entries to Stash proxy dicts."""
     print(f"Fetching {url} ...", file=sys.stderr)
     response = urlopen(url, timeout=30)
-    text = response.read().decode("utf-8")
+    if response.status != 200:
+        raise OSError(f"HTTP {response.status} for {url}")
+    text = response.read().decode("utf-8", errors="replace")
     lines = text.splitlines()
 
     proxies = []
@@ -213,8 +215,12 @@ def main():
             sys.exit(1)
 
         data = {"proxies": proxies}
-        with open(output_file, "w", encoding="utf-8") as f:
-            yaml.dump(data, f, default_flow_style=False, allow_unicode=True, sort_keys=False, width=1000)
+        try:
+            with open(output_file, "w", encoding="utf-8") as f:
+                yaml.dump(data, f, default_flow_style=False, allow_unicode=True, sort_keys=False, width=1000)
+        except yaml.YAMLError as e:
+            print(f"ERROR: Failed to write YAML to {output_file}: {e}", file=sys.stderr)
+            sys.exit(1)
 
         total_converted += len(proxies)
         print(f"Written {len(proxies)} proxies to {output_file}", file=sys.stderr)
