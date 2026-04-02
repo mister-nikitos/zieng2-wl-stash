@@ -1,6 +1,11 @@
-"""Unit tests for convert.py — VLESS URI parsing and Stash proxy building."""
+"""Unit tests for convert.py — VLESS URI parsing, region split, and Stash proxy building."""
 
-from convert import parse_vless_uri, build_stash_proxy
+from convert import (
+    build_stash_proxy,
+    is_ru_proxy_name,
+    parse_vless_uri,
+    split_proxies_by_region,
+)
 
 
 # ── parse_vless_uri ──────────────────────────────────────────────
@@ -66,6 +71,51 @@ def test_parse_invalid_port():
 
 def test_parse_malformed_ipv6():
     assert parse_vless_uri("vless://uuid@[2001:db8::1:443#Broken") is None
+
+
+# ── region split helpers ─────────────────────────────────────────
+
+
+def test_is_ru_proxy_name_true_for_russian_flag():
+    assert is_ru_proxy_name("🇷🇺 VK — #1") is True
+
+
+def test_is_ru_proxy_name_false_without_russian_flag():
+    assert is_ru_proxy_name("🇩🇪 Hetzner — #1") is False
+
+
+def test_split_proxies_by_region_mixed_lists():
+    proxies = [
+        {"name": "🇷🇺 VK — #1", "server": "1.1.1.1"},
+        {"name": "🇳🇱 Global — #1", "server": "8.8.8.8"},
+        {"name": "No flag proxy", "server": "9.9.9.9"},
+    ]
+
+    ru_proxies, global_proxies = split_proxies_by_region(proxies)
+
+    assert ru_proxies == [{"name": "🇷🇺 VK — #1", "server": "1.1.1.1"}]
+    assert global_proxies == [
+        {"name": "🇳🇱 Global — #1", "server": "8.8.8.8"},
+        {"name": "No flag proxy", "server": "9.9.9.9"},
+    ]
+
+
+def test_split_proxies_by_region_all_ru():
+    proxies = [{"name": "🇷🇺 VK — #1", "server": "1.1.1.1"}]
+
+    ru_proxies, global_proxies = split_proxies_by_region(proxies)
+
+    assert ru_proxies == proxies
+    assert global_proxies == []
+
+
+def test_split_proxies_by_region_all_global():
+    proxies = [{"name": "🇫🇮 Global — #1", "server": "9.9.9.9"}]
+
+    ru_proxies, global_proxies = split_proxies_by_region(proxies)
+
+    assert ru_proxies == []
+    assert global_proxies == proxies
 
 
 # ── build_stash_proxy ────────────────────────────────────────────
