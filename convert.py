@@ -16,6 +16,32 @@ SOURCES = {
 }
 
 
+def is_ru_proxy_name(name: str) -> bool:
+    """Return True when the proxy name carries the RU marker."""
+    return "🇷🇺" in name
+
+
+def split_proxies_by_region(proxies: list[dict]) -> tuple[list[dict], list[dict]]:
+    """Split converted proxies into RU and global subsets."""
+    ru_proxies = []
+    global_proxies = []
+
+    for proxy in proxies:
+        if is_ru_proxy_name(proxy["name"]):
+            ru_proxies.append(proxy)
+        else:
+            global_proxies.append(proxy)
+
+    return ru_proxies, global_proxies
+
+
+def write_proxy_provider(output_file: str, proxies: list[dict]) -> None:
+    """Write a Stash proxy-provider YAML file."""
+    data = {"proxies": proxies}
+    with open(output_file, "w", encoding="utf-8") as f:
+        yaml.dump(data, f, default_flow_style=False, allow_unicode=True, sort_keys=False, width=1000)
+
+
 def parse_vless_uri(uri: str) -> Optional[dict]:
     """Parse a single vless:// URI into a dict of components."""
     uri = uri.strip()
@@ -214,16 +240,25 @@ def main():
             print(f"ERROR: 0 proxies converted from {source_url}", file=sys.stderr)
             sys.exit(1)
 
-        data = {"proxies": proxies}
+        ru_proxies, global_proxies = split_proxies_by_region(proxies)
+        output_base, output_ext = os.path.splitext(output_file)
+        region_outputs = {
+            output_file: proxies,
+            f"{output_base}_ru{output_ext}": ru_proxies,
+            f"{output_base}_global{output_ext}": global_proxies,
+        }
+
         try:
-            with open(output_file, "w", encoding="utf-8") as f:
-                yaml.dump(data, f, default_flow_style=False, allow_unicode=True, sort_keys=False, width=1000)
+            for region_output_file, region_proxies in region_outputs.items():
+                write_proxy_provider(region_output_file, region_proxies)
         except yaml.YAMLError as e:
-            print(f"ERROR: Failed to write YAML to {output_file}: {e}", file=sys.stderr)
+            print(f"ERROR: Failed to write YAML output for {output_file}: {e}", file=sys.stderr)
             sys.exit(1)
 
         total_converted += len(proxies)
         print(f"Written {len(proxies)} proxies to {output_file}", file=sys.stderr)
+        print(f"Written {len(ru_proxies)} proxies to {output_base}_ru{output_ext}", file=sys.stderr)
+        print(f"Written {len(global_proxies)} proxies to {output_base}_global{output_ext}", file=sys.stderr)
 
     print(f"\nDone. Total proxies converted: {total_converted}", file=sys.stderr)
 
