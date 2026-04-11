@@ -1,21 +1,21 @@
 proxies:
 - name: '🇷🇺 VK — #1'
   type: vless
-  server: 5.188.141.197
-  port: 443
-  uuid: 8ab6923d-14d0-4afb-8ed7-895515086660
+  server: 212.233.76.156
+  port: 8443
+  uuid: f3b9ff0c-300a-491f-b030-bfc84e673113
+  network: grpc
   tls: true
-  flow: xtls-rprx-vision
   sni: max.ru
-  client-fingerprint: random
+  client-fingerprint: chrome
   reality-opts:
-    public-key: WWA4FL9fWO0sy41E-fciX6ZTKUL4U2MxhpXJs9jPQ2I
-    short-id: b2a6e3d42f05c3d1
+    public-key: UsIT-zjeviusx9Av1bItm6yZiZCW56J1P1zvoQAOpU0
+    short-id: 0123456789abcdef
 - name: '🇷🇺 VK — #2'
   type: vless
   server: 212.233.94.174
   port: 443
-  uuid: 8ab6923d-14d0-4afb-8ed7-895515086660
+  uuid: 773660d9-1249-417b-a93b-54f2a2203b5e
   tls: true
   flow: xtls-rprx-vision
   sni: max.ru
@@ -25,9 +25,9 @@ proxies:
     short-id: b2a6e3d42f05c3d1
 - name: '🇷🇺 VK — #3'
   type: vless
-  server: 212.233.94.174
+  server: 5.188.141.197
   port: 443
-  uuid: 68438fa6-9710-42ea-8529-71bd48e869a5
+  uuid: 773660d9-1249-417b-a93b-54f2a2203b5e
   tls: true
   flow: xtls-rprx-vision
   sni: max.ru
@@ -37,112 +37,54 @@ proxies:
     short-id: b2a6e3d42f05c3d1
 - name: '🇷🇺 VK — #4'
   type: vless
-  server: 5.188.141.197
-  port: 443
-  uuid: 68438fa6-9710-42ea-8529-71bd48e869a5
-  tls: true
-  flow: xtls-rprx-vision
-  sni: max.ru
-  client-fingerprint: random
-  reality-opts:
-    public-key: WWA4FL9fWO0sy41E-fciX6ZTKUL4U2MxhpXJs9jPQ2I
-    short-id: b2a6e3d42f05c3d1
-- name: '🇷🇺 VK — #5'
-  type: vless
   server: 5.188.141.143
   port: 8443
-  uuid: 23fd69b1-1797-4954-8a0f-18d383f93867
+  uuid: bbee19a2-79b9-452d-9791-861f3023ef8a
   tls: true
   flow: xtls-rprx-vision
   sni: ads.x5.ru
   reality-opts:
     public-key: CF466523CTyWo8ekZMcVPHO18gOy4ODyKSWwusJVWVI
     short-id: A1B2C3D4E5F6
-- name: '🇷🇺 VK — #6'
-  type: vless
-  server: 217.16.31.82
-  port: 8443
-  uuid: 23fd69b1-1797-4954-8a0f-18d383f93867
-  tls: true
-  flow: xtls-rprx-vision
-  sni: ads.x5.ru
-  reality-opts:
-    public-key: aetBvw_Oniq0INKvHmf4ZMShd43_gTMnRDYddIV1n2s
-    short-id: A1B2C3D4E5F6
-- name: '🇷🇺 VK — #7'
+- name: '🇷🇺 VK — #5'
   type: vless
   server: 109.120.191.218
   port: 8443
-  uuid: 23fd69b1-1797-4954-8a0f-18d383f93867
+  uuid: bbee19a2-79b9-452d-9791-861f3023ef8a
   tls: true
   flow: xtls-rprx-vision
   sni: ads.x5.ru
   reality-opts:
     public-key: ldGnC9wnr5RpLeHDtixSJhVHNI3S2kl-vhMhP1rVJEc
     short-id: 6FA44664f6a566d4
+- name: '🇷🇺 Yandex — #6'
+  type: vless
+  server: 158.160.222.45
+  port: 8443
+  uuid: a356908f-2058-4992-b26b-4262eb8847ab
+  tls: true
+  flow: xtls-rprx-vision
+  sni: max.ru
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 5kiPAcXkZDoNrCIQ4UX7qXG2vvGxARZ_NGnSiM7YyAg
+    short-id: 9f42684c1b
+- name: '🇷🇺 Yandex — #7'
+  type: vless
+  server: 158.160.246.193
+  port: 443
+  uuid: 17f47d21-1837-4287-b6e7-e537274c41e4
+  network: grpc
+  tls: true
+  sni: static-mon.yandex.net
+  reality-opts:
+    public-key: 9lryIkDCyHLzVsVJiGE4LFMuOHdzYDSTNJOFqGlpcl8
+    short-id: ab176041efecbafa
 - name: '🇷🇺 Yandex — #8'
-  type: vless
-  server: 158.160.246.193
-  port: 443
-  uuid: 17f47d21-1837-4287-b6e7-e537274c41e4
-  network: grpc
-  tls: true
-  sni: static-mon.yandex.net
-  reality-opts:
-    public-key: 9lryIkDCyHLzVsVJiGE4LFMuOHdzYDSTNJOFqGlpcl8
-    short-id: ab176041efecbafa
-- name: '🇷🇺 Yandex — #9'
-  type: vless
-  server: 158.160.231.132
-  port: 443
-  uuid: 17f47d21-1837-4287-b6e7-e537274c41e4
-  network: grpc
-  tls: true
-  sni: static-mon.yandex.net
-  reality-opts:
-    public-key: 9lryIkDCyHLzVsVJiGE4LFMuOHdzYDSTNJOFqGlpcl8
-    short-id: 2901df419dc4e3ff
-- name: '🇷🇺 Yandex — #10'
-  type: vless
-  server: 158.160.246.193
-  port: 443
-  uuid: 17f47d21-1837-4287-b6e7-e537274c41e4
-  network: grpc
-  tls: true
-  sni: static-mon.yandex.net
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: 9lryIkDCyHLzVsVJiGE4LFMuOHdzYDSTNJOFqGlpcl8
-    short-id: ab176041efecbafa
-- name: '🇷🇺 Yandex — #11'
-  type: vless
-  server: 158.160.231.132
-  port: 443
-  uuid: 17f47d21-1837-4287-b6e7-e537274c41e4
-  network: grpc
-  tls: true
-  sni: static-mon.yandex.net
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: 9lryIkDCyHLzVsVJiGE4LFMuOHdzYDSTNJOFqGlpcl8
-    short-id: 97f74fa3a71adccc
-- name: '🇷🇺 Yandex — #12'
-  type: vless
-  server: 158.160.246.193
-  port: 443
-  uuid: 17f47d21-1837-4287-b6e7-e537274c41e4
-  network: grpc
-  tls: true
-  sni: static-mon.yandex.net
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: 9lryIkDCyHLzVsVJiGE4LFMuOHdzYDSTNJOFqGlpcl8
-    short-id: 97f74fa3a71adccc
-- name: '🇷🇺 Yandex — #13'
   type: vless
   server: 158.160.111.153
   port: 443
-  uuid: 11b77e69-bb82-4449-b679-6eade686ceb7
+  uuid: 8fd0f29a-9a50-4114-a40c-dda6953a5988
   tls: true
   flow: xtls-rprx-vision
   sni: smartcaptcha.yandexcloud.net
@@ -150,11 +92,11 @@ proxies:
   reality-opts:
     public-key: 66kZLshj9fxAIQA7NsABohNwgiOcY71enc6as_Frqw0
     short-id: 3c1523da43287ec4
-- name: '🇷🇺 Yandex — #14'
+- name: '🇷🇺 Yandex — #9'
   type: vless
   server: 158.160.98.174
   port: 443
-  uuid: 11b77e69-bb82-4449-b679-6eade686ceb7
+  uuid: 8fd0f29a-9a50-4114-a40c-dda6953a5988
   tls: true
   flow: xtls-rprx-vision
   sni: smartcaptcha.yandexcloud.net
@@ -162,9 +104,9 @@ proxies:
   reality-opts:
     public-key: 66kZLshj9fxAIQA7NsABohNwgiOcY71enc6as_Frqw0
     short-id: 3c1523da43287ec4
-- name: '🇷🇺 4vps.su — #15'
+- name: '🇷🇺 4vps.su — #10'
   type: vless
-  server: 157.22.241.17
+  server: 212.192.14.163
   port: 443
   uuid: cbfc5c7c-ead6-4f56-8c54-e9d8ab72665e
   tls: true
@@ -173,11 +115,66 @@ proxies:
   client-fingerprint: randomized
   reality-opts:
     public-key: rDPZZOBMmBb_mNKPEewzp9Uu6zkGrP7XOVpnRzetXDc
-- name: '🇷🇺 4vps.su — #16'
+- name: '🇷🇺 4vps.su — #11'
   type: vless
-  server: 212.192.14.153
+  server: 157.22.241.5
   port: 443
   uuid: cbfc5c7c-ead6-4f56-8c54-e9d8ab72665e
+  tls: true
+  flow: xtls-rprx-vision
+  sni: goodcardboard.shop
+  client-fingerprint: randomized
+  reality-opts:
+    public-key: rDPZZOBMmBb_mNKPEewzp9Uu6zkGrP7XOVpnRzetXDc
+- name: '🇷🇺 4vps.su — #12'
+  type: vless
+  server: 212.192.14.160
+  port: 443
+  uuid: f40f1bcb-83b6-41fc-a315-d2502ca08792
+  tls: true
+  flow: xtls-rprx-vision
+  sni: goodcardboard.shop
+  client-fingerprint: randomized
+  reality-opts:
+    public-key: rDPZZOBMmBb_mNKPEewzp9Uu6zkGrP7XOVpnRzetXDc
+- name: '🇷🇺 4vps.su — #13'
+  type: vless
+  server: 212.192.14.163
+  port: 443
+  uuid: f40f1bcb-83b6-41fc-a315-d2502ca08792
+  tls: true
+  flow: xtls-rprx-vision
+  sni: goodcardboard.shop
+  client-fingerprint: randomized
+  reality-opts:
+    public-key: rDPZZOBMmBb_mNKPEewzp9Uu6zkGrP7XOVpnRzetXDc
+- name: '🇷🇺 4vps.su — #14'
+  type: vless
+  server: 157.22.241.25
+  port: 443
+  uuid: d0b1ae76-4b8b-496d-8e6a-2af194da225f
+  tls: true
+  flow: xtls-rprx-vision
+  sni: goodcardboard.shop
+  client-fingerprint: randomized
+  reality-opts:
+    public-key: rDPZZOBMmBb_mNKPEewzp9Uu6zkGrP7XOVpnRzetXDc
+- name: '🇷🇺 4vps.su — #15'
+  type: vless
+  server: 212.192.14.163
+  port: 443
+  uuid: d0b1ae76-4b8b-496d-8e6a-2af194da225f
+  tls: true
+  flow: xtls-rprx-vision
+  sni: goodcardboard.shop
+  client-fingerprint: randomized
+  reality-opts:
+    public-key: rDPZZOBMmBb_mNKPEewzp9Uu6zkGrP7XOVpnRzetXDc
+- name: '🇷🇺 4vps.su — #16'
+  type: vless
+  server: 212.192.14.163
+  port: 443
+  uuid: 7aca8c88-307b-4afe-9858-ae2f405a7c6f
   tls: true
   flow: xtls-rprx-vision
   sni: goodcardboard.shop
@@ -188,7 +185,7 @@ proxies:
   type: vless
   server: 157.22.241.25
   port: 443
-  uuid: f40f1bcb-83b6-41fc-a315-d2502ca08792
+  uuid: 7aca8c88-307b-4afe-9858-ae2f405a7c6f
   tls: true
   flow: xtls-rprx-vision
   sni: goodcardboard.shop
@@ -197,9 +194,9 @@ proxies:
     public-key: rDPZZOBMmBb_mNKPEewzp9Uu6zkGrP7XOVpnRzetXDc
 - name: '🇷🇺 4vps.su — #18'
   type: vless
-  server: 212.192.14.160
+  server: 157.22.241.17
   port: 443
-  uuid: f40f1bcb-83b6-41fc-a315-d2502ca08792
+  uuid: 7aca8c88-307b-4afe-9858-ae2f405a7c6f
   tls: true
   flow: xtls-rprx-vision
   sni: goodcardboard.shop
@@ -208,9 +205,9 @@ proxies:
     public-key: rDPZZOBMmBb_mNKPEewzp9Uu6zkGrP7XOVpnRzetXDc
 - name: '🇷🇺 4vps.su — #19'
   type: vless
-  server: 212.192.14.153
+  server: 212.192.14.160
   port: 443
-  uuid: f40f1bcb-83b6-41fc-a315-d2502ca08792
+  uuid: 7aca8c88-307b-4afe-9858-ae2f405a7c6f
   tls: true
   flow: xtls-rprx-vision
   sni: goodcardboard.shop
@@ -219,9 +216,9 @@ proxies:
     public-key: rDPZZOBMmBb_mNKPEewzp9Uu6zkGrP7XOVpnRzetXDc
 - name: '🇷🇺 4vps.su — #20'
   type: vless
-  server: 212.192.14.163
+  server: 157.22.241.5
   port: 443
-  uuid: f40f1bcb-83b6-41fc-a315-d2502ca08792
+  uuid: 7aca8c88-307b-4afe-9858-ae2f405a7c6f
   tls: true
   flow: xtls-rprx-vision
   sni: goodcardboard.shop
@@ -230,9 +227,9 @@ proxies:
     public-key: rDPZZOBMmBb_mNKPEewzp9Uu6zkGrP7XOVpnRzetXDc
 - name: '🇷🇺 4vps.su — #21'
   type: vless
-  server: 157.22.241.25
+  server: 212.192.14.153
   port: 443
-  uuid: d0b1ae76-4b8b-496d-8e6a-2af194da225f
+  uuid: 7aca8c88-307b-4afe-9858-ae2f405a7c6f
   tls: true
   flow: xtls-rprx-vision
   sni: goodcardboard.shop
@@ -241,105 +238,6 @@ proxies:
     public-key: rDPZZOBMmBb_mNKPEewzp9Uu6zkGrP7XOVpnRzetXDc
 - name: '🇷🇺 4vps.su — #22'
   type: vless
-  server: 212.192.14.163
-  port: 443
-  uuid: d0b1ae76-4b8b-496d-8e6a-2af194da225f
-  tls: true
-  flow: xtls-rprx-vision
-  sni: goodcardboard.shop
-  client-fingerprint: randomized
-  reality-opts:
-    public-key: rDPZZOBMmBb_mNKPEewzp9Uu6zkGrP7XOVpnRzetXDc
-- name: '🇷🇺 4vps.su — #23'
-  type: vless
-  server: 212.192.14.153
-  port: 443
-  uuid: d0b1ae76-4b8b-496d-8e6a-2af194da225f
-  tls: true
-  flow: xtls-rprx-vision
-  sni: goodcardboard.shop
-  client-fingerprint: randomized
-  reality-opts:
-    public-key: rDPZZOBMmBb_mNKPEewzp9Uu6zkGrP7XOVpnRzetXDc
-- name: '🇷🇺 4vps.su — #24'
-  type: vless
-  server: 157.22.241.5
-  port: 443
-  uuid: d0b1ae76-4b8b-496d-8e6a-2af194da225f
-  tls: true
-  flow: xtls-rprx-vision
-  sni: goodcardboard.shop
-  client-fingerprint: randomized
-  reality-opts:
-    public-key: rDPZZOBMmBb_mNKPEewzp9Uu6zkGrP7XOVpnRzetXDc
-- name: '🇷🇺 4vps.su — #25'
-  type: vless
-  server: 212.192.14.163
-  port: 443
-  uuid: 7aca8c88-307b-4afe-9858-ae2f405a7c6f
-  tls: true
-  flow: xtls-rprx-vision
-  sni: goodcardboard.shop
-  client-fingerprint: randomized
-  reality-opts:
-    public-key: rDPZZOBMmBb_mNKPEewzp9Uu6zkGrP7XOVpnRzetXDc
-- name: '🇷🇺 4vps.su — #26'
-  type: vless
-  server: 212.192.14.160
-  port: 443
-  uuid: 7aca8c88-307b-4afe-9858-ae2f405a7c6f
-  tls: true
-  flow: xtls-rprx-vision
-  sni: goodcardboard.shop
-  client-fingerprint: randomized
-  reality-opts:
-    public-key: rDPZZOBMmBb_mNKPEewzp9Uu6zkGrP7XOVpnRzetXDc
-- name: '🇷🇺 4vps.su — #27'
-  type: vless
-  server: 157.22.241.5
-  port: 443
-  uuid: 7aca8c88-307b-4afe-9858-ae2f405a7c6f
-  tls: true
-  flow: xtls-rprx-vision
-  sni: goodcardboard.shop
-  client-fingerprint: randomized
-  reality-opts:
-    public-key: rDPZZOBMmBb_mNKPEewzp9Uu6zkGrP7XOVpnRzetXDc
-- name: '🇷🇺 4vps.su — #28'
-  type: vless
-  server: 212.192.14.153
-  port: 443
-  uuid: 7aca8c88-307b-4afe-9858-ae2f405a7c6f
-  tls: true
-  flow: xtls-rprx-vision
-  sni: goodcardboard.shop
-  client-fingerprint: randomized
-  reality-opts:
-    public-key: rDPZZOBMmBb_mNKPEewzp9Uu6zkGrP7XOVpnRzetXDc
-- name: '🇷🇺 4vps.su — #29'
-  type: vless
-  server: 157.22.241.5
-  port: 443
-  uuid: ed2eefa4-7d71-43e3-b629-76baf0ea25a9
-  tls: true
-  flow: xtls-rprx-vision
-  sni: goodcardboard.shop
-  client-fingerprint: randomized
-  reality-opts:
-    public-key: rDPZZOBMmBb_mNKPEewzp9Uu6zkGrP7XOVpnRzetXDc
-- name: '🇷🇺 4vps.su — #30'
-  type: vless
-  server: 212.192.14.153
-  port: 443
-  uuid: ed2eefa4-7d71-43e3-b629-76baf0ea25a9
-  tls: true
-  flow: xtls-rprx-vision
-  sni: goodcardboard.shop
-  client-fingerprint: randomized
-  reality-opts:
-    public-key: rDPZZOBMmBb_mNKPEewzp9Uu6zkGrP7XOVpnRzetXDc
-- name: '🇷🇺 4vps.su — #31'
-  type: vless
   server: 157.22.241.25
   port: 443
   uuid: ed2eefa4-7d71-43e3-b629-76baf0ea25a9
@@ -349,7 +247,7 @@ proxies:
   client-fingerprint: randomized
   reality-opts:
     public-key: rDPZZOBMmBb_mNKPEewzp9Uu6zkGrP7XOVpnRzetXDc
-- name: '🇷🇺 4vps.su — #32'
+- name: '🇷🇺 4vps.su — #23'
   type: vless
   server: 212.192.14.163
   port: 443
@@ -360,7 +258,7 @@ proxies:
   client-fingerprint: randomized
   reality-opts:
     public-key: rDPZZOBMmBb_mNKPEewzp9Uu6zkGrP7XOVpnRzetXDc
-- name: '🇷🇺 4vps.su — #33'
+- name: '🇷🇺 4vps.su — #24'
   type: vless
   server: 212.192.14.160
   port: 443
@@ -371,11 +269,110 @@ proxies:
   client-fingerprint: randomized
   reality-opts:
     public-key: rDPZZOBMmBb_mNKPEewzp9Uu6zkGrP7XOVpnRzetXDc
-- name: '🇷🇺 4vps.su — #34'
+- name: '🇷🇺 4vps.su — #25'
   type: vless
   server: 157.22.241.5
   port: 443
   uuid: 0cde55cc-05b0-40f2-b8c9-f1719be2a2f7
+  tls: true
+  flow: xtls-rprx-vision
+  sni: goodcardboard.shop
+  client-fingerprint: randomized
+  reality-opts:
+    public-key: rDPZZOBMmBb_mNKPEewzp9Uu6zkGrP7XOVpnRzetXDc
+- name: '🇷🇺 4vps.su — #26'
+  type: vless
+  server: 212.192.14.153
+  port: 443
+  uuid: 0cde55cc-05b0-40f2-b8c9-f1719be2a2f7
+  tls: true
+  flow: xtls-rprx-vision
+  sni: goodcardboard.shop
+  client-fingerprint: randomized
+  reality-opts:
+    public-key: rDPZZOBMmBb_mNKPEewzp9Uu6zkGrP7XOVpnRzetXDc
+- name: '🇷🇺 4vps.su — #27'
+  type: vless
+  server: 212.192.14.163
+  port: 443
+  uuid: d4ac8ef7-b18c-46c3-ad40-373e28558b33
+  tls: true
+  flow: xtls-rprx-vision
+  sni: goodcardboard.shop
+  client-fingerprint: randomized
+  reality-opts:
+    public-key: rDPZZOBMmBb_mNKPEewzp9Uu6zkGrP7XOVpnRzetXDc
+- name: '🇷🇺 4vps.su — #28'
+  type: vless
+  server: 157.22.241.17
+  port: 443
+  uuid: d4ac8ef7-b18c-46c3-ad40-373e28558b33
+  tls: true
+  flow: xtls-rprx-vision
+  sni: goodcardboard.shop
+  client-fingerprint: randomized
+  reality-opts:
+    public-key: rDPZZOBMmBb_mNKPEewzp9Uu6zkGrP7XOVpnRzetXDc
+- name: '🇷🇺 4vps.su — #29'
+  type: vless
+  server: 212.192.14.160
+  port: 443
+  uuid: d4ac8ef7-b18c-46c3-ad40-373e28558b33
+  tls: true
+  flow: xtls-rprx-vision
+  sni: goodcardboard.shop
+  client-fingerprint: randomized
+  reality-opts:
+    public-key: rDPZZOBMmBb_mNKPEewzp9Uu6zkGrP7XOVpnRzetXDc
+- name: '🇷🇺 4vps.su — #30'
+  type: vless
+  server: 212.192.14.163
+  port: 443
+  uuid: 09b66405-e860-43cf-9647-9b6c3114a9c6
+  tls: true
+  flow: xtls-rprx-vision
+  sni: goodcardboard.shop
+  client-fingerprint: randomized
+  reality-opts:
+    public-key: rDPZZOBMmBb_mNKPEewzp9Uu6zkGrP7XOVpnRzetXDc
+- name: '🇷🇺 4vps.su — #31'
+  type: vless
+  server: 212.192.14.160
+  port: 443
+  uuid: 09b66405-e860-43cf-9647-9b6c3114a9c6
+  tls: true
+  flow: xtls-rprx-vision
+  sni: goodcardboard.shop
+  client-fingerprint: randomized
+  reality-opts:
+    public-key: rDPZZOBMmBb_mNKPEewzp9Uu6zkGrP7XOVpnRzetXDc
+- name: '🇷🇺 4vps.su — #32'
+  type: vless
+  server: 157.22.241.25
+  port: 443
+  uuid: 7264a721-b53a-4b46-985b-1304657a09ac
+  tls: true
+  flow: xtls-rprx-vision
+  sni: goodcardboard.shop
+  client-fingerprint: randomized
+  reality-opts:
+    public-key: rDPZZOBMmBb_mNKPEewzp9Uu6zkGrP7XOVpnRzetXDc
+- name: '🇷🇺 4vps.su — #33'
+  type: vless
+  server: 157.22.241.5
+  port: 443
+  uuid: 7264a721-b53a-4b46-985b-1304657a09ac
+  tls: true
+  flow: xtls-rprx-vision
+  sni: goodcardboard.shop
+  client-fingerprint: randomized
+  reality-opts:
+    public-key: rDPZZOBMmBb_mNKPEewzp9Uu6zkGrP7XOVpnRzetXDc
+- name: '🇷🇺 4vps.su — #34'
+  type: vless
+  server: 212.192.14.153
+  port: 443
+  uuid: 7264a721-b53a-4b46-985b-1304657a09ac
   tls: true
   flow: xtls-rprx-vision
   sni: goodcardboard.shop
@@ -386,7 +383,7 @@ proxies:
   type: vless
   server: 157.22.241.25
   port: 443
-  uuid: 0cde55cc-05b0-40f2-b8c9-f1719be2a2f7
+  uuid: ed21a78e-2745-438d-a17e-d8d3bad9f26b
   tls: true
   flow: xtls-rprx-vision
   sni: goodcardboard.shop
@@ -395,9 +392,9 @@ proxies:
     public-key: rDPZZOBMmBb_mNKPEewzp9Uu6zkGrP7XOVpnRzetXDc
 - name: '🇷🇺 4vps.su — #36'
   type: vless
-  server: 212.192.14.153
+  server: 157.22.241.17
   port: 443
-  uuid: 0cde55cc-05b0-40f2-b8c9-f1719be2a2f7
+  uuid: ed21a78e-2745-438d-a17e-d8d3bad9f26b
   tls: true
   flow: xtls-rprx-vision
   sni: goodcardboard.shop
@@ -408,7 +405,7 @@ proxies:
   type: vless
   server: 212.192.14.163
   port: 443
-  uuid: 0cde55cc-05b0-40f2-b8c9-f1719be2a2f7
+  uuid: ed21a78e-2745-438d-a17e-d8d3bad9f26b
   tls: true
   flow: xtls-rprx-vision
   sni: goodcardboard.shop
@@ -417,9 +414,9 @@ proxies:
     public-key: rDPZZOBMmBb_mNKPEewzp9Uu6zkGrP7XOVpnRzetXDc
 - name: '🇷🇺 4vps.su — #38'
   type: vless
-  server: 212.192.14.163
+  server: 157.22.241.5
   port: 443
-  uuid: d4ac8ef7-b18c-46c3-ad40-373e28558b33
+  uuid: ed21a78e-2745-438d-a17e-d8d3bad9f26b
   tls: true
   flow: xtls-rprx-vision
   sni: goodcardboard.shop
@@ -428,9 +425,9 @@ proxies:
     public-key: rDPZZOBMmBb_mNKPEewzp9Uu6zkGrP7XOVpnRzetXDc
 - name: '🇷🇺 4vps.su — #39'
   type: vless
-  server: 157.22.241.17
+  server: 212.192.14.160
   port: 443
-  uuid: d4ac8ef7-b18c-46c3-ad40-373e28558b33
+  uuid: ed21a78e-2745-438d-a17e-d8d3bad9f26b
   tls: true
   flow: xtls-rprx-vision
   sni: goodcardboard.shop
@@ -439,9 +436,9 @@ proxies:
     public-key: rDPZZOBMmBb_mNKPEewzp9Uu6zkGrP7XOVpnRzetXDc
 - name: '🇷🇺 4vps.su — #40'
   type: vless
-  server: 157.22.241.17
+  server: 212.192.14.153
   port: 443
-  uuid: 09b66405-e860-43cf-9647-9b6c3114a9c6
+  uuid: ed21a78e-2745-438d-a17e-d8d3bad9f26b
   tls: true
   flow: xtls-rprx-vision
   sni: goodcardboard.shop
@@ -450,9 +447,9 @@ proxies:
     public-key: rDPZZOBMmBb_mNKPEewzp9Uu6zkGrP7XOVpnRzetXDc
 - name: '🇷🇺 4vps.su — #41'
   type: vless
-  server: 212.192.14.163
+  server: 157.22.241.25
   port: 443
-  uuid: 09b66405-e860-43cf-9647-9b6c3114a9c6
+  uuid: 5666386a-c6a9-4da9-a404-23529593bc69
   tls: true
   flow: xtls-rprx-vision
   sni: goodcardboard.shop
@@ -461,9 +458,9 @@ proxies:
     public-key: rDPZZOBMmBb_mNKPEewzp9Uu6zkGrP7XOVpnRzetXDc
 - name: '🇷🇺 4vps.su — #42'
   type: vless
-  server: 157.22.241.25
+  server: 212.192.14.163
   port: 443
-  uuid: 09b66405-e860-43cf-9647-9b6c3114a9c6
+  uuid: 5666386a-c6a9-4da9-a404-23529593bc69
   tls: true
   flow: xtls-rprx-vision
   sni: goodcardboard.shop
@@ -474,7 +471,7 @@ proxies:
   type: vless
   server: 212.192.14.160
   port: 443
-  uuid: 09b66405-e860-43cf-9647-9b6c3114a9c6
+  uuid: 5666386a-c6a9-4da9-a404-23529593bc69
   tls: true
   flow: xtls-rprx-vision
   sni: goodcardboard.shop
@@ -483,9 +480,9 @@ proxies:
     public-key: rDPZZOBMmBb_mNKPEewzp9Uu6zkGrP7XOVpnRzetXDc
 - name: '🇷🇺 4vps.su — #44'
   type: vless
-  server: 157.22.241.25
+  server: 212.192.14.153
   port: 443
-  uuid: 7264a721-b53a-4b46-985b-1304657a09ac
+  uuid: 5666386a-c6a9-4da9-a404-23529593bc69
   tls: true
   flow: xtls-rprx-vision
   sni: goodcardboard.shop
@@ -494,9 +491,9 @@ proxies:
     public-key: rDPZZOBMmBb_mNKPEewzp9Uu6zkGrP7XOVpnRzetXDc
 - name: '🇷🇺 4vps.su — #45'
   type: vless
-  server: 212.192.14.163
+  server: 157.22.241.5
   port: 443
-  uuid: 7264a721-b53a-4b46-985b-1304657a09ac
+  uuid: 5666386a-c6a9-4da9-a404-23529593bc69
   tls: true
   flow: xtls-rprx-vision
   sni: goodcardboard.shop
@@ -505,9 +502,9 @@ proxies:
     public-key: rDPZZOBMmBb_mNKPEewzp9Uu6zkGrP7XOVpnRzetXDc
 - name: '🇷🇺 4vps.su — #46'
   type: vless
-  server: 212.192.14.160
+  server: 212.192.14.153
   port: 443
-  uuid: 7264a721-b53a-4b46-985b-1304657a09ac
+  uuid: 088c2cde-fbc3-481a-84db-c6107d6b512f
   tls: true
   flow: xtls-rprx-vision
   sni: goodcardboard.shop
@@ -516,9 +513,9 @@ proxies:
     public-key: rDPZZOBMmBb_mNKPEewzp9Uu6zkGrP7XOVpnRzetXDc
 - name: '🇷🇺 4vps.su — #47'
   type: vless
-  server: 157.22.241.5
+  server: 212.192.14.160
   port: 443
-  uuid: 7264a721-b53a-4b46-985b-1304657a09ac
+  uuid: 088c2cde-fbc3-481a-84db-c6107d6b512f
   tls: true
   flow: xtls-rprx-vision
   sni: goodcardboard.shop
@@ -527,9 +524,9 @@ proxies:
     public-key: rDPZZOBMmBb_mNKPEewzp9Uu6zkGrP7XOVpnRzetXDc
 - name: '🇷🇺 4vps.su — #48'
   type: vless
-  server: 212.192.14.153
+  server: 212.192.14.163
   port: 443
-  uuid: 7264a721-b53a-4b46-985b-1304657a09ac
+  uuid: 088c2cde-fbc3-481a-84db-c6107d6b512f
   tls: true
   flow: xtls-rprx-vision
   sni: goodcardboard.shop
@@ -538,9 +535,9 @@ proxies:
     public-key: rDPZZOBMmBb_mNKPEewzp9Uu6zkGrP7XOVpnRzetXDc
 - name: '🇷🇺 4vps.su — #49'
   type: vless
-  server: 157.22.241.17
+  server: 157.22.241.5
   port: 443
-  uuid: 7264a721-b53a-4b46-985b-1304657a09ac
+  uuid: 088c2cde-fbc3-481a-84db-c6107d6b512f
   tls: true
   flow: xtls-rprx-vision
   sni: goodcardboard.shop
@@ -551,7 +548,7 @@ proxies:
   type: vless
   server: 212.192.14.160
   port: 443
-  uuid: 14288f8b-cf5f-46f0-afe7-171670c18657
+  uuid: d283bc6e-20b2-4795-81dd-c12679eadd9d
   tls: true
   flow: xtls-rprx-vision
   sni: goodcardboard.shop
@@ -560,9 +557,9 @@ proxies:
     public-key: rDPZZOBMmBb_mNKPEewzp9Uu6zkGrP7XOVpnRzetXDc
 - name: '🇷🇺 4vps.su — #51'
   type: vless
-  server: 157.22.241.17
+  server: 157.22.241.25
   port: 443
-  uuid: 14288f8b-cf5f-46f0-afe7-171670c18657
+  uuid: d283bc6e-20b2-4795-81dd-c12679eadd9d
   tls: true
   flow: xtls-rprx-vision
   sni: goodcardboard.shop
@@ -571,9 +568,9 @@ proxies:
     public-key: rDPZZOBMmBb_mNKPEewzp9Uu6zkGrP7XOVpnRzetXDc
 - name: '🇷🇺 4vps.su — #52'
   type: vless
-  server: 157.22.241.5
+  server: 157.22.241.17
   port: 443
-  uuid: 14288f8b-cf5f-46f0-afe7-171670c18657
+  uuid: d283bc6e-20b2-4795-81dd-c12679eadd9d
   tls: true
   flow: xtls-rprx-vision
   sni: goodcardboard.shop
@@ -582,9 +579,9 @@ proxies:
     public-key: rDPZZOBMmBb_mNKPEewzp9Uu6zkGrP7XOVpnRzetXDc
 - name: '🇷🇺 4vps.su — #53'
   type: vless
-  server: 212.192.14.163
+  server: 212.192.14.153
   port: 443
-  uuid: 14288f8b-cf5f-46f0-afe7-171670c18657
+  uuid: d283bc6e-20b2-4795-81dd-c12679eadd9d
   tls: true
   flow: xtls-rprx-vision
   sni: goodcardboard.shop
@@ -592,215 +589,6 @@ proxies:
   reality-opts:
     public-key: rDPZZOBMmBb_mNKPEewzp9Uu6zkGrP7XOVpnRzetXDc
 - name: '🇷🇺 4vps.su — #54'
-  type: vless
-  server: 157.22.241.25
-  port: 443
-  uuid: 14288f8b-cf5f-46f0-afe7-171670c18657
-  tls: true
-  flow: xtls-rprx-vision
-  sni: goodcardboard.shop
-  client-fingerprint: randomized
-  reality-opts:
-    public-key: rDPZZOBMmBb_mNKPEewzp9Uu6zkGrP7XOVpnRzetXDc
-- name: '🇷🇺 4vps.su — #55'
-  type: vless
-  server: 212.192.14.153
-  port: 443
-  uuid: 14288f8b-cf5f-46f0-afe7-171670c18657
-  tls: true
-  flow: xtls-rprx-vision
-  sni: goodcardboard.shop
-  client-fingerprint: randomized
-  reality-opts:
-    public-key: rDPZZOBMmBb_mNKPEewzp9Uu6zkGrP7XOVpnRzetXDc
-- name: '🇷🇺 4vps.su — #56'
-  type: vless
-  server: 157.22.241.25
-  port: 443
-  uuid: ed21a78e-2745-438d-a17e-d8d3bad9f26b
-  tls: true
-  flow: xtls-rprx-vision
-  sni: goodcardboard.shop
-  client-fingerprint: randomized
-  reality-opts:
-    public-key: rDPZZOBMmBb_mNKPEewzp9Uu6zkGrP7XOVpnRzetXDc
-- name: '🇷🇺 4vps.su — #57'
-  type: vless
-  server: 157.22.241.17
-  port: 443
-  uuid: ed21a78e-2745-438d-a17e-d8d3bad9f26b
-  tls: true
-  flow: xtls-rprx-vision
-  sni: goodcardboard.shop
-  client-fingerprint: randomized
-  reality-opts:
-    public-key: rDPZZOBMmBb_mNKPEewzp9Uu6zkGrP7XOVpnRzetXDc
-- name: '🇷🇺 4vps.su — #58'
-  type: vless
-  server: 212.192.14.163
-  port: 443
-  uuid: ed21a78e-2745-438d-a17e-d8d3bad9f26b
-  tls: true
-  flow: xtls-rprx-vision
-  sni: goodcardboard.shop
-  client-fingerprint: randomized
-  reality-opts:
-    public-key: rDPZZOBMmBb_mNKPEewzp9Uu6zkGrP7XOVpnRzetXDc
-- name: '🇷🇺 4vps.su — #59'
-  type: vless
-  server: 157.22.241.5
-  port: 443
-  uuid: ed21a78e-2745-438d-a17e-d8d3bad9f26b
-  tls: true
-  flow: xtls-rprx-vision
-  sni: goodcardboard.shop
-  client-fingerprint: randomized
-  reality-opts:
-    public-key: rDPZZOBMmBb_mNKPEewzp9Uu6zkGrP7XOVpnRzetXDc
-- name: '🇷🇺 4vps.su — #60'
-  type: vless
-  server: 212.192.14.160
-  port: 443
-  uuid: ed21a78e-2745-438d-a17e-d8d3bad9f26b
-  tls: true
-  flow: xtls-rprx-vision
-  sni: goodcardboard.shop
-  client-fingerprint: randomized
-  reality-opts:
-    public-key: rDPZZOBMmBb_mNKPEewzp9Uu6zkGrP7XOVpnRzetXDc
-- name: '🇷🇺 4vps.su — #61'
-  type: vless
-  server: 212.192.14.153
-  port: 443
-  uuid: ed21a78e-2745-438d-a17e-d8d3bad9f26b
-  tls: true
-  flow: xtls-rprx-vision
-  sni: goodcardboard.shop
-  client-fingerprint: randomized
-  reality-opts:
-    public-key: rDPZZOBMmBb_mNKPEewzp9Uu6zkGrP7XOVpnRzetXDc
-- name: '🇷🇺 4vps.su — #62'
-  type: vless
-  server: 157.22.241.17
-  port: 443
-  uuid: 5666386a-c6a9-4da9-a404-23529593bc69
-  tls: true
-  flow: xtls-rprx-vision
-  sni: goodcardboard.shop
-  client-fingerprint: randomized
-  reality-opts:
-    public-key: rDPZZOBMmBb_mNKPEewzp9Uu6zkGrP7XOVpnRzetXDc
-- name: '🇷🇺 4vps.su — #63'
-  type: vless
-  server: 157.22.241.25
-  port: 443
-  uuid: 5666386a-c6a9-4da9-a404-23529593bc69
-  tls: true
-  flow: xtls-rprx-vision
-  sni: goodcardboard.shop
-  client-fingerprint: randomized
-  reality-opts:
-    public-key: rDPZZOBMmBb_mNKPEewzp9Uu6zkGrP7XOVpnRzetXDc
-- name: '🇷🇺 4vps.su — #64'
-  type: vless
-  server: 212.192.14.160
-  port: 443
-  uuid: 5666386a-c6a9-4da9-a404-23529593bc69
-  tls: true
-  flow: xtls-rprx-vision
-  sni: goodcardboard.shop
-  client-fingerprint: randomized
-  reality-opts:
-    public-key: rDPZZOBMmBb_mNKPEewzp9Uu6zkGrP7XOVpnRzetXDc
-- name: '🇷🇺 4vps.su — #65'
-  type: vless
-  server: 212.192.14.153
-  port: 443
-  uuid: 5666386a-c6a9-4da9-a404-23529593bc69
-  tls: true
-  flow: xtls-rprx-vision
-  sni: goodcardboard.shop
-  client-fingerprint: randomized
-  reality-opts:
-    public-key: rDPZZOBMmBb_mNKPEewzp9Uu6zkGrP7XOVpnRzetXDc
-- name: '🇷🇺 4vps.su — #66'
-  type: vless
-  server: 157.22.241.5
-  port: 443
-  uuid: 5666386a-c6a9-4da9-a404-23529593bc69
-  tls: true
-  flow: xtls-rprx-vision
-  sni: goodcardboard.shop
-  client-fingerprint: randomized
-  reality-opts:
-    public-key: rDPZZOBMmBb_mNKPEewzp9Uu6zkGrP7XOVpnRzetXDc
-- name: '🇷🇺 4vps.su — #67'
-  type: vless
-  server: 212.192.14.160
-  port: 443
-  uuid: 088c2cde-fbc3-481a-84db-c6107d6b512f
-  tls: true
-  flow: xtls-rprx-vision
-  sni: goodcardboard.shop
-  client-fingerprint: randomized
-  reality-opts:
-    public-key: rDPZZOBMmBb_mNKPEewzp9Uu6zkGrP7XOVpnRzetXDc
-- name: '🇷🇺 4vps.su — #68'
-  type: vless
-  server: 157.22.241.5
-  port: 443
-  uuid: 088c2cde-fbc3-481a-84db-c6107d6b512f
-  tls: true
-  flow: xtls-rprx-vision
-  sni: goodcardboard.shop
-  client-fingerprint: randomized
-  reality-opts:
-    public-key: rDPZZOBMmBb_mNKPEewzp9Uu6zkGrP7XOVpnRzetXDc
-- name: '🇷🇺 4vps.su — #69'
-  type: vless
-  server: 212.192.14.160
-  port: 443
-  uuid: d283bc6e-20b2-4795-81dd-c12679eadd9d
-  tls: true
-  flow: xtls-rprx-vision
-  sni: goodcardboard.shop
-  client-fingerprint: randomized
-  reality-opts:
-    public-key: rDPZZOBMmBb_mNKPEewzp9Uu6zkGrP7XOVpnRzetXDc
-- name: '🇷🇺 4vps.su — #70'
-  type: vless
-  server: 157.22.241.25
-  port: 443
-  uuid: d283bc6e-20b2-4795-81dd-c12679eadd9d
-  tls: true
-  flow: xtls-rprx-vision
-  sni: goodcardboard.shop
-  client-fingerprint: randomized
-  reality-opts:
-    public-key: rDPZZOBMmBb_mNKPEewzp9Uu6zkGrP7XOVpnRzetXDc
-- name: '🇷🇺 4vps.su — #71'
-  type: vless
-  server: 157.22.241.17
-  port: 443
-  uuid: d283bc6e-20b2-4795-81dd-c12679eadd9d
-  tls: true
-  flow: xtls-rprx-vision
-  sni: goodcardboard.shop
-  client-fingerprint: randomized
-  reality-opts:
-    public-key: rDPZZOBMmBb_mNKPEewzp9Uu6zkGrP7XOVpnRzetXDc
-- name: '🇷🇺 4vps.su — #72'
-  type: vless
-  server: 157.22.241.5
-  port: 443
-  uuid: d283bc6e-20b2-4795-81dd-c12679eadd9d
-  tls: true
-  flow: xtls-rprx-vision
-  sni: goodcardboard.shop
-  client-fingerprint: randomized
-  reality-opts:
-    public-key: rDPZZOBMmBb_mNKPEewzp9Uu6zkGrP7XOVpnRzetXDc
-- name: '🇷🇺 4vps.su — #73'
   type: vless
   server: 157.22.241.17
   port: 443
@@ -811,9 +599,53 @@ proxies:
   client-fingerprint: randomized
   reality-opts:
     public-key: rDPZZOBMmBb_mNKPEewzp9Uu6zkGrP7XOVpnRzetXDc
-- name: '🇷🇺 4vps.su — #74'
+- name: '🇷🇺 4vps.su — #55'
   type: vless
-  server: 157.22.241.17
+  server: 157.22.241.5
+  port: 443
+  uuid: ee249122-dd82-4f1d-b456-b03973183d3a
+  tls: true
+  flow: xtls-rprx-vision
+  sni: goodcardboard.shop
+  client-fingerprint: randomized
+  reality-opts:
+    public-key: rDPZZOBMmBb_mNKPEewzp9Uu6zkGrP7XOVpnRzetXDc
+- name: '🇷🇺 4vps.su — #56'
+  type: vless
+  server: 157.22.241.25
+  port: 443
+  uuid: ee249122-dd82-4f1d-b456-b03973183d3a
+  tls: true
+  flow: xtls-rprx-vision
+  sni: goodcardboard.shop
+  client-fingerprint: randomized
+  reality-opts:
+    public-key: rDPZZOBMmBb_mNKPEewzp9Uu6zkGrP7XOVpnRzetXDc
+- name: '🇷🇺 4vps.su — #57'
+  type: vless
+  server: 212.192.14.160
+  port: 443
+  uuid: ee249122-dd82-4f1d-b456-b03973183d3a
+  tls: true
+  flow: xtls-rprx-vision
+  sni: goodcardboard.shop
+  client-fingerprint: randomized
+  reality-opts:
+    public-key: rDPZZOBMmBb_mNKPEewzp9Uu6zkGrP7XOVpnRzetXDc
+- name: '🇷🇺 4vps.su — #58'
+  type: vless
+  server: 212.192.14.153
+  port: 443
+  uuid: ee249122-dd82-4f1d-b456-b03973183d3a
+  tls: true
+  flow: xtls-rprx-vision
+  sni: goodcardboard.shop
+  client-fingerprint: randomized
+  reality-opts:
+    public-key: rDPZZOBMmBb_mNKPEewzp9Uu6zkGrP7XOVpnRzetXDc
+- name: '🇷🇺 4vps.su — #59'
+  type: vless
+  server: 212.192.14.153
   port: 443
   uuid: 00cce248-f367-4100-94cf-a06372e65ae5
   tls: true
@@ -822,7 +654,95 @@ proxies:
   client-fingerprint: randomized
   reality-opts:
     public-key: rDPZZOBMmBb_mNKPEewzp9Uu6zkGrP7XOVpnRzetXDc
-- name: '🇷🇺 cloud.ru — #75'
+- name: '🇷🇺 4vps.su — #60'
+  type: vless
+  server: 157.22.241.5
+  port: 443
+  uuid: 00cce248-f367-4100-94cf-a06372e65ae5
+  tls: true
+  flow: xtls-rprx-vision
+  sni: goodcardboard.shop
+  client-fingerprint: randomized
+  reality-opts:
+    public-key: rDPZZOBMmBb_mNKPEewzp9Uu6zkGrP7XOVpnRzetXDc
+- name: '🇷🇺 4vps.su — #61'
+  type: vless
+  server: 157.22.241.25
+  port: 443
+  uuid: 00cce248-f367-4100-94cf-a06372e65ae5
+  tls: true
+  flow: xtls-rprx-vision
+  sni: goodcardboard.shop
+  client-fingerprint: randomized
+  reality-opts:
+    public-key: rDPZZOBMmBb_mNKPEewzp9Uu6zkGrP7XOVpnRzetXDc
+- name: '🇷🇺 4vps.su — #62'
+  type: vless
+  server: 157.22.241.25
+  port: 443
+  uuid: 72dea6b2-f642-4b41-89be-340ac75f84b4
+  tls: true
+  flow: xtls-rprx-vision
+  sni: goodcardboard.shop
+  client-fingerprint: randomized
+  reality-opts:
+    public-key: rDPZZOBMmBb_mNKPEewzp9Uu6zkGrP7XOVpnRzetXDc
+- name: '🇷🇺 4vps.su — #63'
+  type: vless
+  server: 212.192.14.153
+  port: 443
+  uuid: 72dea6b2-f642-4b41-89be-340ac75f84b4
+  tls: true
+  flow: xtls-rprx-vision
+  sni: goodcardboard.shop
+  client-fingerprint: randomized
+  reality-opts:
+    public-key: rDPZZOBMmBb_mNKPEewzp9Uu6zkGrP7XOVpnRzetXDc
+- name: '🇷🇺 4vps.su — #64'
+  type: vless
+  server: 157.22.241.5
+  port: 443
+  uuid: 72dea6b2-f642-4b41-89be-340ac75f84b4
+  tls: true
+  flow: xtls-rprx-vision
+  sni: goodcardboard.shop
+  client-fingerprint: randomized
+  reality-opts:
+    public-key: rDPZZOBMmBb_mNKPEewzp9Uu6zkGrP7XOVpnRzetXDc
+- name: '🇷🇺 4vps.su — #65'
+  type: vless
+  server: 157.22.241.17
+  port: 443
+  uuid: 879860bd-c135-493d-a983-2265731467e6
+  tls: true
+  flow: xtls-rprx-vision
+  sni: goodcardboard.shop
+  client-fingerprint: randomized
+  reality-opts:
+    public-key: rDPZZOBMmBb_mNKPEewzp9Uu6zkGrP7XOVpnRzetXDc
+- name: '🇷🇺 4vps.su — #66'
+  type: vless
+  server: 157.22.241.17
+  port: 443
+  uuid: 25dc43a1-b553-4b87-85b5-7f302adce73e
+  tls: true
+  flow: xtls-rprx-vision
+  sni: goodcardboard.shop
+  client-fingerprint: randomized
+  reality-opts:
+    public-key: rDPZZOBMmBb_mNKPEewzp9Uu6zkGrP7XOVpnRzetXDc
+- name: '🇷🇺 cloud.ru — #67'
+  type: vless
+  server: 213.171.31.216
+  port: 443
+  uuid: 0eca1f22-e5a1-4888-a0fa-c2345e87cf2f
+  tls: true
+  flow: xtls-rprx-vision
+  sni: cdnv-img.perekrestok.ru
+  client-fingerprint: safari
+  reality-opts:
+    public-key: MNbAG72pXVO11PRzMRw7puKjDnmkig2mvEmdjow53Wc
+- name: '🇷🇺 cloud.ru — #68'
   type: vless
   server: 213.171.26.10
   port: 12443
@@ -836,21 +756,7 @@ proxies:
   reality-opts:
     public-key: XqH-gNEL9eJfr1pglaI8WU3OvE654_5duXYBS35UXlM
     short-id: abcdef0123456789
-- name: '🇷🇺 cloud.ru — #76'
-  type: vless
-  server: 213.171.26.10
-  port: 12443
-  uuid: a98c61bf-9195-474e-b606-ac786b49c54c
-  network: grpc
-  tls: true
-  sni: ads.x5.ru
-  client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: grpc-gg
-  reality-opts:
-    public-key: XqH-gNEL9eJfr1pglaI8WU3OvE654_5duXYBS35UXlM
-    short-id: ab
-- name: '🇷🇺 cloud.ru — #77'
+- name: '🇷🇺 cloud.ru — #69'
   type: vless
   server: 213.171.26.10
   port: 12443
@@ -864,7 +770,7 @@ proxies:
   reality-opts:
     public-key: XqH-gNEL9eJfr1pglaI8WU3OvE654_5duXYBS35UXlM
     short-id: ab
-- name: '🇷🇺 cloud.ru — #78'
+- name: '🇷🇺 cloud.ru — #70'
   type: vless
   server: 213.171.26.10
   port: 12443
@@ -878,7 +784,18 @@ proxies:
   reality-opts:
     public-key: XqH-gNEL9eJfr1pglaI8WU3OvE654_5duXYBS35UXlM
     short-id: abcdef0123456789
-- name: '🇷🇺 Delta — #79'
+- name: '🇷🇺 Delta — #71'
+  type: vless
+  server: 84.252.101.90
+  port: 443
+  uuid: 7e7452f2-1004-45ed-a55a-f9d474e152c7
+  tls: true
+  flow: xtls-rprx-vision
+  sni: sub.sbrf-cdn342.ru
+  client-fingerprint: qq
+  alpn:
+  - http/1.1
+- name: '🇷🇺 Delta — #72'
   type: vless
   server: 80.66.65.95
   port: 443
@@ -889,30 +806,7 @@ proxies:
   client-fingerprint: qq
   alpn:
   - http/1.1
-- name: '🇷🇺 Delta — #80'
-  type: vless
-  server: 84.252.101.105
-  port: 443
-  uuid: 7e7452f2-1004-45ed-a55a-f9d474e152c7
-  tls: true
-  flow: xtls-rprx-vision
-  sni: sub.sbrf-cdn342.ru
-  client-fingerprint: qq
-  alpn:
-  - http/1.1
-- name: '🇷🇺 node — #81'
-  type: vless
-  server: 151.236.114.156
-  port: 8443
-  uuid: 3e579780-03bd-4380-9b35-1311d6e1fec4
-  network: grpc
-  tls: true
-  sni: max.ru
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: UsIT-zjeviusx9Av1bItm6yZiZCW56J1P1zvoQAOpU0
-    short-id: 0123456789abcdef
-- name: '🇷🇺 node — #82'
+- name: '🇷🇺 node — #73'
   type: vless
   server: 151.236.114.156
   port: 8443
@@ -924,84 +818,52 @@ proxies:
   reality-opts:
     public-key: UsIT-zjeviusx9Av1bItm6yZiZCW56J1P1zvoQAOpU0
     short-id: 0123456789abcdef
-- name: '🇷🇺 PINVDS — #83'
+- name: '🇷🇺 node — #74'
   type: vless
-  server: 158.160.155.159
+  server: 151.236.114.156
+  port: 8443
+  uuid: 371cf231-255e-4072-8365-08809ab63167
+  network: grpc
+  tls: true
+  sni: max.ru
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: UsIT-zjeviusx9Av1bItm6yZiZCW56J1P1zvoQAOpU0
+    short-id: 0123456789abcdef
+- name: '🇷🇺 PINVDS — #75'
+  type: vless
+  server: 158.160.227.247
   port: 443
-  uuid: e223d0f2-e3a2-4f3a-b6b5-f9ebefb15e96
+  uuid: 68c3332f-79ba-4c64-970d-ae6dec540bfb
   tls: true
   flow: xtls-rprx-vision
   sni: sun6-21.userapi.com
   client-fingerprint: chrome
   reality-opts:
     public-key: 6r6uq4tZym5wRhJ5uti-h-UvN6uatQodMcG8rBU79Q4
-- name: '🇷🇺 PINVDS — #84'
+- name: '🇷🇺 PINVDS — #76'
   type: vless
-  server: 158.160.155.159
+  server: 158.160.227.247
   port: 443
-  uuid: e223d0f2-e3a2-4f3a-b6b5-f9ebefb15e96
-  tls: true
-  flow: xtls-rprx-vision
-  sni: api-maps.yandex.ru
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: 6r6uq4tZym5wRhJ5uti-h-UvN6uatQodMcG8rBU79Q4
-- name: '🇷🇺 PINVDS — #85'
-  type: vless
-  server: 158.160.155.159
-  port: 443
-  uuid: e223d0f2-e3a2-4f3a-b6b5-f9ebefb15e96
+  uuid: 68c3332f-79ba-4c64-970d-ae6dec540bfb
   tls: true
   flow: xtls-rprx-vision
   sni: max.ru
   client-fingerprint: chrome
   reality-opts:
     public-key: 6r6uq4tZym5wRhJ5uti-h-UvN6uatQodMcG8rBU79Q4
-- name: '🇷🇺 PINVDS — #86'
+- name: '🇷🇺 PINVDS — #77'
   type: vless
-  server: 158.160.155.159
+  server: 158.160.227.247
   port: 443
-  uuid: c744f062-c9ef-4a35-9f39-5f7abc2fa51e
+  uuid: 68c3332f-79ba-4c64-970d-ae6dec540bfb
   tls: true
   flow: xtls-rprx-vision
   sni: api-maps.yandex.ru
   client-fingerprint: chrome
   reality-opts:
     public-key: 6r6uq4tZym5wRhJ5uti-h-UvN6uatQodMcG8rBU79Q4
-- name: '🇷🇺 PINVDS — #87'
-  type: vless
-  server: 158.160.155.159
-  port: 443
-  uuid: c744f062-c9ef-4a35-9f39-5f7abc2fa51e
-  tls: true
-  flow: xtls-rprx-vision
-  sni: sun6-21.userapi.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: 6r6uq4tZym5wRhJ5uti-h-UvN6uatQodMcG8rBU79Q4
-- name: '🇷🇺 PINVDS — #88'
-  type: vless
-  server: 158.160.155.159
-  port: 443
-  uuid: c744f062-c9ef-4a35-9f39-5f7abc2fa51e
-  tls: true
-  flow: xtls-rprx-vision
-  sni: max.ru
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: 6r6uq4tZym5wRhJ5uti-h-UvN6uatQodMcG8rBU79Q4
-- name: '🇷🇺 Selectel — #89'
-  type: vless
-  server: 158.160.251.102
-  port: 443
-  uuid: 35ead117-fe4a-4288-89af-18bd147c9f7e
-  tls: true
-  flow: xtls-rprx-vision
-  sni: 5post-gate.x5.ru
-  reality-opts:
-    public-key: OCRYYq4e92sQ-wWFRX6WX9pdvuFBWOqybLhpSiv3nFA
-    short-id: '111111'
-- name: '🇷🇺 Selectel — #90'
+- name: '🇷🇺 Selectel — #78'
   type: vless
   server: 158.160.251.102
   port: 443
@@ -1012,7 +874,7 @@ proxies:
   reality-opts:
     public-key: OCRYYq4e92sQ-wWFRX6WX9pdvuFBWOqybLhpSiv3nFA
     short-id: '111111'
-- name: '🇷🇺 Selectel — #91'
+- name: '🇷🇺 Selectel — #79'
   type: vless
   server: 158.160.251.102
   port: 443
@@ -1023,40 +885,7 @@ proxies:
   reality-opts:
     public-key: OCRYYq4e92sQ-wWFRX6WX9pdvuFBWOqybLhpSiv3nFA
     short-id: '111111'
-- name: '🇷🇺 Selectel — #92'
-  type: vless
-  server: 158.160.251.102
-  port: 443
-  uuid: 5ff27209-04bb-439d-ac52-1f1e89215a04
-  tls: true
-  flow: xtls-rprx-vision
-  sni: 5post-gate.x5.ru
-  reality-opts:
-    public-key: OCRYYq4e92sQ-wWFRX6WX9pdvuFBWOqybLhpSiv3nFA
-    short-id: '111111'
-- name: '🇷🇺 Selectel — #93'
-  type: vless
-  server: 158.160.251.102
-  port: 443
-  uuid: c6c8d886-7de7-4b70-9349-3603784a5dde
-  tls: true
-  flow: xtls-rprx-vision
-  sni: 5post-gate.x5.ru
-  reality-opts:
-    public-key: OCRYYq4e92sQ-wWFRX6WX9pdvuFBWOqybLhpSiv3nFA
-    short-id: '111111'
-- name: '🇷🇺 Selectel — #94'
-  type: vless
-  server: 158.160.251.102
-  port: 443
-  uuid: 070c41f2-0e92-4741-8962-cde51a48f992
-  tls: true
-  flow: xtls-rprx-vision
-  sni: 5post-gate.x5.ru
-  reality-opts:
-    public-key: OCRYYq4e92sQ-wWFRX6WX9pdvuFBWOqybLhpSiv3nFA
-    short-id: '111111'
-- name: '🇷🇺 Selectel — #95'
+- name: '🇷🇺 Selectel — #80'
   type: vless
   server: 158.160.251.102
   port: 443
@@ -1067,18 +896,7 @@ proxies:
   reality-opts:
     public-key: OCRYYq4e92sQ-wWFRX6WX9pdvuFBWOqybLhpSiv3nFA
     short-id: '111111'
-- name: '🇷🇺 Selectel — #96'
-  type: vless
-  server: 158.160.251.102
-  port: 443
-  uuid: f1f680b9-67ba-483f-965d-90ba62fd6a9d
-  tls: true
-  flow: xtls-rprx-vision
-  sni: 5post-gate.x5.ru
-  reality-opts:
-    public-key: OCRYYq4e92sQ-wWFRX6WX9pdvuFBWOqybLhpSiv3nFA
-    short-id: '111111'
-- name: '🇷🇺 Selectel — #97'
+- name: '🇷🇺 Selectel — #81'
   type: vless
   server: 158.160.251.102
   port: 443
@@ -1089,7 +907,7 @@ proxies:
   reality-opts:
     public-key: OCRYYq4e92sQ-wWFRX6WX9pdvuFBWOqybLhpSiv3nFA
     short-id: '111111'
-- name: '🇷🇺 Selectel — #98'
+- name: '🇷🇺 Selectel — #82'
   type: vless
   server: 158.160.222.130
   port: 443
@@ -1101,31 +919,40 @@ proxies:
   reality-opts:
     public-key: OCRYYq4e92sQ-wWFRX6WX9pdvuFBWOqybLhpSiv3nFA
     short-id: '111111'
-- name: '🇷🇺 Selectel — #99'
+- name: '🇷🇺 Selectel — #83'
   type: vless
-  server: 158.160.248.155
+  server: 158.160.251.102
+  port: 443
+  uuid: f1f680b9-67ba-483f-965d-90ba62fd6a9d
+  tls: true
+  flow: xtls-rprx-vision
+  sni: 5post-gate.x5.ru
+  reality-opts:
+    public-key: OCRYYq4e92sQ-wWFRX6WX9pdvuFBWOqybLhpSiv3nFA
+    short-id: '111111'
+- name: '🇷🇺 Selectel — #84'
+  type: vless
+  server: 158.160.251.102
+  port: 443
+  uuid: 070c41f2-0e92-4741-8962-cde51a48f992
+  tls: true
+  flow: xtls-rprx-vision
+  sni: 5post-gate.x5.ru
+  reality-opts:
+    public-key: OCRYYq4e92sQ-wWFRX6WX9pdvuFBWOqybLhpSiv3nFA
+    short-id: '111111'
+- name: '🇷🇺 Selectel — #85'
+  type: vless
+  server: 158.160.251.102
   port: 443
   uuid: 7e7452f2-1004-45ed-a55a-f9d474e152c7
   tls: true
   flow: xtls-rprx-vision
   sni: 5post-gate.x5.ru
-  client-fingerprint: random
   reality-opts:
     public-key: OCRYYq4e92sQ-wWFRX6WX9pdvuFBWOqybLhpSiv3nFA
     short-id: '111111'
-- name: '🇷🇺 Selectel — #100'
-  type: vless
-  server: 158.160.255.168
-  port: 443
-  uuid: 7e7452f2-1004-45ed-a55a-f9d474e152c7
-  tls: true
-  flow: xtls-rprx-vision
-  sni: 5post-gate.x5.ru
-  client-fingerprint: random
-  reality-opts:
-    public-key: OCRYYq4e92sQ-wWFRX6WX9pdvuFBWOqybLhpSiv3nFA
-    short-id: '111111'
-- name: '🇷🇺 Selectel — #101'
+- name: '🇷🇺 Selectel — #86'
   type: vless
   server: 158.160.255.47
   port: 443
@@ -1137,9 +964,20 @@ proxies:
   reality-opts:
     public-key: OCRYYq4e92sQ-wWFRX6WX9pdvuFBWOqybLhpSiv3nFA
     short-id: '111111'
-- name: '🇷🇺 Selectel — #102'
+- name: '🇷🇺 Selectel — #87'
   type: vless
-  server: 84.201.186.105
+  server: 158.160.251.102
+  port: 443
+  uuid: b296419b-ea97-4ab3-992c-2aefa2be4cff
+  tls: true
+  flow: xtls-rprx-vision
+  sni: 5post-gate.x5.ru
+  reality-opts:
+    public-key: OCRYYq4e92sQ-wWFRX6WX9pdvuFBWOqybLhpSiv3nFA
+    short-id: '111111'
+- name: '🇷🇺 Selectel — #88'
+  type: vless
+  server: 158.160.255.168
   port: 443
   uuid: 7e7452f2-1004-45ed-a55a-f9d474e152c7
   tls: true
@@ -1149,7 +987,41 @@ proxies:
   reality-opts:
     public-key: OCRYYq4e92sQ-wWFRX6WX9pdvuFBWOqybLhpSiv3nFA
     short-id: '111111'
-- name: '🇷🇺 Selectel — #103'
+- name: '🇷🇺 Selectel — #89'
+  type: vless
+  server: 158.160.251.102
+  port: 443
+  uuid: c9707193-9351-4bf0-9ba2-3c9ea0101db9
+  tls: true
+  flow: xtls-rprx-vision
+  sni: 5post-gate.x5.ru
+  reality-opts:
+    public-key: OCRYYq4e92sQ-wWFRX6WX9pdvuFBWOqybLhpSiv3nFA
+    short-id: '111111'
+- name: '🇷🇺 Selectel — #90'
+  type: vless
+  server: 158.160.251.102
+  port: 443
+  uuid: 9a976414-8f8a-4806-9969-1bdbe3a20002
+  tls: true
+  flow: xtls-rprx-vision
+  sni: 5post-gate.x5.ru
+  reality-opts:
+    public-key: OCRYYq4e92sQ-wWFRX6WX9pdvuFBWOqybLhpSiv3nFA
+    short-id: '111111'
+- name: '🇷🇺 Selectel — #91'
+  type: vless
+  server: 158.160.248.155
+  port: 443
+  uuid: 7e7452f2-1004-45ed-a55a-f9d474e152c7
+  tls: true
+  flow: xtls-rprx-vision
+  sni: 5post-gate.x5.ru
+  client-fingerprint: random
+  reality-opts:
+    public-key: OCRYYq4e92sQ-wWFRX6WX9pdvuFBWOqybLhpSiv3nFA
+    short-id: '111111'
+- name: '🇷🇺 Selectel — #92'
   type: vless
   server: 84.201.186.20
   port: 443
@@ -1161,62 +1033,41 @@ proxies:
   reality-opts:
     public-key: OCRYYq4e92sQ-wWFRX6WX9pdvuFBWOqybLhpSiv3nFA
     short-id: '111111'
-- name: '🇷🇺 Selectel — #104'
+- name: '🇷🇺 Selectel — #93'
   type: vless
-  server: 158.160.251.102
+  server: 84.201.186.105
   port: 443
   uuid: 7e7452f2-1004-45ed-a55a-f9d474e152c7
   tls: true
   flow: xtls-rprx-vision
   sni: 5post-gate.x5.ru
+  client-fingerprint: random
   reality-opts:
     public-key: OCRYYq4e92sQ-wWFRX6WX9pdvuFBWOqybLhpSiv3nFA
     short-id: '111111'
-- name: '🇷🇺 Timeweb — #105'
-  type: vless
-  server: 82.97.243.86
-  port: 443
-  uuid: 8fb4db41-099d-46de-8190-78df7e01eefb
-  tls: true
-  flow: xtls-rprx-vision
-  sni: goodcardboard.shop
-  client-fingerprint: randomized
-  reality-opts:
-    public-key: rDPZZOBMmBb_mNKPEewzp9Uu6zkGrP7XOVpnRzetXDc
-- name: '🇷🇺 Timeweb — #106'
-  type: vless
-  server: 82.97.243.86
-  port: 443
-  uuid: 505bc04f-cab4-4907-ba98-711f37ac17b2
-  tls: true
-  flow: xtls-rprx-vision
-  sni: goodcardboard.shop
-  client-fingerprint: randomized
-  reality-opts:
-    public-key: rDPZZOBMmBb_mNKPEewzp9Uu6zkGrP7XOVpnRzetXDc
-- name: '🇷🇺 Timeweb — #107'
+- name: '🇷🇺 Timeweb — #94'
   type: vless
   server: 2.59.42.204
   port: 443
-  uuid: 9127f5d4-88bf-4a96-98e0-bc7f5e649f80
+  uuid: 8bb171d0-7a05-49d9-ae8d-5a8923c4c2a3
   tls: true
   flow: xtls-rprx-vision
   sni: goodcardboard.shop
   client-fingerprint: randomized
   reality-opts:
     public-key: rDPZZOBMmBb_mNKPEewzp9Uu6zkGrP7XOVpnRzetXDc
-- name: '🇷🇺 Timeweb — #108'
+- name: '🇷🇺 Timeweb — #95'
   type: vless
   server: 2.59.42.204
   port: 443
-  uuid: 505bc04f-cab4-4907-ba98-711f37ac17b2
+  uuid: 4e796cf3-85a6-4303-ad3d-00ef636e1e90
   tls: true
   flow: xtls-rprx-vision
   sni: goodcardboard.shop
   client-fingerprint: randomized
   reality-opts:
     public-key: rDPZZOBMmBb_mNKPEewzp9Uu6zkGrP7XOVpnRzetXDc
-- name: '🇷🇺 Timeweb — #109'
+- name: '🇷🇺 Timeweb — #96'
   type: vless
   server: 82.97.243.86
   port: 443
@@ -1227,62 +1078,7 @@ proxies:
   client-fingerprint: randomized
   reality-opts:
     public-key: rDPZZOBMmBb_mNKPEewzp9Uu6zkGrP7XOVpnRzetXDc
-- name: '🇷🇺 Timeweb — #110'
-  type: vless
-  server: 2.59.42.204
-  port: 443
-  uuid: 8fb4db41-099d-46de-8190-78df7e01eefb
-  tls: true
-  flow: xtls-rprx-vision
-  sni: goodcardboard.shop
-  client-fingerprint: randomized
-  reality-opts:
-    public-key: rDPZZOBMmBb_mNKPEewzp9Uu6zkGrP7XOVpnRzetXDc
-- name: '🇷🇺 Timeweb — #111'
-  type: vless
-  server: 2.59.42.204
-  port: 443
-  uuid: 99ab5a2d-7bfc-4168-8864-aa550bc15fab
-  tls: true
-  flow: xtls-rprx-vision
-  sni: goodcardboard.shop
-  client-fingerprint: randomized
-  reality-opts:
-    public-key: rDPZZOBMmBb_mNKPEewzp9Uu6zkGrP7XOVpnRzetXDc
-- name: '🇷🇺 Timeweb — #112'
-  type: vless
-  server: 2.59.42.204
-  port: 443
-  uuid: 0e8c5a6d-a9ef-413e-8db1-a42796bdda37
-  tls: true
-  flow: xtls-rprx-vision
-  sni: goodcardboard.shop
-  client-fingerprint: randomized
-  reality-opts:
-    public-key: rDPZZOBMmBb_mNKPEewzp9Uu6zkGrP7XOVpnRzetXDc
-- name: '🇷🇺 Timeweb — #113'
-  type: vless
-  server: 82.97.243.86
-  port: 443
-  uuid: 2fa4fa40-128e-4866-9f91-869b8d872997
-  tls: true
-  flow: xtls-rprx-vision
-  sni: goodcardboard.shop
-  client-fingerprint: randomized
-  reality-opts:
-    public-key: rDPZZOBMmBb_mNKPEewzp9Uu6zkGrP7XOVpnRzetXDc
-- name: '🇷🇺 Timeweb — #114'
-  type: vless
-  server: 82.97.243.86
-  port: 443
-  uuid: 4693dd16-5036-4e6c-8ed2-76ff92c2ad53
-  tls: true
-  flow: xtls-rprx-vision
-  sni: goodcardboard.shop
-  client-fingerprint: randomized
-  reality-opts:
-    public-key: rDPZZOBMmBb_mNKPEewzp9Uu6zkGrP7XOVpnRzetXDc
-- name: '🇷🇺 Timeweb — #115'
+- name: '🇷🇺 Timeweb — #97'
   type: vless
   server: 85.239.61.193
   port: 443
@@ -1293,7 +1089,7 @@ proxies:
   reality-opts:
     public-key: iNHjpSHOGfa1qz-EIC2NG2iV_zcvEx0DC3FD936YURk
     short-id: '8820'
-- name: '🇷🇺 Timeweb — #116'
+- name: '🇷🇺 Timeweb — #98'
   type: vless
   server: 5.129.253.197
   port: 443
@@ -1304,7 +1100,7 @@ proxies:
   reality-opts:
     public-key: oamDaDcahf4RryIL9GrUO8qBOy1uekh2z5d-c-sjszE
     short-id: dc
-- name: '🇷🇺 Timeweb — #117'
+- name: '🇷🇺 Timeweb — #99'
   type: vless
   server: 91.222.239.98
   port: 443
