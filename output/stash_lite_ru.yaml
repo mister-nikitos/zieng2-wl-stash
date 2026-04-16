@@ -1,6 +1,17 @@
 proxies:
 - name: '🇷🇺 VK — #1'
   type: vless
+  server: 95.163.211.119
+  port: 54445
+  uuid: 0eca1f22-e5a1-4888-a0fa-c2345e87cf2f
+  tls: true
+  flow: xtls-rprx-vision
+  sni: sso.passport.yandex.ru
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 7bNu5DhEjnIrOe2Krf6jbopWbIYndpJH4uSAuFHkj0w
+- name: '🇷🇺 VK — #2'
+  type: vless
   server: 95.163.211.125
   port: 443
   uuid: 0eca1f22-e5a1-4888-a0fa-c2345e87cf2f
@@ -10,7 +21,7 @@ proxies:
   client-fingerprint: safari
   reality-opts:
     public-key: MNbAG72pXVO11PRzMRw7puKjDnmkig2mvEmdjow53Wc
-- name: '🇷🇺 VK — #2'
+- name: '🇷🇺 VK — #3'
   type: vless
   server: 95.163.211.125
   port: 443
@@ -21,23 +32,11 @@ proxies:
   client-fingerprint: chrome
   reality-opts:
     public-key: MNbAG72pXVO11PRzMRw7puKjDnmkig2mvEmdjow53Wc
-- name: '🇷🇺 Yandex — #3'
-  type: vless
-  server: 84.201.134.34
-  port: 6443
-  uuid: 51fc8610-ae9d-4ace-ac3d-c5d2f6756350
-  tls: true
-  flow: xtls-rprx-vision
-  sni: console.yandex.cloud
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: RJppv_rQdHeKsuadtv3D7M_yGXesdimv-Uyt2AvJwjk
-    short-id: 7b2e01b4a170e3cf
 - name: '🇷🇺 Yandex — #4'
   type: vless
   server: 51.250.84.29
   port: 443
-  uuid: fb4260ad-410a-409e-93d5-0bbfa6ec1350
+  uuid: 3e52e673-f4ce-4819-a09b-d32102af6161
   tls: true
   flow: xtls-rprx-vision
   sni: max.ru
@@ -47,33 +46,21 @@ proxies:
     short-id: b2a6e3d42f05c3d1
 - name: '🇷🇺 Yandex — #5'
   type: vless
-  server: 158.160.96.59
+  server: 158.160.248.213
   port: 443
-  uuid: 034f514d-a3f3-4e94-a3eb-b5338e8b93fa
+  uuid: d54a0bdd-212f-41a3-b834-da02266b751e
   tls: true
   flow: xtls-rprx-vision
-  sni: ads.x5.ru
-  client-fingerprint: qq
-  reality-opts:
-    public-key: B8ekmOgk9QTnXJJOR_4lDSUapa7PZvV2E37l1Nm4lxk
-    short-id: f497fe3dff69ff78
-- name: '🇷🇺 Yandex — #6'
-  type: vless
-  server: 51.250.84.29
-  port: 443
-  uuid: 92f949e3-585c-4a40-b7a8-e349209a8eab
-  tls: true
-  flow: xtls-rprx-vision
-  sni: max.ru
+  sni: smartcaptcha.yandexcloud.net
   client-fingerprint: random
   reality-opts:
-    public-key: Ew5a5rNW0ZLY9s4xnI3iZHbNLw2I21bp_kwa5poLcDU
-    short-id: b2a6e3d42f05c3d1
-- name: '🇷🇺 Yandex — #7'
+    public-key: 66kZLshj9fxAIQA7NsABohNwgiOcY71enc6as_Frqw0
+    short-id: 3c1523da43287ec4
+- name: '🇷🇺 Yandex — #6'
   type: vless
   server: 158.160.128.223
   port: 443
-  uuid: 127836ca-df15-4a9e-b523-7ff73f4f012f
+  uuid: d54a0bdd-212f-41a3-b834-da02266b751e
   tls: true
   flow: xtls-rprx-vision
   sni: smartcaptcha.yandexcloud.net
@@ -81,35 +68,11 @@ proxies:
   reality-opts:
     public-key: 66kZLshj9fxAIQA7NsABohNwgiOcY71enc6as_Frqw0
     short-id: 3c1523da43287ec4
-- name: '🇷🇺 Yandex — #8'
-  type: vless
-  server: 158.160.248.213
-  port: 443
-  uuid: 127836ca-df15-4a9e-b523-7ff73f4f012f
-  tls: true
-  flow: xtls-rprx-vision
-  sni: smartcaptcha.yandexcloud.net
-  client-fingerprint: random
-  reality-opts:
-    public-key: 66kZLshj9fxAIQA7NsABohNwgiOcY71enc6as_Frqw0
-    short-id: 3c1523da43287ec4
-- name: '🇷🇺 Yandex — #9'
-  type: vless
-  server: 158.160.96.59
-  port: 443
-  uuid: 034f514d-a3f3-4e94-a3eb-b5338e8b93fa
-  tls: true
-  flow: xtls-rprx-vision
-  sni: ads.x5.ru
-  client-fingerprint: qq
-  reality-opts:
-    public-key: B8ekmOgk9QTnXJJOR_4lDSUapa7PZvV2E37l1Nm4lxk
-    short-id: f497fe3dff69ff78
-- name: '🇷🇺 cloud.ru — #10'
+- name: '🇷🇺 cloud.ru — #7'
   type: vless
   server: 213.171.26.10
   port: 12443
-  uuid: bafebdd8-57f7-4e0d-8bfc-754c509ab0b9
+  uuid: e99a4b6b-2259-48b2-a0c1-7fb0325ca815
   network: grpc
   tls: true
   sni: ads.x5.ru
@@ -119,6 +82,42 @@ proxies:
   reality-opts:
     public-key: XqH-gNEL9eJfr1pglaI8WU3OvE654_5duXYBS35UXlM
     short-id: abcdef0123456789
+- name: '🇷🇺 cloud.ru — #8'
+  type: vless
+  server: 213.171.26.10
+  port: 12443
+  uuid: e99a4b6b-2259-48b2-a0c1-7fb0325ca815
+  network: grpc
+  tls: true
+  sni: ads.x5.ru
+  client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: grpc-gg
+  reality-opts:
+    public-key: XqH-gNEL9eJfr1pglaI8WU3OvE654_5duXYBS35UXlM
+    short-id: ab
+- name: '🇷🇺 docker.ru — #9'
+  type: vless
+  server: 185.40.153.191
+  port: 443
+  uuid: 9d94835e-2a8b-45a2-babc-86037288cd9f
+  tls: true
+  sni: vk.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: NsRSWMDMKxVFiry3uRJB8tG5rG8LdIJqTJvHK0Uc6Gw
+    short-id: EeEFB5bF
+- name: '🇷🇺 docker.ru — #10'
+  type: vless
+  server: 185.253.23.111
+  port: 443
+  uuid: 9d94835e-2a8b-45a2-babc-86037288cd9f
+  tls: true
+  sni: vk.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: NsRSWMDMKxVFiry3uRJB8tG5rG8LdIJqTJvHK0Uc6Gw
+    short-id: EeEFB5bF
 - name: '🇷🇺 docker.ru — #11'
   type: vless
   server: 185.253.23.85
@@ -140,52 +139,33 @@ proxies:
   client-fingerprint: chrome
   reality-opts:
     public-key: NsRSWMDMKxVFiry3uRJB8tG5rG8LdIJqTJvHK0Uc6Gw
-    short-id: EeEFB5bF
-- name: '🇷🇺 docker.ru — #13'
-  type: vless
-  server: 185.253.23.85
-  port: 443
-  uuid: 9d94835e-2a8b-45a2-babc-86037288cd9f
-  tls: true
-  sni: vk.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: NsRSWMDMKxVFiry3uRJB8tG5rG8LdIJqTJvHK0Uc6Gw
     short-id: eeefb5bf
-- name: '🇷🇺 docker.ru — #14'
-  type: vless
-  server: 185.253.23.111
-  port: 443
-  uuid: 9d94835e-2a8b-45a2-babc-86037288cd9f
-  tls: true
-  sni: vk.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: NsRSWMDMKxVFiry3uRJB8tG5rG8LdIJqTJvHK0Uc6Gw
-    short-id: eeefb5bf
-- name: '🇷🇺 Selectel — #15'
+- name: '🇷🇺 Selectel — #13'
   type: vless
   server: 5.188.115.227
   port: 8443
-  uuid: e629a380-faa3-4356-8ab0-47f8dfb8b6a4
+  uuid: fabfd5bb-ab95-4e2a-ae93-e96149c601ab
   tls: true
   flow: xtls-rprx-vision
   sni: vkvideo.ru
   reality-opts:
     public-key: ldGnC9wnr5RpLeHDtixSJhVHNI3S2kl-vhMhP1rVJEc
     short-id: 6FA44664f6a566d4
-- name: '🇷🇺 Selectel — #16'
+- name: '🇷🇺 Timeweb — #14'
   type: vless
-  server: 5.188.115.227
-  port: 8443
-  uuid: 65bed514-829d-4973-960f-96be8f3021f1
+  server: 46.149.68.27
+  port: 2083
+  uuid: c72dc9f9-c6f2-4273-9f84-ffcf4c246771
+  network: grpc
   tls: true
-  flow: xtls-rprx-vision
-  sni: vkvideo.ru
+  sni: ir.ozone.ru
+  client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: UpdateService
   reality-opts:
-    public-key: ldGnC9wnr5RpLeHDtixSJhVHNI3S2kl-vhMhP1rVJEc
-    short-id: 6FA44664f6a566d4
-- name: '🇷🇺 Timeweb — #17'
+    public-key: J6NuOlIq3ypdTFc1TMhDDKmF8BWPnNWZq1EkxD7K-lQ
+    short-id: 6da16b1335651b38
+- name: '🇷🇺 Timeweb — #15'
   type: vless
   server: 46.149.68.27
   port: 2083
@@ -199,7 +179,7 @@ proxies:
   reality-opts:
     public-key: J6NuOlIq3ypdTFc1TMhDDKmF8BWPnNWZq1EkxD7K-lQ
     short-id: 6da16b1335651b38
-- name: '🇷🇺 Timeweb — #18'
+- name: '🇷🇺 Timeweb — #16'
   type: vless
   server: 5.129.253.197
   port: 443
