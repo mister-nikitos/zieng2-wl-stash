@@ -27,7 +27,7 @@ proxies:
   type: vless
   server: 158.160.226.106
   port: 443
-  uuid: 892a3a7d-ebd3-4d52-bbce-fe97ea1ba8f5
+  uuid: 79a266a5-34f5-4a90-9035-00cc5ebc7583
   tls: true
   flow: xtls-rprx-vision
   sni: max.ru
@@ -35,21 +35,22 @@ proxies:
     public-key: hBksFtUwQ8MuLktgsxBvfGvguoYQYjd1hyNHZGMMAUY
 - name: '🇷🇺 Yandex — #4'
   type: vless
-  server: 158.160.128.223
+  server: 158.160.184.43
   port: 443
-  uuid: 9d2a2a6a-6857-452d-bad6-8ec4f221c6b5
+  uuid: 79a266a5-34f5-4a90-9035-00cc5ebc7583
+  network: grpc
   tls: true
-  flow: xtls-rprx-vision
-  sni: smartcaptcha.yandexcloud.net
-  client-fingerprint: random
+  sni: vkvideo.ru
+  grpc-opts:
+    grpc-service-name: ozon
   reality-opts:
-    public-key: 66kZLshj9fxAIQA7NsABohNwgiOcY71enc6as_Frqw0
-    short-id: 3c1523da43287ec4
+    public-key: eDzdeuk9EdXK5ZBXz9P-h1DvRbBpgPJnVBs4nlSf3n8
+    short-id: AACCFFBB
 - name: '🇷🇺 Yandex — #5'
   type: vless
   server: 158.160.248.213
   port: 443
-  uuid: 9d2a2a6a-6857-452d-bad6-8ec4f221c6b5
+  uuid: 404207a4-ff07-4521-afef-b0840ecf8c83
   tls: true
   flow: xtls-rprx-vision
   sni: smartcaptcha.yandexcloud.net
@@ -57,7 +58,19 @@ proxies:
   reality-opts:
     public-key: 66kZLshj9fxAIQA7NsABohNwgiOcY71enc6as_Frqw0
     short-id: 3c1523da43287ec4
-- name: '🇷🇺 Aeza Group — #6'
+- name: '🇷🇺 Yandex — #6'
+  type: vless
+  server: 158.160.128.223
+  port: 443
+  uuid: 404207a4-ff07-4521-afef-b0840ecf8c83
+  tls: true
+  flow: xtls-rprx-vision
+  sni: smartcaptcha.yandexcloud.net
+  client-fingerprint: random
+  reality-opts:
+    public-key: 66kZLshj9fxAIQA7NsABohNwgiOcY71enc6as_Frqw0
+    short-id: 3c1523da43287ec4
+- name: '🇷🇺 Aeza Group — #7'
   type: vless
   server: 83.166.236.105
   port: 443
@@ -69,40 +82,36 @@ proxies:
   reality-opts:
     public-key: 9rF-W8XmJlJL7WTN7-AsRfs-ZSr4EZNXQpcv82Gjcxs
     short-id: fb4a4359a6dd240c
-- name: '🇷🇺 CDNvideo — #7'
+- name: '🇷🇺 CDNvideo — #8'
   type: vless
   server: 46.243.235.30
   port: 8443
-  uuid: 892a3a7d-ebd3-4d52-bbce-fe97ea1ba8f5
+  uuid: 79a266a5-34f5-4a90-9035-00cc5ebc7583
   tls: true
   flow: xtls-rprx-vision
   sni: ads.x5.ru
   reality-opts:
     public-key: aetBvw_Oniq0INKvHmf4ZMShd43_gTMnRDYddIV1n2s
     short-id: A1B2C3D4E5F6
-- name: '🇷🇺 Selectel — #8'
+- name: '🇷🇺 Selectel — #9'
   type: vless
-  server: 178.72.181.71
+  server: 82.202.249.3
+  port: 52006
+  uuid: 75807638-6f19-07d0-ae08-38492ee85c88
+  tls: true
+  flow: xtls-rprx-vision
+- name: '🇷🇺 Selectel — #10'
+  type: vless
+  server: 82.202.249.3
   port: 52006
   uuid: 75807638-6f19-07d0-ae08-38492ee85c88
   tls: true
   flow: xtls-rprx-vision
   client-fingerprint: chrome
-- name: '🇷🇺 Timeweb — #9'
+- name: '🇷🇺 Timeweb — #11'
   type: vless
   server: 5.129.253.208
   port: 4384
-  uuid: 82ae5746-137c-4e94-9338-07b63087699a
-  tls: true
-  flow: xtls-rprx-vision
-  sni: files.moscownews24.ru
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-- name: '🇷🇺 Timeweb — #10'
-  type: vless
-  server: 85.239.55.26
-  port: 4509
   uuid: 82ae5746-137c-4e94-9338-07b63087699a
   tls: true
   flow: xtls-rprx-vision
