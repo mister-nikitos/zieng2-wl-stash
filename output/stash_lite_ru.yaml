@@ -3,7 +3,7 @@ proxies:
   type: vless
   server: 51.250.78.186
   port: 443
-  uuid: 75c71e4a-bced-43b2-afca-911b07b92dfa
+  uuid: 8f83c56d-c362-4559-a59d-bc571e93e992
   tls: true
   flow: xtls-rprx-vision
   sni: max.ru
@@ -15,7 +15,7 @@ proxies:
   type: vless
   server: 178.154.243.81
   port: 8443
-  uuid: 683eb3de-dab1-401d-bc3a-27f51dd187ee
+  uuid: 43fbf943-923a-4f5b-858e-89957bc2afed
   tls: true
   flow: xtls-rprx-vision
   sni: vkvideo.ru
@@ -24,9 +24,9 @@ proxies:
     short-id: 6FA44664f6a566d4
 - name: '🇷🇺 Yandex — #3'
   type: vless
-  server: 158.160.125.198
+  server: 158.160.46.112
   port: 443
-  uuid: 0bf9cdce-a82b-4492-9c1a-085d34b37071
+  uuid: 7cf15857-ea70-43f7-9ff8-02aca9d56502
   tls: true
   flow: xtls-rprx-vision
   sni: smartcaptcha.yandexcloud.net
@@ -36,9 +36,9 @@ proxies:
     short-id: 3c1523da43287ec4
 - name: '🇷🇺 Yandex — #4'
   type: vless
-  server: 158.160.46.112
+  server: 158.160.125.198
   port: 443
-  uuid: 0bf9cdce-a82b-4492-9c1a-085d34b37071
+  uuid: 7cf15857-ea70-43f7-9ff8-02aca9d56502
   tls: true
   flow: xtls-rprx-vision
   sni: smartcaptcha.yandexcloud.net
@@ -46,11 +46,22 @@ proxies:
   reality-opts:
     public-key: 66kZLshj9fxAIQA7NsABohNwgiOcY71enc6as_Frqw0
     short-id: 3c1523da43287ec4
+- name: '🇷🇺 docker.ru — #8'
+  type: vless
+  server: 185.40.153.191
+  port: 443
+  uuid: 9d94835e-2a8b-45a2-babc-86037288cd9f
+  tls: true
+  sni: vk.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: NsRSWMDMKxVFiry3uRJB8tG5rG8LdIJqTJvHK0Uc6Gw
+    short-id: EeEFB5bF
 - name: '🇷🇺 node — #9'
   type: vless
-  server: 151.236.114.250
+  server: 151.236.114.143
   port: 8443
-  uuid: 008ea0f4-a8e3-467d-8145-7e1ce8d2d7f9
+  uuid: 365e4df5-7357-4e04-90ab-c39e3087c6b4
   network: grpc
   tls: true
   sni: media.mediavitrina.ru
@@ -62,7 +73,7 @@ proxies:
   type: vless
   server: 151.236.114.143
   port: 8443
-  uuid: ff94382b-4cba-40ee-aaed-3cdaadd6cb34
+  uuid: 7fb17758-6a7b-4149-b8d7-557ba35e8cfc
   network: grpc
   tls: true
   sni: media.mediavitrina.ru
@@ -70,11 +81,23 @@ proxies:
   reality-opts:
     public-key: UsIT-zjeviusx9Av1bItm6yZiZCW56J1P1zvoQAOpU0
     short-id: 0123456789abcdef
-- name: '🇷🇺 Oyster Telecom — #11'
+- name: '🇷🇺 node — #11'
   type: vless
-  server: 51.250.40.246
+  server: 151.236.114.143
+  port: 8443
+  uuid: 3a278d03-2728-4a9b-b40d-827d5e4e8eb8
+  network: grpc
+  tls: true
+  sni: media.mediavitrina.ru
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: UsIT-zjeviusx9Av1bItm6yZiZCW56J1P1zvoQAOpU0
+    short-id: 0123456789abcdef
+- name: '🇷🇺 Oyster Telecom — #12'
+  type: vless
+  server: 51.250.44.142
   port: 443
-  uuid: 88060faa-a746-43a2-bbf9-0a56139cb50f
+  uuid: 3fc73135-0260-422a-8359-dafebb8ed96e
   tls: true
   flow: xtls-rprx-vision
   sni: id.x5.ru
@@ -82,7 +105,30 @@ proxies:
   reality-opts:
     public-key: OCRYYq4e92sQ-wWFRX6WX9pdvuFBWOqybLhpSiv3nFA
     short-id: '111111'
-- name: '🇷🇺 Selectel — #12'
+- name: '🇷🇺 Selectel — #13'
+  type: vless
+  server: 82.202.197.3
+  port: 52006
+  uuid: 75807638-6f19-07d0-ae08-38492ee85c88
+  tls: true
+  flow: xtls-rprx-vision
+- name: '🇷🇺 Selectel — #14'
+  type: vless
+  server: 82.202.197.3
+  port: 52006
+  uuid: 75807638-6f19-07d0-ae08-38492ee85c88
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+- name: '🇷🇺 Selectel — #15'
+  type: vless
+  server: 82.202.197.3
+  port: 52006
+  uuid: 75807638-6f19-07d0-ae08-38492ee85c88
+  tls: true
+  flow: xtls-rprx-vision
+  sni: cluster-russia-1.firstvideocdn.ru
+- name: '🇷🇺 Selectel — #16'
   type: vless
   server: 5.178.87.140
   port: 52006
@@ -90,7 +136,7 @@ proxies:
   tls: true
   flow: xtls-rprx-vision
   sni: cluster-russia-1.firstvideocdn.ru
-- name: '🇷🇺 Selectel — #13'
+- name: '🇷🇺 Selectel — #17'
   type: vless
   server: 82.202.249.3
   port: 52006
@@ -98,83 +144,23 @@ proxies:
   tls: true
   flow: xtls-rprx-vision
   sni: cluster-russia-1.firstvideocdn.ru
-- name: '🇷🇺 Selectel — #14'
-  type: vless
-  server: 84.201.160.50
-  port: 443
-  uuid: 88060faa-a746-43a2-bbf9-0a56139cb50f
-  tls: true
-  flow: xtls-rprx-vision
-  sni: id.x5.ru
-  client-fingerprint: random
-  reality-opts:
-    public-key: OCRYYq4e92sQ-wWFRX6WX9pdvuFBWOqybLhpSiv3nFA
-    short-id: '111111'
-- name: '🇷🇺 Selectel — #15'
-  type: vless
-  server: 51.250.44.142
-  port: 443
-  uuid: 88060faa-a746-43a2-bbf9-0a56139cb50f
-  tls: true
-  flow: xtls-rprx-vision
-  sni: id.x5.ru
-  client-fingerprint: random
-  reality-opts:
-    public-key: OCRYYq4e92sQ-wWFRX6WX9pdvuFBWOqybLhpSiv3nFA
-    short-id: '111111'
-- name: '🇷🇺 Selectel — #16'
-  type: vless
-  server: 51.250.44.142
-  port: 443
-  uuid: 88060faa-a746-43a2-bbf9-0a56139cb50f
-  tls: true
-  flow: xtls-rprx-vision
-  sni: 5post-gate.x5.ru
-  client-fingerprint: qq
-  reality-opts:
-    public-key: OCRYYq4e92sQ-wWFRX6WX9pdvuFBWOqybLhpSiv3nFA
-    short-id: '111111'
-- name: '🇷🇺 Selectel — #17'
+- name: '🇷🇺 Selectel — #18'
   type: vless
   server: 84.201.179.45
   port: 443
-  uuid: 88060faa-a746-43a2-bbf9-0a56139cb50f
+  uuid: d8407e5d-4ac7-4e51-a499-d23945423e0d
   tls: true
   flow: xtls-rprx-vision
   sni: id.x5.ru
   client-fingerprint: random
-  reality-opts:
-    public-key: OCRYYq4e92sQ-wWFRX6WX9pdvuFBWOqybLhpSiv3nFA
-    short-id: '111111'
-- name: '🇷🇺 Selectel — #18'
-  type: vless
-  server: 51.250.40.118
-  port: 443
-  uuid: 88060faa-a746-43a2-bbf9-0a56139cb50f
-  tls: true
-  flow: xtls-rprx-vision
-  sni: id.x5.ru
-  client-fingerprint: qq
   reality-opts:
     public-key: OCRYYq4e92sQ-wWFRX6WX9pdvuFBWOqybLhpSiv3nFA
     short-id: '111111'
 - name: '🇷🇺 Selectel — #19'
   type: vless
-  server: 84.201.160.50
-  port: 443
-  uuid: e7866537-5802-4662-be3c-b3ac4f474b4c
-  tls: true
-  flow: xtls-rprx-vision
-  sni: id.x5.ru
-  client-fingerprint: random
-  reality-opts:
-    public-key: OCRYYq4e92sQ-wWFRX6WX9pdvuFBWOqybLhpSiv3nFA
-    short-id: '111111'
-- name: '🇷🇺 Selectel — #20'
-  type: vless
   server: 51.250.40.118
   port: 443
-  uuid: e7866537-5802-4662-be3c-b3ac4f474b4c
+  uuid: d8407e5d-4ac7-4e51-a499-d23945423e0d
   tls: true
   flow: xtls-rprx-vision
   sni: id.x5.ru
@@ -182,11 +168,23 @@ proxies:
   reality-opts:
     public-key: OCRYYq4e92sQ-wWFRX6WX9pdvuFBWOqybLhpSiv3nFA
     short-id: '111111'
+- name: '🇷🇺 Selectel — #20'
+  type: vless
+  server: 51.250.44.142
+  port: 443
+  uuid: d8407e5d-4ac7-4e51-a499-d23945423e0d
+  tls: true
+  flow: xtls-rprx-vision
+  sni: id.x5.ru
+  client-fingerprint: random
+  reality-opts:
+    public-key: OCRYYq4e92sQ-wWFRX6WX9pdvuFBWOqybLhpSiv3nFA
+    short-id: '111111'
 - name: '🇷🇺 Selectel — #21'
   type: vless
-  server: 84.201.179.45
+  server: 84.201.160.50
   port: 443
-  uuid: e7866537-5802-4662-be3c-b3ac4f474b4c
+  uuid: d8407e5d-4ac7-4e51-a499-d23945423e0d
   tls: true
   flow: xtls-rprx-vision
   sni: id.x5.ru
@@ -198,31 +196,19 @@ proxies:
   type: vless
   server: 51.250.44.142
   port: 443
-  uuid: e7866537-5802-4662-be3c-b3ac4f474b4c
+  uuid: d8407e5d-4ac7-4e51-a499-d23945423e0d
   tls: true
   flow: xtls-rprx-vision
-  sni: id.x5.ru
-  client-fingerprint: random
+  sni: 5post-gate.x5.ru
+  client-fingerprint: qq
   reality-opts:
     public-key: OCRYYq4e92sQ-wWFRX6WX9pdvuFBWOqybLhpSiv3nFA
     short-id: '111111'
 - name: '🇷🇺 Selectel — #23'
   type: vless
-  server: 51.250.44.142
-  port: 443
-  uuid: e7866537-5802-4662-be3c-b3ac4f474b4c
-  tls: true
-  flow: xtls-rprx-vision
-  sni: 5post-gate.x5.ru
-  client-fingerprint: qq
-  reality-opts:
-    public-key: OCRYYq4e92sQ-wWFRX6WX9pdvuFBWOqybLhpSiv3nFA
-    short-id: '111111'
-- name: '🇷🇺 Selectel — #24'
-  type: vless
   server: 51.250.40.246
   port: 443
-  uuid: e7866537-5802-4662-be3c-b3ac4f474b4c
+  uuid: d8407e5d-4ac7-4e51-a499-d23945423e0d
   tls: true
   flow: xtls-rprx-vision
   sni: id.x5.ru
@@ -230,11 +216,11 @@ proxies:
   reality-opts:
     public-key: OCRYYq4e92sQ-wWFRX6WX9pdvuFBWOqybLhpSiv3nFA
     short-id: '111111'
-- name: '🇷🇺 Selectel — #25'
+- name: '🇷🇺 Selectel — #24'
   type: vless
   server: 51.250.44.142
   port: 443
-  uuid: 88060faa-a746-43a2-bbf9-0a56139cb50f
+  uuid: 3fc73135-0260-422a-8359-dafebb8ed96e
   tls: true
   flow: xtls-rprx-vision
   sni: 5post-gate.x5.ru
@@ -242,40 +228,54 @@ proxies:
   reality-opts:
     public-key: OCRYYq4e92sQ-wWFRX6WX9pdvuFBWOqybLhpSiv3nFA
     short-id: '111111'
-- name: '🇷🇺 Timeweb — #26'
+- name: '🇷🇺 Selectel — #25'
   type: vless
-  server: 62.152.59.38
-  port: 46824
-  uuid: dc9e2142-c177-46e7-9f7c-8315fffae54b
+  server: 84.201.179.45
+  port: 443
+  uuid: 3fc73135-0260-422a-8359-dafebb8ed96e
   tls: true
   flow: xtls-rprx-vision
-  sni: api-dev-omni.x5.ru
-  client-fingerprint: chrome
+  sni: id.x5.ru
+  client-fingerprint: random
   reality-opts:
-    public-key: M9K8wb4DW1QrZZm5Z_Ps51jUegGNZc7czLJzd3pDeg4
-    short-id: fd1db6
-- name: '🇷🇺 Timeweb — #27'
+    public-key: OCRYYq4e92sQ-wWFRX6WX9pdvuFBWOqybLhpSiv3nFA
+    short-id: '111111'
+- name: '🇷🇺 Selectel — #26'
   type: vless
-  server: 62.152.59.38
-  port: 46824
-  uuid: dc9e2142-c177-46e7-9f7c-8315fffae54b
+  server: 51.250.40.246
+  port: 443
+  uuid: 3fc73135-0260-422a-8359-dafebb8ed96e
   tls: true
   flow: xtls-rprx-vision
-  sni: api-dev-omni.x5.ru
-  client-fingerprint: chrome
+  sni: id.x5.ru
+  client-fingerprint: random
   reality-opts:
-    public-key: M9K8wb4DW1QrZZm5Z_Ps51jUegGNZc7czLJzd3pDeg4
-    short-id: fd1db6
-- name: '🇷🇺 Timeweb — #28'
+    public-key: OCRYYq4e92sQ-wWFRX6WX9pdvuFBWOqybLhpSiv3nFA
+    short-id: '111111'
+- name: '🇷🇺 Selectel — #27'
   type: vless
-  server: 5.23.54.103
-  port: 8443
-  uuid: 0c8a9f50-51b3-43b5-b1fb-09fc3131a800
+  server: 51.250.40.118
+  port: 443
+  uuid: 3fc73135-0260-422a-8359-dafebb8ed96e
   tls: true
   flow: xtls-rprx-vision
-  sni: gwapp-ru02.freenets.store
+  sni: id.x5.ru
+  client-fingerprint: qq
   reality-opts:
-    public-key: vuC_K7GAfERRLNvqVoGc0Mu8umhpEMkbtpxND0vLJQk
+    public-key: OCRYYq4e92sQ-wWFRX6WX9pdvuFBWOqybLhpSiv3nFA
+    short-id: '111111'
+- name: '🇷🇺 Selectel — #28'
+  type: vless
+  server: 84.201.160.50
+  port: 443
+  uuid: 3fc73135-0260-422a-8359-dafebb8ed96e
+  tls: true
+  flow: xtls-rprx-vision
+  sni: id.x5.ru
+  client-fingerprint: random
+  reality-opts:
+    public-key: OCRYYq4e92sQ-wWFRX6WX9pdvuFBWOqybLhpSiv3nFA
+    short-id: '111111'
 - name: '🇷🇺 Timeweb — #29'
   type: vless
   server: 5.23.54.103
@@ -297,15 +297,27 @@ proxies:
   sni: gwapp-ru02.freenets.store
   reality-opts:
     public-key: vuC_K7GAfERRLNvqVoGc0Mu8umhpEMkbtpxND0vLJQk
-- name: '🇷🇺 VPSVille — #31'
+- name: '🇷🇺 Timeweb — #31'
   type: vless
-  server: 130.49.218.63
+  server: 94.228.115.193
   port: 443
-  uuid: c5bbdac7-6ff5-4762-87bf-870f55a03581
+  uuid: eaf77ff9-a33a-456d-8bdf-6bea4f9582f0
   tls: true
   flow: xtls-rprx-vision
-  sni: fr.pink-world.ru
-  client-fingerprint: chrome
+  sni: sun9-38.userapi.com
+  client-fingerprint: qq
   reality-opts:
-    public-key: XoJMrCB2aP6YCHbW4vsCoDF2h_d8eGZs3u_UAddWBBA
-    short-id: 9ad0e48c54dc7c41
+    public-key: r6lN34m1nN-xQZ458j5NPD5xJ3_QBF2bGzY4KJEo4ic
+    short-id: abbcd128
+- name: '🇷🇺 Timeweb — #32'
+  type: vless
+  server: 89.23.96.109
+  port: 443
+  uuid: eaf77ff9-a33a-456d-8bdf-6bea4f9582f0
+  tls: true
+  flow: xtls-rprx-vision
+  sni: sun9-38.userapi.com
+  client-fingerprint: qq
+  reality-opts:
+    public-key: r6lN34m1nN-xQZ458j5NPD5xJ3_QBF2bGzY4KJEo4ic
+    short-id: abbcd128
