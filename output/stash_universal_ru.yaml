@@ -1,16 +1,4 @@
 proxies:
-- name: '🇷🇺 Yandex — #1'
-  type: vless
-  server: 51.250.47.0
-  port: 8443
-  uuid: 0e3a9376-1bf0-4b9e-a328-f28083bf6c34
-  tls: true
-  flow: xtls-rprx-vision
-  sni: ads.x5.ru
-  client-fingerprint: random
-  reality-opts:
-    public-key: 4iuR2mv0RnnPZbwvQuZ4L07Bois8hMUczEbMeDF0iRc
-    short-id: fb38c1c83009e1
 - name: '🇷🇺 Yandex — #2'
   type: vless
   server: 51.250.47.0
@@ -25,21 +13,9 @@ proxies:
     short-id: fb38c1c83009e1
 - name: '🇷🇺 Yandex — #3'
   type: vless
-  server: 158.160.32.103
-  port: 443
-  uuid: 786004c4-c3f2-42bf-8346-64670e342cc3
-  tls: true
-  flow: xtls-rprx-vision
-  sni: max.ru
-  client-fingerprint: random
-  reality-opts:
-    public-key: Ew5a5rNW0ZLY9s4xnI3iZHbNLw2I21bp_kwa5poLcDU
-    short-id: b2a6e3d42f05c3d1
-- name: '🇷🇺 Yandex — #4'
-  type: vless
   server: 84.201.170.183
   port: 443
-  uuid: 786004c4-c3f2-42bf-8346-64670e342cc3
+  uuid: c09793ed-441d-4c8f-911e-a8e2934a8ad0
   tls: true
   flow: xtls-rprx-vision
   sni: api-maps.yandex.ru
@@ -47,48 +23,54 @@ proxies:
   reality-opts:
     public-key: pLtXM-kfdLN2f0bPQzaPdnXoCEmL2fMnd46Jq2XF8C0
     short-id: b2a6e3d42f05c3d1
+- name: '🇷🇺 Yandex — #4'
+  type: vless
+  server: 158.160.32.103
+  port: 443
+  uuid: c09793ed-441d-4c8f-911e-a8e2934a8ad0
+  tls: true
+  flow: xtls-rprx-vision
+  sni: max.ru
+  client-fingerprint: random
+  reality-opts:
+    public-key: Ew5a5rNW0ZLY9s4xnI3iZHbNLw2I21bp_kwa5poLcDU
+    short-id: b2a6e3d42f05c3d1
 - name: '🇷🇺 CDNvideo — #5'
   type: vless
-  server: 46.243.233.135
-  port: 2083
+  server: 46.243.233.212
+  port: 2082
   uuid: 0e3a9376-1bf0-4b9e-a328-f28083bf6c34
-  network: grpc
   tls: true
-  sni: ads.x5.ru
+  flow: xtls-rprx-vision
+  sni: eh1.vk.com
   client-fingerprint: random
-  grpc-opts:
-    grpc-service-name: grpc
   reality-opts:
-    public-key: FARqAvdBdAqPJGFpjGVY4GWwgGl_afQ8ArDlfVs7-Ck
-    short-id: 5fb06f1e4d8f
+    public-key: o6zlxOHBtqwPdJNatvbmEHH_Ar6SJjJQqUViymfxHmo
+    short-id: cead3d22ec
 - name: '🇷🇺 CDNvideo — #6'
   type: vless
-  server: 46.243.233.212
-  port: 2081
+  server: 46.243.233.135
+  port: 2084
   uuid: 0e3a9376-1bf0-4b9e-a328-f28083bf6c34
-  network: grpc
   tls: true
-  sni: io.ozone.ru
+  flow: xtls-rprx-vision
+  sni: eh.vk.com
   client-fingerprint: random
-  grpc-opts:
-    grpc-service-name: grpc
   reality-opts:
-    public-key: FARqAvdBdAqPJGFpjGVY4GWwgGl_afQ8ArDlfVs7-Ck
-    short-id: 5fb06f1e4d8f
+    public-key: o6zlxOHBtqwPdJNatvbmEHH_Ar6SJjJQqUViymfxHmo
+    short-id: cead3d22ec
 - name: '🇷🇺 CDNvideo — #7'
   type: vless
   server: 46.243.233.135
-  port: 2083
+  port: 2084
   uuid: 0e3a9376-1bf0-4b9e-a328-f28083bf6c34
-  network: grpc
   tls: true
-  sni: ads.x5.ru
+  flow: xtls-rprx-vision
+  sni: eh.vk.com
   client-fingerprint: random
-  grpc-opts:
-    grpc-service-name: grpc
   reality-opts:
-    public-key: FARqAvdBdAqPJGFpjGVY4GWwgGl_afQ8ArDlfVs7-Ck
-    short-id: 5fb06f1e4d8f
+    public-key: o6zlxOHBtqwPdJNatvbmEHH_Ar6SJjJQqUViymfxHmo
+    short-id: cead3d22ec
 - name: '🇷🇺 CDNvideo — #8'
   type: vless
   server: 46.243.233.212
@@ -103,57 +85,9 @@ proxies:
     short-id: cead3d22ec
 - name: '🇷🇺 CDNvideo — #9'
   type: vless
-  server: 46.243.233.135
-  port: 2084
-  uuid: 0e3a9376-1bf0-4b9e-a328-f28083bf6c34
-  tls: true
-  flow: xtls-rprx-vision
-  sni: eh.vk.com
-  client-fingerprint: random
-  reality-opts:
-    public-key: o6zlxOHBtqwPdJNatvbmEHH_Ar6SJjJQqUViymfxHmo
-    short-id: cead3d22ec
-- name: '🇷🇺 CDNvideo — #10'
-  type: vless
-  server: 46.243.233.135
-  port: 2084
-  uuid: 0e3a9376-1bf0-4b9e-a328-f28083bf6c34
-  tls: true
-  flow: xtls-rprx-vision
-  sni: eh.vk.com
-  client-fingerprint: random
-  reality-opts:
-    public-key: o6zlxOHBtqwPdJNatvbmEHH_Ar6SJjJQqUViymfxHmo
-    short-id: cead3d22ec
-- name: '🇷🇺 CDNvideo — #11'
-  type: vless
-  server: 46.243.233.212
-  port: 2082
-  uuid: 0e3a9376-1bf0-4b9e-a328-f28083bf6c34
-  tls: true
-  flow: xtls-rprx-vision
-  sni: eh1.vk.com
-  client-fingerprint: random
-  reality-opts:
-    public-key: o6zlxOHBtqwPdJNatvbmEHH_Ar6SJjJQqUViymfxHmo
-    short-id: cead3d22ec
-- name: '🇷🇺 CDNvideo — #12'
-  type: vless
-  server: 46.243.234.141
-  port: 50445
-  uuid: c9f27ae8-5479-4387-935c-1978c2c48a13
-  tls: true
-  flow: xtls-rprx-vision
-  sni: river-4-421.rtbcdn.ru
-  client-fingerprint: ios
-  reality-opts:
-    public-key: ZSzB9TQPGNcCiC0WLmciF5Jc8doJDvdRgbqTi8SCoEM
-    short-id: a1b2c3d4e5f6789a
-- name: '🇷🇺 CDNvideo — #13'
-  type: vless
   server: 37.18.15.237
   port: 50445
-  uuid: c9f27ae8-5479-4387-935c-1978c2c48a13
+  uuid: 20a61774-601e-42c6-bd19-fd6e2e006316
   tls: true
   flow: xtls-rprx-vision
   sni: river-5-557.rtbcdn.ru
@@ -161,11 +95,23 @@ proxies:
   reality-opts:
     public-key: ZSzB9TQPGNcCiC0WLmciF5Jc8doJDvdRgbqTi8SCoEM
     short-id: a1b2c3d4e5f6789a
-- name: '🇷🇺 CDNvideo — #14'
+- name: '🇷🇺 CDNvideo — #10'
+  type: vless
+  server: 46.243.234.141
+  port: 50445
+  uuid: 20a61774-601e-42c6-bd19-fd6e2e006316
+  tls: true
+  flow: xtls-rprx-vision
+  sni: river-4-421.rtbcdn.ru
+  client-fingerprint: ios
+  reality-opts:
+    public-key: ZSzB9TQPGNcCiC0WLmciF5Jc8doJDvdRgbqTi8SCoEM
+    short-id: a1b2c3d4e5f6789a
+- name: '🇷🇺 CDNvideo — #11'
   type: vless
   server: 37.18.15.237
   port: 7443
-  uuid: c9f27ae8-5479-4387-935c-1978c2c48a13
+  uuid: 20a61774-601e-42c6-bd19-fd6e2e006316
   tls: true
   flow: xtls-rprx-vision
   sni: amedia-vod.cdnvideo.ru
@@ -173,7 +119,7 @@ proxies:
   reality-opts:
     public-key: ZSzB9TQPGNcCiC0WLmciF5Jc8doJDvdRgbqTi8SCoEM
     short-id: a1b2c3d4e5f6789a
-- name: '🇷🇺 cloud.ru — #15'
+- name: '🇷🇺 cloud.ru — #12'
   type: vless
   server: 82.202.140.8
   port: 443
@@ -185,7 +131,7 @@ proxies:
   reality-opts:
     public-key: zlmNRlSzdn2zegjL4nFXmOmlBe_2_Wm0mKhD2aeJ9BE
     short-id: b3
-- name: '🇷🇺 cloud.ru — #16'
+- name: '🇷🇺 cloud.ru — #13'
   type: vless
   server: 82.202.140.8
   port: 443
@@ -197,35 +143,11 @@ proxies:
   reality-opts:
     public-key: zlmNRlSzdn2zegjL4nFXmOmlBe_2_Wm0mKhD2aeJ9BE
     short-id: b3
-- name: '🇷🇺 Delta — #17'
-  type: vless
-  server: 212.233.99.180
-  port: 40443
-  uuid: c9f27ae8-5479-4387-935c-1978c2c48a13
-  tls: true
-  flow: xtls-rprx-vision
-  sni: api-maps.yandex.ru
-  client-fingerprint: qq
-  reality-opts:
-    public-key: ZSzB9TQPGNcCiC0WLmciF5Jc8doJDvdRgbqTi8SCoEM
-    short-id: a1b2c3d4e5f6789a
-- name: '🇷🇺 Delta — #18'
-  type: vless
-  server: 46.243.234.141
-  port: 7443
-  uuid: c9f27ae8-5479-4387-935c-1978c2c48a13
-  tls: true
-  flow: xtls-rprx-vision
-  sni: amedia-vod.cdnvideo.ru
-  client-fingerprint: qq
-  reality-opts:
-    public-key: ZSzB9TQPGNcCiC0WLmciF5Jc8doJDvdRgbqTi8SCoEM
-    short-id: a1b2c3d4e5f6789a
-- name: '🇷🇺 Delta — #19'
+- name: '🇷🇺 Delta — #14'
   type: vless
   server: 151.236.114.198
   port: 8443
-  uuid: c9f27ae8-5479-4387-935c-1978c2c48a13
+  uuid: 20a61774-601e-42c6-bd19-fd6e2e006316
   tls: true
   flow: xtls-rprx-vision
   sni: api-maps.yandex.ru
@@ -233,21 +155,57 @@ proxies:
   reality-opts:
     public-key: ZSzB9TQPGNcCiC0WLmciF5Jc8doJDvdRgbqTi8SCoEM
     short-id: a1b2c3d4e5f6789a
-- name: '🇷🇺 e-Style ISP LLC — #20'
+- name: '🇷🇺 Delta — #15'
   type: vless
-  server: 132.243.230.125
-  port: 7771
-  uuid: 4625bdd0-8af1-474f-9513-c2ca9e869a48
+  server: 212.233.99.180
+  port: 40443
+  uuid: 20a61774-601e-42c6-bd19-fd6e2e006316
+  tls: true
+  flow: xtls-rprx-vision
+  sni: api-maps.yandex.ru
+  client-fingerprint: qq
+  reality-opts:
+    public-key: ZSzB9TQPGNcCiC0WLmciF5Jc8doJDvdRgbqTi8SCoEM
+    short-id: a1b2c3d4e5f6789a
+- name: '🇷🇺 Delta — #16'
+  type: vless
+  server: 46.243.234.141
+  port: 7443
+  uuid: 20a61774-601e-42c6-bd19-fd6e2e006316
+  tls: true
+  flow: xtls-rprx-vision
+  sni: amedia-vod.cdnvideo.ru
+  client-fingerprint: qq
+  reality-opts:
+    public-key: ZSzB9TQPGNcCiC0WLmciF5Jc8doJDvdRgbqTi8SCoEM
+    short-id: a1b2c3d4e5f6789a
+- name: '🇷🇺 Delta — #17'
+  type: vless
+  server: 109.120.189.170
+  port: 5443
+  uuid: 3109f61b-46ed-49f6-9d4a-fbf2aeb0dc4f
+  tls: true
+  flow: xtls-rprx-vision
+  sni: ads.x5.ru
+  client-fingerprint: qq
+  reality-opts:
+    public-key: 0y72WqjYlRKbU-VzinCglBJt6ZD7GvDhNnkwDHB8l0Q
+    short-id: bad5722c72a038
+- name: '🇷🇺 Delta — #18'
+  type: vless
+  server: 109.120.189.170
+  port: 5445
+  uuid: 3109f61b-46ed-49f6-9d4a-fbf2aeb0dc4f
   network: grpc
   tls: true
-  sni: splitter.wb.ru
-  client-fingerprint: chrome
+  sni: ads.x5.ru
+  client-fingerprint: qq
   grpc-opts:
-    grpc-service-name: splitter.wb.ru
+    grpc-service-name: grpc
   reality-opts:
-    public-key: yhUfTGgu5PYRlFqMnRZkxffH_aU05AFUToGI8_EKF28
-    short-id: '8248954896'
-- name: '🇷🇺 e-Style ISP LLC — #21'
+    public-key: cSQW3a_64jadi8uInU7XKZzTDyYKBxWj7c5MgIesIws
+    short-id: bad5722c72a0
+- name: '🇷🇺 e-Style ISP LLC — #19'
   type: vless
   server: 132.243.230.125
   port: 443
@@ -259,7 +217,7 @@ proxies:
   reality-opts:
     public-key: yhUfTGgu5PYRlFqMnRZkxffH_aU05AFUToGI8_EKF28
     short-id: '8248954896'
-- name: '🇷🇺 Selectel — #22'
+- name: '🇷🇺 Selectel — #20'
   type: vless
   server: 158.160.231.91
   port: 443
@@ -271,7 +229,7 @@ proxies:
   reality-opts:
     public-key: OCRYYq4e92sQ-wWFRX6WX9pdvuFBWOqybLhpSiv3nFA
     short-id: '111111'
-- name: '🇷🇺 Timeweb — #23'
+- name: '🇷🇺 Timeweb — #21'
   type: vless
   server: 37.9.4.82
   port: 443
@@ -282,7 +240,18 @@ proxies:
   client-fingerprint: qq
   reality-opts:
     public-key: o6jbbDkNF_5v8BlkIDl4NKhBiXTxCGms-NPmFkuQNXA
-- name: '🇷🇺 Timeweb — #24'
+- name: '🇷🇺 Timeweb — #22'
+  type: vless
+  server: 37.9.4.82
+  port: 443
+  uuid: fb9e3bc7-4932-Fade-ad61-fe040b86d0fb
+  network: grpc
+  tls: true
+  sni: ads.x5.ru
+  client-fingerprint: qq
+  reality-opts:
+    public-key: o6jbbDkNF_5v8BlkIDl4NKhBiXTxCGms-NPmFkuQNXA
+- name: '🇷🇺 Timeweb — #23'
   type: vless
   server: 176.98.178.163
   port: 443
@@ -294,23 +263,22 @@ proxies:
   reality-opts:
     public-key: 4iuR2mv0RnnPZbwvQuZ4L07Bois8hMUczEbMeDF0iRc
     short-id: fb38c1c83009e1
-- name: '🇷🇺 Timeweb — #25'
+- name: '🇷🇺 Timeweb — #24'
   type: vless
-  server: 176.98.178.163
-  port: 8443
-  uuid: 0e3a9376-1bf0-4b9e-a328-f28083bf6c34
+  server: 89.23.100.17
+  port: 443
+  uuid: 85b5cb2e-2617-4930-b6a4-4aeaf3b7b9aa
   tls: true
   flow: xtls-rprx-vision
-  sni: ru3.skysafe.online
-  client-fingerprint: ios
-  reality-opts:
-    public-key: 4iuR2mv0RnnPZbwvQuZ4L07Bois8hMUczEbMeDF0iRc
-    short-id: fb38c1c83009e1
-- name: '🇷🇺 Timeweb — #26'
+  sni: sub.sbrf-cdn342.ru
+  client-fingerprint: qq
+  alpn:
+  - http/1.1
+- name: '🇷🇺 Timeweb — #25'
   type: vless
   server: 158.160.224.52
   port: 40443
-  uuid: 0ae7d04c-cd8b-4f07-bb24-3adf34988456
+  uuid: e0d9955f-3454-464f-9c60-805b7a3f799c
   network: grpc
   tls: true
   sni: max.ru
@@ -322,21 +290,9 @@ proxies:
     short-id: 22c70831c63f4abe
 - name: '🇷🇺 Timeweb — #27'
   type: vless
-  server: 158.160.224.52
-  port: 1443
-  uuid: 0ae7d04c-cd8b-4f07-bb24-3adf34988456
-  tls: true
-  flow: xtls-rprx-vision
-  sni: max.ru
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: qsqnCjigfD1_V7th-DKRtIrHuhyjN7kSnd85PBH5b2U
-    short-id: 22c70831c63f4abe
-- name: '🇷🇺 Timeweb — #28'
-  type: vless
   server: 176.57.213.153
   port: 1443
-  uuid: 0ae7d04c-cd8b-4f07-bb24-3adf34988456
+  uuid: e0d9955f-3454-464f-9c60-805b7a3f799c
   tls: true
   flow: xtls-rprx-vision
   sni: apple.com
@@ -344,11 +300,11 @@ proxies:
   reality-opts:
     public-key: ccCb6lQBtA2KOnCMVrsKXpFmUv2x8EOsMObkuJebNWw
     short-id: 2d5a31d63a1c4914
-- name: '🇷🇺 Timeweb — #30'
+- name: '🇷🇺 Timeweb — #28'
   type: vless
   server: 176.57.213.153
   port: 40443
-  uuid: 0ae7d04c-cd8b-4f07-bb24-3adf34988456
+  uuid: e0d9955f-3454-464f-9c60-805b7a3f799c
   network: grpc
   tls: true
   sni: apple.com
@@ -358,66 +314,92 @@ proxies:
   reality-opts:
     public-key: ccCb6lQBtA2KOnCMVrsKXpFmUv2x8EOsMObkuJebNWw
     short-id: 2d5a31d63a1c4914
-- name: '🇷🇺 UFO Hosting — #32'
+- name: '🇷🇺 Timeweb — #29'
   type: vless
-  server: 95.163.211.240
-  port: 80
-  uuid: 983d6d9a-d4c2-4be7-8cf0-a8a1c56616f5
+  server: 158.160.224.52
+  port: 1443
+  uuid: e0d9955f-3454-464f-9c60-805b7a3f799c
   tls: true
+  flow: xtls-rprx-vision
   sni: max.ru
   client-fingerprint: chrome
   reality-opts:
-    public-key: Z84J2IelR9ch3k8VtlVhhs5ycBUlXA7wHBWcBrjqnAw
-    short-id: 7dbf7d3233971d5c
-- name: '🇷🇺 UFO Hosting — #33'
+    public-key: qsqnCjigfD1_V7th-DKRtIrHuhyjN7kSnd85PBH5b2U
+    short-id: 22c70831c63f4abe
+- name: '🇷🇺 UFO Hosting — #31'
   type: vless
-  server: 95.163.211.240
+  server: 45.144.30.81
+  port: 5432
+  uuid: f8c5b018-f51a-4137-be8a-50a451630589
+  network: grpc
+  tls: true
+  sni: www.samsung.com
+  client-fingerprint: firefox
+  grpc-opts:
+    grpc-service-name: grpc
+  reality-opts:
+    public-key: WNsIqrfrK3gEmFFkeP2Ja8lvt9vGpFyxV612QdqYPC8
+    short-id: 489da765
+- name: '🇷🇺 UFO Hosting — #32'
+  type: vless
+  server: 91.219.227.200
   port: 80
-  uuid: 983d6d9a-d4c2-4be7-8cf0-a8a1c56616f5
+  uuid: c5c9bbbd-5296-4afa-9f8c-69fccf439d90
   tls: true
   sni: sso.passport.yandex.ru
   client-fingerprint: chrome
   reality-opts:
     public-key: Z84J2IelR9ch3k8VtlVhhs5ycBUlXA7wHBWcBrjqnAw
     short-id: 7dbf7d3233971d5c
-- name: '🇷🇺 UFO Hosting — #34'
+- name: '🇷🇺 UFO Hosting — #33'
   type: vless
   server: 91.219.227.189
   port: 80
-  uuid: 983d6d9a-d4c2-4be7-8cf0-a8a1c56616f5
-  tls: true
-  sni: max.ru
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: Z84J2IelR9ch3k8VtlVhhs5ycBUlXA7wHBWcBrjqnAw
-    short-id: 7dbf7d3233971d5c
-- name: '🇷🇺 UFO Hosting — #35'
-  type: vless
-  server: 95.163.211.240
-  port: 80
-  uuid: 983d6d9a-d4c2-4be7-8cf0-a8a1c56616f5
-  tls: true
-  sni: eh.vk.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: Z84J2IelR9ch3k8VtlVhhs5ycBUlXA7wHBWcBrjqnAw
-    short-id: 7dbf7d3233971d5c
-- name: '🇷🇺 UFO Hosting — #36'
-  type: vless
-  server: 95.163.211.240
-  port: 80
-  uuid: 983d6d9a-d4c2-4be7-8cf0-a8a1c56616f5
+  uuid: c5c9bbbd-5296-4afa-9f8c-69fccf439d90
   tls: true
   sni: ads.x5.ru
   client-fingerprint: chrome
   reality-opts:
     public-key: Z84J2IelR9ch3k8VtlVhhs5ycBUlXA7wHBWcBrjqnAw
     short-id: 7dbf7d3233971d5c
+- name: '🇷🇺 UFO Hosting — #34'
+  type: vless
+  server: 95.163.211.240
+  port: 80
+  uuid: c5c9bbbd-5296-4afa-9f8c-69fccf439d90
+  tls: true
+  sni: sso.passport.yandex.ru
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: Z84J2IelR9ch3k8VtlVhhs5ycBUlXA7wHBWcBrjqnAw
+    short-id: 7dbf7d3233971d5c
+- name: '🇷🇺 UFO Hosting — #35'
+  type: vless
+  server: 95.163.211.237
+  port: 80
+  uuid: c5c9bbbd-5296-4afa-9f8c-69fccf439d90
+  tls: true
+  sni: eh.vk.com
+  client-fingerprint: qq
+  reality-opts:
+    public-key: Z84J2IelR9ch3k8VtlVhhs5ycBUlXA7wHBWcBrjqnAw
+    short-id: 7dbf7d3233971d5c
+- name: '🇷🇺 UFO Hosting — #36'
+  type: vless
+  server: 91.219.227.189
+  port: 80
+  uuid: c5c9bbbd-5296-4afa-9f8c-69fccf439d90
+  tls: true
+  sni: sso.passport.yandex.ru
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: Z84J2IelR9ch3k8VtlVhhs5ycBUlXA7wHBWcBrjqnAw
+    short-id: 7dbf7d3233971d5c
 - name: '🇷🇺 UFO Hosting — #37'
   type: vless
-  server: 91.219.227.200
+  server: 95.163.211.240
   port: 80
-  uuid: 983d6d9a-d4c2-4be7-8cf0-a8a1c56616f5
+  uuid: c5c9bbbd-5296-4afa-9f8c-69fccf439d90
   tls: true
   sni: ads.x5.ru
   client-fingerprint: chrome
@@ -428,20 +410,20 @@ proxies:
   type: vless
   server: 91.219.227.189
   port: 80
-  uuid: 983d6d9a-d4c2-4be7-8cf0-a8a1c56616f5
+  uuid: c5c9bbbd-5296-4afa-9f8c-69fccf439d90
   tls: true
-  sni: sso.passport.yandex.ru
+  sni: eh.vk.com
   client-fingerprint: chrome
   reality-opts:
     public-key: Z84J2IelR9ch3k8VtlVhhs5ycBUlXA7wHBWcBrjqnAw
     short-id: 7dbf7d3233971d5c
 - name: '🇷🇺 UFO Hosting — #39'
   type: vless
-  server: 91.219.227.189
+  server: 91.219.227.200
   port: 80
-  uuid: 983d6d9a-d4c2-4be7-8cf0-a8a1c56616f5
+  uuid: c5c9bbbd-5296-4afa-9f8c-69fccf439d90
   tls: true
-  sni: ads.x5.ru
+  sni: max.ru
   client-fingerprint: chrome
   reality-opts:
     public-key: Z84J2IelR9ch3k8VtlVhhs5ycBUlXA7wHBWcBrjqnAw
@@ -450,40 +432,40 @@ proxies:
   type: vless
   server: 91.219.227.200
   port: 80
-  uuid: 983d6d9a-d4c2-4be7-8cf0-a8a1c56616f5
+  uuid: c5c9bbbd-5296-4afa-9f8c-69fccf439d90
   tls: true
-  sni: max.ru
+  sni: ads.x5.ru
   client-fingerprint: chrome
   reality-opts:
     public-key: Z84J2IelR9ch3k8VtlVhhs5ycBUlXA7wHBWcBrjqnAw
     short-id: 7dbf7d3233971d5c
 - name: '🇷🇺 UFO Hosting — #41'
   type: vless
-  server: 91.219.227.200
+  server: 91.219.227.189
   port: 80
-  uuid: 983d6d9a-d4c2-4be7-8cf0-a8a1c56616f5
+  uuid: c5c9bbbd-5296-4afa-9f8c-69fccf439d90
   tls: true
-  sni: sso.passport.yandex.ru
+  sni: max.ru
   client-fingerprint: chrome
   reality-opts:
     public-key: Z84J2IelR9ch3k8VtlVhhs5ycBUlXA7wHBWcBrjqnAw
     short-id: 7dbf7d3233971d5c
 - name: '🇷🇺 UFO Hosting — #42'
   type: vless
-  server: 91.219.227.200
+  server: 95.163.211.240
   port: 80
-  uuid: 983d6d9a-d4c2-4be7-8cf0-a8a1c56616f5
+  uuid: c5c9bbbd-5296-4afa-9f8c-69fccf439d90
   tls: true
-  sni: eh.vk.com
+  sni: max.ru
   client-fingerprint: chrome
   reality-opts:
     public-key: Z84J2IelR9ch3k8VtlVhhs5ycBUlXA7wHBWcBrjqnAw
     short-id: 7dbf7d3233971d5c
 - name: '🇷🇺 UFO Hosting — #43'
   type: vless
-  server: 91.219.227.189
+  server: 91.219.227.200
   port: 80
-  uuid: 983d6d9a-d4c2-4be7-8cf0-a8a1c56616f5
+  uuid: c5c9bbbd-5296-4afa-9f8c-69fccf439d90
   tls: true
   sni: eh.vk.com
   client-fingerprint: chrome
@@ -492,20 +474,20 @@ proxies:
     short-id: 7dbf7d3233971d5c
 - name: '🇷🇺 UFO Hosting — #44'
   type: vless
-  server: 95.163.211.237
+  server: 95.163.211.240
   port: 80
-  uuid: 983d6d9a-d4c2-4be7-8cf0-a8a1c56616f5
+  uuid: c5c9bbbd-5296-4afa-9f8c-69fccf439d90
   tls: true
   sni: eh.vk.com
-  client-fingerprint: qq
+  client-fingerprint: chrome
   reality-opts:
     public-key: Z84J2IelR9ch3k8VtlVhhs5ycBUlXA7wHBWcBrjqnAw
     short-id: 7dbf7d3233971d5c
 - name: '🇷🇺 VPSVille — #45'
   type: vless
-  server: 37.18.15.174
+  server: 81.94.148.168
   port: 443
-  uuid: 62687b27-d18f-4af3-96ef-b03b587f0df5
+  uuid: 0a342696-4fdd-4ff8-ad6e-c32ca625fcd2
   tls: true
   flow: xtls-rprx-vision
   sni: x5.ru
