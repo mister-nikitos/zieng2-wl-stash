@@ -27,7 +27,7 @@ proxies:
   type: vless
   server: 89.208.231.191
   port: 52006
-  uuid: 09606ba3-c89c-07d0-8383-21c9edb6831b
+  uuid: b06a8fde-d409-07d0-b11a-a0fc0ecd522c
   tls: true
   flow: xtls-rprx-vision
   client-fingerprint: chrome
@@ -35,6 +35,16 @@ proxies:
   - h2
   - http/1.1
 - name: '🇷🇺 Beget — #4'
+  type: vless
+  server: 217.26.24.101
+  port: 23151
+  uuid: 9287f532-4150-48ff-a755-64b21e30e9c3
+  tls: true
+  flow: xtls-rprx-vision
+  sni: cms-res-web.online.sberbank.ru
+  reality-opts:
+    public-key: eP0MKUFOcNVSVFbHT8GgBLP4LIHZFq8JuVGlCAlH1HI
+- name: '🇷🇺 Beget — #5'
   type: vless
   server: 193.168.46.180
   port: 443
@@ -46,7 +56,7 @@ proxies:
   reality-opts:
     public-key: D0FqzTuVSzCF8IcFo64SFIpMsaGV47LW3el2GCCVoFY
     short-id: c1a7e9b4711d5f60
-- name: '🇷🇺 Beget — #5'
+- name: '🇷🇺 Beget — #6'
   type: vless
   server: 193.168.46.180
   port: 443
@@ -58,7 +68,7 @@ proxies:
   reality-opts:
     public-key: D0FqzTuVSzCF8IcFo64SFIpMsaGV47LW3el2GCCVoFY
     short-id: c1a7e9b4711d5f60
-- name: '🇷🇺 Beget — #6'
+- name: '🇷🇺 Beget — #7'
   type: vless
   server: 193.168.46.180
   port: 443
@@ -70,17 +80,6 @@ proxies:
   reality-opts:
     public-key: D0FqzTuVSzCF8IcFo64SFIpMsaGV47LW3el2GCCVoFY
     short-id: c1a7e9b4711d5f60
-- name: '🇷🇺 Beget — #7'
-  type: vless
-  server: 217.26.24.101
-  port: 23151
-  uuid: 9287f532-4150-48ff-a755-64b21e30e9c3
-  tls: true
-  flow: xtls-rprx-vision
-  sni: cms-res-web.online.sberbank.ru
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: eP0MKUFOcNVSVFbHT8GgBLP4LIHZFq8JuVGlCAlH1HI
 - name: '🇷🇺 Beget — #8'
   type: vless
   server: 193.168.46.180
@@ -107,16 +106,6 @@ proxies:
     short-id: c1a7e9b4711d5f60
 - name: '🇷🇺 Beget — #10'
   type: vless
-  server: 217.26.24.101
-  port: 23151
-  uuid: 9287f532-4150-48ff-a755-64b21e30e9c3
-  tls: true
-  flow: xtls-rprx-vision
-  sni: cms-res-web.online.sberbank.ru
-  reality-opts:
-    public-key: eP0MKUFOcNVSVFbHT8GgBLP4LIHZFq8JuVGlCAlH1HI
-- name: '🇷🇺 Beget — #11'
-  type: vless
   server: 45.12.75.242
   port: 26424
   uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
@@ -125,7 +114,7 @@ proxies:
   reality-opts:
     public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
     short-id: 23103e1e
-- name: '🇷🇺 Beget — #12'
+- name: '🇷🇺 Beget — #11'
   type: vless
   server: 45.12.75.242
   port: 26424
@@ -136,72 +125,7 @@ proxies:
   reality-opts:
     public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
     short-id: 23103e1e
-- name: '🇷🇺 Selectel — #13'
-  type: vless
-  server: 37.9.4.237
-  port: 443
-  uuid: cd7026dd-442d-406d-9b7c-faec61232a3b
-  network: grpc
-  tls: true
-  sni: kalugaru.instrumentidlyadoma.com
-  client-fingerprint: randomized
-  grpc-opts:
-    grpc-service-name: kalugaru.instrumentidlyadoma.com
-  reality-opts:
-    public-key: tv8VCP2i9WGt3tEaCbdo93NVHwl6Evd1aB6OpnG3ZDs
-- name: '🇷🇺 Selectel — #14'
-  type: vless
-  server: 185.91.54.12
-  port: 443
-  uuid: cd7026dd-442d-406d-9b7c-faec61232a3b
-  network: grpc
-  tls: true
-  sni: pirogovoru.instrumentidlyadoma.com
-  client-fingerprint: randomized
-  grpc-opts:
-    grpc-service-name: pirogovoru.instrumentidlyadoma.com
-  reality-opts:
-    public-key: hcrfswC54uZFwQxdFzFT7kkaQJSTpF_xjr1kHCI08mw
-- name: '🇷🇺 Selectel — #15'
-  type: vless
-  server: 5.178.85.238
-  port: 443
-  uuid: cd7026dd-442d-406d-9b7c-faec61232a3b
-  network: grpc
-  tls: true
-  sni: uhtaru.instrumentidlyadoma.com
-  client-fingerprint: randomized
-  grpc-opts:
-    grpc-service-name: uhtaru.instrumentidlyadoma.com
-  reality-opts:
-    public-key: sOx7AkBNtLuAdWCzqYPxjOErfqI5CeDzbJleGJqp8WU
-- name: '🇷🇺 Selectel — #16'
-  type: vless
-  server: 5.188.115.27
-  port: 443
-  uuid: cd7026dd-442d-406d-9b7c-faec61232a3b
-  network: grpc
-  tls: true
-  sni: rogovoru.instrumentidlyadoma.com
-  client-fingerprint: randomized
-  grpc-opts:
-    grpc-service-name: rogovoru.instrumentidlyadoma.com
-  reality-opts:
-    public-key: mcSB8VHQwqXzWo7oA7RWii3SLVngh63eJOEjxqHKzn8
-- name: '🇷🇺 Selectel — #17'
-  type: vless
-  server: 185.91.52.231
-  port: 443
-  uuid: cd7026dd-442d-406d-9b7c-faec61232a3b
-  network: grpc
-  tls: true
-  sni: elecru.instrumentidlyadoma.com
-  client-fingerprint: randomized
-  grpc-opts:
-    grpc-service-name: elecru.instrumentidlyadoma.com
-  reality-opts:
-    public-key: qmj3LynPhFqW4pVQf47vfPx-nnykWXxuzNoWmw_DEyc
-- name: '🇷🇺 Timeweb — #18'
+- name: '🇷🇺 Timeweb — #12'
   type: vless
   server: 85.193.87.63
   port: 2040
@@ -212,35 +136,11 @@ proxies:
   reality-opts:
     public-key: LidllyozUeeSbuzJ0ZfieGoy8YjVzqXX9H2m9whPaG0
     short-id: 53197c66aef53c44
-- name: '🇷🇺 Timeweb — #19'
+- name: '🇷🇺 Timeweb — #13'
   type: vless
   server: 62.113.43.195
   port: 443
-  uuid: 4641e215-dd56-4633-8ae1-8be21db654f5
-  tls: true
-  flow: xtls-rprx-vision
-  sni: ads.x5.ru
-  client-fingerprint: qq
-  reality-opts:
-    public-key: RJETAkoZ6lowmwc5f0HtPy00c3dfojqQuypriLExXRE
-    short-id: abbcd128
-- name: '🇷🇺 Timeweb — #20'
-  type: vless
-  server: 62.113.43.195
-  port: 443
-  uuid: 4641e215-dd56-4633-8ae1-8be21db654f5
-  tls: true
-  flow: xtls-rprx-vision
-  sni: eh.vk.com
-  client-fingerprint: qq
-  reality-opts:
-    public-key: RJETAkoZ6lowmwc5f0HtPy00c3dfojqQuypriLExXRE
-    short-id: abbcd128
-- name: '🇷🇺 Timeweb — #21'
-  type: vless
-  server: 62.113.43.195
-  port: 443
-  uuid: 4641e215-dd56-4633-8ae1-8be21db654f5
+  uuid: 00ac9a12-dbb3-4c36-aadc-e22bc0334d4c
   tls: true
   flow: xtls-rprx-vision
   sni: api-maps.yandex.ru
@@ -248,29 +148,52 @@ proxies:
   reality-opts:
     public-key: RJETAkoZ6lowmwc5f0HtPy00c3dfojqQuypriLExXRE
     short-id: abbcd128
-- name: '🇷🇺 Yakovlev Denis Alexandrovich — #22'
+- name: '🇷🇺 Timeweb — #14'
   type: vless
-  server: 185.91.54.12
+  server: 62.113.43.195
   port: 443
-  uuid: cd7026dd-442d-0064-9b7c-faec61232a3b
+  uuid: 00ac9a12-dbb3-4c36-aadc-e22bc0334d4c
+  tls: true
+  flow: xtls-rprx-vision
+  sni: ads.x5.ru
+  client-fingerprint: qq
+  reality-opts:
+    public-key: RJETAkoZ6lowmwc5f0HtPy00c3dfojqQuypriLExXRE
+    short-id: abbcd128
+- name: '🇷🇺 Timeweb — #15'
+  type: vless
+  server: 62.113.43.195
+  port: 443
+  uuid: 00ac9a12-dbb3-4c36-aadc-e22bc0334d4c
+  tls: true
+  flow: xtls-rprx-vision
+  sni: eh.vk.com
+  client-fingerprint: qq
+  reality-opts:
+    public-key: RJETAkoZ6lowmwc5f0HtPy00c3dfojqQuypriLExXRE
+    short-id: abbcd128
+- name: '🇷🇺 Timeweb — #16'
+  type: vless
+  server: 89.208.231.191
+  port: 52006
+  uuid: b06a8fde-d409-1f40-b11a-a0fc0ecd522c
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  alpn:
+  - h2
+  - http/1.1
+- name: '🇷🇺 UFO Hosting — #17'
+  type: vless
+  server: 37.9.4.134
+  port: 3443
+  uuid: cd739db7-0c56-4fe9-9d22-b6859362805a
   network: grpc
   tls: true
-  sni: pirogovoru.instrumentidlyadoma.com
-  client-fingerprint: randomized
+  sni: ads.x5.ru
+  client-fingerprint: chrome
   grpc-opts:
-    grpc-service-name: pirogovoru.instrumentidlyadoma.com
+    grpc-service-name: grpc-vk
   reality-opts:
-    public-key: hcrfswC54uZFwQxdFzFT7kkaQJSTpF_xjr1kHCI08mw
-- name: '🇷🇺 Yakovlev Denis Alexandrovich — #23'
-  type: vless
-  server: 81.163.22.17
-  port: 443
-  uuid: cd7026dd-442d-0064-9b7c-faec61232a3b
-  network: grpc
-  tls: true
-  sni: vorkutaru.instrumentidlyadoma.com
-  client-fingerprint: randomized
-  grpc-opts:
-    grpc-service-name: vorkutaru.instrumentidlyadoma.com
-  reality-opts:
-    public-key: 1KWR1P113nLmZyossZtQu2KXtIzGR0Y4YLTuKLMQ0B0
+    public-key: sgFFdQvfeujBKh6g7N7klU_u0mKYlr800MFbko5FzUg
+    short-id: e67fb918ed6b9ffb
