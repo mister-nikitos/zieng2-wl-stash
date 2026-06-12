@@ -1,27 +1,16 @@
 proxies:
 - name: '🇷🇺 VK — #1'
   type: vless
-  server: 89.208.230.241
-  port: 5443
-  uuid: a6bd2cf2-cb83-4ac3-82a3-350cc9d0d469
-  tls: true
-  flow: xtls-rprx-vision
-  sni: max.ru
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: LGcG8Sqv5vPDypbaEgHV0ZGqQOBkgDepPWXyDohbVXQ
-- name: '🇷🇺 VK — #2'
-  type: vless
   server: 185.86.146.15
   port: 5443
   uuid: a6bd2cf2-cb83-4ac3-82a3-350cc9d0d469
   tls: true
   flow: xtls-rprx-vision
   sni: max.ru
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   reality-opts:
     public-key: LGcG8Sqv5vPDypbaEgHV0ZGqQOBkgDepPWXyDohbVXQ
-- name: '🇷🇺 VK — #3'
+- name: '🇷🇺 VK — #2'
   type: vless
   server: 5.188.140.160
   port: 5443
@@ -32,6 +21,17 @@ proxies:
   client-fingerprint: chrome
   reality-opts:
     public-key: LGcG8Sqv5vPDypbaEgHV0ZGqQOBkgDepPWXyDohbVXQ
+- name: '🇷🇺 VK — #3'
+  type: vless
+  server: 89.208.230.241
+  port: 5443
+  uuid: a6bd2cf2-cb83-4ac3-82a3-350cc9d0d469
+  tls: true
+  flow: xtls-rprx-vision
+  sni: max.ru
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: LGcG8Sqv5vPDypbaEgHV0ZGqQOBkgDepPWXyDohbVXQ
 - name: '🇷🇺 VK — #4'
   type: vless
   server: 185.86.146.15
@@ -40,7 +40,7 @@ proxies:
   tls: true
   flow: xtls-rprx-vision
   sni: max.ru
-  client-fingerprint: chrome
+  client-fingerprint: firefox
   reality-opts:
     public-key: LGcG8Sqv5vPDypbaEgHV0ZGqQOBkgDepPWXyDohbVXQ
 - name: '🇷🇺 VK — #5'
@@ -58,29 +58,30 @@ proxies:
   type: vless
   server: 89.208.231.191
   port: 52006
-  uuid: 99156acf-d04f-07d0-b3da-01b3a8df701b
+  uuid: 183dabd8-b351-07d0-9862-5d0521c5cede
   tls: true
   flow: xtls-rprx-vision
   client-fingerprint: chrome
   alpn:
   - h2
   - http/1.1
-- name: '🇷🇺 VK — #7'
+- name: '🇷🇺 Beget — #7'
   type: vless
-  server: 89.208.231.191
-  port: 52006
-  uuid: 99156acf-d04f-0fa0-b3da-01b3a8df701b
+  server: 193.168.46.180
+  port: 443
+  uuid: 124d7ac2-2024-46f5-a361-fdc7b7895677
   tls: true
   flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
+  sni: rruu.persik.host
+  client-fingerprint: qq
+  reality-opts:
+    public-key: D0FqzTuVSzCF8IcFo64SFIpMsaGV47LW3el2GCCVoFY
+    short-id: c1a7e9b4711d5f60
 - name: '🇷🇺 Beget — #8'
   type: vless
   server: 193.168.46.180
   port: 443
-  uuid: 03cbd733-490d-4476-acab-14aa7d6d831a
+  uuid: 5e01d0a3-22a1-4de2-8af0-fbc00934089d
   tls: true
   flow: xtls-rprx-vision
   sni: rruu.persik.host
@@ -92,7 +93,7 @@ proxies:
   type: vless
   server: 193.168.46.180
   port: 443
-  uuid: 879d1619-7062-4da9-af6a-935e741bb016
+  uuid: a7cd9ba7-633e-48d6-9718-e5f909b024be
   tls: true
   flow: xtls-rprx-vision
   sni: rruu.persik.host
@@ -104,7 +105,7 @@ proxies:
   type: vless
   server: 193.168.46.180
   port: 443
-  uuid: cc6e408d-634f-4130-ad0b-0c8dcb2a05e9
+  uuid: 5722c7d6-8ace-4751-a2df-31ae2217af73
   tls: true
   flow: xtls-rprx-vision
   sni: rruu.persik.host
@@ -116,7 +117,7 @@ proxies:
   type: vless
   server: 193.168.46.180
   port: 443
-  uuid: b830919f-f22b-45b3-aab3-dfa71d7c6c2f
+  uuid: 5bf100aa-24f7-4290-83bd-62357cc0c3d5
   tls: true
   flow: xtls-rprx-vision
   sni: rruu.persik.host
@@ -126,18 +127,6 @@ proxies:
     short-id: c1a7e9b4711d5f60
 - name: '🇷🇺 Beget — #12'
   type: vless
-  server: 193.168.46.180
-  port: 443
-  uuid: 3d5ae186-3e37-4b15-b63e-15e41e783254
-  tls: true
-  flow: xtls-rprx-vision
-  sni: rruu.persik.host
-  client-fingerprint: qq
-  reality-opts:
-    public-key: D0FqzTuVSzCF8IcFo64SFIpMsaGV47LW3el2GCCVoFY
-    short-id: c1a7e9b4711d5f60
-- name: '🇷🇺 Beget — #13'
-  type: vless
   server: 45.12.75.242
   port: 26424
   uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
@@ -146,7 +135,7 @@ proxies:
   reality-opts:
     public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
     short-id: 23103e1e
-- name: '🇷🇺 Beget — #14'
+- name: '🇷🇺 Beget — #13'
   type: vless
   server: 45.12.75.242
   port: 26424
@@ -157,7 +146,7 @@ proxies:
   reality-opts:
     public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
     short-id: 23103e1e
-- name: '🇷🇺 cloud.ru — #15'
+- name: '🇷🇺 cloud.ru — #14'
   type: vless
   server: 176.108.245.184
   port: 25565
@@ -168,44 +157,11 @@ proxies:
   client-fingerprint: chrome
   reality-opts:
     public-key: 4i3aVyDqVM-6wbiUQnfaXfBwQkNXxQp5YQZ4SRVbL2I
-- name: '🇷🇺 cloud.ru — #16'
+- name: '🇷🇺 Datahouse.ru — #15'
   type: vless
-  server: 176.108.243.162
-  port: 1505
-  uuid: b84bd2ec-6a5d-4fbb-89af-31cc8ef458d7
-  tls: true
-  flow: xtls-rprx-vision
-  sni: gp.x5.ru
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: 2YCYnPqsLgEgKPyjwE0MJJ0xV13Daeg3WN7wDrAdD3I
-- name: '🇷🇺 cloud.ru — #17'
-  type: vless
-  server: 176.123.165.17
-  port: 27015
-  uuid: b84bd2ec-6a5d-4fbb-89af-31cc8ef458d7
-  tls: true
-  flow: xtls-rprx-vision
-  sni: cdp.x5.ru
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: 3ui1m1pntYNW-iQfGRkM-nF-tZM4SzKbQM_R1jWT6yg
-- name: '🇷🇺 cloud.ru — #18'
-  type: vless
-  server: 176.108.243.211
-  port: 1255
-  uuid: b84bd2ec-6a5d-4fbb-89af-31cc8ef458d7
-  tls: true
-  flow: xtls-rprx-vision
-  sni: www.vk.com
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: kTDSBp4QGP4ob2GsBXkJAsSggJ6thuIuyfJQajX_RW4
-- name: '🇷🇺 Datahouse.ru — #19'
-  type: vless
-  server: 62.152.58.207
+  server: 62.152.58.208
   port: 443
-  uuid: c3049605-9ec0-43df-8e72-652881ef93d9
+  uuid: bf2dbf17-c9ab-4727-a7c4-5299f0e3356a
   tls: true
   flow: xtls-rprx-vision
   sni: yandex.ru
@@ -213,93 +169,11 @@ proxies:
   reality-opts:
     public-key: uqKo06QN98uCn95hbm3HhrMJTkS0tm3e6DZ7IDe1_gY
     short-id: d7b684f29aaea33a
-- name: '🇷🇺 Datahouse.ru — #20'
-  type: vless
-  server: 62.152.58.207
-  port: 443
-  uuid: c3049605-9ec0-43df-8e72-652881ef93d9
-  tls: true
-  flow: xtls-rprx-vision
-  sni: ads.x5.ru
-  client-fingerprint: qq
-  reality-opts:
-    public-key: Rde4-AW3R30RbpIkfiRcPdFalUsLAUdgerk2IYjwkBA
-    short-id: d8b81daaad76dc9c
-- name: '🇷🇺 reg.ru — #21'
-  type: vless
-  server: 79.174.91.45
-  port: 7443
-  uuid: b0ce99fa-9ecc-4ebf-8400-8c1e21f5f1f3
-  tls: true
-  flow: xtls-rprx-vision
-  sni: 5post-gate.x5.ru
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: 5tUy6yxqdIDuncx4zBJR7r3UN7AxKDVdbUGEP5Qdhxk
-    short-id: 2fe645f6
-- name: '🇷🇺 Timeweb — #22'
-  type: vless
-  server: 89.223.68.130
-  port: 443
-  uuid: bbaaff1e-c914-4817-9d33-58be35a3bee6
-  tls: true
-  flow: xtls-rprx-vision
-  sni: serv-ru-2.whit3.net
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: nhAokqXGOVhoKptzb4oHyF5_Kj88T7yebPppzJDVQ3s
-    short-id: 7db0264ba766f307
-- name: '🇷🇺 Timeweb — #23'
-  type: vless
-  server: 89.223.68.130
-  port: 443
-  uuid: bbaaff1e-c914-4817-9d33-58be35a3bee6
-  tls: true
-  flow: xtls-rprx-vision
-  sni: serv-ru-2.whit3.net
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: nhAokqXGOVhoKptzb4oHyF5_Kj88T7yebPppzJDVQ3s
-    short-id: 7db0264ba766f307
-- name: '🇷🇺 Timeweb — #24'
-  type: vless
-  server: 31.130.135.216
-  port: 8443
-  uuid: 4c872cd3-7aa2-43ad-8f75-a71fb0d3c2c1
-  tls: true
-  flow: xtls-rprx-vision
-  sni: apple.com
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: kt-wshmPVd-J1dlU-tsXUoGag2-oFwYQ5UafScaAfzQ
-- name: '🇷🇺 Timeweb — #25'
-  type: vless
-  server: 77.233.223.14
-  port: 443
-  uuid: dcda55c6-6ff4-4636-af62-75ee9cb266f3
-  tls: true
-  flow: xtls-rprx-vision
-  sni: sellflow.org
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-- name: '🇷🇺 Timeweb — #26'
+- name: '🇷🇺 Timeweb — #16'
   type: vless
   server: 62.113.43.195
   port: 443
-  uuid: dddbff9a-3999-47ef-802d-63018feaad2d
-  tls: true
-  flow: xtls-rprx-vision
-  sni: ads.x5.ru
-  client-fingerprint: qq
-  reality-opts:
-    public-key: RJETAkoZ6lowmwc5f0HtPy00c3dfojqQuypriLExXRE
-    short-id: abbcd128
-- name: '🇷🇺 Timeweb — #27'
-  type: vless
-  server: 62.113.43.195
-  port: 443
-  uuid: dddbff9a-3999-47ef-802d-63018feaad2d
+  uuid: 88509ed0-2ff0-488e-9b52-ae6e9e43806d
   tls: true
   flow: xtls-rprx-vision
   sni: api-maps.yandex.ru
@@ -307,11 +181,23 @@ proxies:
   reality-opts:
     public-key: RJETAkoZ6lowmwc5f0HtPy00c3dfojqQuypriLExXRE
     short-id: abbcd128
-- name: '🇷🇺 Timeweb — #28'
+- name: '🇷🇺 Timeweb — #17'
   type: vless
   server: 62.113.43.195
   port: 443
-  uuid: dddbff9a-3999-47ef-802d-63018feaad2d
+  uuid: 88509ed0-2ff0-488e-9b52-ae6e9e43806d
+  tls: true
+  flow: xtls-rprx-vision
+  sni: ads.x5.ru
+  client-fingerprint: qq
+  reality-opts:
+    public-key: RJETAkoZ6lowmwc5f0HtPy00c3dfojqQuypriLExXRE
+    short-id: abbcd128
+- name: '🇷🇺 Timeweb — #18'
+  type: vless
+  server: 62.113.43.195
+  port: 443
+  uuid: 88509ed0-2ff0-488e-9b52-ae6e9e43806d
   tls: true
   flow: xtls-rprx-vision
   sni: eh.vk.com
@@ -319,14 +205,3 @@ proxies:
   reality-opts:
     public-key: RJETAkoZ6lowmwc5f0HtPy00c3dfojqQuypriLExXRE
     short-id: abbcd128
-- name: '🇷🇺 Timeweb — #29'
-  type: vless
-  server: 89.208.231.191
-  port: 52006
-  uuid: 99156acf-d04f-1f40-b3da-01b3a8df701b
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
