@@ -7,26 +7,38 @@ proxies:
   tls: true
   flow: xtls-rprx-vision
   sni: download.max.ru
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: uAEnruG3uui3vI_hofiVrBFbRiLM-DKKWYTnZdj8lDE
+    short-id: 9216f60472db2a30
+- name: '🇷🇺 VK — #2'
+  type: vless
+  server: 185.86.147.210
+  port: 443
+  uuid: 47ab09c5-b2cc-441f-b5e5-6782b722d3ee
+  tls: true
+  flow: xtls-rprx-vision
+  sni: download.max.ru
   client-fingerprint: chrome
   reality-opts:
     public-key: uAEnruG3uui3vI_hofiVrBFbRiLM-DKKWYTnZdj8lDE
     short-id: a72b4a844f7197b2
-- name: '🇷🇺 VK — #2'
+- name: '🇷🇺 VK — #3'
   type: vless
   server: 89.208.231.191
   port: 52006
-  uuid: bf8c0027-9b63-07d0-ae53-a3c455f1760e
+  uuid: 3a72f237-ec06-07d0-a5b2-ffdeda775c76
   tls: true
   flow: xtls-rprx-vision
   client-fingerprint: chrome
   alpn:
   - h2
   - http/1.1
-- name: '🇷🇺 Beget — #3'
+- name: '🇷🇺 Beget — #4'
   type: vless
   server: 193.168.46.180
   port: 443
-  uuid: 2118b31c-73e9-4fc3-9edf-6ce42fab97e0
+  uuid: ffa01d9f-873f-4f01-89b9-569629a92e7f
   tls: true
   flow: xtls-rprx-vision
   sni: rruu.persik.host
@@ -34,23 +46,11 @@ proxies:
   reality-opts:
     public-key: D0FqzTuVSzCF8IcFo64SFIpMsaGV47LW3el2GCCVoFY
     short-id: c1a7e9b4711d5f60
-- name: '🇷🇺 Beget — #4'
-  type: vless
-  server: 193.168.46.180
-  port: 443
-  uuid: c5628933-7eb7-4656-a821-523da5cf5903
-  tls: true
-  flow: xtls-rprx-vision
-  sni: rruu.persik.host
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: D0FqzTuVSzCF8IcFo64SFIpMsaGV47LW3el2GCCVoFY
-    short-id: c1a7e9b4711d5f60
 - name: '🇷🇺 Beget — #5'
   type: vless
   server: 193.168.46.180
   port: 443
-  uuid: fa52344e-35ab-4a38-8dab-32850efb23fd
+  uuid: b7cbdd29-fdd2-44b0-8277-8633e5df1a28
   tls: true
   flow: xtls-rprx-vision
   sni: rruu.persik.host
@@ -60,14 +60,16 @@ proxies:
     short-id: c1a7e9b4711d5f60
 - name: '🇷🇺 Beget — #6'
   type: vless
-  server: 45.12.75.242
-  port: 26424
-  uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
+  server: 193.168.46.180
+  port: 443
+  uuid: 06d8b56e-e316-4497-a7d1-c8a4498b83bc
   tls: true
-  sni: ya.ru
+  flow: xtls-rprx-vision
+  sni: rruu.persik.host
+  client-fingerprint: qq
   reality-opts:
-    public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
-    short-id: 23103e1e
+    public-key: D0FqzTuVSzCF8IcFo64SFIpMsaGV47LW3el2GCCVoFY
+    short-id: c1a7e9b4711d5f60
 - name: '🇷🇺 Beget — #7'
   type: vless
   server: 193.168.46.180
@@ -84,7 +86,7 @@ proxies:
   type: vless
   server: 193.168.46.180
   port: 443
-  uuid: 3e710634-7a0d-42dd-af3f-03b189655d0b
+  uuid: 2118b31c-73e9-4fc3-9edf-6ce42fab97e0
   tls: true
   flow: xtls-rprx-vision
   sni: rruu.persik.host
@@ -107,31 +109,19 @@ proxies:
   type: vless
   server: 193.168.46.180
   port: 443
-  uuid: 2af9d255-926a-43b7-8ad8-1e520e912422
+  uuid: c5628933-7eb7-4656-a821-523da5cf5903
   tls: true
   flow: xtls-rprx-vision
   sni: rruu.persik.host
-  client-fingerprint: qq
+  client-fingerprint: firefox
   reality-opts:
     public-key: D0FqzTuVSzCF8IcFo64SFIpMsaGV47LW3el2GCCVoFY
     short-id: c1a7e9b4711d5f60
-- name: '🇷🇺 Beget — #11'
+- name: '🇷🇺 Datahouse.ru — #11'
   type: vless
-  server: 212.67.12.8
+  server: 62.152.58.208
   port: 443
-  uuid: 5cd26f2d-e015-42f6-b999-fc1ac8284bc8
-  tls: true
-  flow: xtls-rprx-vision
-  sni: windows64.net
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: gRiIgKvVibyGZ2E2Oe5smDFBxtUYH7IWISfkUGrozC0
-    short-id: 2c5b9267fa9bb0d0
-- name: '🇷🇺 Datahouse.ru — #12'
-  type: vless
-  server: 62.152.58.205
-  port: 443
-  uuid: d80a46b7-d70f-4938-a9d0-73c37301b988
+  uuid: 65a4ffe4-0219-4f4d-8e17-d8094f828d6a
   tls: true
   flow: xtls-rprx-vision
   sni: yandex.ru
@@ -139,11 +129,11 @@ proxies:
   reality-opts:
     public-key: uqKo06QN98uCn95hbm3HhrMJTkS0tm3e6DZ7IDe1_gY
     short-id: d7b684f29aaea33a
-- name: '🇷🇺 Datahouse.ru — #13'
+- name: '🇷🇺 Datahouse.ru — #12'
   type: vless
-  server: 62.152.58.205
+  server: 62.152.58.208
   port: 443
-  uuid: d80a46b7-d70f-4938-a9d0-73c37301b988
+  uuid: 65a4ffe4-0219-4f4d-8e17-d8094f828d6a
   tls: true
   flow: xtls-rprx-vision
   sni: www.vk.com
@@ -151,7 +141,7 @@ proxies:
   reality-opts:
     public-key: Rde4-AW3R30RbpIkfiRcPdFalUsLAUdgerk2IYjwkBA
     short-id: d8b81daaad76dc9c
-- name: '🇷🇺 ServTech LTD — #14'
+- name: '🇷🇺 ServTech LTD — #13'
   type: vless
   server: 194.93.0.219
   port: 48350
@@ -162,14 +152,26 @@ proxies:
   client-fingerprint: firefox
   reality-opts:
     public-key: Ea23HWLvV6k7UjJ8xCsUH2UI0oyasSLjXV84aTXQ6Uk
+- name: '🇷🇺 Timeweb — #14'
+  type: vless
+  server: 62.113.43.195
+  port: 443
+  uuid: bd34aa1c-46e3-4eef-a845-2dbdccb9f4c3
+  tls: true
+  flow: xtls-rprx-vision
+  sni: ads.x5.ru
+  client-fingerprint: qq
+  reality-opts:
+    public-key: RJETAkoZ6lowmwc5f0HtPy00c3dfojqQuypriLExXRE
+    short-id: abbcd128
 - name: '🇷🇺 Timeweb — #15'
   type: vless
   server: 62.113.43.195
   port: 443
-  uuid: 854087a2-a86b-46ee-b8f0-a1ddbf15e9c4
+  uuid: bd34aa1c-46e3-4eef-a845-2dbdccb9f4c3
   tls: true
   flow: xtls-rprx-vision
-  sni: ads.x5.ru
+  sni: eh.vk.com
   client-fingerprint: qq
   reality-opts:
     public-key: RJETAkoZ6lowmwc5f0HtPy00c3dfojqQuypriLExXRE
@@ -178,7 +180,7 @@ proxies:
   type: vless
   server: 62.113.43.195
   port: 443
-  uuid: 854087a2-a86b-46ee-b8f0-a1ddbf15e9c4
+  uuid: bd34aa1c-46e3-4eef-a845-2dbdccb9f4c3
   tls: true
   flow: xtls-rprx-vision
   sni: api-maps.yandex.ru
@@ -186,23 +188,11 @@ proxies:
   reality-opts:
     public-key: RJETAkoZ6lowmwc5f0HtPy00c3dfojqQuypriLExXRE
     short-id: abbcd128
-- name: '🇷🇺 Timeweb — #17'
+- name: '🇷🇺 UFO Hosting — #17'
   type: vless
-  server: 62.113.43.195
-  port: 443
-  uuid: 854087a2-a86b-46ee-b8f0-a1ddbf15e9c4
-  tls: true
-  flow: xtls-rprx-vision
-  sni: eh.vk.com
-  client-fingerprint: qq
-  reality-opts:
-    public-key: RJETAkoZ6lowmwc5f0HtPy00c3dfojqQuypriLExXRE
-    short-id: abbcd128
-- name: '🇷🇺 UFO Hosting — #18'
-  type: vless
-  server: 185.91.53.53
+  server: 185.91.52.217
   port: 1445
-  uuid: 57bd59bb-b61e-4fda-ab70-6fc06f141fd5
+  uuid: 3298da97-3842-4844-8373-186c133df355
   network: grpc
   tls: true
   sni: ads.x5.ru
@@ -211,4 +201,4 @@ proxies:
     grpc-service-name: grpc-vk
   reality-opts:
     public-key: sgFFdQvfeujBKh6g7N7klU_u0mKYlr800MFbko5FzUg
-    short-id: 844352756c1fabba
+    short-id: e67fb918ed6b9ffb
