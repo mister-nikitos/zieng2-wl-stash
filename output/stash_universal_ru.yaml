@@ -25,29 +25,27 @@ proxies:
     short-id: 6148904a
 - name: '🇷🇺 VK — #3'
   type: vless
+  server: 185.86.146.53
+  port: 47000
+  uuid: 0bb3239a-1e0f-4f44-9957-09e70d536125
+  tls: true
+  flow: xtls-rprx-vision
+  sni: yandex.ru
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: 8gvuFoZFiWq4Bqrote2sLeQDvjWKV-FbptzTLAYbsEI
+    short-id: 6148904a
+- name: '🇷🇺 VK — #4'
+  type: vless
   server: 89.208.231.191
   port: 52006
-  uuid: 295b380e-d8cc-07d0-b91f-38ef9480cdfe
+  uuid: de3a5b6a-779d-07d0-8d8c-3ed403280941
   tls: true
   flow: xtls-rprx-vision
   client-fingerprint: chrome
   alpn:
   - h2
   - http/1.1
-- name: '🇷🇺 4vps.su — #4'
-  type: vless
-  server: 45.151.62.25
-  port: 443
-  uuid: 448f6d1f-b658-4dea-a7c6-942f19022ac6
-  network: grpc
-  tls: true
-  sni: unpkg.com
-  client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: xyz
-  reality-opts:
-    public-key: ZrczdfyTT7tbeJ1FYwk6_RBKBkWvJURxYXU7Wn_aRWk
-    short-id: c457b36dfffec3bb
 - name: '🇷🇺 4vps.su — #5'
   type: vless
   server: 45.151.62.25
@@ -64,14 +62,16 @@ proxies:
     short-id: c457b36dfffec3bb
 - name: '🇷🇺 Beget — #6'
   type: vless
-  server: 45.12.75.242
-  port: 26424
-  uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
+  server: 193.168.46.180
+  port: 443
+  uuid: 8acdd9b7-6710-4991-b876-53fdae20f7ca
   tls: true
-  sni: ya.ru
+  flow: xtls-rprx-vision
+  sni: rruu.persik.host
+  client-fingerprint: qq
   reality-opts:
-    public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
-    short-id: 23103e1e
+    public-key: D0FqzTuVSzCF8IcFo64SFIpMsaGV47LW3el2GCCVoFY
+    short-id: c1a7e9b4711d5f60
 - name: '🇷🇺 Beget — #7'
   type: vless
   server: 45.12.75.242
@@ -79,7 +79,6 @@ proxies:
   uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
   tls: true
   sni: ya.ru
-  client-fingerprint: chrome
   reality-opts:
     public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
     short-id: 23103e1e
@@ -101,24 +100,21 @@ proxies:
   uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
   tls: true
   sni: ya.ru
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
+    short-id: 23103e1e
+- name: '🇷🇺 Beget — #10'
+  type: vless
+  server: 45.12.75.242
+  port: 26424
+  uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
+  tls: true
+  sni: ya.ru
   client-fingerprint: firefox
   reality-opts:
     public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
     short-id: 23103e1e
-- name: '🇷🇺 Delta — #10'
-  type: vless
-  server: 89.208.228.221
-  port: 5445
-  uuid: 599907db-9e9e-4c50-b9f1-d1b42cdec21f
-  network: grpc
-  tls: true
-  sni: ads.x5.ru
-  client-fingerprint: qq
-  grpc-opts:
-    grpc-service-name: grpc
-  reality-opts:
-    public-key: cSQW3a_64jadi8uInU7XKZzTDyYKBxWj7c5MgIesIws
-    short-id: bad5722c72a0
 - name: '🇷🇺 Delta — #11'
   type: vless
   server: 89.208.228.221
@@ -141,7 +137,7 @@ proxies:
   network: grpc
   tls: true
   sni: ads.x5.ru
-  client-fingerprint: chrome
+  client-fingerprint: firefox
   grpc-opts:
     grpc-service-name: grpc
   reality-opts:
@@ -155,13 +151,27 @@ proxies:
   network: grpc
   tls: true
   sni: ads.x5.ru
-  client-fingerprint: firefox
+  client-fingerprint: qq
   grpc-opts:
     grpc-service-name: grpc
   reality-opts:
     public-key: cSQW3a_64jadi8uInU7XKZzTDyYKBxWj7c5MgIesIws
     short-id: bad5722c72a0
 - name: '🇷🇺 Delta — #14'
+  type: vless
+  server: 89.208.228.221
+  port: 5445
+  uuid: 599907db-9e9e-4c50-b9f1-d1b42cdec21f
+  network: grpc
+  tls: true
+  sni: ads.x5.ru
+  client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: grpc
+  reality-opts:
+    public-key: cSQW3a_64jadi8uInU7XKZzTDyYKBxWj7c5MgIesIws
+    short-id: bad5722c72a0
+- name: '🇷🇺 Delta — #15'
   type: vless
   server: 89.208.228.221
   port: 5443
@@ -173,18 +183,6 @@ proxies:
   reality-opts:
     public-key: 0y72WqjYlRKbU-VzinCglBJt6ZD7GvDhNnkwDHB8l0Q
     short-id: bad5722c72a038
-- name: '🇷🇺 Delta — #15'
-  type: vless
-  server: 89.208.228.221
-  port: 5443
-  uuid: 599907db-9e9e-4c50-b9f1-d1b42cdec21f
-  tls: true
-  flow: xtls-rprx-vision
-  sni: ads.x5.ru
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: 0y72WqjYlRKbU-VzinCglBJt6ZD7GvDhNnkwDHB8l0Q
-    short-id: bad5722c72a038
 - name: '🇷🇺 Delta — #16'
   type: vless
   server: 89.208.228.221
@@ -193,7 +191,7 @@ proxies:
   tls: true
   flow: xtls-rprx-vision
   sni: ads.x5.ru
-  client-fingerprint: chrome
+  client-fingerprint: firefox
   reality-opts:
     public-key: 0y72WqjYlRKbU-VzinCglBJt6ZD7GvDhNnkwDHB8l0Q
     short-id: bad5722c72a038
@@ -217,22 +215,22 @@ proxies:
   tls: true
   flow: xtls-rprx-vision
   sni: ads.x5.ru
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 0y72WqjYlRKbU-VzinCglBJt6ZD7GvDhNnkwDHB8l0Q
+    short-id: bad5722c72a038
+- name: '🇷🇺 Delta — #19'
+  type: vless
+  server: 89.208.228.221
+  port: 5443
+  uuid: 599907db-9e9e-4c50-b9f1-d1b42cdec21f
+  tls: true
+  flow: xtls-rprx-vision
+  sni: ads.x5.ru
   client-fingerprint: firefox
   reality-opts:
     public-key: 0y72WqjYlRKbU-VzinCglBJt6ZD7GvDhNnkwDHB8l0Q
     short-id: bad5722c72a038
-- name: '🇷🇺 MTS PJSC — #19'
-  type: vless
-  server: 2.59.80.65
-  port: 443
-  uuid: c0fb5126-93f2-45dd-98c7-a1501b93d6db
-  tls: true
-  flow: xtls-rprx-vision
-  sni: rbc.ru
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: rZgu2lJcC2yrYnx66znee-Z75mW6m4TRfWt7_neoEVI
-    short-id: 1b8e04c90af97d47
 - name: '🇷🇺 MTS PJSC — #20'
   type: vless
   server: 2.59.80.65
@@ -244,7 +242,7 @@ proxies:
   client-fingerprint: firefox
   reality-opts:
     public-key: rZgu2lJcC2yrYnx66znee-Z75mW6m4TRfWt7_neoEVI
-    short-id: caa0a516476ad539
+    short-id: 1b8e04c90af97d47
 - name: '🇷🇺 MTS PJSC — #21'
   type: vless
   server: 2.59.80.65
@@ -281,26 +279,26 @@ proxies:
   reality-opts:
     public-key: rZgu2lJcC2yrYnx66znee-Z75mW6m4TRfWt7_neoEVI
     short-id: caa0a516476ad539
-- name: '🇷🇺 Timeweb — #24'
+- name: '🇷🇺 MTS PJSC — #24'
   type: vless
-  server: 62.113.43.195
+  server: 2.59.80.65
   port: 443
-  uuid: 9fbfed95-471c-432b-bf58-4ccfdcb332ed
+  uuid: c0fb5126-93f2-45dd-98c7-a1501b93d6db
   tls: true
   flow: xtls-rprx-vision
-  sni: ads.x5.ru
-  client-fingerprint: qq
+  sni: rbc.ru
+  client-fingerprint: firefox
   reality-opts:
-    public-key: RJETAkoZ6lowmwc5f0HtPy00c3dfojqQuypriLExXRE
-    short-id: abbcd128
+    public-key: rZgu2lJcC2yrYnx66znee-Z75mW6m4TRfWt7_neoEVI
+    short-id: caa0a516476ad539
 - name: '🇷🇺 Timeweb — #25'
   type: vless
   server: 62.113.43.195
   port: 443
-  uuid: 9fbfed95-471c-432b-bf58-4ccfdcb332ed
+  uuid: f0e468f2-c889-4cc1-94d4-60fd5c001fb7
   tls: true
   flow: xtls-rprx-vision
-  sni: eh.vk.com
+  sni: api-maps.yandex.ru
   client-fingerprint: qq
   reality-opts:
     public-key: RJETAkoZ6lowmwc5f0HtPy00c3dfojqQuypriLExXRE
@@ -309,11 +307,34 @@ proxies:
   type: vless
   server: 62.113.43.195
   port: 443
-  uuid: 9fbfed95-471c-432b-bf58-4ccfdcb332ed
+  uuid: f0e468f2-c889-4cc1-94d4-60fd5c001fb7
   tls: true
   flow: xtls-rprx-vision
-  sni: api-maps.yandex.ru
+  sni: ads.x5.ru
   client-fingerprint: qq
   reality-opts:
     public-key: RJETAkoZ6lowmwc5f0HtPy00c3dfojqQuypriLExXRE
     short-id: abbcd128
+- name: '🇷🇺 Timeweb — #27'
+  type: vless
+  server: 62.113.43.195
+  port: 443
+  uuid: f0e468f2-c889-4cc1-94d4-60fd5c001fb7
+  tls: true
+  flow: xtls-rprx-vision
+  sni: eh.vk.com
+  client-fingerprint: qq
+  reality-opts:
+    public-key: RJETAkoZ6lowmwc5f0HtPy00c3dfojqQuypriLExXRE
+    short-id: abbcd128
+- name: '🇷🇺 Timeweb — #28'
+  type: vless
+  server: 89.208.231.191
+  port: 52006
+  uuid: de3a5b6a-779d-1f40-8d8c-3ed403280941
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  alpn:
+  - h2
+  - http/1.1
