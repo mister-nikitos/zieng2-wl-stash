@@ -39,7 +39,7 @@ proxies:
   type: vless
   server: 89.208.231.191
   port: 52006
-  uuid: cb733ddd-55b1-07d0-b179-d3126ea80bc7
+  uuid: 9c0d4517-dace-07d0-ae4d-1577a527e240
   tls: true
   flow: xtls-rprx-vision
   client-fingerprint: chrome
@@ -97,7 +97,7 @@ proxies:
   network: grpc
   tls: true
   sni: ads.x5.ru
-  client-fingerprint: qq
+  client-fingerprint: chrome
   grpc-opts:
     grpc-service-name: grpc
   reality-opts:
@@ -125,13 +125,27 @@ proxies:
   network: grpc
   tls: true
   sni: ads.x5.ru
-  client-fingerprint: firefox
+  client-fingerprint: qq
   grpc-opts:
     grpc-service-name: grpc
   reality-opts:
     public-key: cSQW3a_64jadi8uInU7XKZzTDyYKBxWj7c5MgIesIws
     short-id: bad5722c72a0
 - name: '🇷🇺 Delta — #12'
+  type: vless
+  server: 89.208.228.221
+  port: 5445
+  uuid: 599907db-9e9e-4c50-b9f1-d1b42cdec21f
+  network: grpc
+  tls: true
+  sni: ads.x5.ru
+  client-fingerprint: firefox
+  grpc-opts:
+    grpc-service-name: grpc
+  reality-opts:
+    public-key: cSQW3a_64jadi8uInU7XKZzTDyYKBxWj7c5MgIesIws
+    short-id: bad5722c72a0
+- name: '🇷🇺 Delta — #13'
   type: vless
   server: 89.208.228.221
   port: 5443
@@ -143,18 +157,6 @@ proxies:
   reality-opts:
     public-key: 0y72WqjYlRKbU-VzinCglBJt6ZD7GvDhNnkwDHB8l0Q
     short-id: bad5722c72a038
-- name: '🇷🇺 Delta — #13'
-  type: vless
-  server: 89.208.228.221
-  port: 5443
-  uuid: 599907db-9e9e-4c50-b9f1-d1b42cdec21f
-  tls: true
-  flow: xtls-rprx-vision
-  sni: ads.x5.ru
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: 0y72WqjYlRKbU-VzinCglBJt6ZD7GvDhNnkwDHB8l0Q
-    short-id: bad5722c72a038
 - name: '🇷🇺 Delta — #14'
   type: vless
   server: 89.208.228.221
@@ -163,7 +165,7 @@ proxies:
   tls: true
   flow: xtls-rprx-vision
   sni: ads.x5.ru
-  client-fingerprint: chrome
+  client-fingerprint: firefox
   reality-opts:
     public-key: 0y72WqjYlRKbU-VzinCglBJt6ZD7GvDhNnkwDHB8l0Q
     short-id: bad5722c72a038
@@ -187,24 +189,22 @@ proxies:
   tls: true
   flow: xtls-rprx-vision
   sni: ads.x5.ru
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   reality-opts:
     public-key: 0y72WqjYlRKbU-VzinCglBJt6ZD7GvDhNnkwDHB8l0Q
     short-id: bad5722c72a038
 - name: '🇷🇺 Delta — #17'
   type: vless
   server: 89.208.228.221
-  port: 5445
+  port: 5443
   uuid: 599907db-9e9e-4c50-b9f1-d1b42cdec21f
-  network: grpc
   tls: true
+  flow: xtls-rprx-vision
   sni: ads.x5.ru
-  client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: grpc
+  client-fingerprint: firefox
   reality-opts:
-    public-key: cSQW3a_64jadi8uInU7XKZzTDyYKBxWj7c5MgIesIws
-    short-id: bad5722c72a0
+    public-key: 0y72WqjYlRKbU-VzinCglBJt6ZD7GvDhNnkwDHB8l0Q
+    short-id: bad5722c72a038
 - name: '🇷🇺 MTS PJSC — #18'
   type: vless
   server: 2.59.80.65
@@ -269,10 +269,10 @@ proxies:
   type: vless
   server: 62.113.43.195
   port: 443
-  uuid: c6db7fb4-076a-49d1-8060-91976cfd2f59
+  uuid: e64cbb57-9e53-4578-9f90-a60a50dc5ed6
   tls: true
   flow: xtls-rprx-vision
-  sni: api-maps.yandex.ru
+  sni: ads.x5.ru
   client-fingerprint: qq
   reality-opts:
     public-key: RJETAkoZ6lowmwc5f0HtPy00c3dfojqQuypriLExXRE
@@ -281,10 +281,10 @@ proxies:
   type: vless
   server: 62.113.43.195
   port: 443
-  uuid: c6db7fb4-076a-49d1-8060-91976cfd2f59
+  uuid: e64cbb57-9e53-4578-9f90-a60a50dc5ed6
   tls: true
   flow: xtls-rprx-vision
-  sni: ads.x5.ru
+  sni: api-maps.yandex.ru
   client-fingerprint: qq
   reality-opts:
     public-key: RJETAkoZ6lowmwc5f0HtPy00c3dfojqQuypriLExXRE
@@ -293,7 +293,7 @@ proxies:
   type: vless
   server: 62.113.43.195
   port: 443
-  uuid: c6db7fb4-076a-49d1-8060-91976cfd2f59
+  uuid: e64cbb57-9e53-4578-9f90-a60a50dc5ed6
   tls: true
   flow: xtls-rprx-vision
   sni: eh.vk.com
@@ -301,3 +301,14 @@ proxies:
   reality-opts:
     public-key: RJETAkoZ6lowmwc5f0HtPy00c3dfojqQuypriLExXRE
     short-id: abbcd128
+- name: '🇷🇺 Timeweb — #26'
+  type: vless
+  server: 89.208.231.191
+  port: 52006
+  uuid: 9c0d4517-dace-1f40-ae4d-1577a527e240
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  alpn:
+  - h2
+  - http/1.1
