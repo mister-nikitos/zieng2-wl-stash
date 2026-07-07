@@ -3,7 +3,7 @@ proxies:
   type: vless
   server: 89.208.231.191
   port: 8443
-  uuid: 89682531-06ca-07d0-9894-868a7309a506
+  uuid: da2edde8-d5fc-07d0-b726-a49c1b77a742
   tls: true
   flow: xtls-rprx-vision
   sni: max.ru
@@ -11,20 +11,23 @@ proxies:
   reality-opts:
     public-key: 4CH3o5zOMcFNMbnwXnkAg0FFepmsc0QzhahXkUzb1ik
     short-id: d8c6b58bcbb0c323
-- name: '🇷🇺 Yandex — #2'
-  type: vless
-  server: 84.201.172.67
-  port: 2777
-  uuid: a48c736e-d3de-47b8-a6eb-ef1d6fd34c63
-  tls: true
-  flow: xtls-rprx-vision
-  sni: ads.x5.ru
-  reality-opts:
-    public-key: HyxhIAJ1VbVX77n76vXAps81yWRVbKCr8AC_71sM5Ao
-    short-id: 0f4dacf08722a29f
-- name: '🇷🇺 Aeza Group — #4'
+- name: '🇷🇺 Aeza Group — #3'
   type: vless
   server: 193.233.246.89
+  port: 8443
+  uuid: 41da9cd0-b02c-427a-b74e-7e402c610ae4
+  network: grpc
+  tls: true
+  sni: ads.x5.ru
+  client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: grpc-yandex
+  reality-opts:
+    public-key: sgFFdQvfeujBKh6g7N7klU_u0mKYlr800MFbko5FzUg
+    short-id: 844352756c1fabba
+- name: '🇷🇺 Aeza Group — #4'
+  type: vless
+  server: 193.233.246.85
   port: 8443
   uuid: 41da9cd0-b02c-427a-b74e-7e402c610ae4
   network: grpc
@@ -38,7 +41,7 @@ proxies:
     short-id: 844352756c1fabba
 - name: '🇷🇺 Aeza Group — #5'
   type: vless
-  server: 193.233.246.85
+  server: 193.233.246.76
   port: 8443
   uuid: 41da9cd0-b02c-427a-b74e-7e402c610ae4
   network: grpc
@@ -52,21 +55,19 @@ proxies:
     short-id: 844352756c1fabba
 - name: '🇷🇺 Aeza Group — #6'
   type: vless
-  server: 193.233.246.76
-  port: 8443
+  server: 193.233.246.79
+  port: 443
   uuid: 41da9cd0-b02c-427a-b74e-7e402c610ae4
-  network: grpc
   tls: true
-  sni: ads.x5.ru
-  client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: grpc-yandex
+  flow: xtls-rprx-vision
+  sni: avatars.mds.yandex.net
+  client-fingerprint: qq
   reality-opts:
-    public-key: sgFFdQvfeujBKh6g7N7klU_u0mKYlr800MFbko5FzUg
-    short-id: 844352756c1fabba
+    public-key: 8h8t5eBWL9oERK7xWHQLFJE5j6sZdgNDQAs3EGnNbho
+    short-id: 2f49bccf11150ef2
 - name: '🇷🇺 Aeza Group — #7'
   type: vless
-  server: 193.233.246.79
+  server: 193.233.246.82
   port: 443
   uuid: 41da9cd0-b02c-427a-b74e-7e402c610ae4
   tls: true
@@ -78,7 +79,7 @@ proxies:
     short-id: 2f49bccf11150ef2
 - name: '🇷🇺 Aeza Group — #8'
   type: vless
-  server: 193.233.246.82
+  server: 193.233.246.80
   port: 443
   uuid: 41da9cd0-b02c-427a-b74e-7e402c610ae4
   tls: true
@@ -90,18 +91,6 @@ proxies:
     short-id: 2f49bccf11150ef2
 - name: '🇷🇺 Aeza Group — #9'
   type: vless
-  server: 193.233.246.80
-  port: 443
-  uuid: 41da9cd0-b02c-427a-b74e-7e402c610ae4
-  tls: true
-  flow: xtls-rprx-vision
-  sni: avatars.mds.yandex.net
-  client-fingerprint: qq
-  reality-opts:
-    public-key: 8h8t5eBWL9oERK7xWHQLFJE5j6sZdgNDQAs3EGnNbho
-    short-id: 2f49bccf11150ef2
-- name: '🇷🇺 Aeza Group — #10'
-  type: vless
   server: 193.233.246.76
   port: 443
   uuid: 41da9cd0-b02c-427a-b74e-7e402c610ae4
@@ -112,9 +101,23 @@ proxies:
   reality-opts:
     public-key: 8h8t5eBWL9oERK7xWHQLFJE5j6sZdgNDQAs3EGnNbho
     short-id: 2f49bccf11150ef2
-- name: '🇷🇺 Aeza Group — #12'
+- name: '🇷🇺 Aeza Group — #11'
   type: vless
   server: 193.233.246.82
+  port: 8443
+  uuid: 41da9cd0-b02c-427a-b74e-7e402c610ae4
+  network: grpc
+  tls: true
+  sni: ads.x5.ru
+  client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: grpc-yandex
+  reality-opts:
+    public-key: sgFFdQvfeujBKh6g7N7klU_u0mKYlr800MFbko5FzUg
+    short-id: 844352756c1fabba
+- name: '🇷🇺 Aeza Group — #12'
+  type: vless
+  server: 193.233.246.79
   port: 8443
   uuid: 41da9cd0-b02c-427a-b74e-7e402c610ae4
   network: grpc
@@ -128,20 +131,6 @@ proxies:
     short-id: 844352756c1fabba
 - name: '🇷🇺 Aeza Group — #13'
   type: vless
-  server: 193.233.246.79
-  port: 8443
-  uuid: 41da9cd0-b02c-427a-b74e-7e402c610ae4
-  network: grpc
-  tls: true
-  sni: ads.x5.ru
-  client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: grpc-yandex
-  reality-opts:
-    public-key: sgFFdQvfeujBKh6g7N7klU_u0mKYlr800MFbko5FzUg
-    short-id: 844352756c1fabba
-- name: '🇷🇺 Aeza Group — #14'
-  type: vless
   server: 193.233.246.88
   port: 443
   uuid: 41da9cd0-b02c-427a-b74e-7e402c610ae4
@@ -152,7 +141,7 @@ proxies:
   reality-opts:
     public-key: 8h8t5eBWL9oERK7xWHQLFJE5j6sZdgNDQAs3EGnNbho
     short-id: 2f49bccf11150ef2
-- name: '🇷🇺 Aeza Group — #19'
+- name: '🇷🇺 Aeza Group — #18'
   type: vless
   server: 193.233.246.89
   port: 443
@@ -164,7 +153,7 @@ proxies:
   reality-opts:
     public-key: 8h8t5eBWL9oERK7xWHQLFJE5j6sZdgNDQAs3EGnNbho
     short-id: 2f49bccf11150ef2
-- name: '🇷🇺 Aeza Group — #20'
+- name: '🇷🇺 Aeza Group — #19'
   type: vless
   server: 193.233.246.80
   port: 8443
@@ -178,7 +167,7 @@ proxies:
   reality-opts:
     public-key: sgFFdQvfeujBKh6g7N7klU_u0mKYlr800MFbko5FzUg
     short-id: 844352756c1fabba
-- name: '🇷🇺 Aeza Group — #22'
+- name: '🇷🇺 Aeza Group — #21'
   type: vless
   server: 193.233.246.88
   port: 8443
@@ -192,7 +181,7 @@ proxies:
   reality-opts:
     public-key: sgFFdQvfeujBKh6g7N7klU_u0mKYlr800MFbko5FzUg
     short-id: 844352756c1fabba
-- name: '🇷🇺 Aeza Group — #23'
+- name: '🇷🇺 Aeza Group — #22'
   type: vless
   server: 193.233.246.85
   port: 443
@@ -204,31 +193,133 @@ proxies:
   reality-opts:
     public-key: 8h8t5eBWL9oERK7xWHQLFJE5j6sZdgNDQAs3EGnNbho
     short-id: 2f49bccf11150ef2
-- name: '🇷🇺 Beget — #24'
+- name: '🇷🇺 Aeza Group — #24'
   type: vless
-  server: 193.168.46.180
-  port: 443
-  uuid: 4c9402c5-78f8-4290-9bd2-f494ee14d405
+  server: 193.233.246.89
+  port: 8443
+  uuid: 41da9cd0-b02c-427a-b74e-7e402c610ae4
+  network: grpc
   tls: true
-  flow: xtls-rprx-vision
-  sni: rruu.persik.host
-  client-fingerprint: qq
+  sni: ads.x5.ru
+  client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: grpc-yandex
   reality-opts:
-    public-key: D0FqzTuVSzCF8IcFo64SFIpMsaGV47LW3el2GCCVoFY
-    short-id: c1a7e9b4711d5f60
-- name: '🇷🇺 Beget — #25'
+    public-key: sgFFdQvfeujBKh6g7N7klU_u0mKYlr800MFbko5FzUg
+    short-id: 844352756c1fabba
+- name: '🇷🇺 Aeza Group — #25'
   type: vless
-  server: 193.168.46.180
-  port: 443
-  uuid: 712da836-24d5-42c4-95ef-b86e50af246d
+  server: 193.233.246.85
+  port: 8443
+  uuid: 41da9cd0-b02c-427a-b74e-7e402c610ae4
+  network: grpc
   tls: true
-  flow: xtls-rprx-vision
-  sni: rruu.persik.host
-  client-fingerprint: qq
+  sni: ads.x5.ru
+  client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: grpc-yandex
   reality-opts:
-    public-key: D0FqzTuVSzCF8IcFo64SFIpMsaGV47LW3el2GCCVoFY
-    short-id: c1a7e9b4711d5f60
-- name: '🇷🇺 Beget — #26'
+    public-key: sgFFdQvfeujBKh6g7N7klU_u0mKYlr800MFbko5FzUg
+    short-id: 844352756c1fabba
+- name: '🇷🇺 Aeza Group — #26'
+  type: vless
+  server: 193.233.246.85
+  port: 8443
+  uuid: 41da9cd0-b02c-427a-b74e-7e402c610ae4
+  network: grpc
+  tls: true
+  sni: avatars.mds.yandex.net
+  client-fingerprint: qq
+  grpc-opts:
+    grpc-service-name: grpc-yandex
+  reality-opts:
+    public-key: sgFFdQvfeujBKh6g7N7klU_u0mKYlr800MFbko5FzUg
+    short-id: e67fb918ed6b9ffb
+- name: '🇷🇺 Aeza Group — #27'
+  type: vless
+  server: 193.233.246.79
+  port: 8443
+  uuid: 41da9cd0-b02c-427a-b74e-7e402c610ae4
+  network: grpc
+  tls: true
+  sni: avatars.mds.yandex.net
+  client-fingerprint: qq
+  grpc-opts:
+    grpc-service-name: grpc-yandex
+  reality-opts:
+    public-key: sgFFdQvfeujBKh6g7N7klU_u0mKYlr800MFbko5FzUg
+    short-id: e67fb918ed6b9ffb
+- name: '🇷🇺 Aeza Group — #28'
+  type: vless
+  server: 193.233.246.76
+  port: 8443
+  uuid: 41da9cd0-b02c-427a-b74e-7e402c610ae4
+  network: grpc
+  tls: true
+  sni: avatars.mds.yandex.net
+  client-fingerprint: qq
+  grpc-opts:
+    grpc-service-name: grpc-yandex
+  reality-opts:
+    public-key: sgFFdQvfeujBKh6g7N7klU_u0mKYlr800MFbko5FzUg
+    short-id: e67fb918ed6b9ffb
+- name: '🇷🇺 Aeza Group — #29'
+  type: vless
+  server: 193.233.246.82
+  port: 8443
+  uuid: 41da9cd0-b02c-427a-b74e-7e402c610ae4
+  network: grpc
+  tls: true
+  sni: avatars.mds.yandex.net
+  client-fingerprint: qq
+  grpc-opts:
+    grpc-service-name: grpc-yandex
+  reality-opts:
+    public-key: sgFFdQvfeujBKh6g7N7klU_u0mKYlr800MFbko5FzUg
+    short-id: e67fb918ed6b9ffb
+- name: '🇷🇺 Aeza Group — #30'
+  type: vless
+  server: 193.233.246.80
+  port: 8443
+  uuid: 41da9cd0-b02c-427a-b74e-7e402c610ae4
+  network: grpc
+  tls: true
+  sni: avatars.mds.yandex.net
+  client-fingerprint: qq
+  grpc-opts:
+    grpc-service-name: grpc-yandex
+  reality-opts:
+    public-key: sgFFdQvfeujBKh6g7N7klU_u0mKYlr800MFbko5FzUg
+    short-id: e67fb918ed6b9ffb
+- name: '🇷🇺 Aeza Group — #31'
+  type: vless
+  server: 193.233.246.88
+  port: 8443
+  uuid: 41da9cd0-b02c-427a-b74e-7e402c610ae4
+  network: grpc
+  tls: true
+  sni: avatars.mds.yandex.net
+  client-fingerprint: qq
+  grpc-opts:
+    grpc-service-name: grpc-yandex
+  reality-opts:
+    public-key: sgFFdQvfeujBKh6g7N7klU_u0mKYlr800MFbko5FzUg
+    short-id: e67fb918ed6b9ffb
+- name: '🇷🇺 Aeza Group — #32'
+  type: vless
+  server: 193.233.246.89
+  port: 8443
+  uuid: 41da9cd0-b02c-427a-b74e-7e402c610ae4
+  network: grpc
+  tls: true
+  sni: avatars.mds.yandex.net
+  client-fingerprint: qq
+  grpc-opts:
+    grpc-service-name: grpc-yandex
+  reality-opts:
+    public-key: sgFFdQvfeujBKh6g7N7klU_u0mKYlr800MFbko5FzUg
+    short-id: e67fb918ed6b9ffb
+- name: '🇷🇺 Beget — #34'
   type: vless
   server: 193.168.46.180
   port: 443
@@ -240,7 +331,19 @@ proxies:
   reality-opts:
     public-key: D0FqzTuVSzCF8IcFo64SFIpMsaGV47LW3el2GCCVoFY
     short-id: c1a7e9b4711d5f60
-- name: '🇷🇺 Beget — #27'
+- name: '🇷🇺 Beget — #35'
+  type: vless
+  server: 193.168.46.180
+  port: 443
+  uuid: f5930a7b-b217-4316-962a-5c141f7605aa
+  tls: true
+  flow: xtls-rprx-vision
+  sni: rruu.persik.host
+  client-fingerprint: qq
+  reality-opts:
+    public-key: D0FqzTuVSzCF8IcFo64SFIpMsaGV47LW3el2GCCVoFY
+    short-id: c1a7e9b4711d5f60
+- name: '🇷🇺 Beget — #36'
   type: vless
   server: 193.168.46.180
   port: 443
@@ -252,11 +355,11 @@ proxies:
   reality-opts:
     public-key: D0FqzTuVSzCF8IcFo64SFIpMsaGV47LW3el2GCCVoFY
     short-id: c1a7e9b4711d5f60
-- name: '🇷🇺 Beget — #28'
+- name: '🇷🇺 Beget — #37'
   type: vless
   server: 193.168.46.180
   port: 443
-  uuid: 80478653-8f0e-4252-9648-5728a1356f4e
+  uuid: 09172c5b-b01d-4283-b475-d830bcae7a5b
   tls: true
   flow: xtls-rprx-vision
   sni: rruu.persik.host
@@ -264,191 +367,98 @@ proxies:
   reality-opts:
     public-key: D0FqzTuVSzCF8IcFo64SFIpMsaGV47LW3el2GCCVoFY
     short-id: c1a7e9b4711d5f60
-- name: '🇷🇺 Beget — #29'
+- name: '🇷🇺 Beget — #38'
   type: vless
-  server: 45.12.75.242
-  port: 26424
-  uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
-  tls: true
-  sni: ya.ru
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
-    short-id: 23103e1e
-- name: '🇷🇺 Beget — #30'
-  type: vless
-  server: 45.12.75.242
-  port: 26424
-  uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
-  tls: true
-  sni: ya.ru
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
-    short-id: 23103e1e
-- name: '🇷🇺 Beget — #31'
-  type: vless
-  server: 45.12.75.242
-  port: 26424
-  uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
-  tls: true
-  sni: ya.ru
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
-    short-id: 23103e1e
-- name: '🇷🇺 Beget — #32'
-  type: vless
-  server: 45.12.75.242
-  port: 26424
-  uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
-  tls: true
-  sni: ya.ru
-  reality-opts:
-    public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
-    short-id: 23103e1e
-- name: '🇷🇺 Selectel — #36'
-  type: vless
-  server: 213.219.212.24
+  server: 193.168.46.180
   port: 443
-  uuid: 8a6f9d0b-dc16-431b-8914-cf8fde1eae7e
+  uuid: 5e631231-43de-4de5-b043-2a61fbef9475
   tls: true
   flow: xtls-rprx-vision
-  sni: eh.vk.ru
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: AAZjVvbC7AwPKot_1ygO5VMpN7XYifCA7lG0RNR5sEk
-- name: '🇷🇺 Selectel — #37'
-  type: vless
-  server: 213.219.212.30
-  port: 443
-  uuid: 8a6f9d0b-dc16-431b-8914-cf8fde1eae7e
-  tls: true
-  flow: xtls-rprx-vision
-  sni: eh.vk.ru
+  sni: rruu.persik.host
   client-fingerprint: qq
   reality-opts:
-    public-key: AAZjVvbC7AwPKot_1ygO5VMpN7XYifCA7lG0RNR5sEk
-- name: '🇷🇺 Selectel — #38'
+    public-key: D0FqzTuVSzCF8IcFo64SFIpMsaGV47LW3el2GCCVoFY
+    short-id: c1a7e9b4711d5f60
+- name: '🇷🇺 Beget — #39'
   type: vless
-  server: 213.219.212.105
-  port: 443
-  uuid: 8a6f9d0b-dc16-431b-8914-cf8fde1eae7e
+  server: 45.12.75.242
+  port: 26424
+  uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
   tls: true
-  flow: xtls-rprx-vision
-  sni: eh.vk.ru
-  client-fingerprint: qq
-  reality-opts:
-    public-key: AAZjVvbC7AwPKot_1ygO5VMpN7XYifCA7lG0RNR5sEk
-- name: '🇷🇺 Selectel — #39'
-  type: vless
-  server: 213.219.212.30
-  port: 443
-  uuid: 8a6f9d0b-dc16-431b-8914-cf8fde1eae7e
-  tls: true
-  flow: xtls-rprx-vision
-  sni: eh.vk.ru
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: AAZjVvbC7AwPKot_1ygO5VMpN7XYifCA7lG0RNR5sEk
-- name: '🇷🇺 Selectel — #40'
-  type: vless
-  server: 213.219.212.14
-  port: 443
-  uuid: 8a6f9d0b-dc16-431b-8914-cf8fde1eae7e
-  tls: true
-  flow: xtls-rprx-vision
-  sni: eh.vk.ru
+  sni: ya.ru
   client-fingerprint: chrome
   reality-opts:
-    public-key: AAZjVvbC7AwPKot_1ygO5VMpN7XYifCA7lG0RNR5sEk
-- name: '🇷🇺 Selectel — #41'
+    public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
+    short-id: 23103e1e
+- name: '🇷🇺 Beget — #40'
   type: vless
-  server: 213.219.212.105
-  port: 443
-  uuid: 8a6f9d0b-dc16-431b-8914-cf8fde1eae7e
+  server: 45.12.75.242
+  port: 26424
+  uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
   tls: true
-  flow: xtls-rprx-vision
-  sni: eh.vk.ru
-  reality-opts:
-    public-key: AAZjVvbC7AwPKot_1ygO5VMpN7XYifCA7lG0RNR5sEk
-- name: '🇷🇺 Selectel — #42'
-  type: vless
-  server: 213.219.212.24
-  port: 443
-  uuid: 8a6f9d0b-dc16-431b-8914-cf8fde1eae7e
-  tls: true
-  flow: xtls-rprx-vision
-  sni: eh.vk.ru
-  reality-opts:
-    public-key: AAZjVvbC7AwPKot_1ygO5VMpN7XYifCA7lG0RNR5sEk
-- name: '🇷🇺 Selectel — #43'
-  type: vless
-  server: 213.219.212.105
-  port: 443
-  uuid: 8a6f9d0b-dc16-431b-8914-cf8fde1eae7e
-  tls: true
-  flow: xtls-rprx-vision
-  sni: eh.vk.ru
+  sni: ya.ru
   client-fingerprint: firefox
   reality-opts:
-    public-key: AAZjVvbC7AwPKot_1ygO5VMpN7XYifCA7lG0RNR5sEk
-- name: '🇷🇺 Selectel — #44'
+    public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
+    short-id: 23103e1e
+- name: '🇷🇺 Beget — #41'
   type: vless
-  server: 213.219.212.30
-  port: 443
-  uuid: 8a6f9d0b-dc16-431b-8914-cf8fde1eae7e
+  server: 45.12.75.242
+  port: 26424
+  uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
   tls: true
-  flow: xtls-rprx-vision
-  sni: eh.vk.ru
-  reality-opts:
-    public-key: AAZjVvbC7AwPKot_1ygO5VMpN7XYifCA7lG0RNR5sEk
-- name: '🇷🇺 Selectel — #45'
-  type: vless
-  server: 213.219.212.14
-  port: 443
-  uuid: 8a6f9d0b-dc16-431b-8914-cf8fde1eae7e
-  tls: true
-  flow: xtls-rprx-vision
-  sni: eh.vk.ru
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: AAZjVvbC7AwPKot_1ygO5VMpN7XYifCA7lG0RNR5sEk
-- name: '🇷🇺 Selectel — #46'
-  type: vless
-  server: 213.219.212.105
-  port: 443
-  uuid: 8a6f9d0b-dc16-431b-8914-cf8fde1eae7e
-  tls: true
-  flow: xtls-rprx-vision
-  sni: eh.vk.ru
+  sni: ya.ru
   client-fingerprint: chrome
   reality-opts:
-    public-key: AAZjVvbC7AwPKot_1ygO5VMpN7XYifCA7lG0RNR5sEk
+    public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
+    short-id: 23103e1e
+- name: '🇷🇺 Beget — #42'
+  type: vless
+  server: 45.12.75.242
+  port: 26424
+  uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
+  tls: true
+  sni: ya.ru
+  reality-opts:
+    public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
+    short-id: 23103e1e
+- name: '🇷🇺 MTS PJSC — #43'
+  type: vless
+  server: 62.113.75.187
+  port: 443
+  uuid: 1144c488-b3e9-470b-977c-a12fb75b1113
+  tls: true
+  flow: xtls-rprx-vision
+  sni: rbc.ru
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: rZgu2lJcC2yrYnx66znee-Z75mW6m4TRfWt7_neoEVI
+    short-id: caa0a516476ad539
 - name: '🇷🇺 Selectel — #47'
   type: vless
-  server: 213.219.212.30
+  server: 213.219.212.24
   port: 443
   uuid: 8a6f9d0b-dc16-431b-8914-cf8fde1eae7e
   tls: true
   flow: xtls-rprx-vision
   sni: eh.vk.ru
-  client-fingerprint: chrome
+  client-fingerprint: firefox
   reality-opts:
     public-key: AAZjVvbC7AwPKot_1ygO5VMpN7XYifCA7lG0RNR5sEk
 - name: '🇷🇺 Selectel — #48'
   type: vless
-  server: 213.219.212.14
+  server: 213.219.212.30
   port: 443
   uuid: 8a6f9d0b-dc16-431b-8914-cf8fde1eae7e
   tls: true
   flow: xtls-rprx-vision
   sni: eh.vk.ru
+  client-fingerprint: qq
   reality-opts:
     public-key: AAZjVvbC7AwPKot_1ygO5VMpN7XYifCA7lG0RNR5sEk
 - name: '🇷🇺 Selectel — #49'
   type: vless
-  server: 213.219.212.14
+  server: 213.219.212.105
   port: 443
   uuid: 8a6f9d0b-dc16-431b-8914-cf8fde1eae7e
   tls: true
@@ -459,7 +469,18 @@ proxies:
     public-key: AAZjVvbC7AwPKot_1ygO5VMpN7XYifCA7lG0RNR5sEk
 - name: '🇷🇺 Selectel — #50'
   type: vless
-  server: 213.219.212.24
+  server: 213.219.212.30
+  port: 443
+  uuid: 8a6f9d0b-dc16-431b-8914-cf8fde1eae7e
+  tls: true
+  flow: xtls-rprx-vision
+  sni: eh.vk.ru
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: AAZjVvbC7AwPKot_1ygO5VMpN7XYifCA7lG0RNR5sEk
+- name: '🇷🇺 Selectel — #51'
+  type: vless
+  server: 213.219.212.14
   port: 443
   uuid: 8a6f9d0b-dc16-431b-8914-cf8fde1eae7e
   tls: true
@@ -468,48 +489,35 @@ proxies:
   client-fingerprint: chrome
   reality-opts:
     public-key: AAZjVvbC7AwPKot_1ygO5VMpN7XYifCA7lG0RNR5sEk
-- name: '🇷🇺 Selectel — #51'
-  type: vless
-  server: 213.219.212.24
-  port: 443
-  uuid: a5d0bebb-3a92-075a-2df3-4c7d36b04af0
-  tls: true
-  flow: xtls-rprx-vision
-  sni: eh.vk.ru
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: AAZjVvbC7AwPKot_1ygO5VMpN7XYifCA7lG0RNR5sEk
 - name: '🇷🇺 Selectel — #52'
   type: vless
   server: 213.219.212.14
   port: 443
-  uuid: a5d0bebb-3a92-075a-2df3-4c7d36b04af0
+  uuid: 8a6f9d0b-dc16-431b-8914-cf8fde1eae7e
   tls: true
   flow: xtls-rprx-vision
   sni: eh.vk.ru
-  client-fingerprint: firefox
   reality-opts:
     public-key: AAZjVvbC7AwPKot_1ygO5VMpN7XYifCA7lG0RNR5sEk
 - name: '🇷🇺 Selectel — #53'
   type: vless
   server: 213.219.212.30
   port: 443
-  uuid: a5d0bebb-3a92-075a-2df3-4c7d36b04af0
+  uuid: 8a6f9d0b-dc16-431b-8914-cf8fde1eae7e
   tls: true
   flow: xtls-rprx-vision
   sni: eh.vk.ru
-  client-fingerprint: firefox
   reality-opts:
     public-key: AAZjVvbC7AwPKot_1ygO5VMpN7XYifCA7lG0RNR5sEk
 - name: '🇷🇺 Selectel — #54'
   type: vless
-  server: 213.219.212.24
+  server: 213.219.212.105
   port: 443
   uuid: 8a6f9d0b-dc16-431b-8914-cf8fde1eae7e
   tls: true
   flow: xtls-rprx-vision
   sni: eh.vk.ru
-  client-fingerprint: qq
+  client-fingerprint: firefox
   reality-opts:
     public-key: AAZjVvbC7AwPKot_1ygO5VMpN7XYifCA7lG0RNR5sEk
 - name: '🇷🇺 Selectel — #55'
@@ -520,10 +528,129 @@ proxies:
   tls: true
   flow: xtls-rprx-vision
   sni: eh.vk.ru
-  client-fingerprint: firefox
   reality-opts:
     public-key: AAZjVvbC7AwPKot_1ygO5VMpN7XYifCA7lG0RNR5sEk
 - name: '🇷🇺 Selectel — #56'
+  type: vless
+  server: 213.219.212.105
+  port: 443
+  uuid: 8a6f9d0b-dc16-431b-8914-cf8fde1eae7e
+  tls: true
+  flow: xtls-rprx-vision
+  sni: eh.vk.ru
+  reality-opts:
+    public-key: AAZjVvbC7AwPKot_1ygO5VMpN7XYifCA7lG0RNR5sEk
+- name: '🇷🇺 Selectel — #57'
+  type: vless
+  server: 213.219.212.14
+  port: 443
+  uuid: 8a6f9d0b-dc16-431b-8914-cf8fde1eae7e
+  tls: true
+  flow: xtls-rprx-vision
+  sni: eh.vk.ru
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: AAZjVvbC7AwPKot_1ygO5VMpN7XYifCA7lG0RNR5sEk
+- name: '🇷🇺 Selectel — #58'
+  type: vless
+  server: 213.219.212.105
+  port: 443
+  uuid: 8a6f9d0b-dc16-431b-8914-cf8fde1eae7e
+  tls: true
+  flow: xtls-rprx-vision
+  sni: eh.vk.ru
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: AAZjVvbC7AwPKot_1ygO5VMpN7XYifCA7lG0RNR5sEk
+- name: '🇷🇺 Selectel — #59'
+  type: vless
+  server: 213.219.212.30
+  port: 443
+  uuid: 8a6f9d0b-dc16-431b-8914-cf8fde1eae7e
+  tls: true
+  flow: xtls-rprx-vision
+  sni: eh.vk.ru
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: AAZjVvbC7AwPKot_1ygO5VMpN7XYifCA7lG0RNR5sEk
+- name: '🇷🇺 Selectel — #60'
+  type: vless
+  server: 213.219.212.14
+  port: 443
+  uuid: 8a6f9d0b-dc16-431b-8914-cf8fde1eae7e
+  tls: true
+  flow: xtls-rprx-vision
+  sni: eh.vk.ru
+  client-fingerprint: qq
+  reality-opts:
+    public-key: AAZjVvbC7AwPKot_1ygO5VMpN7XYifCA7lG0RNR5sEk
+- name: '🇷🇺 Selectel — #61'
+  type: vless
+  server: 213.219.212.24
+  port: 443
+  uuid: 8a6f9d0b-dc16-431b-8914-cf8fde1eae7e
+  tls: true
+  flow: xtls-rprx-vision
+  sni: eh.vk.ru
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: AAZjVvbC7AwPKot_1ygO5VMpN7XYifCA7lG0RNR5sEk
+- name: '🇷🇺 Selectel — #62'
+  type: vless
+  server: 213.219.212.24
+  port: 443
+  uuid: a5d0bebb-3a92-075a-2df3-4c7d36b04af0
+  tls: true
+  flow: xtls-rprx-vision
+  sni: eh.vk.ru
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: AAZjVvbC7AwPKot_1ygO5VMpN7XYifCA7lG0RNR5sEk
+- name: '🇷🇺 Selectel — #63'
+  type: vless
+  server: 213.219.212.14
+  port: 443
+  uuid: a5d0bebb-3a92-075a-2df3-4c7d36b04af0
+  tls: true
+  flow: xtls-rprx-vision
+  sni: eh.vk.ru
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: AAZjVvbC7AwPKot_1ygO5VMpN7XYifCA7lG0RNR5sEk
+- name: '🇷🇺 Selectel — #64'
+  type: vless
+  server: 213.219.212.30
+  port: 443
+  uuid: a5d0bebb-3a92-075a-2df3-4c7d36b04af0
+  tls: true
+  flow: xtls-rprx-vision
+  sni: eh.vk.ru
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: AAZjVvbC7AwPKot_1ygO5VMpN7XYifCA7lG0RNR5sEk
+- name: '🇷🇺 Selectel — #65'
+  type: vless
+  server: 213.219.212.24
+  port: 443
+  uuid: 8a6f9d0b-dc16-431b-8914-cf8fde1eae7e
+  tls: true
+  flow: xtls-rprx-vision
+  sni: eh.vk.ru
+  client-fingerprint: qq
+  reality-opts:
+    public-key: AAZjVvbC7AwPKot_1ygO5VMpN7XYifCA7lG0RNR5sEk
+- name: '🇷🇺 Selectel — #66'
+  type: vless
+  server: 213.219.212.24
+  port: 443
+  uuid: 8a6f9d0b-dc16-431b-8914-cf8fde1eae7e
+  tls: true
+  flow: xtls-rprx-vision
+  sni: eh.vk.ru
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: AAZjVvbC7AwPKot_1ygO5VMpN7XYifCA7lG0RNR5sEk
+- name: '🇷🇺 Selectel — #67'
   type: vless
   server: 213.219.212.105
   port: 443
@@ -534,7 +661,7 @@ proxies:
   client-fingerprint: firefox
   reality-opts:
     public-key: AAZjVvbC7AwPKot_1ygO5VMpN7XYifCA7lG0RNR5sEk
-- name: '🇷🇺 Selectel — #57'
+- name: '🇷🇺 Selectel — #68'
   type: vless
   server: 213.219.212.30
   port: 443
@@ -545,7 +672,40 @@ proxies:
   client-fingerprint: firefox
   reality-opts:
     public-key: AAZjVvbC7AwPKot_1ygO5VMpN7XYifCA7lG0RNR5sEk
-- name: '🇷🇺 Timeweb — #58'
+- name: '🇷🇺 Selectel — #69'
+  type: vless
+  server: 176.109.92.141
+  port: 443
+  uuid: a5d0bebb-3a92-075a-2df3-4c7d36b04af0
+  tls: true
+  flow: xtls-rprx-vision
+  sni: ads.x5.ru
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: AAZjVvbC7AwPKot_1ygO5VMpN7XYifCA7lG0RNR5sEk
+- name: '🇷🇺 Selectel — #70'
+  type: vless
+  server: 176.109.92.139
+  port: 443
+  uuid: a5d0bebb-3a92-075a-2df3-4c7d36b04af0
+  tls: true
+  flow: xtls-rprx-vision
+  sni: ads.x5.ru
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: AAZjVvbC7AwPKot_1ygO5VMpN7XYifCA7lG0RNR5sEk
+- name: '🇷🇺 Selectel — #71'
+  type: vless
+  server: 176.109.92.139
+  port: 443
+  uuid: a5d0bebb-3a92-075a-2df3-4c7d36b04af0
+  tls: true
+  flow: xtls-rprx-vision
+  sni: ads.x5.ru
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: AAZjVvbC7AwPKot_1ygO5VMpN7XYifCA7lG0RNR5sEk
+- name: '🇷🇺 Timeweb — #72'
   type: vless
   server: 5.129.249.11
   port: 8443
@@ -556,7 +716,7 @@ proxies:
   client-fingerprint: firefox
   reality-opts:
     public-key: 92bt1gYq9EAz3SSOtKDrmqnbetNcaStEDicwrFg0_Rc
-- name: '🇷🇺 TW-Cloud — #59'
+- name: '🇷🇺 TW-Cloud — #73'
   type: vless
   server: 46.182.24.124
   port: 443
@@ -567,7 +727,7 @@ proxies:
   client-fingerprint: chrome
   reality-opts:
     public-key: Kto_-HjLzajq1_Ffa69tSwfn-dIg1ow9elgaUBhkqyo
-- name: '🇷🇺 TW-Cloud — #60'
+- name: '🇷🇺 TW-Cloud — #74'
   type: vless
   server: 46.182.24.124
   port: 443
@@ -578,18 +738,7 @@ proxies:
   client-fingerprint: firefox
   reality-opts:
     public-key: Kto_-HjLzajq1_Ffa69tSwfn-dIg1ow9elgaUBhkqyo
-- name: '🇷🇺 Yakovlev Denis Alexandrovich — #61'
-  type: vless
-  server: 188.68.218.101
-  port: 443
-  uuid: 967b2fad-bb2a-46d1-8efb-3bfda81f7f92
-  tls: true
-  flow: xtls-rprx-vision
-  sni: cloud.mail.ru
-  client-fingerprint: qq
-  reality-opts:
-    public-key: A41b2Th15KC7t1hSRTvkA3-CzZfv1DD1XOV2L5ICuA0
-- name: '🇷🇺 Yakovlev Denis Alexandrovich — #62'
+- name: '🇷🇺 Yakovlev Denis Alexandrovich — #75'
   type: vless
   server: 188.68.218.101
   port: 443
@@ -600,7 +749,18 @@ proxies:
   client-fingerprint: firefox
   reality-opts:
     public-key: A41b2Th15KC7t1hSRTvkA3-CzZfv1DD1XOV2L5ICuA0
-- name: '🇷🇺 Yakovlev Denis Alexandrovich — #63'
+- name: '🇷🇺 Yakovlev Denis Alexandrovich — #76'
+  type: vless
+  server: 188.68.218.101
+  port: 443
+  uuid: 967b2fad-bb2a-46d1-8efb-3bfda81f7f92
+  tls: true
+  flow: xtls-rprx-vision
+  sni: cloud.mail.ru
+  client-fingerprint: qq
+  reality-opts:
+    public-key: A41b2Th15KC7t1hSRTvkA3-CzZfv1DD1XOV2L5ICuA0
+- name: '🇷🇺 Yakovlev Denis Alexandrovich — #77'
   type: vless
   server: 188.68.218.101
   port: 443
