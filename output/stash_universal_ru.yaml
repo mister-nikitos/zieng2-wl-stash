@@ -3,7 +3,7 @@ proxies:
   type: vless
   server: 89.208.231.191
   port: 8443
-  uuid: 0e984bfe-9a40-07d0-9340-85e5a2995df1
+  uuid: 02c86827-ebd1-07d0-9dd6-d46f5e865e18
   tls: true
   flow: xtls-rprx-vision
   sni: max.ru
@@ -15,7 +15,7 @@ proxies:
   type: vless
   server: 193.168.46.180
   port: 443
-  uuid: 9102ec91-4b6a-4a38-9e98-655960a94dce
+  uuid: 422c9959-8894-4402-97e1-6e1eafc81823
   tls: true
   flow: xtls-rprx-vision
   sni: rruu.persik.host
@@ -27,7 +27,7 @@ proxies:
   type: vless
   server: 193.168.46.180
   port: 443
-  uuid: 29caf19a-74c7-4e6d-8143-0f7a6ddf65bd
+  uuid: 522c2dea-289f-4ec1-90e7-7491a8012554
   tls: true
   flow: xtls-rprx-vision
   sni: rruu.persik.host
@@ -39,7 +39,7 @@ proxies:
   type: vless
   server: 193.168.46.180
   port: 443
-  uuid: 522c2dea-289f-4ec1-90e7-7491a8012554
+  uuid: ebfc1f92-54ea-4859-9404-fe8f3061b0c7
   tls: true
   flow: xtls-rprx-vision
   sni: rruu.persik.host
@@ -51,7 +51,7 @@ proxies:
   type: vless
   server: 193.168.46.180
   port: 443
-  uuid: 283a5160-b7e8-42fc-b1bf-40678ee09718
+  uuid: b9bf4d72-ad9e-4a2f-a0b8-5195808b112c
   tls: true
   flow: xtls-rprx-vision
   sni: rruu.persik.host
@@ -63,7 +63,7 @@ proxies:
   type: vless
   server: 193.168.46.180
   port: 443
-  uuid: 69212088-1265-4dd7-951e-b57fc3cf2fae
+  uuid: 016e993c-bca2-43cb-a59b-6f208b257668
   tls: true
   flow: xtls-rprx-vision
   sni: rruu.persik.host
@@ -127,7 +127,15 @@ proxies:
     short-id: 23103e1e
 - name: '🇷🇺 Fornex Hosting S.L. — #12'
   type: vless
-  server: 217.177.74.196
+  server: 130.17.2.37
+  port: 4100
+  uuid: 155e8dd4-a559-407a-9ea8-13a5e829f066
+  network: ws
+  ws-opts:
+    path: /v1
+- name: '🇷🇺 Fornex Hosting S.L. — #13'
+  type: vless
+  server: 130.17.2.66
   port: 2200
   uuid: 2aa7f4b1-e859-46d0-b8ac-8587811ab7b1
   network: ws
@@ -135,14 +143,6 @@ proxies:
     path: /v1
     headers:
       Host: rzd.ru
-- name: '🇷🇺 Fornex Hosting S.L. — #13'
-  type: vless
-  server: 130.17.2.37
-  port: 4100
-  uuid: 155e8dd4-a559-407a-9ea8-13a5e829f066
-  network: ws
-  ws-opts:
-    path: /v1
 - name: '🇷🇺 MegaMax Network — #14'
   type: vless
   server: 212.67.9.113
@@ -153,9 +153,9 @@ proxies:
     path: /v1
 - name: '🇷🇺 ProCloud — #15'
   type: vless
-  server: 176.109.85.77
-  port: 10443
-  uuid: 9e6fa2b7-c9a9-4914-9508-68a689711edd
+  server: 91.185.83.110
+  port: 8443
+  uuid: 0ff2b612-5d73-4d7c-aec7-77db8697cb2e
   tls: true
   flow: xtls-rprx-vision
   sni: muzgrape.space
@@ -165,9 +165,9 @@ proxies:
     short-id: ccaa
 - name: '🇷🇺 ProCloud — #16'
   type: vless
-  server: 176.109.85.77
-  port: 10443
-  uuid: 9e6fa2b7-c9a9-4914-9508-68a689711edd
+  server: 91.185.83.110
+  port: 8443
+  uuid: 0ff2b612-5d73-4d7c-aec7-77db8697cb2e
   tls: true
   flow: xtls-rprx-vision
   sni: muzgrape.space
@@ -177,25 +177,9 @@ proxies:
     short-id: ccaaaa
 - name: '🇷🇺 SpaceWeb Hosting provider — #17'
   type: vless
-  server: 77.222.35.36
-  port: 4100
-  uuid: 155e8dd4-a559-407a-9ea8-13a5e829f066
-  network: ws
-  ws-opts:
-    path: /v1
-- name: '🇷🇺 SpaceWeb Hosting provider — #18'
-  type: vless
   server: 168.222.140.204
   port: 4100
   uuid: 155e8dd4-a559-407a-9ea8-13a5e829f066
   network: ws
   ws-opts:
     path: /v1
-- name: '🇷🇺 Timeweb — #19'
-  type: vless
-  server: 85.239.44.8
-  port: 27700
-  uuid: ce7dcd95-2f9a-431f-9c3e-0caaf6428798
-  network: grpc
-  grpc-opts:
-    grpc-service-name: zuugrpc
