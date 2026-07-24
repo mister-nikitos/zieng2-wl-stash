@@ -142,7 +142,7 @@ proxies:
   type: vless
   server: 193.168.46.180
   port: 443
-  uuid: 5c4cfe4c-b2cb-4014-9ef1-25b0a501da09
+  uuid: 7e58d0a6-448d-44a2-8d95-9f877c81ddd4
   tls: true
   flow: xtls-rprx-vision
   sni: rruu.persik.host
@@ -154,7 +154,7 @@ proxies:
   type: vless
   server: 193.168.46.180
   port: 443
-  uuid: 7e58d0a6-448d-44a2-8d95-9f877c81ddd4
+  uuid: 8b063fcd-a7db-47b9-a073-e820ad654f59
   tls: true
   flow: xtls-rprx-vision
   sni: rruu.persik.host
@@ -166,7 +166,7 @@ proxies:
   type: vless
   server: 193.168.46.180
   port: 443
-  uuid: 8b063fcd-a7db-47b9-a073-e820ad654f59
+  uuid: 6eb6ddf7-d36d-45f4-b310-c3251dc706d5
   tls: true
   flow: xtls-rprx-vision
   sni: rruu.persik.host
@@ -178,7 +178,7 @@ proxies:
   type: vless
   server: 193.168.46.180
   port: 443
-  uuid: 6eb6ddf7-d36d-45f4-b310-c3251dc706d5
+  uuid: 61bb65f3-7b91-4ac5-a17f-1a03c97e842e
   tls: true
   flow: xtls-rprx-vision
   sni: rruu.persik.host
@@ -190,7 +190,7 @@ proxies:
   type: vless
   server: 193.168.46.180
   port: 443
-  uuid: 61bb65f3-7b91-4ac5-a17f-1a03c97e842e
+  uuid: 3a446b5c-14fb-41c8-996c-f17fb2b773a2
   tls: true
   flow: xtls-rprx-vision
   sni: rruu.persik.host
@@ -208,27 +208,13 @@ proxies:
     path: /v1
 - name: '🇷🇺 Selectel — #19'
   type: vless
-  server: 135.106.158.189
-  port: 443
-  uuid: 340e4de3-144b-49c4-ad72-b49b35713728
-  network: grpc
-  tls: true
-  sni: funny1.oneok.name
-  client-fingerprint: safari
-  grpc-opts:
-    grpc-service-name: api.v1.StreamService
-  reality-opts:
-    public-key: w5fBwTRrvLjDfKKfYM88Lrh7DpwSVlhnCCyo4FxLUSo
-    short-id: 096bb498
-- name: '🇷🇺 Selectel — #20'
-  type: vless
   server: 87.228.122.108
   port: 4100
   uuid: 155e8dd4-a559-407a-9ea8-13a5e829f066
   network: ws
   ws-opts:
     path: /v1
-- name: '🇷🇺 Selectel — #21'
+- name: '🇷🇺 Selectel — #20'
   type: vless
   server: 213.219.212.24
   port: 443
@@ -237,6 +223,17 @@ proxies:
   flow: xtls-rprx-vision
   sni: pro-ru-213.emrata.top
   client-fingerprint: qq
+  reality-opts:
+    public-key: AAZjVvbC7AwPKot_1ygO5VMpN7XYifCA7lG0RNR5sEk
+- name: '🇷🇺 Selectel — #21'
+  type: vless
+  server: 213.219.212.24
+  port: 443
+  uuid: 8bdaaef0-44b3-4f2f-8858-aa4d16a64e92
+  tls: true
+  flow: xtls-rprx-vision
+  sni: pro-ru-213.emrata.top
+  client-fingerprint: firefox
   reality-opts:
     public-key: AAZjVvbC7AwPKot_1ygO5VMpN7XYifCA7lG0RNR5sEk
 - name: '🇷🇺 Selectel — #22'
@@ -258,7 +255,7 @@ proxies:
   tls: true
   flow: xtls-rprx-vision
   sni: pro-ru-213.emrata.top
-  client-fingerprint: firefox
+  client-fingerprint: edge
   reality-opts:
     public-key: AAZjVvbC7AwPKot_1ygO5VMpN7XYifCA7lG0RNR5sEk
 - name: '🇷🇺 Selectel — #24'
@@ -269,20 +266,23 @@ proxies:
   tls: true
   flow: xtls-rprx-vision
   sni: pro-ru-213.emrata.top
-  client-fingerprint: edge
+  client-fingerprint: chrome
   reality-opts:
     public-key: AAZjVvbC7AwPKot_1ygO5VMpN7XYifCA7lG0RNR5sEk
 - name: '🇷🇺 Selectel — #25'
   type: vless
-  server: 213.219.212.24
+  server: 135.106.158.189
   port: 443
-  uuid: 8bdaaef0-44b3-4f2f-8858-aa4d16a64e92
+  uuid: 340e4de3-144b-49c4-ad72-b49b35713728
+  network: grpc
   tls: true
-  flow: xtls-rprx-vision
-  sni: pro-ru-213.emrata.top
-  client-fingerprint: chrome
+  sni: funny1.oneok.name
+  client-fingerprint: safari
+  grpc-opts:
+    grpc-service-name: api.v1.StreamService
   reality-opts:
-    public-key: AAZjVvbC7AwPKot_1ygO5VMpN7XYifCA7lG0RNR5sEk
+    public-key: w5fBwTRrvLjDfKKfYM88Lrh7DpwSVlhnCCyo4FxLUSo
+    short-id: 096bb498
 - name: '🇷🇺 Selectel — #26'
   type: vless
   server: 135.106.158.189
@@ -311,7 +311,18 @@ proxies:
   reality-opts:
     public-key: w5fBwTRrvLjDfKKfYM88Lrh7DpwSVlhnCCyo4FxLUSo
     short-id: 096bb498
-- name: '🇷🇺 SpaceWeb — #28'
+- name: '🇷🇺 Selectel — #28'
+  type: vless
+  server: 213.219.212.24
+  port: 443
+  uuid: 8bdaaef0-44b3-4f2f-8858-aa4d16a64e92
+  tls: true
+  flow: xtls-rprx-vision
+  sni: pro-ru-213.emrata.top
+  client-fingerprint: ios
+  reality-opts:
+    public-key: AAZjVvbC7AwPKot_1ygO5VMpN7XYifCA7lG0RNR5sEk
+- name: '🇷🇺 SpaceWeb — #29'
   type: vless
   server: 168.222.140.204
   port: 4100
@@ -319,7 +330,7 @@ proxies:
   network: ws
   ws-opts:
     path: /v1
-- name: '🇷🇺 SpaceWeb — #29'
+- name: '🇷🇺 SpaceWeb — #30'
   type: vless
   server: 77.222.35.36
   port: 4100
@@ -327,7 +338,7 @@ proxies:
   network: ws
   ws-opts:
     path: /v1
-- name: '🇷🇺 SpaceWeb — #30'
+- name: '🇷🇺 SpaceWeb — #31'
   type: vless
   server: 77.222.46.162
   port: 2200
@@ -335,19 +346,6 @@ proxies:
   network: ws
   ws-opts:
     path: /v1
-- name: '🇷🇺 Timeweb — #31'
-  type: vless
-  server: 78.159.245.32
-  port: 443
-  uuid: 2c634977-584e-4e1f-b501-1b70c77a6743
-  network: ws
-  tls: true
-  sni: furrycdn.net
-  client-fingerprint: chrome
-  ws-opts:
-    path: /api/v1/video-stream
-    headers:
-      Host: furrycdn.net
 - name: '🇷🇺 Timeweb — #32'
   type: vless
   server: 78.159.245.32
@@ -375,6 +373,19 @@ proxies:
       Host: furrycdn.net
 - name: '🇷🇺 Timeweb — #34'
   type: vless
+  server: 78.159.245.32
+  port: 443
+  uuid: 2c634977-584e-4e1f-b501-1b70c77a6743
+  network: ws
+  tls: true
+  sni: furrycdn.net
+  client-fingerprint: chrome
+  ws-opts:
+    path: /api/v1/video-stream
+    headers:
+      Host: furrycdn.net
+- name: '🇷🇺 Timeweb — #35'
+  type: vless
   server: 109.120.189.154
   port: 443
   uuid: 1db0a61e-05f5-43ad-870c-ceff6ce06939
@@ -385,7 +396,7 @@ proxies:
   reality-opts:
     public-key: KvQ0JuE-17nWMSvEnG9xdlqPWv3bZBn9JlDiLmyE-SE
     short-id: 6aa44564cda562bc
-- name: '🇷🇺 Timeweb — #35'
+- name: '🇷🇺 Timeweb — #36'
   type: vless
   server: 201.51.12.199
   port: 443
@@ -396,7 +407,7 @@ proxies:
   client-fingerprint: firefox
   reality-opts:
     public-key: yFdgeRvZ7pYNp7C5v3sOq1x3gwHxWYem62W2tB9RJ0k
-- name: '🇷🇺 Timeweb — #36'
+- name: '🇷🇺 Timeweb — #37'
   type: vless
   server: 109.120.189.154
   port: 443
@@ -408,7 +419,7 @@ proxies:
   reality-opts:
     public-key: KvQ0JuE-17nWMSvEnG9xdlqPWv3bZBn9JlDiLmyE-SE
     short-id: 6aa44564cda562bc
-- name: '🇷🇺 Timeweb — #37'
+- name: '🇷🇺 Timeweb — #38'
   type: vless
   server: 109.120.189.154
   port: 443
@@ -417,6 +428,18 @@ proxies:
   flow: xtls-rprx-vision
   sni: ads.x5.ru
   client-fingerprint: safari
+  reality-opts:
+    public-key: KvQ0JuE-17nWMSvEnG9xdlqPWv3bZBn9JlDiLmyE-SE
+    short-id: 6aa44564cda562bc
+- name: '🇷🇺 Timeweb — #39'
+  type: vless
+  server: 109.120.189.154
+  port: 443
+  uuid: 1db0a61e-05f5-43ad-870c-ceff6ce06939
+  tls: true
+  flow: xtls-rprx-vision
+  sni: ads.x5.ru
+  client-fingerprint: chrome
   reality-opts:
     public-key: KvQ0JuE-17nWMSvEnG9xdlqPWv3bZBn9JlDiLmyE-SE
     short-id: 6aa44564cda562bc
