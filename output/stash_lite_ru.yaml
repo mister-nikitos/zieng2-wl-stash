@@ -3,7 +3,7 @@ proxies:
   type: vless
   server: 89.208.231.191
   port: 8443
-  uuid: c2aeeb88-9358-07d0-bc2c-50a7ce9bb459
+  uuid: af4e34c5-729a-07d0-8abf-421d1eab6c73
   tls: true
   flow: xtls-rprx-vision
   sni: max.ru
@@ -139,7 +139,7 @@ proxies:
     short-id: a8389289e18af5f4
 - name: '🇷🇺 Fornex Hosting S.L. — #13'
   type: vless
-  server: 31.172.67.215
+  server: 130.17.2.137
   port: 4100
   uuid: 2aa7f4b1-e859-46d0-b8ac-8587811ab7b1
   network: ws
@@ -153,7 +153,26 @@ proxies:
   network: ws
   ws-opts:
     path: /v1
-- name: '🇷🇺 SIA VEESP — #15'
+- name: '🇷🇺 MegaMax Network — #15'
+  type: vless
+  server: 212.67.9.113
+  port: 2200
+  uuid: 2aa7f4b1-e859-46d0-b8ac-8587811ab7b1
+  network: ws
+  ws-opts:
+    path: /v1
+- name: '🇷🇺 New Hosting Technologies LLC — #16'
+  type: vless
+  server: 82.202.138.144
+  port: 443
+  uuid: 85329505-90c2-43d1-9c4a-689b1a0be884
+  tls: true
+  flow: xtls-rprx-vision
+  sni: abuse.sellflow.org
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+- name: '🇷🇺 SIA VEESP — #17'
   type: vless
   server: 94.242.55.42
   port: 443
@@ -164,15 +183,7 @@ proxies:
   reality-opts:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
     short-id: 6ba85179e30d4fc2
-- name: '🇷🇺 SpaceWeb — #16'
-  type: vless
-  server: 77.222.35.36
-  port: 4100
-  uuid: 155e8dd4-a559-407a-9ea8-13a5e829f066
-  network: ws
-  ws-opts:
-    path: /v1
-- name: '🇷🇺 SpaceWeb — #17'
+- name: '🇷🇺 SpaceWeb — #18'
   type: vless
   server: 77.222.46.162
   port: 2200
@@ -180,7 +191,54 @@ proxies:
   network: ws
   ws-opts:
     path: /v1
-- name: '🇷🇺 Timeweb — #18'
+- name: '🇷🇺 SpaceWeb — #19'
+  type: vless
+  server: 168.222.140.204
+  port: 4100
+  uuid: 155e8dd4-a559-407a-9ea8-13a5e829f066
+  network: ws
+  ws-opts:
+    path: /v1
+- name: '🇷🇺 Timeweb — #20'
+  type: vless
+  server: 186.246.6.189
+  port: 443
+  uuid: 507e8554-4941-4297-9196-af102455f6ed
+  network: grpc
+  tls: true
+  sni: optim.tildacdn.pub
+  client-fingerprint: ios
+  grpc-opts:
+    grpc-service-name: ebl
+  reality-opts:
+    public-key: unNROkbh95ZZNHzG2RIkgrFftOLldNH0ccmtW63CziE
+- name: '🇷🇺 Timeweb — #21'
+  type: vless
+  server: 186.246.6.189
+  port: 443
+  uuid: 507e8554-4941-4297-9196-af102455f6ed
+  network: grpc
+  tls: true
+  sni: optim.tildacdn.pub
+  client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: ebl
+  reality-opts:
+    public-key: unNROkbh95ZZNHzG2RIkgrFftOLldNH0ccmtW63CziE
+- name: '🇷🇺 Timeweb — #22'
+  type: vless
+  server: 186.246.6.189
+  port: 443
+  uuid: 507e8554-4941-4297-9196-af102455f6ed
+  network: grpc
+  tls: true
+  sni: optim.tildacdn.pub
+  client-fingerprint: edge
+  grpc-opts:
+    grpc-service-name: ebl
+  reality-opts:
+    public-key: unNROkbh95ZZNHzG2RIkgrFftOLldNH0ccmtW63CziE
+- name: '🇷🇺 Timeweb — #23'
   type: vless
   server: 186.246.6.189
   port: 443
@@ -193,7 +251,7 @@ proxies:
     grpc-service-name: ebl
   reality-opts:
     public-key: unNROkbh95ZZNHzG2RIkgrFftOLldNH0ccmtW63CziE
-- name: '🇷🇺 Timeweb — #19'
+- name: '🇷🇺 Timeweb — #24'
   type: vless
   server: 185.247.16.3
   port: 2200
@@ -203,24 +261,15 @@ proxies:
     path: /v1
     headers:
       Host: rzd.ru
-- name: '🇷🇺 Timeweb — #20'
+- name: '🇷🇺 Veesp datacenter — #25'
   type: vless
-  server: 104.171.131.174
+  server: 94.242.51.53
   port: 443
-  uuid: 9faf2a1c-c074-4770-81f7-0563d8839e95
+  uuid: b4e99731-fa4f-4cc8-a848-95963dcb15a9
   tls: true
   flow: xtls-rprx-vision
-  sni: zop01k8wp7.medved.app
-  client-fingerprint: firefox
-  alpn:
-  - h2
-  - http/1.1
-- name: '🇷🇺 Timeweb — #21'
-  type: vless
-  server: 104.171.131.174
-  port: 443
-  uuid: 9faf2a1c-c074-4770-81f7-0563d8839e95
-  tls: true
-  flow: xtls-rprx-vision
-  sni: zop01k8wp7.medved.app
-  client-fingerprint: firefox
+  sni: spbnoda.shoptwo.xyz
+  client-fingerprint: ios
+  reality-opts:
+    public-key: lEw7Th7hb6fO4wu2Ykmq3A52Qsmesryh40YEzaRSknE
+    short-id: a7183b9ea73e367f
