@@ -3,7 +3,7 @@ proxies:
   type: vless
   server: 89.208.231.191
   port: 8443
-  uuid: 1ac65a78-7ec4-07d0-b25e-e7f7a59a4d3e
+  uuid: 110d3618-25bb-07d0-b90c-f94de2ce4506
   tls: true
   flow: xtls-rprx-vision
   sni: max.ru
@@ -48,7 +48,7 @@ proxies:
   type: vless
   server: 193.168.46.180
   port: 443
-  uuid: c7d0bfbd-fa37-4531-9b50-c06509e778e8
+  uuid: ec1d5aa1-2308-4f48-a147-e76b8d838916
   tls: true
   flow: xtls-rprx-vision
   sni: rruu.persik.host
@@ -60,7 +60,7 @@ proxies:
   type: vless
   server: 193.168.46.180
   port: 443
-  uuid: 010d7dc9-776b-4495-a85c-44794f3da49c
+  uuid: 894c0b0a-6525-4109-b043-e51ed909fc27
   tls: true
   flow: xtls-rprx-vision
   sni: rruu.persik.host
@@ -72,7 +72,7 @@ proxies:
   type: vless
   server: 193.168.46.180
   port: 443
-  uuid: 6d6aea53-e5d6-44a2-97a8-b388e6c1c4b0
+  uuid: 426a6255-edf7-4564-bc5c-0684e9aba4be
   tls: true
   flow: xtls-rprx-vision
   sni: rruu.persik.host
@@ -84,7 +84,7 @@ proxies:
   type: vless
   server: 193.168.46.180
   port: 443
-  uuid: cad9d260-56d6-4189-939c-01b1ef3c51c2
+  uuid: a40ece5a-f87c-4d94-9782-1010203b1852
   tls: true
   flow: xtls-rprx-vision
   sni: rruu.persik.host
@@ -96,7 +96,7 @@ proxies:
   type: vless
   server: 193.168.46.180
   port: 443
-  uuid: d8dddc60-b552-415a-8e06-994b16b9c4b0
+  uuid: cb88fa02-6225-448c-8ba5-4b0e85e41d02
   tls: true
   flow: xtls-rprx-vision
   sni: rruu.persik.host
@@ -111,6 +111,7 @@ proxies:
   uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
   tls: true
   sni: ya.ru
+  client-fingerprint: chrome
   reality-opts:
     public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
     short-id: 23103e1e
@@ -121,7 +122,6 @@ proxies:
   uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
   tls: true
   sni: ya.ru
-  client-fingerprint: chrome
   reality-opts:
     public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
     short-id: 23103e1e
@@ -147,7 +147,19 @@ proxies:
   reality-opts:
     public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
     short-id: 23103e1e
-- name: '🇷🇺 Fornex Hosting S.L. — #16'
+- name: '🇷🇺 EdgeCenter — #16'
+  type: vless
+  server: 91.243.86.196
+  port: 443
+  uuid: 34a1ada8-4a1a-434b-8583-7b68668f6e9d
+  tls: true
+  flow: xtls-rprx-vision
+  sni: www.cloudflare.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: dRPcJM7ZWihjiGNHuIJ4iaCpLxHAKoo59WE-vsTZASs
+    short-id: 41f6de54
+- name: '🇷🇺 Fornex Hosting S.L. — #17'
   type: vless
   server: 130.17.2.137
   port: 2200
@@ -155,15 +167,15 @@ proxies:
   network: ws
   ws-opts:
     path: /v1
-- name: '🇷🇺 Fornex Hosting S.L. — #17'
+- name: '🇷🇺 Fornex Hosting S.L. — #18'
   type: vless
-  server: 130.17.2.137
+  server: 81.85.78.193
   port: 4100
   uuid: 2aa7f4b1-e859-46d0-b8ac-8587811ab7b1
   network: ws
   ws-opts:
     path: /v1
-- name: '🇷🇺 MegaMax Network — #26'
+- name: '🇷🇺 MegaMax Network — #27'
   type: vless
   server: 212.67.9.113
   port: 2200
@@ -171,6 +183,20 @@ proxies:
   network: ws
   ws-opts:
     path: /v1
+- name: '🇷🇺 Selectel — #30'
+  type: vless
+  server: 45.92.179.7
+  port: 16923
+  uuid: 28863986-75fb-4b2f-b006-65e62194358d
+  network: grpc
+  tls: true
+  sni: yandex.ru
+  client-fingerprint: qq
+  grpc-opts:
+    grpc-service-name: neurex
+  reality-opts:
+    public-key: _QeslG3rHGM7DoM99pYC8-jpc16pM2MbNZ6NRMoxmHA
+    short-id: 10ffb85da1c2d986
 - name: '🇷🇺 Selectel — #31'
   type: vless
   server: 87.228.122.108
@@ -192,13 +218,53 @@ proxies:
     short-id: 6ba85179e30d4fc2
 - name: '🇷🇺 SpaceWeb — #33'
   type: vless
-  server: 77.222.37.89
+  server: 77.222.46.162
   port: 2200
-  uuid: b79c54f3-68e9-4e9d-8b57-22cbbe978730
+  uuid: 2aa7f4b1-e859-46d0-b8ac-8587811ab7b1
   network: ws
   ws-opts:
     path: /v1
-- name: '🇷🇺 Timeweb — #34'
+- name: '🇷🇺 SpaceWeb — #34'
+  type: vless
+  server: 168.222.140.204
+  port: 4100
+  uuid: 155e8dd4-a559-407a-9ea8-13a5e829f066
+  network: ws
+  ws-opts:
+    path: /v1
+- name: '🇷🇺 SpaceWeb — #35'
+  type: vless
+  server: 77.222.35.36
+  port: 4100
+  uuid: 155e8dd4-a559-407a-9ea8-13a5e829f066
+  network: ws
+  ws-opts:
+    path: /v1
+- name: '🇷🇺 SpaceWeb — #36'
+  type: vless
+  server: 168.222.202.15
+  port: 4100
+  uuid: 2001e98b-e06e-4244-910f-7ff640746eda
+  network: ws
+  ws-opts:
+    path: /v1
+- name: '🇷🇺 Timeweb — #37'
+  type: vless
+  server: 147.45.235.14
+  port: 2200
+  uuid: 55009b9b-7b9c-4830-86c6-cb058a7a2e2f
+  network: ws
+  ws-opts:
+    path: /v1
+- name: '🇷🇺 Timeweb — #38'
+  type: vless
+  server: 72.56.7.195
+  port: 2200
+  uuid: 31c2a8e8-0ab2-4f3f-8767-11f3a35d4228
+  network: ws
+  ws-opts:
+    path: /v1
+- name: '🇷🇺 Timeweb — #39'
   type: vless
   server: 185.247.16.3
   port: 2200
@@ -208,19 +274,7 @@ proxies:
     path: /v1
     headers:
       Host: rzd.ru
-- name: '🇷🇺 Timeweb — #35'
-  type: vless
-  server: 176.98.178.136
-  port: 443
-  uuid: a95b3155-bc03-4789-b367-944b83be8f86
-  tls: true
-  flow: xtls-rprx-vision
-  sni: yahoo.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: M0OIVB0y6CXMfNZ16OfHfWrHktWU9yZ0rgQ3a9-_gUY
-    short-id: 4952fc975688bce3
-- name: '🇷🇺 Timeweb — #36'
+- name: '🇷🇺 Timeweb — #40'
   type: vless
   server: 83.217.192.58
   port: 2200
@@ -228,7 +282,7 @@ proxies:
   network: ws
   ws-opts:
     path: /v1
-- name: '🇷🇺 Timeweb — #37'
+- name: '🇷🇺 Timeweb — #41'
   type: vless
   server: 72.56.36.96
   port: 40443
