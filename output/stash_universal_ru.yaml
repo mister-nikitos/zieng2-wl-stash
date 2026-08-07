@@ -3,7 +3,7 @@ proxies:
   type: vless
   server: 89.208.231.191
   port: 8443
-  uuid: 1a2b65ad-d09d-07d0-83b1-330ebb76dfa2
+  uuid: 8558fadf-4d75-07d0-829e-30ad0a1e8a84
   tls: true
   flow: xtls-rprx-vision
   sni: max.ru
@@ -25,18 +25,18 @@ proxies:
     short-id: a3dbdfb829
 - name: '🇷🇺 Aeza Group — #3'
   type: vless
-  server: 193.233.246.82
-  port: 8443
-  uuid: 41da9cd0-b02c-427a-b74e-7e402c610ae4
+  server: 85.192.56.3
+  port: 443
+  uuid: 95e8532b-cc69-42d4-9553-e3c23292b15b
   network: grpc
   tls: true
-  sni: ads.x5.ru
-  client-fingerprint: chrome
+  sni: www.google.com
+  client-fingerprint: random
   grpc-opts:
-    grpc-service-name: grpc-yandex
+    grpc-service-name: grpc
   reality-opts:
-    public-key: sgFFdQvfeujBKh6g7N7klU_u0mKYlr800MFbko5FzUg
-    short-id: 844352756c1fabba
+    public-key: jowOwf_cxg_FNpG36QJcyqBWtDItBBYjqj7VGhD2lnw
+    short-id: d3124debabf1456c
 - name: '🇷🇺 Aeza Group — #4'
   type: vless
   server: 85.192.56.3
@@ -45,7 +45,7 @@ proxies:
   network: grpc
   tls: true
   sni: www.google.com
-  client-fingerprint: chrome
+  client-fingerprint: qq
   grpc-opts:
     grpc-service-name: grpc
   reality-opts:
@@ -59,7 +59,7 @@ proxies:
   network: grpc
   tls: true
   sni: www.google.com
-  client-fingerprint: qq
+  client-fingerprint: firefox
   grpc-opts:
     grpc-service-name: grpc
   reality-opts:
@@ -67,45 +67,28 @@ proxies:
     short-id: d3124debabf1456c
 - name: '🇷🇺 Aeza Group — #6'
   type: vless
-  server: 85.192.56.3
-  port: 443
-  uuid: 95e8532b-cc69-42d4-9553-e3c23292b15b
-  network: grpc
-  tls: true
-  sni: www.google.com
-  client-fingerprint: firefox
-  grpc-opts:
-    grpc-service-name: grpc
-  reality-opts:
-    public-key: jowOwf_cxg_FNpG36QJcyqBWtDItBBYjqj7VGhD2lnw
-    short-id: d3124debabf1456c
-- name: '🇷🇺 Aeza Group — #7'
-  type: vless
-  server: 85.192.56.3
-  port: 443
-  uuid: 95e8532b-cc69-42d4-9553-e3c23292b15b
-  network: grpc
-  tls: true
-  sni: www.google.com
-  client-fingerprint: edge
-  grpc-opts:
-    grpc-service-name: grpc
-  reality-opts:
-    public-key: jowOwf_cxg_FNpG36QJcyqBWtDItBBYjqj7VGhD2lnw
-    short-id: d3124debabf1456c
-- name: '🇷🇺 Aeza Group — #8'
-  type: vless
   server: 45.146.131.97
   port: 4100
   uuid: 5502312d-b5cf-4652-8c59-4d670dd047be
   network: ws
   ws-opts:
     path: /v1
-- name: '🇷🇺 Beget — #9'
+- name: '🇷🇺 Beget — #7'
+  type: vless
+  server: 45.12.75.242
+  port: 26424
+  uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
+  tls: true
+  sni: ya.ru
+  client-fingerprint: qq
+  reality-opts:
+    public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
+    short-id: 23103e1e
+- name: '🇷🇺 Beget — #8'
   type: vless
   server: 193.168.46.180
   port: 443
-  uuid: fad6156d-efd6-407c-8cb2-a2ba6729e497
+  uuid: 05a2305a-84fa-4999-b6e2-764ec21e772b
   tls: true
   flow: xtls-rprx-vision
   sni: rruu.persik.host
@@ -113,7 +96,7 @@ proxies:
   reality-opts:
     public-key: D0FqzTuVSzCF8IcFo64SFIpMsaGV47LW3el2GCCVoFY
     short-id: c1a7e9b4711d5f60
-- name: '🇷🇺 Beget — #10'
+- name: '🇷🇺 Beget — #9'
   type: vless
   server: 193.168.46.180
   port: 443
@@ -125,7 +108,7 @@ proxies:
   reality-opts:
     public-key: D0FqzTuVSzCF8IcFo64SFIpMsaGV47LW3el2GCCVoFY
     short-id: c1a7e9b4711d5f60
-- name: '🇷🇺 Beget — #11'
+- name: '🇷🇺 Beget — #10'
   type: vless
   server: 31.129.96.186
   port: 2200
@@ -133,19 +116,7 @@ proxies:
   network: ws
   ws-opts:
     path: /v1
-- name: '🇷🇺 Beget — #12'
-  type: vless
-  server: 193.168.46.180
-  port: 443
-  uuid: 010d7dc9-776b-4495-a85c-44794f3da49c
-  tls: true
-  flow: xtls-rprx-vision
-  sni: rruu.persik.host
-  client-fingerprint: qq
-  reality-opts:
-    public-key: D0FqzTuVSzCF8IcFo64SFIpMsaGV47LW3el2GCCVoFY
-    short-id: c1a7e9b4711d5f60
-- name: '🇷🇺 Beget — #13'
+- name: '🇷🇺 Beget — #11'
   type: vless
   server: 193.168.46.180
   port: 443
@@ -157,7 +128,7 @@ proxies:
   reality-opts:
     public-key: D0FqzTuVSzCF8IcFo64SFIpMsaGV47LW3el2GCCVoFY
     short-id: c1a7e9b4711d5f60
-- name: '🇷🇺 Beget — #14'
+- name: '🇷🇺 Beget — #12'
   type: vless
   server: 193.168.46.180
   port: 443
@@ -169,26 +140,19 @@ proxies:
   reality-opts:
     public-key: D0FqzTuVSzCF8IcFo64SFIpMsaGV47LW3el2GCCVoFY
     short-id: c1a7e9b4711d5f60
-- name: '🇷🇺 Beget — #15'
+- name: '🇷🇺 Beget — #13'
   type: vless
-  server: 45.12.75.242
-  port: 26424
-  uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
+  server: 193.168.46.180
+  port: 443
+  uuid: b55544b5-1dbe-41c3-9a82-4551ff55be0e
   tls: true
-  sni: ya.ru
+  flow: xtls-rprx-vision
+  sni: rruu.persik.host
   client-fingerprint: qq
   reality-opts:
-    public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
-    short-id: 23103e1e
-- name: '🇷🇺 Beget — #16'
-  type: vless
-  server: 155.212.142.50
-  port: 4100
-  uuid: 2aa7f4b1-e859-46d0-b8ac-8587811ab7b1
-  network: ws
-  ws-opts:
-    path: /v1
-- name: '🇷🇺 Beget — #17'
+    public-key: D0FqzTuVSzCF8IcFo64SFIpMsaGV47LW3el2GCCVoFY
+    short-id: c1a7e9b4711d5f60
+- name: '🇷🇺 Beget — #14'
   type: vless
   server: 45.12.75.242
   port: 26424
@@ -198,7 +162,7 @@ proxies:
   reality-opts:
     public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
     short-id: 23103e1e
-- name: '🇷🇺 Beget — #18'
+- name: '🇷🇺 Beget — #15'
   type: vless
   server: 45.12.75.242
   port: 26424
@@ -209,7 +173,7 @@ proxies:
   reality-opts:
     public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
     short-id: 23103e1e
-- name: '🇷🇺 Beget — #19'
+- name: '🇷🇺 Beget — #16'
   type: vless
   server: 45.12.75.242
   port: 26424
@@ -220,7 +184,19 @@ proxies:
   reality-opts:
     public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
     short-id: 23103e1e
-- name: '🇷🇺 MegaMax Network — #20'
+- name: '🇷🇺 Delta — #17'
+  type: vless
+  server: 217.16.18.174
+  port: 5443
+  uuid: 99216440-8607-48a6-8a96-397a45e03356
+  tls: true
+  flow: xtls-rprx-vision
+  sni: ads.x5.ru
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: EC_gDR0zwFKeVnGhy2RD1GePSUYyDhRjxCM2wCGktTk
+    short-id: ad7dab462a323acb
+- name: '🇷🇺 MegaMax Network — #18'
   type: vless
   server: 212.67.9.113
   port: 2200
@@ -228,15 +204,15 @@ proxies:
   network: ws
   ws-opts:
     path: /v1
-- name: '🇷🇺 Selectel — #21'
+- name: '🇷🇺 reg.ru — #19'
   type: vless
-  server: 87.228.122.108
+  server: 168.222.140.155
   port: 4100
-  uuid: 155e8dd4-a559-407a-9ea8-13a5e829f066
+  uuid: 2aa7f4b1-e859-46d0-b8ac-8587811ab7b1
   network: ws
   ws-opts:
     path: /v1
-- name: '🇷🇺 SIA VEESP — #23'
+- name: '🇷🇺 SIA VEESP — #21'
   type: vless
   server: 94.242.55.42
   port: 443
@@ -247,7 +223,7 @@ proxies:
   reality-opts:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
     short-id: 6ba85179e30d4fc2
-- name: '🇷🇺 SIA VEESP — #24'
+- name: '🇷🇺 SIA VEESP — #22'
   type: vless
   server: 94.242.55.42
   port: 443
@@ -259,7 +235,19 @@ proxies:
   reality-opts:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
     short-id: 6ba85179e30d4fc2
-- name: '🇷🇺 SIA VEESP — #25'
+- name: '🇷🇺 SIA VEESP — #23'
+  type: vless
+  server: 94.242.55.42
+  port: 443
+  uuid: 8ca5cbd3-ec16-4728-bedc-2bc0d82f0922
+  tls: true
+  flow: xtls-rprx-vision
+  sni: enterprisekitten.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    short-id: 6ba85179e30d4fc2
+- name: '🇷🇺 SIA VEESP — #24'
   type: vless
   server: 94.242.55.42
   port: 443
@@ -271,7 +259,7 @@ proxies:
   reality-opts:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
     short-id: 6ba85179e30d4fc2
-- name: '🇷🇺 SIA VEESP — #26'
+- name: '🇷🇺 SIA VEESP — #25'
   type: vless
   server: 94.242.55.42
   port: 443
@@ -279,7 +267,18 @@ proxies:
   tls: true
   flow: xtls-rprx-vision
   sni: enterprisekitten.com
-  client-fingerprint: qq
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    short-id: 6ba85179e30d4fc2
+- name: '🇷🇺 SIA VEESP — #26'
+  type: vless
+  server: 94.242.55.42
+  port: 443
+  uuid: 8ca5cbd3-ec16-4728-bedc-2bc0d82f0922
+  tls: true
+  sni: enterprisekitten.com
+  client-fingerprint: ios
   reality-opts:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
     short-id: 6ba85179e30d4fc2
@@ -302,22 +301,18 @@ proxies:
   tls: true
   flow: xtls-rprx-vision
   sni: enterprisekitten.com
-  client-fingerprint: firefox
+  client-fingerprint: qq
   reality-opts:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
     short-id: 6ba85179e30d4fc2
-- name: '🇷🇺 SIA VEESP — #29'
+- name: '🇷🇺 SpaceWeb — #29'
   type: vless
-  server: 94.242.55.42
-  port: 443
-  uuid: 8ca5cbd3-ec16-4728-bedc-2bc0d82f0922
-  tls: true
-  flow: xtls-rprx-vision
-  sni: enterprisekitten.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-    short-id: 6ba85179e30d4fc2
+  server: 168.222.202.187
+  port: 4100
+  uuid: 55009b9b-7b9c-4830-86c6-cb058a7a2e2f
+  network: ws
+  ws-opts:
+    path: /v1
 - name: '🇷🇺 SpaceWeb — #30'
   type: vless
   server: 77.222.38.3
@@ -344,21 +339,13 @@ proxies:
     path: /v1
 - name: '🇷🇺 SpaceWeb — #33'
   type: vless
-  server: 77.222.35.36
-  port: 4100
-  uuid: 155e8dd4-a559-407a-9ea8-13a5e829f066
-  network: ws
-  ws-opts:
-    path: /v1
-- name: '🇷🇺 SpaceWeb — #34'
-  type: vless
   server: 77.222.46.162
   port: 2200
   uuid: 2aa7f4b1-e859-46d0-b8ac-8587811ab7b1
   network: ws
   ws-opts:
     path: /v1
-- name: '🇷🇺 SpaceWeb — #35'
+- name: '🇷🇺 SpaceWeb — #34'
   type: vless
   server: 168.222.202.15
   port: 4100
@@ -366,7 +353,7 @@ proxies:
   network: ws
   ws-opts:
     path: /v1
-- name: '🇷🇺 Timeweb — #36'
+- name: '🇷🇺 Timeweb — #35'
   type: vless
   server: 147.45.235.14
   port: 2200
@@ -374,7 +361,7 @@ proxies:
   network: ws
   ws-opts:
     path: /v1
-- name: '🇷🇺 Timeweb — #37'
+- name: '🇷🇺 Timeweb — #36'
   type: vless
   server: 104.171.137.148
   port: 2200
@@ -382,23 +369,7 @@ proxies:
   network: ws
   ws-opts:
     path: /v1
-- name: '🇷🇺 Timeweb — #38'
-  type: vless
-  server: 201.51.0.38
-  port: 4100
-  uuid: e7299042-7d8f-440f-8368-2516b0e69341
-  network: ws
-  ws-opts:
-    path: /v1
-- name: '🇷🇺 Timeweb — #39'
-  type: vless
-  server: 104.171.132.232
-  port: 2200
-  uuid: a2aa7759-ddac-4d02-bf9d-de62cbff9481
-  network: ws
-  ws-opts:
-    path: /v1
-- name: '🇷🇺 Timeweb — #40'
+- name: '🇷🇺 Timeweb — #37'
   type: vless
   server: 104.171.132.102
   port: 2200
@@ -406,7 +377,7 @@ proxies:
   network: ws
   ws-opts:
     path: /v1
-- name: '🇷🇺 Timeweb — #41'
+- name: '🇷🇺 Timeweb — #38'
   type: vless
   server: 104.171.137.109
   port: 2200
@@ -414,7 +385,7 @@ proxies:
   network: ws
   ws-opts:
     path: /v1
-- name: '🇷🇺 Timeweb — #42'
+- name: '🇷🇺 Timeweb — #39'
   type: vless
   server: 109.73.193.169
   port: 4100
@@ -422,7 +393,7 @@ proxies:
   network: ws
   ws-opts:
     path: /v1
-- name: '🇷🇺 Timeweb — #43'
+- name: '🇷🇺 Timeweb — #40'
   type: vless
   server: 72.56.246.91
   port: 4100
@@ -430,7 +401,7 @@ proxies:
   network: ws
   ws-opts:
     path: /v1
-- name: '🇷🇺 Timeweb — #44'
+- name: '🇷🇺 Timeweb — #41'
   type: vless
   server: 104.171.132.128
   port: 4100
@@ -438,7 +409,7 @@ proxies:
   network: ws
   ws-opts:
     path: /v1
-- name: '🇷🇺 Timeweb — #45'
+- name: '🇷🇺 Timeweb — #42'
   type: vless
   server: 83.217.192.58
   port: 2200
@@ -446,7 +417,7 @@ proxies:
   network: ws
   ws-opts:
     path: /v1
-- name: '🇷🇺 Timeweb — #46'
+- name: '🇷🇺 Timeweb — #43'
   type: vless
   server: 185.247.16.3
   port: 2200
@@ -456,7 +427,7 @@ proxies:
     path: /v1
     headers:
       Host: rzd.ru
-- name: '🇷🇺 Timeweb — #47'
+- name: '🇷🇺 Timeweb — #44'
   type: vless
   server: 72.56.7.195
   port: 2200
@@ -464,7 +435,7 @@ proxies:
   network: ws
   ws-opts:
     path: /v1
-- name: '🇷🇺 Timeweb — #48'
+- name: '🇷🇺 Timeweb — #45'
   type: vless
   server: 72.56.36.96
   port: 40443
@@ -476,7 +447,7 @@ proxies:
   reality-opts:
     public-key: cZF84xUCciKRXxTA39vNnh0U8CjUZiUSjLzuNTMOzV8
     short-id: 33e48a03db900ff3
-- name: '🇷🇺 Timeweb — #49'
+- name: '🇷🇺 Timeweb — #46'
   type: vless
   server: 188.225.33.206
   port: 8443
@@ -487,15 +458,23 @@ proxies:
   client-fingerprint: chrome
   reality-opts:
     public-key: C819rM4M_c473A8glp-eBFh8Fm9O1cmEeXmivDhM1Fc
-- name: '🇷🇺 Xorek.Cloud — #52'
+- name: '🇷🇺 Xorek.Cloud — #49'
   type: vless
-  server: 194.26.229.214
-  port: 2200
-  uuid: a9f07ec1-bd8a-4c95-a281-3de7f0b76853
+  server: 194.26.229.219
+  port: 4100
+  uuid: 099c6e3f-e8d3-41d4-95f2-ef2eafb51cdc
   network: ws
   ws-opts:
     path: /v1
-- name: '🇷🇺 Xorek.Cloud — #53'
+- name: '🇷🇺 Xorek.Cloud — #50'
+  type: vless
+  server: 194.26.229.218
+  port: 2200
+  uuid: af325624-e28d-44fd-a8a7-058a439d128f
+  network: ws
+  ws-opts:
+    path: /v1
+- name: '🇷🇺 Xorek.Cloud — #51'
   type: vless
   server: 194.26.229.212
   port: 2200
@@ -503,7 +482,7 @@ proxies:
   network: ws
   ws-opts:
     path: /v1
-- name: '🇷🇺 Xorek.Cloud — #54'
+- name: '🇷🇺 Xorek.Cloud — #52'
   type: vless
   server: 194.26.229.220
   port: 4100
