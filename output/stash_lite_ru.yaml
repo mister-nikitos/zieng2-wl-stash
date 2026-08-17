@@ -46,14 +46,18 @@ proxies:
   network: ws
   ws-opts:
     path: /v1
-- name: '🇷🇺 Aeza Group — #11'
+- name: '🇷🇺 Baxet — #11'
   type: vless
-  server: 79.137.192.188
-  port: 2200
-  uuid: 106b0505-da24-4ae4-b22c-302ab814f6f4
-  network: ws
-  ws-opts:
-    path: /v1
+  server: 176.32.34.201
+  port: 8443
+  uuid: dbacac09-9ee8-400c-b53b-745a769c220a
+  tls: true
+  flow: xtls-rprx-vision
+  sni: m.vkvideo.ru
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: NZRqNbmIpef0OecDrRio_MtqY6z64DMi-ZUVcX-fUgs
+    short-id: db321fe4
 - name: '🇷🇺 Beget — #12'
   type: vless
   server: 185.141.227.153
@@ -62,7 +66,7 @@ proxies:
   network: grpc
   tls: true
   sni: api-maps.yandex.ru
-  client-fingerprint: firefox
+  client-fingerprint: safari
   grpc-opts:
     grpc-service-name: grpc-reality
   reality-opts:
@@ -76,7 +80,7 @@ proxies:
   network: grpc
   tls: true
   sni: api-maps.yandex.ru
-  client-fingerprint: safari
+  client-fingerprint: firefox
   grpc-opts:
     grpc-service-name: grpc-reality
   reality-opts:
@@ -161,7 +165,7 @@ proxies:
   type: vless
   server: 193.168.46.180
   port: 443
-  uuid: da8f3d69-7022-4872-94c5-c1627f93ebc2
+  uuid: f12f032d-442f-4353-958b-f5e9f3bb91c4
   tls: true
   flow: xtls-rprx-vision
   sni: rruu.persik.host
@@ -173,7 +177,7 @@ proxies:
   type: vless
   server: 193.168.46.180
   port: 443
-  uuid: f12f032d-442f-4353-958b-f5e9f3bb91c4
+  uuid: ae28a56f-1c52-4135-88ce-2f9e79fdee7d
   tls: true
   flow: xtls-rprx-vision
   sni: rruu.persik.host
@@ -185,7 +189,7 @@ proxies:
   type: vless
   server: 193.168.46.180
   port: 443
-  uuid: ae28a56f-1c52-4135-88ce-2f9e79fdee7d
+  uuid: a1aa77b4-b590-4c38-b527-48f164f58703
   tls: true
   flow: xtls-rprx-vision
   sni: rruu.persik.host
@@ -197,7 +201,7 @@ proxies:
   type: vless
   server: 193.168.46.180
   port: 443
-  uuid: a1aa77b4-b590-4c38-b527-48f164f58703
+  uuid: 37ec7168-8a62-4551-b169-67d21e25bed1
   tls: true
   flow: xtls-rprx-vision
   sni: rruu.persik.host
@@ -209,7 +213,7 @@ proxies:
   type: vless
   server: 193.168.46.180
   port: 443
-  uuid: 37ec7168-8a62-4551-b169-67d21e25bed1
+  uuid: 306643ff-c130-461d-badc-a1539755e5ac
   tls: true
   flow: xtls-rprx-vision
   sni: rruu.persik.host
@@ -227,33 +231,17 @@ proxies:
     path: /v1
     headers:
       Host: live.ok.ru
-- name: '🇷🇺 FDCservers.net — #28'
+- name: '🇷🇺 Beget — #28'
   type: vless
-  server: 66.90.93.74
-  port: 8443
-  uuid: ca599ed4-f7a0-4ddf-a45d-3cb6276d6cd7
+  server: 45.90.32.132
+  port: 4100
+  uuid: 31c2a8e8-0ab2-4f3f-8767-11f3a35d4228
   network: ws
-  tls: true
-  sni: gateway-v1.bosx.net
-  client-fingerprint: firefox
-  alpn:
-  - http/1.1
   ws-opts:
-    path: /api/connect
-- name: '🇷🇺 FDCservers.net — #29'
-  type: vless
-  server: 66.90.93.74
-  port: 8443
-  uuid: ca599ed4-f7a0-4ddf-a45d-3cb6276d6cd7
-  network: ws
-  tls: true
-  sni: gateway-v1.bosx.net
-  client-fingerprint: edge
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: /api/connect
-- name: '🇷🇺 MegaMax Network — #30'
+    path: /v1
+    headers:
+      Host: live.ok.ru
+- name: '🇷🇺 MegaMax Network — #29'
   type: vless
   server: 212.67.9.113
   port: 2200
@@ -261,34 +249,48 @@ proxies:
   network: ws
   ws-opts:
     path: /v1
-- name: '🇷🇺 MT FINANCE LLC — #31'
+- name: '🇷🇺 MT FINANCE LLC — #30'
   type: vless
   server: 213.178.155.239
-  port: 8449
-  uuid: 9eecb29d-fefa-49eb-a3bd-ae4a54f13a93
+  port: 443
+  uuid: 1b6a7ff9-dcf8-462c-b73a-041fefdf3feb
   network: grpc
   tls: true
-  sni: eh.vk.com
+  sni: max.ru
   client-fingerprint: firefox
   grpc-opts:
-    grpc-service-name: bridge-akenai-grpc-vk
+    grpc-service-name: bridge-akenai-grpc-max
   reality-opts:
     public-key: dg-XAKwtCTyYz0HN94sbNCM8xLwY4lBHkUa883nTFn8
     short-id: 0d0440286388a044
-- name: '🇷🇺 MT FINANCE LLC — #32'
+- name: '🇷🇺 MT FINANCE LLC — #31'
   type: vless
   server: 213.178.155.239
-  port: 8449
-  uuid: 8b278ed9-485e-4979-97e6-115adce9c76f
+  port: 443
+  uuid: 87b320fe-2329-498d-997b-7b956a99eecb
   network: grpc
   tls: true
-  sni: eh.vk.com
+  sni: max.ru
   client-fingerprint: firefox
   grpc-opts:
-    grpc-service-name: bridge-akenai-grpc-vk
+    grpc-service-name: bridge-akenai-grpc-max
   reality-opts:
     public-key: dg-XAKwtCTyYz0HN94sbNCM8xLwY4lBHkUa883nTFn8
     short-id: be7d4026
+- name: '🇷🇺 MT FINANCE LLC — #32'
+  type: vless
+  server: 213.178.155.239
+  port: 443
+  uuid: abc4c4d2-3760-4003-8cb7-322f8ec1a9c5
+  network: grpc
+  tls: true
+  sni: max.ru
+  client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: bridge-akenai-grpc-max
+  reality-opts:
+    public-key: dg-XAKwtCTyYz0HN94sbNCM8xLwY4lBHkUa883nTFn8
+    short-id: 0d0440286388a044
 - name: '🇷🇺 ProCloud — #33'
   type: vless
   server: 185.147.26.45
@@ -304,39 +306,21 @@ proxies:
     public-key: qflDse4yNSmw5uo74Leu1S9lHAcP9ThsanYSkZYSPTs
 - name: '🇷🇺 reg.ru — #34'
   type: vless
-  server: 80.78.247.12
-  port: 4100
-  uuid: 96c4225e-119c-4259-9015-7f74e057db36
-  network: ws
-  ws-opts:
-    path: /v1
-- name: '🇷🇺 reg.ru — #35'
-  type: vless
-  server: 80.78.247.12
-  port: 4100
-  uuid: 96c4225e-119c-4259-9015-7f74e057db36
-  network: ws
-  ws-opts:
-    path: /v1
-    headers:
-      Host: live.ok.ru
-- name: '🇷🇺 reg.ru — #36'
-  type: vless
   server: 168.222.143.50
   port: 4100
   uuid: 2aa7f4b1-e859-46d0-b8ac-8587811ab7b1
   network: ws
   ws-opts:
     path: /v1
-- name: '🇷🇺 reg.ru — #37'
+- name: '🇷🇺 reg.ru — #35'
   type: vless
-  server: 168.222.140.155
+  server: 168.222.143.50
   port: 2200
   uuid: 2aa7f4b1-e859-46d0-b8ac-8587811ab7b1
   network: ws
   ws-opts:
     path: /v1
-- name: '🇷🇺 Selectel — #39'
+- name: '🇷🇺 Selectel — #40'
   type: vless
   server: 87.228.122.108
   port: 4100
@@ -344,23 +328,11 @@ proxies:
   network: ws
   ws-opts:
     path: /v1
-- name: '🇷🇺 Selectel — #40'
-  type: vless
-  server: 139.100.197.28
-  port: 52006
-  uuid: f6072a9a-dace-07d0-b190-b730da521efc
-  tls: true
-  flow: xtls-rprx-vision
-  sni: search.setlisting.ru
-  client-fingerprint: qq
-  alpn:
-  - h2
-  - http/1.1
 - name: '🇷🇺 Selectel — #41'
   type: vless
   server: 139.100.197.28
   port: 52006
-  uuid: 746cc3cb-653c-07d0-96ed-dece5a5757a2
+  uuid: f6072a9a-dace-07d0-b190-b730da521efc
   tls: true
   flow: xtls-rprx-vision
   sni: search.setlisting.ru
@@ -408,16 +380,19 @@ proxies:
   type: vless
   server: 139.100.197.28
   port: 52006
-  uuid: 5aa8cff9-d9ad-07d0-9876-db3e4ef60f49
+  uuid: ab2cea85-d7eb-07d0-aa5a-98bab5d37dab
   tls: true
   flow: xtls-rprx-vision
   sni: search.setlisting.ru
   client-fingerprint: qq
+  alpn:
+  - h2
+  - http/1.1
 - name: '🇷🇺 Selectel — #46'
   type: vless
   server: 139.100.197.28
   port: 52006
-  uuid: 224c6892-f346-07d0-91db-149da1f0c170
+  uuid: 5aa8cff9-d9ad-07d0-9876-db3e4ef60f49
   tls: true
   flow: xtls-rprx-vision
   sni: search.setlisting.ru
@@ -426,24 +401,12 @@ proxies:
   type: vless
   server: 139.100.197.28
   port: 52006
-  uuid: 224c6892-f346-07d0-91db-149da1f0c170
-  tls: true
-  flow: xtls-rprx-vision
-  sni: search.setlisting.ru
-  client-fingerprint: edge
-  alpn:
-  - h2
-  - http/1.1
-- name: '🇷🇺 Selectel — #49'
-  type: vless
-  server: 139.100.197.28
-  port: 52006
   uuid: 076c7307-d301-07d0-9dcd-89ae6aeaab67
   tls: true
   flow: xtls-rprx-vision
   sni: search.setlisting.ru
   client-fingerprint: qq
-- name: '🇷🇺 Selectel — #50'
+- name: '🇷🇺 Selectel — #48'
   type: vless
   server: 139.100.197.28
   port: 52006
@@ -452,7 +415,35 @@ proxies:
   flow: xtls-rprx-vision
   sni: search.setlisting.ru
   client-fingerprint: qq
+- name: '🇷🇺 Selectel — #49'
+  type: vless
+  server: 139.100.197.28
+  port: 52006
+  uuid: 076c7307-d301-07d0-9dcd-89ae6aeaab67
+  tls: true
+  flow: xtls-rprx-vision
+  sni: search.setlisting.ru
+  client-fingerprint: edge
+  alpn:
+  - h2
+  - http/1.1
+- name: '🇷🇺 SpaceWeb — #50'
+  type: vless
+  server: 168.222.140.204
+  port: 4100
+  uuid: 155e8dd4-a559-407a-9ea8-13a5e829f066
+  network: ws
+  ws-opts:
+    path: /v1
 - name: '🇷🇺 SpaceWeb — #51'
+  type: vless
+  server: 168.222.202.187
+  port: 4100
+  uuid: 55009b9b-7b9c-4830-86c6-cb058a7a2e2f
+  network: ws
+  ws-opts:
+    path: /v1
+- name: '🇷🇺 SpaceWeb — #52'
   type: vless
   server: 77.222.46.162
   port: 2200
@@ -460,7 +451,7 @@ proxies:
   network: ws
   ws-opts:
     path: /v1
-- name: '🇷🇺 SpaceWeb — #52'
+- name: '🇷🇺 SpaceWeb — #53'
   type: vless
   server: 31.177.83.226
   port: 2200
@@ -468,7 +459,7 @@ proxies:
   network: ws
   ws-opts:
     path: /v1
-- name: '🇷🇺 SpaceWeb — #53'
+- name: '🇷🇺 SpaceWeb — #54'
   type: vless
   server: 168.222.141.146
   port: 2200
@@ -476,7 +467,7 @@ proxies:
   network: ws
   ws-opts:
     path: /v1
-- name: '🇷🇺 SpaceWeb — #54'
+- name: '🇷🇺 SpaceWeb — #55'
   type: vless
   server: 77.222.37.89
   port: 4100
@@ -484,19 +475,11 @@ proxies:
   network: ws
   ws-opts:
     path: /v1
-- name: '🇷🇺 SpaceWeb — #55'
+- name: '🇷🇺 SpaceWeb — #56'
   type: vless
   server: 77.222.37.89
   port: 2200
   uuid: b79c54f3-68e9-4e9d-8b57-22cbbe978730
-  network: ws
-  ws-opts:
-    path: /v1
-- name: '🇷🇺 SpaceWeb — #56'
-  type: vless
-  server: 168.222.140.55
-  port: 2200
-  uuid: e1e26ef7-3291-45ac-b821-a11dcdbfdb4d
   network: ws
   ws-opts:
     path: /v1
@@ -602,16 +585,6 @@ proxies:
     path: /v1
 - name: '🇷🇺 SpaceWeb — #69'
   type: vless
-  server: 168.222.140.55
-  port: 2200
-  uuid: e1e26ef7-3291-45ac-b821-a11dcdbfdb4d
-  network: ws
-  ws-opts:
-    path: /v1
-    headers:
-      Host: rzd.ru
-- name: '🇷🇺 SpaceWeb — #70'
-  type: vless
   server: 80.93.62.207
   port: 2200
   uuid: 020530ec-acf3-41a3-b93e-838e6860bd74
@@ -620,19 +593,20 @@ proxies:
     path: /v1
     headers:
       Host: rzd.ru
-- name: '🇷🇺 Timeweb — #71'
+- name: '🇷🇺 Timeweb — #70'
   type: vless
-  server: 104.171.137.146
-  port: 443
-  uuid: 670decfe-68cc-499e-8cb1-22b39c20acbb
+  server: 201.51.1.84
+  port: 16923
+  uuid: ba222add-6ac1-45f1-9a18-f91cb38e324f
+  network: grpc
   tls: true
-  flow: xtls-rprx-vision
-  sni: rf2.helper-internet.com
-  client-fingerprint: firefox
+  sni: api-maps.yandex.ru
+  grpc-opts:
+    grpc-service-name: neurex
   reality-opts:
-    public-key: W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE
-    short-id: ff776ff77be48b88
-- name: '🇷🇺 Timeweb — #72'
+    public-key: _QeslG3rHGM7DoM99pYC8-jpc16pM2MbNZ6NRMoxmHA
+    short-id: 10ffb85da1c2d986
+- name: '🇷🇺 Timeweb — #71'
   type: vless
   server: 201.51.1.84
   port: 16923
@@ -646,7 +620,69 @@ proxies:
   reality-opts:
     public-key: _QeslG3rHGM7DoM99pYC8-jpc16pM2MbNZ6NRMoxmHA
     short-id: 10ffb85da1c2d986
+- name: '🇷🇺 Timeweb — #72'
+  type: vless
+  server: 31.177.111.144
+  port: 443
+  uuid: 8071f3cc-994f-4fe2-bb87-cdc79559cb56
+  network: grpc
+  tls: true
+  sni: ads.x5.ru
+  client-fingerprint: firefox
+  grpc-opts:
+    grpc-service-name: grpc
+  reality-opts:
+    public-key: J3W60M3AtU5k97dW435MfETjHX-DtfFqNrRUNoj2MXE
+    short-id: a1b2c3d4
 - name: '🇷🇺 Timeweb — #73'
+  type: vless
+  server: 104.171.132.232
+  port: 2200
+  uuid: a2aa7759-ddac-4d02-bf9d-de62cbff9481
+  network: ws
+  ws-opts:
+    path: /v1
+- name: '🇷🇺 Timeweb — #74'
+  type: vless
+  server: 104.171.132.232
+  port: 4100
+  uuid: a2aa7759-ddac-4d02-bf9d-de62cbff9481
+  network: ws
+  ws-opts:
+    path: /v1
+- name: '🇷🇺 Timeweb — #75'
+  type: vless
+  server: 186.246.6.234
+  port: 2200
+  uuid: 2a88091e-e3f8-4478-9751-6ce0557a7f2e
+  network: ws
+  ws-opts:
+    path: /v1
+- name: '🇷🇺 Timeweb — #76'
+  type: vless
+  server: 186.246.6.234
+  port: 4100
+  uuid: 77fd4d9e-c314-4203-b3e0-b836a1d969b4
+  network: ws
+  ws-opts:
+    path: /v1
+- name: '🇷🇺 Timeweb — #77'
+  type: vless
+  server: 104.171.136.112
+  port: 2200
+  uuid: bee21918-0933-430c-904b-c941b92256ba
+  network: ws
+  ws-opts:
+    path: /v1
+- name: '🇷🇺 Timeweb — #78'
+  type: vless
+  server: 104.171.137.185
+  port: 2200
+  uuid: 3b037295-b93f-4ed1-b3ee-0efb8bc2f093
+  network: ws
+  ws-opts:
+    path: /v1
+- name: '🇷🇺 Timeweb — #79'
   type: vless
   server: 201.51.1.84
   port: 16923
@@ -660,7 +696,7 @@ proxies:
   reality-opts:
     public-key: _QeslG3rHGM7DoM99pYC8-jpc16pM2MbNZ6NRMoxmHA
     short-id: 10ffb85da1c2d986
-- name: '🇷🇺 Timeweb — #74'
+- name: '🇷🇺 Timeweb — #80'
   type: vless
   server: 83.217.192.58
   port: 4100
@@ -668,7 +704,7 @@ proxies:
   network: ws
   ws-opts:
     path: /v1
-- name: '🇷🇺 Timeweb — #75'
+- name: '🇷🇺 Timeweb — #81'
   type: vless
   server: 201.51.2.6
   port: 2200
@@ -678,20 +714,7 @@ proxies:
     path: /v1
     headers:
       Host: rzd.ru
-- name: '🇷🇺 Timeweb — #85'
-  type: vless
-  server: 201.51.1.84
-  port: 16923
-  uuid: ba222add-6ac1-45f1-9a18-f91cb38e324f
-  network: grpc
-  tls: true
-  sni: api-maps.yandex.ru
-  grpc-opts:
-    grpc-service-name: neurex
-  reality-opts:
-    public-key: _QeslG3rHGM7DoM99pYC8-jpc16pM2MbNZ6NRMoxmHA
-    short-id: 10ffb85da1c2d986
-- name: '🇷🇺 Timeweb — #86'
+- name: '🇷🇺 Timeweb — #91'
   type: vless
   server: 104.171.137.109
   port: 2200
@@ -699,7 +722,7 @@ proxies:
   network: ws
   ws-opts:
     path: /v1
-- name: '🇷🇺 Timeweb — #87'
+- name: '🇷🇺 Timeweb — #92'
   type: vless
   server: 188.225.33.206
   port: 8443
@@ -710,33 +733,7 @@ proxies:
   client-fingerprint: firefox
   reality-opts:
     public-key: C819rM4M_c473A8glp-eBFh8Fm9O1cmEeXmivDhM1Fc
-- name: '🇷🇺 Timeweb — #88'
-  type: vless
-  server: 185.247.16.3
-  port: 2200
-  uuid: 155e8dd4-a559-407a-9ea8-13a5e829f066
-  network: ws
-  ws-opts:
-    path: /v1
-    headers:
-      Host: rzd.ru
-- name: '🇷🇺 Timeweb — #89'
-  type: vless
-  server: 185.247.16.4
-  port: 2200
-  uuid: 106b0505-da24-4ae4-b22c-302ab814f6f4
-  network: ws
-  ws-opts:
-    path: /v1
-- name: '🇷🇺 Timeweb — #90'
-  type: vless
-  server: 104.171.137.148
-  port: 2200
-  uuid: a484645e-59df-4980-b649-92b71250ec60
-  network: ws
-  ws-opts:
-    path: /v1
-- name: '🇷🇺 Timeweb — #91'
+- name: '🇷🇺 Timeweb — #93'
   type: vless
   server: 201.51.5.253
   port: 2200
@@ -744,7 +741,7 @@ proxies:
   network: ws
   ws-opts:
     path: /v1
-- name: '🇷🇺 Timeweb — #92'
+- name: '🇷🇺 Timeweb — #94'
   type: vless
   server: 5.129.241.247
   port: 4100
@@ -752,7 +749,7 @@ proxies:
   network: ws
   ws-opts:
     path: /v1
-- name: '🇷🇺 Timeweb — #93'
+- name: '🇷🇺 Timeweb — #95'
   type: vless
   server: 147.45.235.14
   port: 2200
@@ -762,21 +759,7 @@ proxies:
     path: /v1
     headers:
       Host: rzd.ru
-- name: '🇷🇺 Timeweb — #94'
-  type: vless
-  server: 201.51.1.84
-  port: 16923
-  uuid: ba222add-6ac1-45f1-9a18-f91cb38e324f
-  network: grpc
-  tls: true
-  sni: api-maps.yandex.ru
-  client-fingerprint: edge
-  grpc-opts:
-    grpc-service-name: neurex
-  reality-opts:
-    public-key: _QeslG3rHGM7DoM99pYC8-jpc16pM2MbNZ6NRMoxmHA
-    short-id: 10ffb85da1c2d986
-- name: '🇷🇺 Timeweb — #95'
+- name: '🇷🇺 Timeweb — #96'
   type: vless
   server: 188.225.33.206
   port: 8443
@@ -787,7 +770,7 @@ proxies:
   client-fingerprint: chrome
   reality-opts:
     public-key: C819rM4M_c473A8glp-eBFh8Fm9O1cmEeXmivDhM1Fc
-- name: '🇷🇺 Timeweb — #96'
+- name: '🇷🇺 Timeweb — #97'
   type: vless
   server: 72.56.247.70
   port: 4100
@@ -795,7 +778,7 @@ proxies:
   network: ws
   ws-opts:
     path: /v1
-- name: '🇷🇺 Timeweb — #97'
+- name: '🇷🇺 Timeweb — #98'
   type: vless
   server: 201.51.0.38
   port: 4100
@@ -805,19 +788,11 @@ proxies:
     path: /v1
     headers:
       Host: live.ok.ru
-- name: '🇷🇺 Timeweb — #98'
+- name: '🇷🇺 Timeweb — #99'
   type: vless
   server: 201.51.0.38
   port: 4100
   uuid: e7299042-7d8f-440f-8368-2516b0e69341
-  network: ws
-  ws-opts:
-    path: /v1
-- name: '🇷🇺 Timeweb — #99'
-  type: vless
-  server: 104.171.133.161
-  port: 4100
-  uuid: 155e8dd4-a559-407a-9ea8-13a5e829f066
   network: ws
   ws-opts:
     path: /v1
@@ -883,21 +858,13 @@ proxies:
       Host: live.ok.ru
 - name: '🇷🇺 Timeweb — #107'
   type: vless
-  server: 104.171.137.141
-  port: 4100
-  uuid: d5d72f0a-42b0-4f43-b568-9cf7fbff073d
-  network: ws
-  ws-opts:
-    path: /v1
-- name: '🇷🇺 Timeweb — #108'
-  type: vless
   server: 147.45.235.14
   port: 2200
   uuid: 55009b9b-7b9c-4830-86c6-cb058a7a2e2f
   network: ws
   ws-opts:
     path: /v1
-- name: '🇷🇺 Timeweb — #109'
+- name: '🇷🇺 Timeweb — #108'
   type: vless
   server: 176.98.178.17
   port: 4100
@@ -905,25 +872,7 @@ proxies:
   network: ws
   ws-opts:
     path: /v1
-- name: '🇷🇺 Timeweb — #110'
-  type: vless
-  server: 193.188.23.170
-  port: 2200
-  uuid: 1f9ac5fe-ce9c-40ff-b52f-6f96b1285ba6
-  network: ws
-  ws-opts:
-    path: /v1
-    headers:
-      Host: rzd.ru
-- name: '🇷🇺 Timeweb — #111'
-  type: vless
-  server: 193.188.23.170
-  port: 2200
-  uuid: b3d66abd-ea82-4616-92f0-1dec8d1e4cfc
-  network: ws
-  ws-opts:
-    path: /v1
-- name: '🇷🇺 Timeweb — #112'
+- name: '🇷🇺 Timeweb — #109'
   type: vless
   server: 104.171.134.235
   port: 4100
@@ -933,15 +882,7 @@ proxies:
     path: /v1
     headers:
       Host: live.ok.ru
-- name: '🇷🇺 Timeweb — #113'
-  type: vless
-  server: 185.185.142.79
-  port: 2200
-  uuid: 0c4f46c2-afb7-4a80-8f6e-10258d80333e
-  network: ws
-  ws-opts:
-    path: /v1
-- name: '🇷🇺 Timeweb — #114'
+- name: '🇷🇺 Timeweb — #110'
   type: vless
   server: 185.185.142.79
   port: 2200
@@ -951,7 +892,7 @@ proxies:
     path: /v1
     headers:
       Host: rzd.ru
-- name: '🇷🇺 Timeweb — #115'
+- name: '🇷🇺 Timeweb — #111'
   type: vless
   server: 104.171.137.176
   port: 2200
@@ -959,7 +900,7 @@ proxies:
   network: ws
   ws-opts:
     path: /v1
-- name: '🇷🇺 Timeweb — #116'
+- name: '🇷🇺 Timeweb — #112'
   type: vless
   server: 85.92.111.38
   port: 4100
@@ -967,7 +908,7 @@ proxies:
   network: ws
   ws-opts:
     path: /v1
-- name: '🇷🇺 Timeweb — #117'
+- name: '🇷🇺 Timeweb — #113'
   type: vless
   server: 85.92.111.38
   port: 4100
@@ -977,15 +918,7 @@ proxies:
     path: /v1
     headers:
       Host: live.ok.ru
-- name: '🇷🇺 Timeweb — #118'
-  type: vless
-  server: 185.247.16.4
-  port: 4100
-  uuid: a484645e-59df-4980-b649-92b71250ec60
-  network: ws
-  ws-opts:
-    path: /v1
-- name: '🇷🇺 Timeweb — #119'
+- name: '🇷🇺 Timeweb — #114'
   type: vless
   server: 109.73.193.169
   port: 4100
@@ -993,7 +926,7 @@ proxies:
   network: ws
   ws-opts:
     path: /v1
-- name: '🇷🇺 Timeweb — #120'
+- name: '🇷🇺 Timeweb — #115'
   type: vless
   server: 109.73.193.169
   port: 2200
@@ -1001,7 +934,7 @@ proxies:
   network: ws
   ws-opts:
     path: /v1
-- name: '🇷🇺 Timeweb — #121'
+- name: '🇷🇺 Timeweb — #116'
   type: vless
   server: 188.225.81.61
   port: 4100
@@ -1009,7 +942,7 @@ proxies:
   network: ws
   ws-opts:
     path: /v1
-- name: '🇷🇺 Timeweb — #122'
+- name: '🇷🇺 Timeweb — #117'
   type: vless
   server: 77.95.201.235
   port: 2200
@@ -1017,7 +950,7 @@ proxies:
   network: ws
   ws-opts:
     path: /v1
-- name: '🇷🇺 Timeweb — #123'
+- name: '🇷🇺 Timeweb — #118'
   type: vless
   server: 104.171.137.176
   port: 4100
@@ -1025,7 +958,7 @@ proxies:
   network: ws
   ws-opts:
     path: /v1
-- name: '🇷🇺 Timeweb — #124'
+- name: '🇷🇺 Timeweb — #119'
   type: vless
   server: 212.193.26.170
   port: 2200
@@ -1033,7 +966,7 @@ proxies:
   network: ws
   ws-opts:
     path: /v1
-- name: '🇷🇺 Timeweb — #125'
+- name: '🇷🇺 Timeweb — #120'
   type: vless
   server: 5.129.194.34
   port: 4100
@@ -1041,7 +974,7 @@ proxies:
   network: ws
   ws-opts:
     path: /v1
-- name: '🇷🇺 Timeweb — #126'
+- name: '🇷🇺 Timeweb — #121'
   type: vless
   server: 201.24.127.110
   port: 4100
@@ -1051,7 +984,7 @@ proxies:
     path: /v1
     headers:
       Host: live.ok.ru
-- name: '🇷🇺 Timeweb — #127'
+- name: '🇷🇺 Timeweb — #122'
   type: vless
   server: 104.171.136.172
   port: 4100
@@ -1059,7 +992,7 @@ proxies:
   network: ws
   ws-opts:
     path: /v1
-- name: '🇷🇺 Timeweb — #128'
+- name: '🇷🇺 Timeweb — #123'
   type: vless
   server: 72.56.246.91
   port: 4100
@@ -1067,7 +1000,7 @@ proxies:
   network: ws
   ws-opts:
     path: /v1
-- name: '🇷🇺 Timeweb — #129'
+- name: '🇷🇺 Timeweb — #124'
   type: vless
   server: 217.149.23.169
   port: 2200
@@ -1075,7 +1008,7 @@ proxies:
   network: ws
   ws-opts:
     path: /v1
-- name: '🇷🇺 Timeweb — #130'
+- name: '🇷🇺 Timeweb — #125'
   type: vless
   server: 5.129.252.140
   port: 4100
@@ -1083,7 +1016,7 @@ proxies:
   network: ws
   ws-opts:
     path: /v1
-- name: '🇷🇺 Timeweb — #131'
+- name: '🇷🇺 Timeweb — #126'
   type: vless
   server: 77.95.201.235
   port: 2200
@@ -1093,7 +1026,7 @@ proxies:
     path: /v1
     headers:
       Host: rzd.ru
-- name: '🇷🇺 Timeweb — #132'
+- name: '🇷🇺 Timeweb — #127'
   type: vless
   server: 104.171.135.186
   port: 4100
@@ -1101,7 +1034,7 @@ proxies:
   network: ws
   ws-opts:
     path: /v1
-- name: '🇷🇺 Timeweb — #133'
+- name: '🇷🇺 Timeweb — #128'
   type: vless
   server: 104.171.137.176
   port: 2200
@@ -1111,7 +1044,7 @@ proxies:
     path: /v1
     headers:
       Host: rzd.ru
-- name: '🇷🇺 Timeweb — #134'
+- name: '🇷🇺 Timeweb — #129'
   type: vless
   server: 104.171.132.128
   port: 4100
@@ -1119,15 +1052,7 @@ proxies:
   network: ws
   ws-opts:
     path: /v1
-- name: '🇷🇺 Timeweb — #135'
-  type: vless
-  server: 104.171.137.141
-  port: 2200
-  uuid: d5d72f0a-42b0-4f43-b568-9cf7fbff073d
-  network: ws
-  ws-opts:
-    path: /v1
-- name: '🇷🇺 Timeweb — #136'
+- name: '🇷🇺 Timeweb — #130'
   type: vless
   server: 89.223.70.156
   port: 2200
@@ -1135,7 +1060,7 @@ proxies:
   network: ws
   ws-opts:
     path: /v1
-- name: '🇷🇺 Timeweb — #137'
+- name: '🇷🇺 Timeweb — #131'
   type: vless
   server: 188.225.27.238
   port: 2200
@@ -1145,7 +1070,7 @@ proxies:
     path: /v1
     headers:
       Host: rzd.ru
-- name: '🇷🇺 Timeweb — #138'
+- name: '🇷🇺 Timeweb — #132'
   type: vless
   server: 201.51.2.6
   port: 2200
@@ -1153,7 +1078,7 @@ proxies:
   network: ws
   ws-opts:
     path: /v1
-- name: '🇷🇺 Timeweb — #139'
+- name: '🇷🇺 Timeweb — #133'
   type: vless
   server: 104.171.132.185
   port: 4100
@@ -1161,7 +1086,7 @@ proxies:
   network: ws
   ws-opts:
     path: /v1
-- name: '🇷🇺 Timeweb — #140'
+- name: '🇷🇺 Timeweb — #134'
   type: vless
   server: 185.247.16.49
   port: 2200
@@ -1171,7 +1096,7 @@ proxies:
     path: /v1
     headers:
       Host: rzd.ru
-- name: '🇷🇺 Timeweb — #141'
+- name: '🇷🇺 Timeweb — #135'
   type: vless
   server: 104.171.134.235
   port: 4100
@@ -1179,7 +1104,7 @@ proxies:
   network: ws
   ws-opts:
     path: /v1
-- name: '🇷🇺 Timeweb — #142'
+- name: '🇷🇺 Timeweb — #136'
   type: vless
   server: 109.73.196.160
   port: 4100
@@ -1187,15 +1112,7 @@ proxies:
   network: ws
   ws-opts:
     path: /v1
-- name: '🇷🇺 Timeweb — #143'
-  type: vless
-  server: 83.217.200.217
-  port: 4100
-  uuid: 5ab425b0-d54d-45ed-a7ae-0a5788112258
-  network: ws
-  ws-opts:
-    path: /v1
-- name: '🇷🇺 Timeweb — #144'
+- name: '🇷🇺 Timeweb — #137'
   type: vless
   server: 72.56.36.96
   port: 40443
@@ -1207,7 +1124,7 @@ proxies:
   reality-opts:
     public-key: cZF84xUCciKRXxTA39vNnh0U8CjUZiUSjLzuNTMOzV8
     short-id: 33e48a03db900ff3
-- name: '🇷🇺 Timeweb — #145'
+- name: '🇷🇺 Timeweb — #138'
   type: vless
   server: 72.56.14.138
   port: 2200
@@ -1215,27 +1132,7 @@ proxies:
   network: ws
   ws-opts:
     path: /v1
-- name: '🇷🇺 Timeweb — #147'
-  type: vless
-  server: 83.217.200.217
-  port: 2200
-  uuid: 2fc0a781-a772-49c0-9a04-c6ddff3ec877
-  network: ws
-  ws-opts:
-    path: /v1
-- name: '🇷🇺 Timeweb — #148'
-  type: vless
-  server: 5.178.85.233
-  port: 9704
-  uuid: 2c789be4-57d2-496a-9a7e-ca9751863a45
-  tls: true
-  flow: xtls-rprx-vision
-  sni: ru-5.nodes.ac
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: Wki8ekkP0DkoL4jUkeqftXEdGwAqNGT5P2zsr75Iuz4
-    short-id: d25eb35e924ce840
-- name: '🇷🇺 Timeweb — #149'
+- name: '🇷🇺 Timeweb — #139'
   type: vless
   server: 5.178.85.233
   port: 9704
@@ -1247,7 +1144,29 @@ proxies:
   reality-opts:
     public-key: Wki8ekkP0DkoL4jUkeqftXEdGwAqNGT5P2zsr75Iuz4
     short-id: d25eb35e924ce840
-- name: '🇷🇺 UFO Hosting — #150'
+- name: '🇷🇺 Timeweb — #140'
+  type: vless
+  server: 5.129.241.247
+  port: 2200
+  uuid: de013182-c865-4302-a660-7472717c815b
+  network: ws
+  ws-opts:
+    path: /v1
+    headers:
+      Host: rzd.ru
+- name: '🇷🇺 Timeweb — #141'
+  type: vless
+  server: 5.178.85.233
+  port: 9704
+  uuid: 63bc74f0-fa19-40f5-9e3a-ce7c4827abb8
+  tls: true
+  flow: xtls-rprx-vision
+  sni: ru-5.nodes.ac
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: Wki8ekkP0DkoL4jUkeqftXEdGwAqNGT5P2zsr75Iuz4
+    short-id: d25eb35e924ce840
+- name: '🇷🇺 UFO Hosting — #142'
   type: vless
   server: 45.84.1.247
   port: 8443
@@ -1259,7 +1178,7 @@ proxies:
   reality-opts:
     public-key: E_hcnZ6IvHDD2IFy8UGRvwWXHSqRrF--Ply0hJXSd30
     short-id: 849cac6150823b
-- name: '🇷🇺 UFO Hosting — #151'
+- name: '🇷🇺 UFO Hosting — #143'
   type: vless
   server: 45.84.1.247
   port: 8443
@@ -1271,7 +1190,41 @@ proxies:
   reality-opts:
     public-key: E_hcnZ6IvHDD2IFy8UGRvwWXHSqRrF--Ply0hJXSd30
     short-id: 849cac6150823b
-- name: '🇷🇺 Xorek.Cloud — #152'
+- name: '🇷🇺 Xorek.Cloud — #144'
+  type: vless
+  server: 194.26.229.217
+  port: 4100
+  uuid: e58a0802-443e-4ba3-992b-73687bb5b9f0
+  network: ws
+  ws-opts:
+    path: /v1
+    headers:
+      Host: live.ok.ru
+- name: '🇷🇺 Xorek.Cloud — #145'
+  type: vless
+  server: 194.26.229.217
+  port: 4100
+  uuid: af049fac-3086-4fb8-bc9b-7a48c806daf3
+  network: ws
+  ws-opts:
+    path: /v1
+- name: '🇷🇺 Xorek.Cloud — #146'
+  type: vless
+  server: 194.26.229.217
+  port: 2200
+  uuid: e58a0802-443e-4ba3-992b-73687bb5b9f0
+  network: ws
+  ws-opts:
+    path: /v1
+- name: '🇷🇺 Xorek.Cloud — #147'
+  type: vless
+  server: 194.26.229.217
+  port: 4100
+  uuid: e58a0802-443e-4ba3-992b-73687bb5b9f0
+  network: ws
+  ws-opts:
+    path: /v1
+- name: '🇷🇺 Xorek.Cloud — #148'
   type: vless
   server: 194.26.229.219
   port: 4100
@@ -1279,7 +1232,7 @@ proxies:
   network: ws
   ws-opts:
     path: /v1
-- name: '🇷🇺 Xorek.Cloud — #153'
+- name: '🇷🇺 Xorek.Cloud — #149'
   type: vless
   server: 194.26.229.212
   port: 2200
@@ -1287,7 +1240,7 @@ proxies:
   network: ws
   ws-opts:
     path: /v1
-- name: '🇷🇺 Xorek.Cloud — #154'
+- name: '🇷🇺 Xorek.Cloud — #150'
   type: vless
   server: 194.26.229.207
   port: 2200
@@ -1297,7 +1250,7 @@ proxies:
     path: /v1
     headers:
       Host: rzd.ru
-- name: '🇷🇺 Xorek.Cloud — #155'
+- name: '🇷🇺 Xorek.Cloud — #151'
   type: vless
   server: 194.26.229.207
   port: 2200
@@ -1307,7 +1260,7 @@ proxies:
     path: /v1
     headers:
       Host: rzd.ru
-- name: '🇷🇺 Xorek.Cloud — #156'
+- name: '🇷🇺 Xorek.Cloud — #152'
   type: vless
   server: 194.26.229.207
   port: 2200
@@ -1315,7 +1268,7 @@ proxies:
   network: ws
   ws-opts:
     path: /v1
-- name: '🇷🇺 Xorek.Cloud — #157'
+- name: '🇷🇺 Xorek.Cloud — #153'
   type: vless
   server: 194.26.229.209
   port: 2200
@@ -1323,7 +1276,7 @@ proxies:
   network: ws
   ws-opts:
     path: /v1
-- name: '🇷🇺 Xorek.Cloud — #158'
+- name: '🇷🇺 Xorek.Cloud — #154'
   type: vless
   server: 194.26.229.214
   port: 2200
@@ -1333,7 +1286,7 @@ proxies:
     path: /v1
     headers:
       Host: rzd.ru
-- name: '🇷🇺 Xorek.Cloud — #159'
+- name: '🇷🇺 Xorek.Cloud — #155'
   type: vless
   server: 194.26.229.214
   port: 2200
@@ -1341,7 +1294,7 @@ proxies:
   network: ws
   ws-opts:
     path: /v1
-- name: '🇷🇺 Xorek.Cloud — #160'
+- name: '🇷🇺 Xorek.Cloud — #156'
   type: vless
   server: 194.26.229.214
   port: 2200
@@ -1349,7 +1302,7 @@ proxies:
   network: ws
   ws-opts:
     path: /v1
-- name: '🇷🇺 Xorek.Cloud — #161'
+- name: '🇷🇺 Xorek.Cloud — #157'
   type: vless
   server: 194.26.229.220
   port: 4100
@@ -1357,7 +1310,7 @@ proxies:
   network: ws
   ws-opts:
     path: /v1
-- name: '🇷🇺 Xorek.Cloud — #162'
+- name: '🇷🇺 Xorek.Cloud — #158'
   type: vless
   server: 194.26.229.220
   port: 4100
@@ -1365,7 +1318,7 @@ proxies:
   network: ws
   ws-opts:
     path: /v1
-- name: '🇷🇺 Xorek.Cloud — #163'
+- name: '🇷🇺 Xorek.Cloud — #159'
   type: vless
   server: 194.26.229.209
   port: 4100
@@ -1373,15 +1326,7 @@ proxies:
   network: ws
   ws-opts:
     path: /v1
-- name: '🇷🇺 Xorek.Cloud — #164'
-  type: vless
-  server: 194.26.229.211
-  port: 2200
-  uuid: 1a2f7607-b36a-4996-b7a2-72359123c446
-  network: ws
-  ws-opts:
-    path: /v1
-- name: '🇷🇺 Xorek.Cloud — #165'
+- name: '🇷🇺 Xorek.Cloud — #160'
   type: vless
   server: 194.26.229.214
   port: 4100
@@ -1389,7 +1334,7 @@ proxies:
   network: ws
   ws-opts:
     path: /v1
-- name: '🇷🇺 Xorek.Cloud — #166'
+- name: '🇷🇺 Xorek.Cloud — #161'
   type: vless
   server: 194.26.229.214
   port: 4100
@@ -1397,7 +1342,7 @@ proxies:
   network: ws
   ws-opts:
     path: /v1
-- name: '🇷🇺 Xorek.Cloud — #167'
+- name: '🇷🇺 Xorek.Cloud — #162'
   type: vless
   server: 194.26.229.220
   port: 2200
@@ -1407,7 +1352,7 @@ proxies:
     path: /v1
     headers:
       Host: rzd.ru
-- name: '🇷🇺 Xorek.Cloud — #168'
+- name: '🇷🇺 Xorek.Cloud — #163'
   type: vless
   server: 194.26.229.222
   port: 4100
@@ -1415,17 +1360,7 @@ proxies:
   network: ws
   ws-opts:
     path: /v1
-- name: '🇷🇺 Xorek.Cloud — #169'
-  type: vless
-  server: 194.26.229.211
-  port: 4100
-  uuid: 1a2f7607-b36a-4996-b7a2-72359123c446
-  network: ws
-  ws-opts:
-    path: /v1
-    headers:
-      Host: live.ok.ru
-- name: '🇷🇺 Xorek.Cloud — #170'
+- name: '🇷🇺 Xorek.Cloud — #164'
   type: vless
   server: 194.26.229.218
   port: 2200
@@ -1433,7 +1368,7 @@ proxies:
   network: ws
   ws-opts:
     path: /v1
-- name: '🇷🇺 Xorek.Cloud — #171'
+- name: '🇷🇺 Xorek.Cloud — #165'
   type: vless
   server: 194.26.229.218
   port: 2200
@@ -1441,7 +1376,7 @@ proxies:
   network: ws
   ws-opts:
     path: /v1
-- name: '🇷🇺 Xorek.Cloud — #172'
+- name: '🇷🇺 Xorek.Cloud — #166'
   type: vless
   server: 194.26.229.210
   port: 4100
@@ -1449,7 +1384,7 @@ proxies:
   network: ws
   ws-opts:
     path: /v1
-- name: '🇷🇺 Yakovlev Denis Alexandrovich — #173'
+- name: '🇷🇺 Yakovlev Denis Alexandrovich — #167'
   type: vless
   server: 176.109.85.71
   port: 14443
@@ -1458,6 +1393,77 @@ proxies:
   tls: true
   sni: mws.tunnelgate.org
   client-fingerprint: ios
+  ws-opts:
+    path: /ru
+- name: '🇷🇺 Yakovlev Denis Alexandrovich — #168'
+  type: vless
+  server: 176.109.85.71
+  port: 14443
+  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
+  network: ws
+  tls: true
+  sni: mws.tunnelgate.org
+  client-fingerprint: firefox
+  ws-opts:
+    path: /ru
+- name: '🇷🇺 Yakovlev Denis Alexandrovich — #169'
+  type: vless
+  server: 176.109.85.71
+  port: 14443
+  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
+  network: ws
+  tls: true
+  sni: mws.tunnelgate.org
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /ru
+- name: '🇷🇺 Yakovlev Denis Alexandrovich — #170'
+  type: vless
+  server: 176.109.85.71
+  port: 14443
+  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
+  network: ws
+  tls: true
+  sni: mws.tunnelgate.org
+  client-fingerprint: qq
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /ru
+- name: '🇷🇺 Yakovlev Denis Alexandrovich — #171'
+  type: vless
+  server: 176.109.85.71
+  port: 14443
+  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
+  network: ws
+  tls: true
+  sni: mws.tunnelgate.org
+  client-fingerprint: qq
+  ws-opts:
+    path: /ru
+- name: '🇷🇺 Yakovlev Denis Alexandrovich — #172'
+  type: vless
+  server: 176.109.85.71
+  port: 14443
+  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
+  network: ws
+  tls: true
+  sni: mws.tunnelgate.org
+  ws-opts:
+    path: /ru
+- name: '🇷🇺 Yakovlev Denis Alexandrovich — #173'
+  type: vless
+  server: 176.109.85.71
+  port: 14443
+  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
+  network: ws
+  tls: true
+  sni: mws.tunnelgate.org
+  client-fingerprint: firefox
+  alpn:
+  - http/1.1
   ws-opts:
     path: /ru
 - name: '🇷🇺 Yakovlev Denis Alexandrovich — #174'
@@ -1468,9 +1474,13 @@ proxies:
   network: ws
   tls: true
   sni: mws.tunnelgate.org
-  client-fingerprint: firefox
+  client-fingerprint: qq
+  alpn:
+  - http/1.1
   ws-opts:
     path: /ru
+    headers:
+      Host: mws.tunnelgate.org
 - name: '🇷🇺 Yakovlev Denis Alexandrovich — #175'
   type: vless
   server: 176.109.85.71
@@ -1479,86 +1489,11 @@ proxies:
   network: ws
   tls: true
   sni: mws.tunnelgate.org
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
   ws-opts:
     path: /ru
+    headers:
+      Host: mws.tunnelgate.org
 - name: '🇷🇺 Yakovlev Denis Alexandrovich — #176'
-  type: vless
-  server: 176.109.85.71
-  port: 14443
-  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
-  network: ws
-  tls: true
-  sni: mws.tunnelgate.org
-  client-fingerprint: qq
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: /ru
-- name: '🇷🇺 Yakovlev Denis Alexandrovich — #177'
-  type: vless
-  server: 176.109.85.71
-  port: 14443
-  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
-  network: ws
-  tls: true
-  sni: mws.tunnelgate.org
-  client-fingerprint: qq
-  ws-opts:
-    path: /ru
-- name: '🇷🇺 Yakovlev Denis Alexandrovich — #178'
-  type: vless
-  server: 176.109.85.71
-  port: 14443
-  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
-  network: ws
-  tls: true
-  sni: mws.tunnelgate.org
-  ws-opts:
-    path: /ru
-- name: '🇷🇺 Yakovlev Denis Alexandrovich — #179'
-  type: vless
-  server: 176.109.85.71
-  port: 14443
-  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
-  network: ws
-  tls: true
-  sni: mws.tunnelgate.org
-  client-fingerprint: firefox
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: /ru
-- name: '🇷🇺 Yakovlev Denis Alexandrovich — #180'
-  type: vless
-  server: 176.109.85.71
-  port: 14443
-  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
-  network: ws
-  tls: true
-  sni: mws.tunnelgate.org
-  client-fingerprint: qq
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: /ru
-    headers:
-      Host: mws.tunnelgate.org
-- name: '🇷🇺 Yakovlev Denis Alexandrovich — #181'
-  type: vless
-  server: 176.109.85.71
-  port: 14443
-  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
-  network: ws
-  tls: true
-  sni: mws.tunnelgate.org
-  ws-opts:
-    path: /ru
-    headers:
-      Host: mws.tunnelgate.org
-- name: '🇷🇺 Yakovlev Denis Alexandrovich — #182'
   type: vless
   server: 176.109.85.71
   port: 14443
@@ -1573,7 +1508,7 @@ proxies:
     path: /ru
     headers:
       Host: mws.tunnelgate.org
-- name: '🇷🇺 Yakovlev Denis Alexandrovich — #183'
+- name: '🇷🇺 Yakovlev Denis Alexandrovich — #177'
   type: vless
   server: 176.109.85.71
   port: 14443
@@ -1588,7 +1523,7 @@ proxies:
     path: /ru
     headers:
       Host: mws.tunnelgate.org
-- name: '🇷🇺 Yakovlev Denis Alexandrovich — #184'
+- name: '🇷🇺 Yakovlev Denis Alexandrovich — #178'
   type: vless
   server: 176.109.85.71
   port: 14443
@@ -1601,7 +1536,7 @@ proxies:
     path: /ru
     headers:
       Host: mws.tunnelgate.org
-- name: '🇷🇺 Yakovlev Denis Alexandrovich — #185'
+- name: '🇷🇺 Yakovlev Denis Alexandrovich — #179'
   type: vless
   server: 176.109.85.71
   port: 14443
