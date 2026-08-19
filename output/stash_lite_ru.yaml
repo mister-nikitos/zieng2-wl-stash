@@ -126,7 +126,7 @@ proxies:
   type: vless
   server: 193.168.46.180
   port: 443
-  uuid: f056a35d-3ec8-46a6-910f-ecb7797ea3a9
+  uuid: 120aa225-0449-4f1a-b56d-0c8be0cb335e
   tls: true
   flow: xtls-rprx-vision
   sni: rruu.persik.host
@@ -138,7 +138,7 @@ proxies:
   type: vless
   server: 193.168.46.180
   port: 443
-  uuid: 120aa225-0449-4f1a-b56d-0c8be0cb335e
+  uuid: ce4230c7-cb22-4c91-9edd-ad9e53f27f99
   tls: true
   flow: xtls-rprx-vision
   sni: rruu.persik.host
@@ -150,7 +150,7 @@ proxies:
   type: vless
   server: 193.168.46.180
   port: 443
-  uuid: ce4230c7-cb22-4c91-9edd-ad9e53f27f99
+  uuid: cf542a61-99a6-4702-b51b-0ee884f3884f
   tls: true
   flow: xtls-rprx-vision
   sni: rruu.persik.host
@@ -162,7 +162,7 @@ proxies:
   type: vless
   server: 193.168.46.180
   port: 443
-  uuid: cf542a61-99a6-4702-b51b-0ee884f3884f
+  uuid: 48b03cf2-8beb-47e5-81c0-33dada6f2daa
   tls: true
   flow: xtls-rprx-vision
   sni: rruu.persik.host
@@ -180,17 +180,9 @@ proxies:
     path: /v1
 - name: '🇷🇺 Selectel — #18'
   type: vless
-  server: 87.228.122.108
-  port: 4100
-  uuid: 155e8dd4-a559-407a-9ea8-13a5e829f066
-  network: ws
-  ws-opts:
-    path: /v1
-- name: '🇷🇺 Selectel — #19'
-  type: vless
   server: 84.38.185.149
   port: 52006
-  uuid: eee887b6-a3b5-07d0-a180-edac083f95a8
+  uuid: b9c53727-7119-07d0-81b7-2f3724bfacb8
   tls: true
   flow: xtls-rprx-vision
   sni: claudecode.fastaichat.ru
@@ -198,6 +190,16 @@ proxies:
   alpn:
   - h2
   - http/1.1
+- name: '🇷🇺 SpaceWeb — #19'
+  type: vless
+  server: 168.222.203.14
+  port: 4100
+  uuid: 2e79f3ca-b8db-4d4d-a96e-8f7313480696
+  network: ws
+  ws-opts:
+    path: /v1
+    headers:
+      Host: live.ok.ru
 - name: '🇷🇺 SpaceWeb — #20'
   type: vless
   server: 168.222.203.14
@@ -216,6 +218,63 @@ proxies:
     path: /v1
 - name: '🇷🇺 Timeweb — #22'
   type: vless
+  server: 78.159.250.33
+  port: 18443
+  uuid: 2c634977-584e-4e1f-b501-1b70c77a6743
+  tls: true
+  flow: xtls-rprx-vision
+  sni: disagreedebut.net
+  client-fingerprint: firefox
+- name: '🇷🇺 Timeweb — #23'
+  type: vless
+  server: 188.225.33.206
+  port: 8443
+  uuid: c124a209-d949-4951-8234-e2d918b3e6c0
+  tls: true
+  flow: xtls-rprx-vision
+  sni: max.ru
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: C819rM4M_c473A8glp-eBFh8Fm9O1cmEeXmivDhM1Fc
+- name: '🇷🇺 Timeweb — #24'
+  type: vless
+  server: 78.159.250.33
+  port: 18443
+  uuid: 2c634977-584e-4e1f-b501-1b70c77a6743
+  tls: true
+  flow: xtls-rprx-vision
+  sni: disagreedebut.net
+  client-fingerprint: chrome
+- name: '🇷🇺 Timeweb — #25'
+  type: vless
+  server: 185.141.227.153
+  port: 9001
+  uuid: 2c634977-584e-4e1f-b501-1b70c77a6743
+  network: grpc
+  tls: true
+  sni: api-maps.yandex.ru
+  client-fingerprint: qq
+  grpc-opts:
+    grpc-service-name: grpc-reality
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    short-id: 6ba85179e30d4fc2
+- name: '🇷🇺 Timeweb — #26'
+  type: vless
+  server: 201.51.1.84
+  port: 16923
+  uuid: ba222add-6ac1-45f1-9a18-f91cb38e324f
+  network: grpc
+  tls: true
+  sni: api-maps.yandex.ru
+  client-fingerprint: firefox
+  grpc-opts:
+    grpc-service-name: neurex
+  reality-opts:
+    public-key: _QeslG3rHGM7DoM99pYC8-jpc16pM2MbNZ6NRMoxmHA
+    short-id: 10ffb85da1c2d986
+- name: '🇷🇺 Timeweb — #27'
+  type: vless
   server: 185.141.227.153
   port: 9001
   uuid: 2c634977-584e-4e1f-b501-1b70c77a6743
@@ -228,89 +287,31 @@ proxies:
   reality-opts:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
     short-id: 6ba85179e30d4fc2
-- name: '🇷🇺 Timeweb — #23'
-  type: vless
-  server: 78.159.250.33
-  port: 18443
-  uuid: 2c634977-584e-4e1f-b501-1b70c77a6743
-  tls: true
-  flow: xtls-rprx-vision
-  sni: disagreedebut.net
-  client-fingerprint: chrome
-- name: '🇷🇺 Timeweb — #24'
-  type: vless
-  server: 85.92.111.38
-  port: 4100
-  uuid: 0c4f46c2-afb7-4a80-8f6e-10258d80333e
-  network: ws
-  ws-opts:
-    path: /v1
-    headers:
-      Host: live.ok.ru
-- name: '🇷🇺 Timeweb — #25'
-  type: vless
-  server: 78.159.250.33
-  port: 18443
-  uuid: 2c634977-584e-4e1f-b501-1b70c77a6743
-  tls: true
-  flow: xtls-rprx-vision
-  sni: disagreedebut.net
-  client-fingerprint: qq
-- name: '🇷🇺 Timeweb — #26'
-  type: vless
-  server: 185.141.227.153
-  port: 9001
-  uuid: 2c634977-584e-4e1f-b501-1b70c77a6743
-  network: grpc
-  tls: true
-  sni: api-maps.yandex.ru
-  client-fingerprint: edge
-  grpc-opts:
-    grpc-service-name: grpc-reality
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-    short-id: 6ba85179e30d4fc2
-- name: '🇷🇺 Timeweb — #27'
-  type: vless
-  server: 185.141.227.153
-  port: 9001
-  uuid: 2c634977-584e-4e1f-b501-1b70c77a6743
-  network: grpc
-  tls: true
-  sni: api-maps.yandex.ru
-  client-fingerprint: firefox
-  grpc-opts:
-    grpc-service-name: grpc-reality
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-    short-id: 6ba85179e30d4fc2
 - name: '🇷🇺 Timeweb — #28'
   type: vless
-  server: 201.51.1.84
-  port: 16923
-  uuid: ba222add-6ac1-45f1-9a18-f91cb38e324f
+  server: 185.141.227.153
+  port: 9001
+  uuid: 2c634977-584e-4e1f-b501-1b70c77a6743
   network: grpc
   tls: true
   sni: api-maps.yandex.ru
-  client-fingerprint: firefox
+  client-fingerprint: ios
   grpc-opts:
-    grpc-service-name: neurex
+    grpc-service-name: grpc-reality
   reality-opts:
-    public-key: _QeslG3rHGM7DoM99pYC8-jpc16pM2MbNZ6NRMoxmHA
-    short-id: 10ffb85da1c2d986
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    short-id: 6ba85179e30d4fc2
 - name: '🇷🇺 Timeweb — #29'
   type: vless
-  server: 201.51.1.84
-  port: 16923
-  uuid: ba222add-6ac1-45f1-9a18-f91cb38e324f
-  network: grpc
+  server: 188.225.33.206
+  port: 8443
+  uuid: c124a209-d949-4951-8234-e2d918b3e6c0
   tls: true
-  sni: api-maps.yandex.ru
-  grpc-opts:
-    grpc-service-name: neurex
+  flow: xtls-rprx-vision
+  sni: max.ru
+  client-fingerprint: firefox
   reality-opts:
-    public-key: _QeslG3rHGM7DoM99pYC8-jpc16pM2MbNZ6NRMoxmHA
-    short-id: 10ffb85da1c2d986
+    public-key: C819rM4M_c473A8glp-eBFh8Fm9O1cmEeXmivDhM1Fc
 - name: '🇷🇺 Timeweb — #30'
   type: vless
   server: 201.51.1.84
@@ -327,65 +328,6 @@ proxies:
     short-id: 10ffb85da1c2d986
 - name: '🇷🇺 Timeweb — #31'
   type: vless
-  server: 188.225.33.206
-  port: 8443
-  uuid: c124a209-d949-4951-8234-e2d918b3e6c0
-  tls: true
-  flow: xtls-rprx-vision
-  sni: max.ru
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: C819rM4M_c473A8glp-eBFh8Fm9O1cmEeXmivDhM1Fc
-- name: '🇷🇺 Timeweb — #32'
-  type: vless
-  server: 185.141.227.153
-  port: 9001
-  uuid: 2c634977-584e-4e1f-b501-1b70c77a6743
-  network: grpc
-  tls: true
-  sni: api-maps.yandex.ru
-  client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: grpc-reality
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-    short-id: 6ba85179e30d4fc2
-- name: '🇷🇺 Timeweb — #33'
-  type: vless
-  server: 185.141.227.153
-  port: 9001
-  uuid: 2c634977-584e-4e1f-b501-1b70c77a6743
-  network: grpc
-  tls: true
-  sni: api-maps.yandex.ru
-  client-fingerprint: ios
-  grpc-opts:
-    grpc-service-name: grpc-reality
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-    short-id: 6ba85179e30d4fc2
-- name: '🇷🇺 Timeweb — #35'
-  type: vless
-  server: 188.225.33.206
-  port: 8443
-  uuid: c124a209-d949-4951-8234-e2d918b3e6c0
-  tls: true
-  flow: xtls-rprx-vision
-  sni: max.ru
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: C819rM4M_c473A8glp-eBFh8Fm9O1cmEeXmivDhM1Fc
-- name: '🇷🇺 Timeweb — #36'
-  type: vless
-  server: 194.87.143.165
-  port: 8443
-  uuid: f9613819-d2fe-4b3a-a2e6-40c184c6854c
-  network: ws
-  tls: true
-  sni: wsru1.wba-pn.ru
-  client-fingerprint: chrome
-- name: '🇷🇺 Timeweb — #37'
-  type: vless
   server: 201.51.1.84
   port: 16923
   uuid: ba222add-6ac1-45f1-9a18-f91cb38e324f
@@ -398,23 +340,25 @@ proxies:
   reality-opts:
     public-key: _QeslG3rHGM7DoM99pYC8-jpc16pM2MbNZ6NRMoxmHA
     short-id: 10ffb85da1c2d986
-- name: '🇷🇺 Timeweb — #38'
+- name: '🇷🇺 Timeweb — #32'
   type: vless
-  server: 85.92.111.38
-  port: 4100
-  uuid: 0c4f46c2-afb7-4a80-8f6e-10258d80333e
-  network: ws
-  ws-opts:
-    path: /v1
-- name: '🇷🇺 Timeweb — #39'
-  type: vless
-  server: 91.222.237.55
+  server: 89.223.70.156
   port: 2200
-  uuid: 714e1212-6707-471e-9f40-2fbd3d8d3b4b
+  uuid: 96c4225e-119c-4259-9015-7f74e057db36
   network: ws
   ws-opts:
     path: /v1
-- name: '🇷🇺 Timeweb — #40'
+- name: '🇷🇺 Timeweb — #33'
+  type: vless
+  server: 188.225.27.238
+  port: 2200
+  uuid: 77fd4d9e-c314-4203-b3e0-b836a1d969b4
+  network: ws
+  ws-opts:
+    path: /v1
+    headers:
+      Host: rzd.ru
+- name: '🇷🇺 Timeweb — #34'
   type: vless
   server: 185.141.227.153
   port: 9001
@@ -422,12 +366,69 @@ proxies:
   network: grpc
   tls: true
   sni: api-maps.yandex.ru
-  client-fingerprint: qq
+  client-fingerprint: edge
   grpc-opts:
     grpc-service-name: grpc-reality
   reality-opts:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
     short-id: 6ba85179e30d4fc2
+- name: '🇷🇺 Timeweb — #35'
+  type: vless
+  server: 185.141.227.153
+  port: 9001
+  uuid: 2c634977-584e-4e1f-b501-1b70c77a6743
+  network: grpc
+  tls: true
+  sni: api-maps.yandex.ru
+  client-fingerprint: firefox
+  grpc-opts:
+    grpc-service-name: grpc-reality
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    short-id: 6ba85179e30d4fc2
+- name: '🇷🇺 Timeweb — #36'
+  type: vless
+  server: 201.51.1.84
+  port: 16923
+  uuid: ba222add-6ac1-45f1-9a18-f91cb38e324f
+  network: grpc
+  tls: true
+  sni: api-maps.yandex.ru
+  grpc-opts:
+    grpc-service-name: neurex
+  reality-opts:
+    public-key: _QeslG3rHGM7DoM99pYC8-jpc16pM2MbNZ6NRMoxmHA
+    short-id: 10ffb85da1c2d986
+- name: '🇷🇺 Timeweb — #37'
+  type: vless
+  server: 185.141.227.153
+  port: 9001
+  uuid: 2c634977-584e-4e1f-b501-1b70c77a6743
+  network: grpc
+  tls: true
+  sni: api-maps.yandex.ru
+  client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: grpc-reality
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    short-id: 6ba85179e30d4fc2
+- name: '🇷🇺 Timeweb — #39'
+  type: vless
+  server: 85.92.111.38
+  port: 4100
+  uuid: 0c4f46c2-afb7-4a80-8f6e-10258d80333e
+  network: ws
+  ws-opts:
+    path: /v1
+- name: '🇷🇺 Timeweb — #40'
+  type: vless
+  server: 91.222.237.55
+  port: 2200
+  uuid: 714e1212-6707-471e-9f40-2fbd3d8d3b4b
+  network: ws
+  ws-opts:
+    path: /v1
 - name: '🇷🇺 Timeweb — #41'
   type: vless
   server: 72.56.36.96
@@ -440,31 +441,11 @@ proxies:
   reality-opts:
     public-key: cZF84xUCciKRXxTA39vNnh0U8CjUZiUSjLzuNTMOzV8
     short-id: 33e48a03db900ff3
-- name: '🇷🇺 Yakovlev Denis Alexandrovich — #42'
+- name: '🇷🇺 Xorek.Cloud — #42'
   type: vless
-  server: 176.109.85.71
-  port: 14443
-  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
+  server: 194.26.229.217
+  port: 4100
+  uuid: af049fac-3086-4fb8-bc9b-7a48c806daf3
   network: ws
-  tls: true
-  sni: mws.tunnelgate.org
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
   ws-opts:
-    path: /ru
-    headers:
-      Host: mws.tunnelgate.org
-- name: '🇷🇺 Yakovlev Denis Alexandrovich — #43'
-  type: vless
-  server: 176.109.85.71
-  port: 14443
-  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
-  network: ws
-  tls: true
-  sni: mws.tunnelgate.org
-  client-fingerprint: firefox
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: /ru
+    path: /v1
