@@ -12,62 +12,7 @@ proxies:
   network: ws
   ws-opts:
     path: /v1
-- name: '🇷🇺 Selectel — #3'
-  type: vless
-  server: 46.254.18.207
-  port: 443
-  uuid: cf80b5fc-c445-4373-87e6-f8a22ad10d81
-  tls: true
-  flow: xtls-rprx-vision
-  sni: ru-i.monkeyisland.xyz
-  client-fingerprint: chrome
-  alpn:
-  - h2
-- name: '🇷🇺 Selectel — #4'
-  type: vless
-  server: 46.254.18.207
-  port: 443
-  uuid: cf80b5fc-c445-4373-87e6-f8a22ad10d81
-  tls: true
-  flow: xtls-rprx-vision
-  sni: ru-i.monkeyisland.xyz
-  client-fingerprint: edge
-  alpn:
-  - h2
-- name: '🇷🇺 Selectel — #5'
-  type: vless
-  server: 46.254.18.207
-  port: 443
-  uuid: cf80b5fc-c445-4373-87e6-f8a22ad10d81
-  tls: true
-  flow: xtls-rprx-vision
-  sni: ru-i.monkeyisland.xyz
-  client-fingerprint: firefox
-  alpn:
-  - h2
-- name: '🇷🇺 Selectel — #6'
-  type: vless
-  server: 46.254.18.207
-  port: 443
-  uuid: cf80b5fc-c445-4373-87e6-f8a22ad10d81
-  tls: true
-  flow: xtls-rprx-vision
-  sni: ru-i.monkeyisland.xyz
-  client-fingerprint: ios
-  alpn:
-  - h2
-- name: '🇷🇺 Selectel — #7'
-  type: vless
-  server: 46.254.18.207
-  port: 443
-  uuid: cf80b5fc-c445-4373-87e6-f8a22ad10d81
-  tls: true
-  flow: xtls-rprx-vision
-  sni: ru-i.monkeyisland.xyz
-  client-fingerprint: qq
-  alpn:
-  - h2
-- name: '🇷🇺 SpaceWeb — #8'
+- name: '🇷🇺 SpaceWeb — #3'
   type: vless
   server: 168.222.203.14
   port: 4100
@@ -75,7 +20,7 @@ proxies:
   network: ws
   ws-opts:
     path: /v1
-- name: '🇷🇺 Sprinthost — #9'
+- name: '🇷🇺 Sprinthost — #4'
   type: vless
   server: 185.185.69.26
   port: 2200
@@ -85,23 +30,25 @@ proxies:
     path: /v1
     headers:
       Host: rzd.ru
-- name: '🇷🇺 Timeweb — #10'
+- name: '🇷🇺 Sprinthost — #5'
   type: vless
-  server: 5.42.121.52
-  port: 2200
-  uuid: 64bd5231-8c49-44f4-8bc0-998eef787d05
-  network: ws
-  ws-opts:
-    path: /v1
-- name: '🇷🇺 Timeweb — #11'
-  type: vless
-  server: 5.42.121.52
+  server: 185.185.69.26
   port: 4100
-  uuid: 64bd5231-8c49-44f4-8bc0-998eef787d05
+  uuid: 7ee53e03-96ed-4121-9da2-62f3d3374506
   network: ws
   ws-opts:
     path: /v1
-- name: '🇷🇺 Timeweb — #12'
+    headers:
+      Host: live.ok.ru
+- name: '🇷🇺 Timeweb — #6'
+  type: vless
+  server: 87.249.54.48
+  port: 4100
+  uuid: fe3489e2-6b59-4adb-91f3-e34300a13d5a
+  network: ws
+  ws-opts:
+    path: /v1
+- name: '🇷🇺 Timeweb — #7'
   type: vless
   server: 200.165.234.45
   port: 4100
@@ -111,7 +58,45 @@ proxies:
     path: /v1
     headers:
       Host: live.ok.ru
-- name: '🇷🇺 Xorek.Cloud — #13'
+- name: '🇷🇺 Timeweb — #8'
+  type: vless
+  server: 217.199.254.215
+  port: 443
+  uuid: d7430ae7-320c-4658-808b-3006d0627d82
+  network: grpc
+  tls: true
+  sni: kaos.ubuntuhosting.host
+  client-fingerprint: firefox
+  grpc-opts:
+    grpc-service-name: gun
+  reality-opts:
+    public-key: HHbMyxLRgywVoS_G5d35HW0bToENF0ihXHJ20iLAYRM
+    short-id: b6549e
+- name: '🇷🇺 Timeweb — #9'
+  type: vless
+  server: 87.249.54.48
+  port: 2200
+  uuid: fe3489e2-6b59-4adb-91f3-e34300a13d5a
+  network: ws
+  ws-opts:
+    path: /v1
+- name: '🇷🇺 Timeweb — #10'
+  type: vless
+  server: 188.225.47.234
+  port: 4100
+  uuid: 7b2ce6b0-6d2b-4926-b7bf-6247eb1a0050
+  network: ws
+  ws-opts:
+    path: /v1
+- name: '🇷🇺 Timeweb — #11'
+  type: vless
+  server: 201.24.49.74
+  port: 2200
+  uuid: f0528a17-863f-4160-a5a0-0d9ad03f2ee7
+  network: ws
+  ws-opts:
+    path: /v1
+- name: '🇷🇺 Xorek.Cloud — #12'
   type: vless
   server: 194.26.229.122
   port: 2200
