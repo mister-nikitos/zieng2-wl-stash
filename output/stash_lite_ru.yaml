@@ -7,21 +7,45 @@ proxies:
   network: ws
   ws-opts:
     path: /v1
-- name: '🇷🇺 Timeweb — #2'
+- name: '🇷🇺 Sprinthost — #2'
   type: vless
-  server: 200.165.234.45
+  server: 185.185.69.26
+  port: 2200
+  uuid: 7ee53e03-96ed-4121-9da2-62f3d3374506
+  network: ws
+  ws-opts:
+    path: /v1
+    headers:
+      Host: rzd.ru
+- name: '🇷🇺 Sprinthost — #3'
+  type: vless
+  server: 185.185.69.26
   port: 4100
-  uuid: 39e0f41b-180b-4f7e-a607-37b135f0fd83
+  uuid: 7ee53e03-96ed-4121-9da2-62f3d3374506
   network: ws
   ws-opts:
     path: /v1
     headers:
       Host: live.ok.ru
-- name: '🇷🇺 Xorek.Cloud — #3'
+- name: '🇷🇺 Timeweb — #4'
   type: vless
-  server: 194.26.229.122
+  server: 217.199.254.215
+  port: 443
+  uuid: d7430ae7-320c-4658-808b-3006d0627d82
+  network: grpc
+  tls: true
+  sni: kaos.ubuntuhosting.host
+  client-fingerprint: firefox
+  grpc-opts:
+    grpc-service-name: gun
+  reality-opts:
+    public-key: HHbMyxLRgywVoS_G5d35HW0bToENF0ihXHJ20iLAYRM
+    short-id: b6549e
+- name: '🇷🇺 Timeweb — #5'
+  type: vless
+  server: 87.249.54.48
   port: 2200
-  uuid: 84d0ff7b-9760-415f-a974-b3e1fe92264f
+  uuid: fe3489e2-6b59-4adb-91f3-e34300a13d5a
   network: ws
   ws-opts:
     path: /v1
