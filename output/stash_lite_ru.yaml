@@ -42,37 +42,7 @@ proxies:
   reality-opts:
     public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
     short-id: 23103e1e
-- name: '🇷🇺 MegaMax Network — #5'
-  type: vless
-  server: 212.67.9.113
-  port: 2200
-  uuid: 2aa7f4b1-e859-46d0-b8ac-8587811ab7b1
-  network: ws
-  ws-opts:
-    path: /v1
-- name: '🇷🇺 Selectel — #6'
-  type: vless
-  server: 82.148.21.26
-  port: 443
-  uuid: 29834e2e-729c-491f-af21-d1d9a8bde8c6
-  tls: true
-  flow: xtls-rprx-vision
-  sni: crypt-obhod-15.mystatic-cdn.ru
-  client-fingerprint: edge
-  alpn:
-  - h2
-- name: '🇷🇺 Selectel — #7'
-  type: vless
-  server: 82.148.21.26
-  port: 443
-  uuid: 29834e2e-729c-491f-af21-d1d9a8bde8c6
-  tls: true
-  flow: xtls-rprx-vision
-  sni: crypt-obhod-15.mystatic-cdn.ru
-  client-fingerprint: qq
-  alpn:
-  - h2
-- name: '🇷🇺 Selectel — #8'
+- name: '🇷🇺 Selectel — #5'
   type: vless
   server: 5.182.5.43
   port: 443
@@ -81,6 +51,20 @@ proxies:
   tls: true
   sni: kaos.ubuntuhosting.host
   client-fingerprint: edge
+  grpc-opts:
+    grpc-service-name: gun
+  reality-opts:
+    public-key: HHbMyxLRgywVoS_G5d35HW0bToENF0ihXHJ20iLAYRM
+    short-id: b6549e
+- name: '🇷🇺 Selectel — #6'
+  type: vless
+  server: 5.182.5.43
+  port: 443
+  uuid: d7430ae7-320c-4658-808b-3006d0627d82
+  network: grpc
+  tls: true
+  sni: kaos.ubuntuhosting.host
+  client-fingerprint: firefox
   grpc-opts:
     grpc-service-name: gun
   reality-opts:
