@@ -7,7 +7,7 @@ proxies:
   network: ws
   tls: true
   sni: fbsv6.guardora.pro
-  client-fingerprint: safari
+  client-fingerprint: firefox
   alpn:
   - http/1.1
   ws-opts:
@@ -15,6 +15,21 @@ proxies:
     headers:
       Host: fbsv6.guardora.pro
 - name: '🇷🇺 VK — #2'
+  type: vless
+  server: 217.19.122.65
+  port: 443
+  uuid: bc5ec86c-3e65-4272-994c-59a924c72a68
+  network: ws
+  tls: true
+  sni: fbsv6.guardora.pro
+  client-fingerprint: safari
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /ws
+    headers:
+      Host: fbsv6.guardora.pro
+- name: '🇷🇺 VK — #3'
   type: vless
   server: 185.141.227.216
   port: 443
@@ -25,21 +40,6 @@ proxies:
   client-fingerprint: chrome
   ws-opts:
     path: /ws
-- name: '🇷🇺 VK — #3'
-  type: vless
-  server: 217.19.122.65
-  port: 443
-  uuid: bc5ec86c-3e65-4272-994c-59a924c72a68
-  network: ws
-  tls: true
-  sni: fbsv6.guardora.pro
-  client-fingerprint: firefox
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: /ws
-    headers:
-      Host: fbsv6.guardora.pro
 - name: '🇷🇺 Beget — #4'
   type: vless
   server: 45.12.75.242
