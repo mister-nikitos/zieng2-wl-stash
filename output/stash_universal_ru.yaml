@@ -43,11 +43,26 @@ proxies:
   tls: true
   sni: fbsv6.guardora.pro
   client-fingerprint: chrome
+  alpn:
+  - http/1.1
   ws-opts:
     path: /ws
     headers:
       Host: fbsv6.guardora.pro
 - name: '🇷🇺 VK — #5'
+  type: vless
+  server: 78.159.246.110
+  port: 443
+  uuid: bc5ec86c-3e65-4272-994c-59a924c72a68
+  network: ws
+  tls: true
+  sni: fbsv6.guardora.pro
+  client-fingerprint: chrome
+  ws-opts:
+    path: /ws
+    headers:
+      Host: fbsv6.guardora.pro
+- name: '🇷🇺 VK — #6'
   type: vless
   server: 78.159.246.110
   port: 443
@@ -62,17 +77,6 @@ proxies:
     path: /ws
     headers:
       Host: fbsv6.guardora.pro
-- name: '🇷🇺 VK — #6'
-  type: vless
-  server: 78.159.246.110
-  port: 443
-  uuid: bc5ec86c-3e65-4272-994c-59a924c72a68
-  network: ws
-  tls: true
-  sni: fbsv6.guardora.pro
-  client-fingerprint: random
-  ws-opts:
-    path: /ws
 - name: '🇷🇺 VK — #7'
   type: vless
   server: 78.159.246.110
@@ -82,12 +86,8 @@ proxies:
   tls: true
   sni: fbsv6.guardora.pro
   client-fingerprint: random
-  alpn:
-  - http/1.1
   ws-opts:
     path: /ws
-    headers:
-      Host: fbsv6.guardora.pro
 - name: '🇷🇺 VK — #8'
   type: vless
   server: 78.159.246.110
@@ -96,7 +96,7 @@ proxies:
   network: ws
   tls: true
   sni: fbsv6.guardora.pro
-  client-fingerprint: chrome
+  client-fingerprint: random
   alpn:
   - http/1.1
   ws-opts:
@@ -146,19 +146,7 @@ proxies:
     path: /ws
     headers:
       Host: fbsv6.guardora.pro
-- name: '🇷🇺 Baxet — #12'
-  type: vless
-  server: 46.17.41.178
-  port: 12180
-  uuid: e1f3079a-06e9-4282-a7f0-123378539e7c
-  network: grpc
-  tls: true
-  sni: it.nvidia.com
-  client-fingerprint: safari
-  reality-opts:
-    public-key: 3j3n6pV48Pe20lNbV3oZwl8Edg0cpD_ayz8Vp3GcfUk
-    short-id: b060d8ad6e2f6dc7
-- name: '🇷🇺 Beget — #13'
+- name: '🇷🇺 Beget — #12'
   type: vless
   server: 45.12.75.242
   port: 26424
@@ -169,7 +157,7 @@ proxies:
   reality-opts:
     public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
     short-id: 23103e1e
-- name: '🇷🇺 Beget — #14'
+- name: '🇷🇺 Beget — #13'
   type: vless
   server: 45.12.75.242
   port: 26424
@@ -180,7 +168,7 @@ proxies:
   reality-opts:
     public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
     short-id: 23103e1e
-- name: '🇷🇺 Beget — #15'
+- name: '🇷🇺 Beget — #14'
   type: vless
   server: 45.12.75.242
   port: 26424
@@ -190,7 +178,7 @@ proxies:
   reality-opts:
     public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
     short-id: 23103e1e
-- name: '🇷🇺 Beget — #16'
+- name: '🇷🇺 Beget — #15'
   type: vless
   server: 45.12.75.242
   port: 26424
@@ -201,3 +189,17 @@ proxies:
   reality-opts:
     public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
     short-id: 23103e1e
+- name: '🇷🇺 Timeweb — #26'
+  type: vless
+  server: 45.93.201.119
+  port: 443
+  uuid: f778d2eb-1bec-4d19-b0bf-0a5e39feed4f
+  network: grpc
+  tls: true
+  sni: vir2albridge.com
+  client-fingerprint: ios
+  grpc-opts:
+    grpc-service-name: moktana.net.v1.StreamService
+  reality-opts:
+    public-key: C6nh6hqFTbtizgSH8vGmw2XUxsQAbAW3jPylpgGvfl4
+    short-id: 7c4b9a2e8d5f3c1b
