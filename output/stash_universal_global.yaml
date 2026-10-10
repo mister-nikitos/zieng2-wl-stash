@@ -1,30 +1,5 @@
 proxies:
-- name: '🇨🇭 Switzerland — #47'
-  type: vless
-  server: 153.76.161.59
-  port: 2096
-  uuid: 3fcec4e4-a674-44d2-8cae-c253cec43b9c
-  network: grpc
-  tls: true
-  sni: id.vk.com
-  client-fingerprint: random
-  grpc-opts:
-    grpc-service-name: vless-grpc-reality
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
 - name: '🇩🇪 Germany — #51'
-  type: vless
-  server: 91.240.87.166
-  port: 443
-  uuid: c5b5ef33-819e-4972-9a5a-4ad91f38507f
-  tls: true
-  flow: xtls-rprx-vision
-  sni: www.vk.com
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: nkpZyXHfG7nhEh1vjBjEDV-Tn7UhHEb5iN9iA8gc9VE
-    short-id: c31188450fe50718
-- name: '🇩🇪 Germany — #52'
   type: vless
   server: 91.240.87.166
   port: 443
@@ -38,9 +13,21 @@ proxies:
     short-id: c31188450fe50718
 - name: '🇩🇪 Germany — #53'
   type: vless
+  server: 91.240.87.166
+  port: 443
+  uuid: c5b5ef33-819e-4972-9a5a-4ad91f38507f
+  tls: true
+  flow: xtls-rprx-vision
+  sni: www.vk.com
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: nkpZyXHfG7nhEh1vjBjEDV-Tn7UhHEb5iN9iA8gc9VE
+    short-id: c31188450fe50718
+- name: '🇩🇪 Germany — #54'
+  type: vless
   server: 188.225.77.178
   port: 443
-  uuid: cad38718-529f-44f8-b002-0a65f3194f5e
+  uuid: 3cc94d6b-a357-4b79-ba10-a774f6c58d06
   network: grpc
   tls: true
   sni: cloudcdn-m9-12.cdn.yandex.net
@@ -50,11 +37,35 @@ proxies:
   reality-opts:
     public-key: 9YcV-gA7iaXFnI0HXQa624OIqm4zxO_U2eMCWXQAiCQ
     short-id: 8375b32501373f41
-- name: '🇩🇪 Germany — #54'
+- name: '🇩🇪 Germany — #55'
+  type: vless
+  server: 185.229.9.175
+  port: 443
+  uuid: 895ae830-3276-49ad-9395-7937f6820d45
+  tls: true
+  flow: xtls-rprx-vision
+  sni: www.vk.com
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: ZO7C9aMpoVJ6CmkKWUBS20eKe542_tGIc6wZFGB-yjY
+    short-id: b4e5b7cefcd0d47c
+- name: '🇩🇪 Germany — #56'
+  type: vless
+  server: 91.240.87.166
+  port: 443
+  uuid: 895ae830-3276-49ad-9395-7937f6820d45
+  tls: true
+  flow: xtls-rprx-vision
+  sni: www.vk.com
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: nkpZyXHfG7nhEh1vjBjEDV-Tn7UhHEb5iN9iA8gc9VE
+    short-id: c31188450fe50718
+- name: '🇩🇪 Germany — #57'
   type: vless
   server: 95.129.236.149
   port: 443
-  uuid: e2a29d65-9323-42d4-9a74-42be1152e959
+  uuid: 895ae830-3276-49ad-9395-7937f6820d45
   network: ws
   tls: true
   sni: d.nehtar.ru
@@ -63,11 +74,23 @@ proxies:
   - http/1.1
   ws-opts:
     path: /gateway/v1/ws/74c4d5e82a8e50ccf09fc628c17dc9be
-- name: '🇩🇪 Germany — #55'
+- name: '🇩🇪 Germany — #58'
+  type: vless
+  server: 185.229.9.175
+  port: 443
+  uuid: 895ae830-3276-49ad-9395-7937f6820d45
+  tls: true
+  flow: xtls-rprx-vision
+  sni: max.ru
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: 2QoNARj5aaa5-kUEiwx38KzbbiENQZ95V7x9jFo6f2A
+    short-id: 88a84e3390fcf4a7
+- name: '🇩🇪 Germany — #59'
   type: vless
   server: 185.86.145.142
   port: 443
-  uuid: e2a29d65-9323-42d4-9a74-42be1152e959
+  uuid: 895ae830-3276-49ad-9395-7937f6820d45
   network: ws
   tls: true
   sni: n2.185-86-145-142.sslip.io
@@ -76,59 +99,11 @@ proxies:
   - http/1.1
   ws-opts:
     path: /e7ws
-- name: '🇩🇪 Germany — #56'
-  type: vless
-  server: 185.229.9.175
-  port: 443
-  uuid: e2a29d65-9323-42d4-9a74-42be1152e959
-  tls: true
-  flow: xtls-rprx-vision
-  sni: api.ok.ru
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: Eutx4frdhG1y7THj7k3CjazAsrCMj932RtbV4a1QfQk
-    short-id: d5b6308860d578bb
-- name: '🇩🇪 Germany — #57'
-  type: vless
-  server: 185.229.9.234
-  port: 443
-  uuid: e2a29d65-9323-42d4-9a74-42be1152e959
-  tls: true
-  flow: xtls-rprx-vision
-  sni: max.ru
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: AD7roAsP-vrlxeyfnVEWj7Cq_2viTSICXo2Psm6B_3E
-    short-id: cb425a961bb7d67c
-- name: '🇩🇪 Germany — #58'
-  type: vless
-  server: 87.242.94.90
-  port: 7445
-  uuid: e2a29d65-9323-42d4-9a74-42be1152e959
-  tls: true
-  flow: xtls-rprx-vision
-  sni: passport.yandex.ru
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: 0w339GBhpDiYwa9Wgqu3z3epu8dHAzeYUFXPtvzK8To
-    short-id: 190c27ae5f2e4d2c
-- name: '🇩🇪 Germany — #59'
-  type: vless
-  server: 91.240.87.166
-  port: 443
-  uuid: e2a29d65-9323-42d4-9a74-42be1152e959
-  tls: true
-  flow: xtls-rprx-vision
-  sni: www.vk.com
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: nkpZyXHfG7nhEh1vjBjEDV-Tn7UhHEb5iN9iA8gc9VE
-    short-id: c31188450fe50718
 - name: '🇩🇪 Germany — #60'
   type: vless
   server: 185.229.9.175
   port: 443
-  uuid: e2a29d65-9323-42d4-9a74-42be1152e959
+  uuid: 895ae830-3276-49ad-9395-7937f6820d45
   tls: true
   flow: xtls-rprx-vision
   sni: yandex.ru
@@ -138,21 +113,21 @@ proxies:
     short-id: cb0e256070ac91c7
 - name: '🇩🇪 Germany — #61'
   type: vless
-  server: 185.229.9.175
-  port: 443
-  uuid: e2a29d65-9323-42d4-9a74-42be1152e959
+  server: 185.229.9.235
+  port: 46005
+  uuid: 895ae830-3276-49ad-9395-7937f6820d45
   tls: true
   flow: xtls-rprx-vision
   sni: max.ru
   client-fingerprint: firefox
   reality-opts:
-    public-key: 2QoNARj5aaa5-kUEiwx38KzbbiENQZ95V7x9jFo6f2A
-    short-id: 88a84e3390fcf4a7
+    public-key: tP_mtYuA3fZq8C6WatAA4TmDv0_Wigq9xYcmb5UsTRA
+    short-id: 93653ee07ff5124c
 - name: '🇩🇪 Germany — #62'
   type: vless
   server: 31.177.111.140
   port: 443
-  uuid: e2a29d65-9323-42d4-9a74-42be1152e959
+  uuid: 895ae830-3276-49ad-9395-7937f6820d45
   network: ws
   tls: true
   sni: cdn.rucdncomp.pro
@@ -163,33 +138,33 @@ proxies:
     path: /client/collect/6b3a32fb9f37/
 - name: '🇩🇪 Germany — #63'
   type: vless
-  server: 31.177.111.75
-  port: 8443
-  uuid: e2a29d65-9323-42d4-9a74-42be1152e959
+  server: 87.242.94.90
+  port: 7445
+  uuid: 895ae830-3276-49ad-9395-7937f6820d45
   tls: true
   flow: xtls-rprx-vision
-  sni: wap.yandex.ru
+  sni: passport.yandex.ru
   client-fingerprint: firefox
   reality-opts:
-    public-key: rVAe7lMXUS4ie-OaecaucJOyl0y1gVmaWFrRq2gMRG8
-    short-id: c1756ac68565f85c
+    public-key: 0w339GBhpDiYwa9Wgqu3z3epu8dHAzeYUFXPtvzK8To
+    short-id: 190c27ae5f2e4d2c
 - name: '🇩🇪 Germany — #64'
   type: vless
   server: 185.229.9.234
   port: 443
-  uuid: e2a29d65-9323-42d4-9a74-42be1152e959
+  uuid: 895ae830-3276-49ad-9395-7937f6820d45
   tls: true
   flow: xtls-rprx-vision
-  sni: yandex.ru
+  sni: max.ru
   client-fingerprint: firefox
   reality-opts:
-    public-key: fsyvGBPzzwpnSA0UnJML_cDqviNSEdj9zktpC1EeFhY
-    short-id: 743541f932fa3959
+    public-key: AD7roAsP-vrlxeyfnVEWj7Cq_2viTSICXo2Psm6B_3E
+    short-id: cb425a961bb7d67c
 - name: '🇩🇪 Germany — #65'
   type: vless
   server: 91.240.87.166
   port: 443
-  uuid: e2a29d65-9323-42d4-9a74-42be1152e959
+  uuid: 895ae830-3276-49ad-9395-7937f6820d45
   tls: true
   flow: xtls-rprx-vision
   sni: yandex.ru
@@ -199,45 +174,21 @@ proxies:
     short-id: 7bb730e3e6616d31
 - name: '🇩🇪 Germany — #66'
   type: vless
-  server: 185.229.9.234
-  port: 443
-  uuid: e2a29d65-9323-42d4-9a74-42be1152e959
+  server: 31.177.111.75
+  port: 8443
+  uuid: 895ae830-3276-49ad-9395-7937f6820d45
   tls: true
   flow: xtls-rprx-vision
-  sni: www.vk.com
+  sni: wap.yandex.ru
   client-fingerprint: firefox
   reality-opts:
-    public-key: 7o36V1H4H_34kTMpwCfJmDB1bbd21Rgbk2dM_dAonyM
-    short-id: 0bb3fbdc6cb178d4
+    public-key: rVAe7lMXUS4ie-OaecaucJOyl0y1gVmaWFrRq2gMRG8
+    short-id: c1756ac68565f85c
 - name: '🇩🇪 Germany — #67'
   type: vless
-  server: 185.229.9.175
-  port: 443
-  uuid: e2a29d65-9323-42d4-9a74-42be1152e959
-  tls: true
-  flow: xtls-rprx-vision
-  sni: www.vk.com
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: ZO7C9aMpoVJ6CmkKWUBS20eKe542_tGIc6wZFGB-yjY
-    short-id: b4e5b7cefcd0d47c
-- name: '🇩🇪 Germany — #68'
-  type: vless
-  server: 185.229.9.235
-  port: 46005
-  uuid: e2a29d65-9323-42d4-9a74-42be1152e959
-  tls: true
-  flow: xtls-rprx-vision
-  sni: max.ru
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: tP_mtYuA3fZq8C6WatAA4TmDv0_Wigq9xYcmb5UsTRA
-    short-id: 93653ee07ff5124c
-- name: '🇩🇪 Germany — #69'
-  type: vless
   server: 185.229.9.234
   port: 443
-  uuid: e2a29d65-9323-42d4-9a74-42be1152e959
+  uuid: 895ae830-3276-49ad-9395-7937f6820d45
   tls: true
   flow: xtls-rprx-vision
   sni: api.ok.ru
@@ -245,11 +196,47 @@ proxies:
   reality-opts:
     public-key: lIgF8B3ICGAQ6ExbRe9YDu8ZD1Ozzqu7-YO7hfuXfRw
     short-id: cc8069f6c2cbcb32
+- name: '🇩🇪 Germany — #68'
+  type: vless
+  server: 185.229.9.234
+  port: 443
+  uuid: 895ae830-3276-49ad-9395-7937f6820d45
+  tls: true
+  flow: xtls-rprx-vision
+  sni: yandex.ru
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: fsyvGBPzzwpnSA0UnJML_cDqviNSEdj9zktpC1EeFhY
+    short-id: 743541f932fa3959
+- name: '🇩🇪 Germany — #69'
+  type: vless
+  server: 185.229.9.234
+  port: 443
+  uuid: 895ae830-3276-49ad-9395-7937f6820d45
+  tls: true
+  flow: xtls-rprx-vision
+  sni: www.vk.com
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: 7o36V1H4H_34kTMpwCfJmDB1bbd21Rgbk2dM_dAonyM
+    short-id: 0bb3fbdc6cb178d4
 - name: '🇩🇪 Germany — #70'
+  type: vless
+  server: 185.229.9.175
+  port: 443
+  uuid: 895ae830-3276-49ad-9395-7937f6820d45
+  tls: true
+  flow: xtls-rprx-vision
+  sni: api.ok.ru
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: Eutx4frdhG1y7THj7k3CjazAsrCMj932RtbV4a1QfQk
+    short-id: d5b6308860d578bb
+- name: '🇩🇪 Germany — #71'
   type: vless
   server: 188.225.77.178
   port: 443
-  uuid: 53329fcf-e868-42a6-91ff-7ab073768d7a
+  uuid: 76638e58-4f67-43ab-9aa3-ad54eda00edc
   network: grpc
   tls: true
   sni: cloudcdn-m9-12.cdn.yandex.net
@@ -259,18 +246,6 @@ proxies:
   reality-opts:
     public-key: 9YcV-gA7iaXFnI0HXQa624OIqm4zxO_U2eMCWXQAiCQ
     short-id: 8375b32501373f41
-- name: '🇪🇪 Estonia — #71'
-  type: vless
-  server: 188.225.83.133
-  port: 443
-  uuid: 4c346148-ece9-487a-bffb-ba5a399b2d71
-  network: grpc
-  tls: true
-  sni: xnodtwx.artemida.live
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: JqmkP6Fys7jN2Fu1iDJuWKVNPhlgHfy_pj1DHFVKVhw
-    short-id: a1b2c3d4e5f6a7b8
 - name: '🇪🇪 Estonia — #72'
   type: vless
   server: 45.133.151.163
@@ -282,164 +257,63 @@ proxies:
   reality-opts:
     public-key: jOVKSP-bS9OkILJ8Epz8hadh6qhavCrOiJYeF0NCn0k
     short-id: a73f0410d728c823
-- name: '🇪🇪 Estonia — #73'
+- name: '🇫🇷 France — #73'
   type: vless
-  server: 188.225.83.133
-  port: 443
-  uuid: 4c346148-ece9-487a-bffb-ba5a399b2d71
-  network: grpc
-  tls: true
-  sni: xnodtwx.artemida.live
-  client-fingerprint: random
-  reality-opts:
-    public-key: JqmkP6Fys7jN2Fu1iDJuWKVNPhlgHfy_pj1DHFVKVhw
-    short-id: a1b2c3d4e5f6a7b8
-- name: '🇫🇮 Finland — #74'
-  type: vless
-  server: 46.243.235.246
-  port: 7449
-  uuid: f23bc4f1-cc71-4003-ae6c-d6abe21d8191
+  server: 82.202.179.104
+  port: 9443
+  uuid: ccd6419d-6943-4e7c-bc8c-7a157dadff80
   tls: true
   flow: xtls-rprx-vision
-  sni: passport.yandex.ru
+  sni: smartcaptcha.yandexcloud.net
   client-fingerprint: firefox
   reality-opts:
-    public-key: TixECE6AqdT0DEihGXGqBAovNYMxZSB2csK0Lmm1ch0
-    short-id: 11e097a032298bd8
-- name: '🇫🇮 Finland — #75'
+    public-key: tvc-zUxqKX5P3DrZ2OiLIKHVPeu5MKjFLRWRYcvL3BQ
+    short-id: 9b027a0fe332
+- name: '🇫🇷 France — #74'
   type: vless
-  server: 46.243.235.246
-  port: 7449
-  uuid: f23bc4f1-cc71-4003-ae6c-d6abe21d8191
+  server: 82.202.179.104
+  port: 9443
+  uuid: ccd6419d-6943-4e7c-bc8c-7a157dadff80
   tls: true
   flow: xtls-rprx-vision
-  sni: passport.yandex.ru
+  sni: smartcaptcha.yandexcloud.net
+  client-fingerprint: random
+  reality-opts:
+    public-key: tvc-zUxqKX5P3DrZ2OiLIKHVPeu5MKjFLRWRYcvL3BQ
+    short-id: 9b027a0fe332
+- name: '🇬🇧 United Kingdom — #75'
+  type: vless
+  server: 188.225.32.76
+  port: 443
+  uuid: 12e95f93-443c-0002-9a2a-5b318b9124cf
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: V-wRiXvhBx01utmXJbrThJ_DE4tNJfK6mnzo9EB3fVA
+- name: '🇬🇧 United Kingdom — #76'
+  type: vless
+  server: 46.182.24.15
+  port: 443
+  uuid: 12e95f93-443c-0002-9a2a-5b318b9124cf
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: V-wRiXvhBx01utmXJbrThJ_DE4tNJfK6mnzo9EB3fVA
+- name: '🇳🇱 The Netherlands — #77'
+  type: vless
+  server: 31.130.155.114
+  port: 443
+  uuid: 6ed6162d-fc15-447c-b04c-5d6975d2231d
+  tls: true
+  flow: xtls-rprx-vision
+  sni: api.max.ru
   client-fingerprint: edge
   reality-opts:
-    public-key: TixECE6AqdT0DEihGXGqBAovNYMxZSB2csK0Lmm1ch0
-    short-id: 11e097a032298bd8
-- name: '🇫🇮 Finland — #76'
-  type: vless
-  server: 46.243.235.246
-  port: 7449
-  uuid: f23bc4f1-cc71-4003-ae6c-d6abe21d8191
-  tls: true
-  flow: xtls-rprx-vision
-  sni: passport.yandex.ru
-  client-fingerprint: ios
-  reality-opts:
-    public-key: TixECE6AqdT0DEihGXGqBAovNYMxZSB2csK0Lmm1ch0
-    short-id: 11e097a032298bd8
-- name: '🇫🇮 Finland — #77'
-  type: vless
-  server: 46.243.235.246
-  port: 7449
-  uuid: f23bc4f1-cc71-4003-ae6c-d6abe21d8191
-  tls: true
-  flow: xtls-rprx-vision
-  sni: passport.yandex.ru
-  client-fingerprint: safari
-  reality-opts:
-    public-key: TixECE6AqdT0DEihGXGqBAovNYMxZSB2csK0Lmm1ch0
-    short-id: 11e097a032298bd8
-- name: '🇫🇮 Finland — #78'
-  type: vless
-  server: 46.243.235.246
-  port: 7449
-  uuid: f23bc4f1-cc71-4003-ae6c-d6abe21d8191
-  tls: true
-  flow: xtls-rprx-vision
-  sni: passport.yandex.ru
-  client-fingerprint: random
-  reality-opts:
-    public-key: TixECE6AqdT0DEihGXGqBAovNYMxZSB2csK0Lmm1ch0
-    short-id: 11e097a032298bd8
-- name: '🇫🇮 Finland — #79'
-  type: vless
-  server: 46.243.235.246
-  port: 7449
-  uuid: 985fbc4e-f2fd-4a7f-b09f-f9b7728dd0a4
-  tls: true
-  flow: xtls-rprx-vision
-  sni: passport.yandex.ru
-  client-fingerprint: random
-  reality-opts:
-    public-key: TixECE6AqdT0DEihGXGqBAovNYMxZSB2csK0Lmm1ch0
-    short-id: 11e097a032298bd8
-- name: '🇫🇮 Finland — #80'
-  type: vless
-  server: 83.220.175.235
-  port: 2096
-  uuid: f13b36ac-3765-4458-8a4d-08575038c463
-  network: grpc
-  tls: true
-  sni: id.vk.com
-  client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: vless-grpc-reality
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-- name: '🇫🇷 France — #81'
-  type: vless
-  server: 82.202.178.133
-  port: 31443
-  uuid: 03218c7c-acd1-45c0-87a1-9cc77101c6b4
-  tls: true
-  flow: xtls-rprx-vision
-  sni: smartcaptcha.yandexcloud.net
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: lA0NS88gVVkaZf4qA1aYystzmLsZ5SNzszDsC-8DMSM
-    short-id: e351ebf520
-- name: '🇫🇷 France — #82'
-  type: vless
-  server: 82.202.179.104
-  port: 9443
-  uuid: ccd6419d-6943-4e7c-bc8c-7a157dadff80
-  tls: true
-  flow: xtls-rprx-vision
-  sni: smartcaptcha.yandexcloud.net
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: tvc-zUxqKX5P3DrZ2OiLIKHVPeu5MKjFLRWRYcvL3BQ
-    short-id: 9b027a0fe332
-- name: '🇫🇷 France — #83'
-  type: vless
-  server: 82.202.178.133
-  port: 31443
-  uuid: 03218c7c-acd1-45c0-87a1-9cc77101c6b4
-  tls: true
-  flow: xtls-rprx-vision
-  sni: smartcaptcha.yandexcloud.net
-  client-fingerprint: random
-  reality-opts:
-    public-key: lA0NS88gVVkaZf4qA1aYystzmLsZ5SNzszDsC-8DMSM
-    short-id: e351ebf520
-- name: '🇫🇷 France — #84'
-  type: vless
-  server: 82.202.179.104
-  port: 9443
-  uuid: ccd6419d-6943-4e7c-bc8c-7a157dadff80
-  tls: true
-  flow: xtls-rprx-vision
-  sni: smartcaptcha.yandexcloud.net
-  client-fingerprint: random
-  reality-opts:
-    public-key: tvc-zUxqKX5P3DrZ2OiLIKHVPeu5MKjFLRWRYcvL3BQ
-    short-id: 9b027a0fe332
-- name: '🇫🇷 France — #85'
-  type: vless
-  server: 82.202.178.133
-  port: 31443
-  uuid: 54f22246-cc9c-4315-907a-6c94c901d20f
-  tls: true
-  flow: xtls-rprx-vision
-  sni: smartcaptcha.yandexcloud.net
-  client-fingerprint: random
-  reality-opts:
-    public-key: lA0NS88gVVkaZf4qA1aYystzmLsZ5SNzszDsC-8DMSM
-    short-id: e351ebf520
-- name: '🇳🇱 The Netherlands — #86'
+    public-key: aySWi4vGm4__zU_RFNtym1AyjtfY0AX9WoigfVG7hWA
+    short-id: 6c183039c8fe2676
+- name: '🇳🇱 The Netherlands — #78'
   type: vless
   server: 31.130.155.114
   port: 443
@@ -447,11 +321,11 @@ proxies:
   tls: true
   flow: xtls-rprx-vision
   sni: api.max.ru
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   reality-opts:
     public-key: aySWi4vGm4__zU_RFNtym1AyjtfY0AX9WoigfVG7hWA
     short-id: 6c183039c8fe2676
-- name: '🇳🇱 The Netherlands — #87'
+- name: '🇳🇱 The Netherlands — #79'
   type: vless
   server: 188.225.45.77
   port: 443
@@ -465,18 +339,7 @@ proxies:
   reality-opts:
     public-key: 5SjHShy0uFG9MmzFbZ21Ozg623ZXKwLf3pzC_QA8CBE
     short-id: 5803463a64073dfc
-- name: '🇳🇱 The Netherlands — #88'
-  type: vless
-  server: 196.240.125.251
-  port: 8443
-  uuid: 8de76932-518a-4ac8-ac92-be6b1f17ddd8
-  tls: true
-  flow: xtls-rprx-vision
-  sni: api-v1-6ac7858f.vmagnum.win
-  client-fingerprint: firefox
-  alpn:
-  - h2
-- name: '🇳🇱 The Netherlands — #89'
+- name: '🇳🇱 The Netherlands — #80'
   type: vless
   server: 188.225.45.77
   port: 443
@@ -490,7 +353,7 @@ proxies:
   reality-opts:
     public-key: 5SjHShy0uFG9MmzFbZ21Ozg623ZXKwLf3pzC_QA8CBE
     short-id: 5803463a64073dfc
-- name: '🇳🇱 The Netherlands — #90'
+- name: '🇳🇱 The Netherlands — #81'
   type: vless
   server: 188.225.45.77
   port: 443
@@ -504,174 +367,11 @@ proxies:
   reality-opts:
     public-key: 5SjHShy0uFG9MmzFbZ21Ozg623ZXKwLf3pzC_QA8CBE
     short-id: 5803463a64073dfc
-- name: '🇳🇱 The Netherlands — #91'
-  type: vless
-  server: 185.86.145.183
-  port: 443
-  uuid: 7ec9f26a-edec-4bf1-addd-700626df27c1
-  network: ws
-  tls: true
-  sni: cosmo-pulse.ru
-  client-fingerprint: edge
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: /nl7ws
-    headers:
-      Host: cosmo-pulse.ru
-- name: '🇳🇱 The Netherlands — #92'
-  type: vless
-  server: 185.86.145.183
-  port: 443
-  uuid: 7ec9f26a-edec-4bf1-addd-700626df27c1
-  network: ws
-  tls: true
-  sni: cosmo-pulse.ru
-  client-fingerprint: ios
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: /nl7ws
-    headers:
-      Host: cosmo-pulse.ru
-- name: '🇳🇱 The Netherlands — #93'
-  type: vless
-  server: 185.86.145.183
-  port: 443
-  uuid: 7ec9f26a-edec-4bf1-addd-700626df27c1
-  network: ws
-  tls: true
-  sni: cosmo-pulse.ru
-  client-fingerprint: qq
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: /nl7ws
-    headers:
-      Host: cosmo-pulse.ru
-- name: '🇳🇱 The Netherlands — #94'
-  type: vless
-  server: 185.86.145.183
-  port: 443
-  uuid: 7ec9f26a-edec-4bf1-addd-700626df27c1
-  network: ws
-  tls: true
-  sni: cosmo-pulse.ru
-  client-fingerprint: safari
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: /nl7ws
-    headers:
-      Host: cosmo-pulse.ru
-- name: '🇳🇱 The Netherlands — #95'
-  type: vless
-  server: 196.240.125.5
-  port: 8443
-  uuid: 8de76932-518a-4ac8-ac92-be6b1f17ddd8
-  tls: true
-  flow: xtls-rprx-vision
-  sni: api-v1-6ac7858f.vmagnum.win
-  client-fingerprint: ios
-- name: '🇳🇱 The Netherlands — #96'
-  type: vless
-  server: 196.240.125.251
-  port: 8443
-  uuid: 8de76932-518a-4ac8-ac92-be6b1f17ddd8
-  tls: true
-  flow: xtls-rprx-vision
-  sni: api-v1-6ac7858f.vmagnum.win
-  client-fingerprint: edge
-  alpn:
-  - h2
-- name: '🇳🇱 The Netherlands — #97'
-  type: vless
-  server: 196.240.125.251
-  port: 8443
-  uuid: 8de76932-518a-4ac8-ac92-be6b1f17ddd8
-  tls: true
-  flow: xtls-rprx-vision
-  sni: api-v1-6ac9122f.vmagnum.win
-  client-fingerprint: firefox
-  alpn:
-  - h2
-- name: '🇳🇱 The Netherlands — #98'
-  type: vless
-  server: 196.240.125.251
-  port: 8443
-  uuid: 8de76932-518a-4ac8-ac92-be6b1f17ddd8
-  tls: true
-  flow: xtls-rprx-vision
-  sni: api-v1-6ac9122f.vmagnum.win
-  client-fingerprint: chrome
-  alpn:
-  - h2
-- name: '🇳🇱 The Netherlands — #99'
-  type: vless
-  server: 196.240.125.5
-  port: 8443
-  uuid: 8de76932-518a-4ac8-ac92-be6b1f17ddd8
-  tls: true
-  flow: xtls-rprx-vision
-  sni: api-v1-6ac7858f.vmagnum.win
-  client-fingerprint: chrome
-- name: '🇳🇱 The Netherlands — #100'
-  type: vless
-  server: 196.240.125.251
-  port: 8443
-  uuid: 8de76932-518a-4ac8-ac92-be6b1f17ddd8
-  tls: true
-  flow: xtls-rprx-vision
-  sni: api-v1-6ac9122f.vmagnum.win
-  client-fingerprint: ios
-  alpn:
-  - h2
-- name: '🇳🇱 The Netherlands — #101'
-  type: vless
-  server: 196.240.125.251
-  port: 8443
-  uuid: 8de76932-518a-4ac8-ac92-be6b1f17ddd8
-  tls: true
-  flow: xtls-rprx-vision
-  sni: api-v1-6ac7858f.vmagnum.win
-  client-fingerprint: chrome
-- name: '🇳🇱 The Netherlands — #102'
-  type: vless
-  server: 196.240.125.5
-  port: 8443
-  uuid: 8de76932-518a-4ac8-ac92-be6b1f17ddd8
-  tls: true
-  flow: xtls-rprx-vision
-  sni: api-v1-6ac7858f.vmagnum.win
-  client-fingerprint: safari
-- name: '🇳🇱 The Netherlands — #103'
-  type: vless
-  server: 196.240.125.5
-  port: 8443
-  uuid: 8de76932-518a-4ac8-ac92-be6b1f17ddd8
-  tls: true
-  flow: xtls-rprx-vision
-  sni: api-v1-6ac7858f.vmagnum.win
-  client-fingerprint: firefox
-- name: '🇳🇱 The Netherlands — #104'
-  type: vless
-  server: 185.86.145.183
-  port: 443
-  uuid: 7ec9f26a-edec-4bf1-addd-700626df27c1
-  network: ws
-  tls: true
-  sni: cosmo-pulse.ru
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: /nl7ws
-    headers:
-      Host: cosmo-pulse.ru
-- name: '🇳🇴 Norway — #105'
+- name: '🇳🇴 Norway — #82'
   type: vless
   server: 87.242.95.164
   port: 9443
-  uuid: cad38718-529f-44f8-b002-0a65f3194f5e
+  uuid: 3cc94d6b-a357-4b79-ba10-a774f6c58d06
   network: grpc
   tls: true
   sni: passport.yandex.ru
@@ -681,11 +381,11 @@ proxies:
   reality-opts:
     public-key: 9YcV-gA7iaXFnI0HXQa624OIqm4zxO_U2eMCWXQAiCQ
     short-id: 8375b32501373f41
-- name: '🇳🇴 Norway — #106'
+- name: '🇳🇴 Norway — #83'
   type: vless
   server: 87.242.95.164
   port: 9443
-  uuid: 53329fcf-e868-42a6-91ff-7ab073768d7a
+  uuid: 76638e58-4f67-43ab-9aa3-ad54eda00edc
   network: grpc
   tls: true
   sni: passport.yandex.ru
@@ -695,7 +395,44 @@ proxies:
   reality-opts:
     public-key: 9YcV-gA7iaXFnI0HXQa624OIqm4zxO_U2eMCWXQAiCQ
     short-id: 8375b32501373f41
-- name: '🇵🇱 Poland — #107'
+- name: '🇵🇱 Poland — #84'
+  type: vless
+  server: 91.215.43.248
+  port: 443
+  uuid: a5893c8b-28a2-4947-9a1c-708db25506c3
+  network: ws
+  tls: true
+  sni: my.kempekl.online
+  client-fingerprint: firefox
+  ws-opts:
+    path: /gateway/v1/ws/a64eb463966ba9c4bfd628f1de0362ae
+- name: '🇵🇱 Poland — #85'
+  type: vless
+  server: 91.215.43.248
+  port: 443
+  uuid: a5893c8b-28a2-4947-9a1c-708db25506c3
+  network: ws
+  tls: true
+  sni: my.kempekl.online
+  client-fingerprint: firefox
+  ws-opts:
+    path: /gateway/v1/ws/a64eb463966ba9c4bfd628f1de0362ae
+    headers:
+      Host: my.kempekl.online
+- name: '🇵🇱 Poland — #86'
+  type: vless
+  server: 91.215.43.248
+  port: 443
+  uuid: a5893c8b-28a2-4947-9a1c-708db25506c3
+  network: ws
+  tls: true
+  sni: my.kempekl.online
+  client-fingerprint: qq
+  ws-opts:
+    path: /gateway/v1/ws/a64eb463966ba9c4bfd628f1de0362ae
+    headers:
+      Host: my.kempekl.online
+- name: '🇵🇱 Poland — #87'
   type: vless
   server: 90.156.218.163
   port: 443
@@ -703,48 +440,11 @@ proxies:
   tls: true
   flow: xtls-rprx-vision
   sni: eh.vk.ru
-  client-fingerprint: random
+  client-fingerprint: firefox
   reality-opts:
     public-key: fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI
     short-id: db04ce8bdb8900f1
-- name: '🇵🇱 Poland — #108'
-  type: vless
-  server: 91.215.43.248
-  port: 443
-  uuid: a5893c8b-28a2-4947-9a1c-708db25506c3
-  network: ws
-  tls: true
-  sni: my.kempekl.online
-  client-fingerprint: firefox
-  ws-opts:
-    path: /gateway/v1/ws/a64eb463966ba9c4bfd628f1de0362ae
-- name: '🇵🇱 Poland — #109'
-  type: vless
-  server: 91.215.43.248
-  port: 443
-  uuid: a5893c8b-28a2-4947-9a1c-708db25506c3
-  network: ws
-  tls: true
-  sni: my.kempekl.online
-  client-fingerprint: firefox
-  ws-opts:
-    path: /gateway/v1/ws/a64eb463966ba9c4bfd628f1de0362ae
-    headers:
-      Host: my.kempekl.online
-- name: '🇵🇱 Poland — #110'
-  type: vless
-  server: 91.215.43.248
-  port: 443
-  uuid: a5893c8b-28a2-4947-9a1c-708db25506c3
-  network: ws
-  tls: true
-  sni: my.kempekl.online
-  client-fingerprint: qq
-  ws-opts:
-    path: /gateway/v1/ws/a64eb463966ba9c4bfd628f1de0362ae
-    headers:
-      Host: my.kempekl.online
-- name: '🇵🇱 Poland — #111'
+- name: '🇵🇱 Poland — #88'
   type: vless
   server: 91.215.43.248
   port: 443
@@ -757,7 +457,7 @@ proxies:
     path: /gateway/v1/ws/a64eb463966ba9c4bfd628f1de0362ae
     headers:
       Host: my.kempekl.online
-- name: '🇵🇱 Poland — #112'
+- name: '🇵🇱 Poland — #89'
   type: vless
   server: 91.215.43.248
   port: 443
@@ -770,29 +470,7 @@ proxies:
     path: /gateway/v1/ws/a64eb463966ba9c4bfd628f1de0362ae
     headers:
       Host: my.kempekl.online
-- name: '🇵🇱 Poland — #113'
-  type: vless
-  server: 46.8.208.80
-  port: 8443
-  uuid: 56ff50da-a238-4646-95ab-dd159634bd87
-  network: grpc
-  tls: true
-  sni: ru14.transitb2bsytems.com
-  client-fingerprint: random
-  reality-opts:
-    public-key: BC9xHGiLQKQkqNduzHvnwizRNDyr8TTr5Bxnf4Dov20
-- name: '🇵🇱 Poland — #114'
-  type: vless
-  server: 46.8.208.80
-  port: 8443
-  uuid: 56ff50da-a238-4646-95ab-dd159634bd87
-  network: grpc
-  tls: true
-  sni: ru14.transitb2bsytems.com
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: BC9xHGiLQKQkqNduzHvnwizRNDyr8TTr5Bxnf4Dov20
-- name: '🇵🇱 Poland — #115'
+- name: '🇵🇱 Poland — #90'
   type: vless
   server: 91.215.43.248
   port: 443
@@ -805,7 +483,7 @@ proxies:
     path: /gateway/v1/ws/a64eb463966ba9c4bfd628f1de0362ae
     headers:
       Host: my.kempekl.online
-- name: '🇺🇸 United States — #118'
+- name: '🇺🇸 United States — #93'
   type: vless
   server: 188.225.77.44
   port: 4433
@@ -817,7 +495,7 @@ proxies:
   reality-opts:
     public-key: S_s3FVodJIep88KnIgT0cZLUMB2tAJHTJEn0o-J03G8
     short-id: 283f4b51fbe39ad9
-- name: '🇺🇸 United States — #119'
+- name: '🇺🇸 United States — #94'
   type: vless
   server: 188.225.77.44
   port: 4433
@@ -826,6 +504,30 @@ proxies:
   flow: xtls-rprx-vision
   sni: rufi.willo.help
   client-fingerprint: random
+  reality-opts:
+    public-key: S_s3FVodJIep88KnIgT0cZLUMB2tAJHTJEn0o-J03G8
+    short-id: 283f4b51fbe39ad9
+- name: '🇺🇸 United States — #95'
+  type: vless
+  server: 188.225.77.44
+  port: 4433
+  uuid: 66217279-de40-4b62-b2bb-9c33b8fb7a01
+  tls: true
+  flow: xtls-rprx-vision
+  sni: rufi.willo.help
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: S_s3FVodJIep88KnIgT0cZLUMB2tAJHTJEn0o-J03G8
+    short-id: 283f4b51fbe39ad9
+- name: '🇺🇸 United States — #96'
+  type: vless
+  server: 188.225.77.44
+  port: 4433
+  uuid: f3765e79-995f-43a7-bf47-41695ab5e51c
+  tls: true
+  flow: xtls-rprx-vision
+  sni: rufi.willo.help
+  client-fingerprint: firefox
   reality-opts:
     public-key: S_s3FVodJIep88KnIgT0cZLUMB2tAJHTJEn0o-J03G8
     short-id: 283f4b51fbe39ad9
