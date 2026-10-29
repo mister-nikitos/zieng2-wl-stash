@@ -1,5 +1,5 @@
 proxies:
-- name: '🇷🇺 Beget — #72'
+- name: '🇷🇺 Beget — #71'
   type: vless
   server: 45.12.75.242
   port: 26424
@@ -7,6 +7,16 @@ proxies:
   tls: true
   sni: ya.ru
   client-fingerprint: chrome
+  reality-opts:
+    public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
+    short-id: 23103e1e
+- name: '🇷🇺 Beget — #72'
+  type: vless
+  server: 45.12.75.242
+  port: 26424
+  uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
+  tls: true
+  sni: ya.ru
   reality-opts:
     public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
     short-id: 23103e1e
@@ -21,24 +31,41 @@ proxies:
   reality-opts:
     public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
     short-id: 23103e1e
-- name: '🇷🇺 Beget — #74'
+- name: '🇷🇺 Delta — #74'
   type: vless
-  server: 45.12.75.242
-  port: 26424
-  uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
+  server: 185.229.9.135
+  port: 443
+  uuid: d9833bab-0a4d-4ebf-9d80-1f6ab04f3964
+  network: ws
   tls: true
-  sni: ya.ru
-  reality-opts:
-    public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
-    short-id: 23103e1e
-- name: '🇷🇺 Beget — #75'
+  sni: app.lesotorg-kirov.ru
+  ws-opts:
+    path: /chws
+    headers:
+      Host: app.lesotorg-kirov.ru
+- name: '🇷🇺 Delta — #75'
   type: vless
-  server: 45.12.75.242
-  port: 26424
-  uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
+  server: 185.229.9.135
+  port: 443
+  uuid: d9833bab-0a4d-4ebf-9d80-1f6ab04f3964
+  network: ws
   tls: true
-  sni: ya.ru
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
-    short-id: 23103e1e
+  sni: app.lesotorg-kirov.ru
+  client-fingerprint: android
+  ws-opts:
+    path: /chws
+    headers:
+      Host: app.lesotorg-kirov.ru
+- name: '🇷🇺 Delta — #76'
+  type: vless
+  server: 185.229.9.135
+  port: 443
+  uuid: d9833bab-0a4d-4ebf-9d80-1f6ab04f3964
+  network: ws
+  tls: true
+  sni: app.lesotorg-kirov.ru
+  client-fingerprint: chrome
+  ws-opts:
+    path: /chws
+    headers:
+      Host: app.lesotorg-kirov.ru
