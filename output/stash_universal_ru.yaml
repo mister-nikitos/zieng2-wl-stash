@@ -1,5 +1,29 @@
 proxies:
-- name: '🇷🇺 Beget — #1'
+- name: '🇷🇺 Aeza Group — #1'
+  type: vless
+  server: 178.250.242.209
+  port: 18443
+  uuid: 6036c28a-8db2-432e-8118-ff0c16641ad0
+  tls: true
+  flow: xtls-rprx-vision
+  sni: hop.convertgo.ru
+  client-fingerprint: qq
+  reality-opts:
+    public-key: oo2BXh-enbxxGXJcEzT3lgP26ru2rVnU5RP7PVUO0Sk
+    short-id: 43dcff53849b81e6
+- name: '🇷🇺 Aeza Group — #2'
+  type: vless
+  server: 178.250.242.209
+  port: 18443
+  uuid: 6036c28a-8db2-432e-8118-ff0c16641ad0
+  tls: true
+  flow: xtls-rprx-vision
+  sni: hop.convertgo.ru
+  client-fingerprint: ios
+  reality-opts:
+    public-key: oo2BXh-enbxxGXJcEzT3lgP26ru2rVnU5RP7PVUO0Sk
+    short-id: 43dcff53849b81e6
+- name: '🇷🇺 Beget — #3'
   type: vless
   server: 45.12.75.242
   port: 26424
@@ -10,7 +34,7 @@ proxies:
   reality-opts:
     public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
     short-id: 23103e1e
-- name: '🇷🇺 Beget — #2'
+- name: '🇷🇺 Beget — #4'
   type: vless
   server: 45.12.75.242
   port: 26424
@@ -21,7 +45,7 @@ proxies:
   reality-opts:
     public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
     short-id: 23103e1e
-- name: '🇷🇺 Beget — #3'
+- name: '🇷🇺 Beget — #5'
   type: vless
   server: 45.12.75.242
   port: 26424
@@ -32,28 +56,6 @@ proxies:
   reality-opts:
     public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
     short-id: 23103e1e
-- name: '🇷🇺 Beget — #4'
-  type: vless
-  server: 45.12.75.242
-  port: 26424
-  uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
-  tls: true
-  sni: ya.ru
-  reality-opts:
-    public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
-    short-id: 23103e1e
-- name: '🇷🇺 Delta — #5'
-  type: vless
-  server: 185.229.9.135
-  port: 443
-  uuid: 8f763a7f-4cda-4db1-90e3-9aeae0860dc0
-  network: ws
-  tls: true
-  sni: business.lesotorg-kirov.ru
-  ws-opts:
-    path: /chws
-    headers:
-      Host: business.lesotorg-kirov.ru
 - name: '🇷🇺 Delta — #6'
   type: vless
   server: 185.229.9.135
@@ -62,7 +64,6 @@ proxies:
   network: ws
   tls: true
   sni: business.lesotorg-kirov.ru
-  client-fingerprint: android
   ws-opts:
     path: /chws
     headers:
@@ -75,7 +76,7 @@ proxies:
   network: ws
   tls: true
   sni: business.lesotorg-kirov.ru
-  client-fingerprint: safari
+  client-fingerprint: android
   ws-opts:
     path: /chws
     headers:
@@ -88,7 +89,7 @@ proxies:
   network: ws
   tls: true
   sni: business.lesotorg-kirov.ru
-  client-fingerprint: firefox
+  client-fingerprint: safari
   ws-opts:
     path: /chws
     headers:
@@ -111,21 +112,36 @@ proxies:
   network: ws
   tls: true
   sni: business.lesotorg-kirov.ru
-  client-fingerprint: android
+  client-fingerprint: chrome
   ws-opts:
     path: /chws
-- name: '🇷🇺 IHC — #11'
+    headers:
+      Host: business.lesotorg-kirov.ru
+- name: '🇷🇺 Delta — #11'
   type: vless
-  server: 46.254.19.164
+  server: 185.229.9.135
   port: 443
-  uuid: a5212bcb-ab85-459a-bec6-9f259eeeebfa
+  uuid: 8f763a7f-4cda-4db1-90e3-9aeae0860dc0
+  network: ws
   tls: true
-  sni: wtb.tems.bet
+  sni: business.lesotorg-kirov.ru
   client-fingerprint: firefox
-  reality-opts:
-    public-key: 3qgZ9UlB-y1i9jx_zQQBgiNgFHz6fPQdP9gMMl4zXiM
-    short-id: 8937c9ed2d470352
-- name: '🇷🇺 IHC — #12'
+  ws-opts:
+    path: /chws
+    headers:
+      Host: business.lesotorg-kirov.ru
+- name: '🇷🇺 Delta — #12'
+  type: vless
+  server: 185.229.9.135
+  port: 443
+  uuid: 8f763a7f-4cda-4db1-90e3-9aeae0860dc0
+  network: ws
+  tls: true
+  sni: business.lesotorg-kirov.ru
+  client-fingerprint: ios
+  ws-opts:
+    path: /chws
+- name: '🇷🇺 IHC — #13'
   type: vless
   server: 46.254.19.164
   port: 443
@@ -136,7 +152,7 @@ proxies:
   reality-opts:
     public-key: 3qgZ9UlB-y1i9jx_zQQBgiNgFHz6fPQdP9gMMl4zXiM
     short-id: 8937c9ed2d470352
-- name: '🇷🇺 IHC — #13'
+- name: '🇷🇺 IHC — #14'
   type: vless
   server: 46.254.19.164
   port: 443
@@ -147,7 +163,18 @@ proxies:
   reality-opts:
     public-key: 3qgZ9UlB-y1i9jx_zQQBgiNgFHz6fPQdP9gMMl4zXiM
     short-id: 8937c9ed2d470352
-- name: '🇷🇺 IHC — #14'
+- name: '🇷🇺 IHC — #15'
+  type: vless
+  server: 46.254.19.164
+  port: 443
+  uuid: a5212bcb-ab85-459a-bec6-9f259eeeebfa
+  tls: true
+  sni: wtb.tems.bet
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: 3qgZ9UlB-y1i9jx_zQQBgiNgFHz6fPQdP9gMMl4zXiM
+    short-id: 8937c9ed2d470352
+- name: '🇷🇺 IHC — #16'
   type: vless
   server: 46.254.19.164
   port: 443
@@ -158,7 +185,7 @@ proxies:
   reality-opts:
     public-key: 3qgZ9UlB-y1i9jx_zQQBgiNgFHz6fPQdP9gMMl4zXiM
     short-id: 8937c9ed2d470352
-- name: '🇷🇺 IHC — #15'
+- name: '🇷🇺 IHC — #17'
   type: vless
   server: 46.254.19.164
   port: 443
