@@ -1,5 +1,5 @@
 proxies:
-- name: '🇷🇺 Beget — #12'
+- name: '🇷🇺 Beget — #8'
   type: vless
   server: 45.12.75.242
   port: 26424
@@ -10,7 +10,7 @@ proxies:
   reality-opts:
     public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
     short-id: 23103e1e
-- name: '🇷🇺 Beget — #13'
+- name: '🇷🇺 Beget — #9'
   type: vless
   server: 45.12.75.242
   port: 26424
@@ -21,126 +21,65 @@ proxies:
   reality-opts:
     public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
     short-id: 23103e1e
-- name: '🇷🇺 Beget — #14'
+- name: '🇷🇺 Delta — #10'
   type: vless
-  server: 45.12.75.242
-  port: 26424
-  uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
+  server: 185.229.9.135
+  port: 443
+  uuid: 4df3e06b-85e9-4b69-b38a-be37bad2fe9d
+  network: ws
   tls: true
+  sni: business.lesotorg-kirov.ru
+  client-fingerprint: qq
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /chws
+    headers:
+      Host: business.lesotorg-kirov.ru
+- name: '🇩🇪 Germany — #17'
+  type: vless
+  server: 51.250.89.125
+  port: 443
+  uuid: 48eb49ce-38b5-4ed1-b6ab-8eaf37cde710
+  tls: true
+  flow: xtls-rprx-vision
   sni: ya.ru
-  reality-opts:
-    public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
-    short-id: 23103e1e
-- name: '🇷🇺 Beget — #15'
-  type: vless
-  server: 45.12.75.242
-  port: 26424
-  uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
-  tls: true
-  sni: ya.ru
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
-    short-id: 23103e1e
-- name: '🇷🇺 IHC — #16'
-  type: vless
-  server: 46.254.19.164
-  port: 443
-  uuid: a5212bcb-ab85-459a-bec6-9f259eeeebfa
-  tls: true
-  sni: wtb.tems.bet
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: 3qgZ9UlB-y1i9jx_zQQBgiNgFHz6fPQdP9gMMl4zXiM
-    short-id: 8937c9ed2d470352
-- name: '🇷🇺 IHC — #17'
-  type: vless
-  server: 46.254.19.164
-  port: 443
-  uuid: a5212bcb-ab85-459a-bec6-9f259eeeebfa
-  tls: true
-  sni: wtb.tems.bet
-  client-fingerprint: ios
-  reality-opts:
-    public-key: 3qgZ9UlB-y1i9jx_zQQBgiNgFHz6fPQdP9gMMl4zXiM
-    short-id: 8937c9ed2d470352
-- name: '🇷🇺 IHC — #18'
-  type: vless
-  server: 46.254.19.164
-  port: 443
-  uuid: a5212bcb-ab85-459a-bec6-9f259eeeebfa
-  tls: true
-  sni: wtb.tems.bet
   client-fingerprint: chrome
   reality-opts:
-    public-key: 3qgZ9UlB-y1i9jx_zQQBgiNgFHz6fPQdP9gMMl4zXiM
-    short-id: 8937c9ed2d470352
-- name: '🇷🇺 IHC — #19'
-  type: vless
-  server: 46.254.19.164
-  port: 443
-  uuid: a5212bcb-ab85-459a-bec6-9f259eeeebfa
-  tls: true
-  sni: wtb.tems.bet
-  client-fingerprint: safari
-  reality-opts:
-    public-key: 3qgZ9UlB-y1i9jx_zQQBgiNgFHz6fPQdP9gMMl4zXiM
-    short-id: 8937c9ed2d470352
-- name: '🇷🇺 IHC — #20'
-  type: vless
-  server: 46.254.19.164
-  port: 443
-  uuid: a5212bcb-ab85-459a-bec6-9f259eeeebfa
-  tls: true
-  sni: wtb.tems.bet
-  client-fingerprint: random
-  reality-opts:
-    public-key: 3qgZ9UlB-y1i9jx_zQQBgiNgFHz6fPQdP9gMMl4zXiM
-    short-id: 8937c9ed2d470352
-- name: '🇩🇪 Germany — #27'
-  type: vless
-  server: 51.250.89.125
-  port: 443
-  uuid: 48eb49ce-38b5-4ed1-b6ab-8eaf37cde710
-  tls: true
-  flow: xtls-rprx-vision
-  sni: ya.ru
-  client-fingerprint: ios
-  reality-opts:
     public-key: jOmP_dqNqx6SDQ6Orso5rKGkTQhrFSSgGaq39I2siE4
     short-id: 6c61720cfed28f1a
-- name: '🇩🇪 Germany — #28'
+- name: '🇳🇱 The Netherlands — #18'
   type: vless
-  server: 51.250.89.125
+  server: 84.201.169.241
   port: 443
-  uuid: 48eb49ce-38b5-4ed1-b6ab-8eaf37cde710
-  tls: true
-  flow: xtls-rprx-vision
-  sni: ya.ru
-  client-fingerprint: safari
-  reality-opts:
-    public-key: jOmP_dqNqx6SDQ6Orso5rKGkTQhrFSSgGaq39I2siE4
-    short-id: 6c61720cfed28f1a
-- name: '🇩🇪 Germany — #29'
-  type: vless
-  server: 51.250.89.125
-  port: 443
-  uuid: 48eb49ce-38b5-4ed1-b6ab-8eaf37cde710
-  tls: true
-  flow: xtls-rprx-vision
-  sni: ya.ru
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: jOmP_dqNqx6SDQ6Orso5rKGkTQhrFSSgGaq39I2siE4
-    short-id: 6c61720cfed28f1a
-- name: '🇳🇱 The Netherlands — #30'
-  type: vless
-  server: 84.201.158.195
-  port: 443
-  uuid: 06ec3898-f952-52a5-8547-51ae1e6f0a62
+  uuid: 1e2b9c0c-4f9b-56f5-a062-1c4f2d2aa200
   tls: true
   flow: xtls-rprx-vision
   sni: api-maps.yandex.ru
-  client-fingerprint: qq
+  client-fingerprint: firefox
   reality-opts:
-    public-key: W4k2NnQJBHQciIPcm5TdpPOv_rqKhoUUyU3nGewoCjg
+    public-key: xsKg-Qi8sZNRRaNf6svIUwSw6iMdOTc6Cl82inZFM1Y
+- name: '🇳🇱 The Netherlands — #19'
+  type: vless
+  server: 185.86.145.37
+  port: 443
+  uuid: fd8b05d0-0a98-4fba-9b48-5c0367abfcf5
+  network: ws
+  tls: true
+  sni: ara.rtkdvbr.cc
+  client-fingerprint: qq
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /amws
+    headers:
+      Host: ara.rtkdvbr.cc
+- name: '🇵🇱 Poland — #49'
+  type: vless
+  server: 188.225.62.62
+  port: 7443
+  uuid: 6116f0f3-15eb-4217-b38e-16514dc00ba1
+  tls: true
+  flow: xtls-rprx-vision
+  sni: ru2.datacore-tech.ru
+  client-fingerprint: safari
