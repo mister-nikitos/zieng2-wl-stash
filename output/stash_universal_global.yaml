@@ -1,5 +1,5 @@
 proxies:
-- name: '🇩🇪 Germany — #16'
+- name: '🇩🇪 Germany — #17'
   type: vless
   server: 217.19.122.156
   port: 443
@@ -12,19 +12,6 @@ proxies:
     path: /useraction/events/b892639b7195/
     headers:
       Host: z1q3pv4g78.rucdncomp.pro
-- name: '🇩🇪 Germany — #17'
-  type: vless
-  server: 217.19.122.156
-  port: 443
-  uuid: c720cb74-4c84-4fce-b8ae-637dbaa16199
-  network: ws
-  tls: true
-  sni: z1q3pv4g78.rucdncomp.pro
-  client-fingerprint: firefox
-  ws-opts:
-    path: /useraction/events/b892639b7195/
-    headers:
-      Host: z1q3pv4g78.rucdncomp.pro
 - name: '🇩🇪 Germany — #18'
   type: vless
   server: 217.19.122.156
@@ -33,7 +20,7 @@ proxies:
   network: ws
   tls: true
   sni: z1q3pv4g78.rucdncomp.pro
-  client-fingerprint: chrome
+  client-fingerprint: firefox
   ws-opts:
     path: /useraction/events/b892639b7195/
     headers:
@@ -47,8 +34,6 @@ proxies:
   tls: true
   sni: z1q3pv4g78.rucdncomp.pro
   client-fingerprint: chrome
-  alpn:
-  - http/1.1
   ws-opts:
     path: /useraction/events/b892639b7195/
     headers:
@@ -61,7 +46,7 @@ proxies:
   network: ws
   tls: true
   sni: z1q3pv4g78.rucdncomp.pro
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   alpn:
   - http/1.1
   ws-opts:
@@ -76,7 +61,7 @@ proxies:
   network: ws
   tls: true
   sni: z1q3pv4g78.rucdncomp.pro
-  client-fingerprint: ios
+  client-fingerprint: firefox
   alpn:
   - http/1.1
   ws-opts:
@@ -91,7 +76,7 @@ proxies:
   network: ws
   tls: true
   sni: z1q3pv4g78.rucdncomp.pro
-  client-fingerprint: safari
+  client-fingerprint: ios
   alpn:
   - http/1.1
   ws-opts:
@@ -106,14 +91,14 @@ proxies:
   network: ws
   tls: true
   sni: z1q3pv4g78.rucdncomp.pro
-  client-fingerprint: random
+  client-fingerprint: safari
   alpn:
   - http/1.1
   ws-opts:
     path: /useraction/events/b892639b7195/
     headers:
       Host: z1q3pv4g78.rucdncomp.pro
-- name: '🇩🇪 Germany — #25'
+- name: '🇩🇪 Germany — #24'
   type: vless
   server: 217.19.122.156
   port: 443
@@ -121,7 +106,9 @@ proxies:
   network: ws
   tls: true
   sni: z1q3pv4g78.rucdncomp.pro
-  client-fingerprint: ios
+  client-fingerprint: random
+  alpn:
+  - http/1.1
   ws-opts:
     path: /useraction/events/b892639b7195/
     headers:
@@ -134,7 +121,7 @@ proxies:
   network: ws
   tls: true
   sni: z1q3pv4g78.rucdncomp.pro
-  client-fingerprint: random
+  client-fingerprint: ios
   ws-opts:
     path: /useraction/events/b892639b7195/
     headers:
@@ -147,11 +134,24 @@ proxies:
   network: ws
   tls: true
   sni: z1q3pv4g78.rucdncomp.pro
+  client-fingerprint: random
+  ws-opts:
+    path: /useraction/events/b892639b7195/
+    headers:
+      Host: z1q3pv4g78.rucdncomp.pro
+- name: '🇩🇪 Germany — #28'
+  type: vless
+  server: 217.19.122.156
+  port: 443
+  uuid: c720cb74-4c84-4fce-b8ae-637dbaa16199
+  network: ws
+  tls: true
+  sni: z1q3pv4g78.rucdncomp.pro
   alpn:
   - http/1.1
   ws-opts:
     path: /useraction/events/b892639b7195/
-- name: '🇩🇪 Germany — #28'
+- name: '🇩🇪 Germany — #29'
   type: vless
   server: 217.19.122.156
   port: 443
@@ -162,7 +162,33 @@ proxies:
   client-fingerprint: chrome
   ws-opts:
     path: /useraction/events/b892639b7195/
-- name: '🇳🇱 The Netherlands — #29'
+- name: '🇫🇷 France — #30'
+  type: vless
+  server: 188.225.83.133
+  port: 443
+  uuid: 5f1c2e83-d4aa-4f10-81e9-e0ccc018974c
+  network: grpc
+  tls: true
+  sni: xnodtwx.artemida.live
+  client-fingerprint: edge
+  reality-opts:
+    public-key: JqmkP6Fys7jN2Fu1iDJuWKVNPhlgHfy_pj1DHFVKVhw
+    short-id: a1b2c3d4e5f6a7b8
+- name: '🇬🇧 United Kingdom — #31'
+  type: vless
+  server: 78.159.245.15
+  port: 1505
+  uuid: 2c5f0cce-18a3-4a66-9cac-a24304da29a0
+  network: grpc
+  tls: true
+  sni: iv.kommersant.ru
+  client-fingerprint: qq
+  grpc-opts:
+    grpc-service-name: grpc
+  reality-opts:
+    public-key: 5nRL3eh_pQWHdej0It-V9mOapVLSi4PgkgjG9iqhpSw
+    short-id: a5bd715862513387
+- name: '🇳🇱 The Netherlands — #32'
   type: vless
   server: 185.86.145.37
   port: 443
@@ -177,7 +203,7 @@ proxies:
     path: /amws
     headers:
       Host: ara.rtkdvbr.cc
-- name: '🇳🇱 The Netherlands — #30'
+- name: '🇳🇱 The Netherlands — #33'
   type: vless
   server: 185.86.145.37
   port: 443
@@ -190,7 +216,7 @@ proxies:
     path: /amws
     headers:
       Host: ara.rtkdvbr.cc
-- name: '🇳🇱 The Netherlands — #31'
+- name: '🇳🇱 The Netherlands — #34'
   type: vless
   server: 185.86.145.37
   port: 443
@@ -205,7 +231,7 @@ proxies:
     path: /amws
     headers:
       Host: ara.rtkdvbr.cc
-- name: '🇳🇱 The Netherlands — #32'
+- name: '🇳🇱 The Netherlands — #35'
   type: vless
   server: 185.86.145.37
   port: 443
@@ -218,7 +244,7 @@ proxies:
     path: /amws
     headers:
       Host: ara.rtkdvbr.cc
-- name: '🇳🇱 The Netherlands — #33'
+- name: '🇳🇱 The Netherlands — #36'
   type: vless
   server: 185.86.145.37
   port: 443
@@ -233,7 +259,7 @@ proxies:
     path: /amws
     headers:
       Host: ara.rtkdvbr.cc
-- name: '🇳🇱 The Netherlands — #34'
+- name: '🇳🇱 The Netherlands — #37'
   type: vless
   server: 185.86.145.37
   port: 443
@@ -246,3 +272,84 @@ proxies:
     path: /amws
     headers:
       Host: ara.rtkdvbr.cc
+- name: '🇳🇱 The Netherlands — #38'
+  type: vless
+  server: 185.86.145.37
+  port: 443
+  uuid: e37ebf3b-ac32-48a8-8f56-d113967eaf29
+  network: ws
+  tls: true
+  sni: ara.rtkdvbr.cc
+  client-fingerprint: chrome
+  ws-opts:
+    path: /amws
+    headers:
+      Host: ara.rtkdvbr.cc
+- name: '🇳🇱 The Netherlands — #39'
+  type: vless
+  server: 185.86.145.37
+  port: 443
+  uuid: e37ebf3b-ac32-48a8-8f56-d113967eaf29
+  network: ws
+  tls: true
+  sni: ara.rtkdvbr.cc
+  client-fingerprint: safari
+  ws-opts:
+    path: /amws
+    headers:
+      Host: ara.rtkdvbr.cc
+- name: '🇳🇱 The Netherlands — #40'
+  type: vless
+  server: 185.86.145.37
+  port: 443
+  uuid: e37ebf3b-ac32-48a8-8f56-d113967eaf29
+  network: ws
+  tls: true
+  sni: ara.rtkdvbr.cc
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /amws
+    headers:
+      Host: ara.rtkdvbr.cc
+- name: '🇳🇱 The Netherlands — #41'
+  type: vless
+  server: 185.86.145.37
+  port: 443
+  uuid: e37ebf3b-ac32-48a8-8f56-d113967eaf29
+  network: ws
+  tls: true
+  sni: ara.rtkdvbr.cc
+  client-fingerprint: ios
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /amws
+    headers:
+      Host: ara.rtkdvbr.cc
+- name: '🇳🇱 The Netherlands — #42'
+  type: vless
+  server: 185.86.145.37
+  port: 443
+  uuid: e37ebf3b-ac32-48a8-8f56-d113967eaf29
+  network: ws
+  tls: true
+  sni: ara.rtkdvbr.cc
+  client-fingerprint: ios
+  ws-opts:
+    path: /amws
+    headers:
+      Host: ara.rtkdvbr.cc
+- name: '🇵🇱 Poland — #67'
+  type: vless
+  server: 188.225.83.133
+  port: 443
+  uuid: 5f1c2e83-d4aa-4f10-81e9-e0ccc018974c
+  network: grpc
+  tls: true
+  sni: xnodtwx.artemida.live
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: JqmkP6Fys7jN2Fu1iDJuWKVNPhlgHfy_pj1DHFVKVhw
+    short-id: a1b2c3d4e5f6a7b8

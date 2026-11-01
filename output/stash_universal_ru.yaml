@@ -1,26 +1,4 @@
 proxies:
-- name: '🇷🇺 Beget — #1'
-  type: vless
-  server: 45.12.75.242
-  port: 26424
-  uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
-  tls: true
-  sni: ya.ru
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
-    short-id: 23103e1e
-- name: '🇷🇺 Beget — #2'
-  type: vless
-  server: 45.12.75.242
-  port: 26424
-  uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
-  tls: true
-  sni: ya.ru
-  client-fingerprint: qq
-  reality-opts:
-    public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
-    short-id: 23103e1e
 - name: '🇷🇺 Beget — #3'
   type: vless
   server: 45.12.75.242
@@ -28,6 +6,7 @@ proxies:
   uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
   tls: true
   sni: ya.ru
+  client-fingerprint: chrome
   reality-opts:
     public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
     short-id: 23103e1e
@@ -38,110 +17,103 @@ proxies:
   uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
   tls: true
   sni: ya.ru
+  client-fingerprint: qq
+  reality-opts:
+    public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
+    short-id: 23103e1e
+- name: '🇷🇺 Beget — #5'
+  type: vless
+  server: 45.12.75.242
+  port: 26424
+  uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
+  tls: true
+  sni: ya.ru
   client-fingerprint: firefox
   reality-opts:
     public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
     short-id: 23103e1e
-- name: '🇷🇺 IHC — #5'
+- name: '🇷🇺 Beget — #6'
   type: vless
-  server: 46.254.19.164
-  port: 443
-  uuid: a5212bcb-ab85-459a-bec6-9f259eeeebfa
+  server: 45.12.75.242
+  port: 26424
+  uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
   tls: true
-  sni: wtb.tems.bet
-  client-fingerprint: firefox
+  sni: ya.ru
   reality-opts:
-    public-key: 3qgZ9UlB-y1i9jx_zQQBgiNgFHz6fPQdP9gMMl4zXiM
-    short-id: 8937c9ed2d470352
-- name: '🇷🇺 IHC — #6'
+    public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
+    short-id: 23103e1e
+- name: '🇷🇺 Delta — #7'
   type: vless
-  server: 46.254.19.164
+  server: 185.229.9.135
   port: 443
-  uuid: a5212bcb-ab85-459a-bec6-9f259eeeebfa
+  uuid: d8a47403-5dbf-4450-8640-0134719b1d86
+  network: ws
   tls: true
-  sni: wtb.tems.bet
-  client-fingerprint: safari
-  reality-opts:
-    public-key: 3qgZ9UlB-y1i9jx_zQQBgiNgFHz6fPQdP9gMMl4zXiM
-    short-id: 8937c9ed2d470352
-- name: '🇷🇺 IHC — #7'
+  sni: business.lesotorg-kirov.ru
+  client-fingerprint: qq
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /chws
+    headers:
+      Host: business.lesotorg-kirov.ru
+- name: '🇷🇺 Delta — #8'
   type: vless
-  server: 46.254.19.164
+  server: 185.229.9.135
   port: 443
-  uuid: a5212bcb-ab85-459a-bec6-9f259eeeebfa
+  uuid: d8a47403-5dbf-4450-8640-0134719b1d86
+  network: ws
   tls: true
-  sni: wtb.tems.bet
-  client-fingerprint: ios
-  reality-opts:
-    public-key: 3qgZ9UlB-y1i9jx_zQQBgiNgFHz6fPQdP9gMMl4zXiM
-    short-id: 8937c9ed2d470352
-- name: '🇷🇺 IHC — #8'
-  type: vless
-  server: 46.254.19.164
-  port: 443
-  uuid: a5212bcb-ab85-459a-bec6-9f259eeeebfa
-  tls: true
-  sni: wtb.tems.bet
+  sni: business.lesotorg-kirov.ru
   client-fingerprint: chrome
-  reality-opts:
-    public-key: 3qgZ9UlB-y1i9jx_zQQBgiNgFHz6fPQdP9gMMl4zXiM
-    short-id: 8937c9ed2d470352
-- name: '🇷🇺 IHC — #9'
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /chws
+    headers:
+      Host: business.lesotorg-kirov.ru
+- name: '🇷🇺 Delta — #9'
   type: vless
-  server: 46.254.19.164
+  server: 185.229.9.135
   port: 443
-  uuid: a5212bcb-ab85-459a-bec6-9f259eeeebfa
+  uuid: d8a47403-5dbf-4450-8640-0134719b1d86
+  network: ws
   tls: true
-  sni: wtb.tems.bet
-  client-fingerprint: random
-  reality-opts:
-    public-key: 3qgZ9UlB-y1i9jx_zQQBgiNgFHz6fPQdP9gMMl4zXiM
-    short-id: 8937c9ed2d470352
-- name: '🇷🇺 Timeweb — #12'
-  type: vless
-  server: 95.163.215.8
-  port: 5003
-  uuid: 4f4e8129-56ae-4b6e-baeb-ebdd07d8b2c5
-  tls: true
-  flow: xtls-rprx-vision
-  sni: eh.vk.com
+  sni: business.lesotorg-kirov.ru
   client-fingerprint: firefox
-  reality-opts:
-    public-key: SHIYN7zN9aFVxwKK-bIvDbhUgtHvlBhDi1qSl2sWwRw
-    short-id: e7
-- name: '🇷🇺 Timeweb — #13'
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /chws
+    headers:
+      Host: business.lesotorg-kirov.ru
+- name: '🇷🇺 Delta — #10'
   type: vless
-  server: 95.163.215.8
-  port: 5003
-  uuid: 4f4e8129-56ae-4b6e-baeb-ebdd07d8b2c5
+  server: 185.229.9.135
+  port: 443
+  uuid: d8a47403-5dbf-4450-8640-0134719b1d86
+  network: ws
   tls: true
-  flow: xtls-rprx-vision
-  sni: eh.vk.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: SHIYN7zN9aFVxwKK-bIvDbhUgtHvlBhDi1qSl2sWwRw
-    short-id: e7
-- name: '🇷🇺 Timeweb — #14'
-  type: vless
-  server: 95.163.215.8
-  port: 5003
-  uuid: 4f4e8129-56ae-4b6e-baeb-ebdd07d8b2c5
-  tls: true
-  flow: xtls-rprx-vision
-  sni: eh.vk.com
+  sni: business.lesotorg-kirov.ru
   client-fingerprint: ios
-  reality-opts:
-    public-key: SHIYN7zN9aFVxwKK-bIvDbhUgtHvlBhDi1qSl2sWwRw
-    short-id: e7
-- name: '🇷🇺 Timeweb — #15'
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /chws
+    headers:
+      Host: business.lesotorg-kirov.ru
+- name: '🇷🇺 Delta — #11'
   type: vless
-  server: 95.163.215.8
-  port: 5003
-  uuid: 4f4e8129-56ae-4b6e-baeb-ebdd07d8b2c5
+  server: 185.229.9.135
+  port: 443
+  uuid: d8a47403-5dbf-4450-8640-0134719b1d86
+  network: ws
   tls: true
-  flow: xtls-rprx-vision
-  sni: eh.vk.com
+  sni: business.lesotorg-kirov.ru
   client-fingerprint: safari
-  reality-opts:
-    public-key: SHIYN7zN9aFVxwKK-bIvDbhUgtHvlBhDi1qSl2sWwRw
-    short-id: e7
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /chws
+    headers:
+      Host: business.lesotorg-kirov.ru
