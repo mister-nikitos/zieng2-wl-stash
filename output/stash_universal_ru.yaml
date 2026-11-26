@@ -1,5 +1,5 @@
 proxies:
-- name: '🇷🇺 VK — #2'
+- name: '🇷🇺 VK — #1'
   type: vless
   server: 185.22.234.129
   port: 443
@@ -12,20 +12,7 @@ proxies:
   - http/1.1
   ws-opts:
     path: /useraction/collect/8a64b355ef0c/
-- name: '🇷🇺 VK — #3'
-  type: vless
-  server: 185.22.234.129
-  port: 443
-  uuid: 37af0181-5598-4aad-a040-d926bcb65757
-  network: ws
-  tls: true
-  sni: smartcdn.top
-  client-fingerprint: firefox
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: /useraction/collect/8a64b355ef0c/
-- name: '🇷🇺 VK — #4'
+- name: '🇷🇺 VK — #2'
   type: vless
   server: 185.22.234.129
   port: 443
@@ -38,3 +25,18 @@ proxies:
   - http/1.1
   ws-opts:
     path: /useraction/collect/8a64b355ef0c/
+- name: '🇷🇺 VK — #3'
+  type: vless
+  server: 185.22.234.129
+  port: 443
+  uuid: 37af0181-5598-4aad-a040-d926bcb65757
+  network: ws
+  tls: true
+  sni: smartcdn.top
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /useraction/collect/8a64b355ef0c/
+    headers:
+      Host: smartcdn.top
