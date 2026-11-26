@@ -1,1 +1,40 @@
-proxies: []
+proxies:
+- name: '🇷🇺 VK — #2'
+  type: vless
+  server: 78.159.240.11
+  port: 445
+  uuid: 37af0181-5598-4aad-a040-d926bcb65757
+  network: grpc
+  tls: true
+  sni: passport.yandex.ru
+  client-fingerprint: firefox
+  grpc-opts:
+    grpc-service-name: grpc
+  reality-opts:
+    public-key: VHWmCkZwC5XE-ctv0p8BinjoIx4SWgJUIsZPrhNf6TA
+- name: '🇷🇺 VK — #4'
+  type: vless
+  server: 185.22.234.129
+  port: 443
+  uuid: 37af0181-5598-4aad-a040-d926bcb65757
+  network: ws
+  tls: true
+  sni: smartcdn.top
+  client-fingerprint: firefox
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /useraction/collect/8a64b355ef0c/
+- name: '🇷🇺 VK — #6'
+  type: vless
+  server: 78.159.240.11
+  port: 445
+  uuid: 37af0181-5598-4aad-a040-d926bcb65757
+  network: grpc
+  tls: true
+  sni: passport.yandex.ru
+  client-fingerprint: ios
+  grpc-opts:
+    grpc-service-name: grpc
+  reality-opts:
+    public-key: VHWmCkZwC5XE-ctv0p8BinjoIx4SWgJUIsZPrhNf6TA
