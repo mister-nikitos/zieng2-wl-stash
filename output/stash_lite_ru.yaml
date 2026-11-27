@@ -20,12 +20,25 @@ proxies:
   network: ws
   tls: true
   sni: smartcdn.top
-  client-fingerprint: safari
+  client-fingerprint: firefox
   alpn:
   - http/1.1
   ws-opts:
     path: /useraction/collect/8a64b355ef0c/
 - name: '🇷🇺 VK — #3'
+  type: vless
+  server: 185.22.234.129
+  port: 443
+  uuid: 37af0181-5598-4aad-a040-d926bcb65757
+  network: ws
+  tls: true
+  sni: smartcdn.top
+  client-fingerprint: safari
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /useraction/collect/8a64b355ef0c/
+- name: '🇷🇺 VK — #4'
   type: vless
   server: 185.22.234.129
   port: 443
@@ -40,3 +53,15 @@ proxies:
     path: /useraction/collect/8a64b355ef0c/
     headers:
       Host: smartcdn.top
+- name: '🇷🇺 Yandex — #5'
+  type: vless
+  server: 84.201.130.151
+  port: 443
+  uuid: f4b08bf1-d9bd-4755-aa88-ba922282c608
+  tls: true
+  flow: xtls-rprx-vision
+  sni: ruforeign3.richhoodfoc.com
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: FmH06hSx9EeWD2rSoIDxr_LT0kuspuA3CnWBAOciZhE
+    short-id: 9dcf31a09fe98e19
