@@ -1,44 +1,18 @@
 proxies:
 - name: '🇷🇺 VK — #1'
   type: vless
-  server: 185.22.234.129
-  port: 443
+  server: 78.159.240.11
+  port: 445
   uuid: 37af0181-5598-4aad-a040-d926bcb65757
-  network: ws
+  network: grpc
   tls: true
-  sni: smartcdn.top
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: /useraction/collect/8a64b355ef0c/
-- name: '🇷🇺 VK — #2'
-  type: vless
-  server: 185.22.234.129
-  port: 443
-  uuid: 37af0181-5598-4aad-a040-d926bcb65757
-  network: ws
-  tls: true
-  sni: smartcdn.top
+  sni: passport.yandex.ru
   client-fingerprint: firefox
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: /useraction/collect/8a64b355ef0c/
-- name: '🇷🇺 VK — #3'
-  type: vless
-  server: 185.22.234.129
-  port: 443
-  uuid: 37af0181-5598-4aad-a040-d926bcb65757
-  network: ws
-  tls: true
-  sni: smartcdn.top
-  client-fingerprint: safari
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: /useraction/collect/8a64b355ef0c/
-- name: '🇷🇺 VK — #4'
+  grpc-opts:
+    grpc-service-name: grpc
+  reality-opts:
+    public-key: VHWmCkZwC5XE-ctv0p8BinjoIx4SWgJUIsZPrhNf6TA
+- name: '🇷🇺 VK — #2'
   type: vless
   server: 78.159.240.11
   port: 445
@@ -46,46 +20,70 @@ proxies:
   network: grpc
   tls: true
   sni: passport.yandex.ru
-  client-fingerprint: ios
+  client-fingerprint: safari
   grpc-opts:
     grpc-service-name: grpc
   reality-opts:
     public-key: VHWmCkZwC5XE-ctv0p8BinjoIx4SWgJUIsZPrhNf6TA
-- name: '🇷🇺 VK — #5'
+- name: '🇷🇺 Selectel — #3'
   type: vless
-  server: 185.22.234.129
+  server: 31.184.215.18
   port: 443
-  uuid: 37af0181-5598-4aad-a040-d926bcb65757
-  network: ws
-  tls: true
-  sni: smartcdn.top
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-  ws-opts:
-    path: /useraction/collect/8a64b355ef0c/
-    headers:
-      Host: smartcdn.top
-- name: '🇷🇺 VK — #6'
-  type: vless
-  server: 185.22.234.129
-  port: 443
-  uuid: 37af0181-5598-4aad-a040-d926bcb65757
-  network: ws
-  tls: true
-  sni: smartcdn.top
-  client-fingerprint: chrome
-  ws-opts:
-    path: /useraction/collect/8a64b355ef0c/
-- name: '🇷🇺 Yandex — #7'
-  type: vless
-  server: 84.201.130.151
-  port: 443
-  uuid: f4b08bf1-d9bd-4755-aa88-ba922282c608
+  uuid: 6dfb3b5f-e878-48c9-8f49-b2ab0b2a6d48
   tls: true
   flow: xtls-rprx-vision
-  sni: ruforeign3.richhoodfoc.com
+  sni: files.sdvgamma.xyz
+  client-fingerprint: edge
+  alpn:
+  - h2
+- name: '🇷🇺 Selectel — #4'
+  type: vless
+  server: 31.184.215.18
+  port: 443
+  uuid: 6dfb3b5f-e878-48c9-8f49-b2ab0b2a6d48
+  tls: true
+  flow: xtls-rprx-vision
+  sni: files.sdvgamma.xyz
   client-fingerprint: firefox
-  reality-opts:
-    public-key: FmH06hSx9EeWD2rSoIDxr_LT0kuspuA3CnWBAOciZhE
-    short-id: 9dcf31a09fe98e19
+  alpn:
+  - h2
+- name: '🇷🇺 Selectel — #5'
+  type: vless
+  server: 31.184.215.18
+  port: 443
+  uuid: 6dfb3b5f-e878-48c9-8f49-b2ab0b2a6d48
+  tls: true
+  flow: xtls-rprx-vision
+  sni: files.sdvgamma.xyz
+  client-fingerprint: qq
+  alpn:
+  - h2
+- name: '🇷🇺 Selectel — #6'
+  type: vless
+  server: 31.184.215.18
+  port: 443
+  uuid: 6dfb3b5f-e878-48c9-8f49-b2ab0b2a6d48
+  tls: true
+  flow: xtls-rprx-vision
+  sni: files.sdvgamma.xyz
+  client-fingerprint: safari
+  alpn:
+  - h2
+- name: '🇷🇺 Selectel — #7'
+  type: vless
+  server: 31.184.215.18
+  port: 443
+  uuid: 6dfb3b5f-e878-48c9-8f49-b2ab0b2a6d48
+  tls: true
+  flow: xtls-rprx-vision
+  sni: files.sdvgamma.xyz
+  client-fingerprint: firefox
+- name: '🇷🇺 Selectel — #8'
+  type: vless
+  server: 46.182.24.208
+  port: 443
+  uuid: 6dfb3b5f-e878-48c9-8f49-b2ab0b2a6d48
+  tls: true
+  flow: xtls-rprx-vision
+  sni: selec-bs2.gamma-kvn.com
+  client-fingerprint: firefox
